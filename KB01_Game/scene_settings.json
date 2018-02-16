@@ -1,0 +1,28 @@
+{
+	"AmountOfScenes" : 4,
+	"Scene1" : 
+	{
+		"LevelIndex" : 1,
+		"RECT" : 
+		[
+			500,
+			500,
+			500,
+			500
+		]
+	}
+}
+{
+	"AmountOfScenes" : 4,
+	"Scene2" : 
+	{
+		"LevelIndex" : 1,
+		"RECT" : 
+		[
+			500,
+			500,
+			500,
+			500
+		]
+	}
+}

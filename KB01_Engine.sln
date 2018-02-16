@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KB01_Engine", "KB01_Engine\KB01_Engine.vcxproj", "{02AB0373-88EC-451F-93EB-A21D8C241CF1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{903AE275-174A-4783-9BCE-8EB8CC25102D} = {903AE275-174A-4783-9BCE-8EB8CC25102D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KB01_Game", "KB01_Game\KB01_Game.vcxproj", "{893DAB1D-356F-4428-A515-3453B33A0738}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KB01EngineTest", "KB01EngineTest\KB01EngineTest.vcxproj", "{903AE275-174A-4783-9BCE-8EB8CC25102D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://johnlokerse.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = KB01_Engine\\KB01_Engine.vcxproj
+		SccProjectName1 = KB01_Engine
+		SccLocalPath1 = KB01_Engine
+		SccProjectUniqueName2 = KB01_Game\\KB01_Game.vcxproj
+		SccProjectName2 = KB01_Game
+		SccLocalPath2 = KB01_Game
+		SccProjectUniqueName3 = KB01EngineTest\\KB01EngineTest.vcxproj
+		SccProjectName3 = KB01EngineTest
+		SccLocalPath3 = KB01EngineTest
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02AB0373-88EC-451F-93EB-A21D8C241CF1}.Debug|ARM.ActiveCfg = Debug|Win32
+		{02AB0373-88EC-451F-93EB-A21D8C241CF1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{02AB0373-88EC-451F-93EB-A21D8C241CF1}.Debug|Win32.Build.0 = Debug|Win32
+		{02AB0373-88EC-451F-93EB-A21D8C241CF1}.Debug|x64.ActiveCfg = Debug|Win32
+		{02AB0373-88EC-451F-93EB-A21D8C241CF1}.Release|ARM.ActiveCfg = Release|Win32
+		{02AB0373-88EC-451F-93EB-A21D8C241CF1}.Release|Win32.ActiveCfg = Release|Win32
+		{02AB0373-88EC-451F-93EB-A21D8C241CF1}.Release|Win32.Build.0 = Release|Win32
+		{02AB0373-88EC-451F-93EB-A21D8C241CF1}.Release|x64.ActiveCfg = Release|Win32
+		{893DAB1D-356F-4428-A515-3453B33A0738}.Debug|ARM.ActiveCfg = Debug|Win32
+		{893DAB1D-356F-4428-A515-3453B33A0738}.Debug|Win32.ActiveCfg = Debug|Win32
+		{893DAB1D-356F-4428-A515-3453B33A0738}.Debug|Win32.Build.0 = Debug|Win32
+		{893DAB1D-356F-4428-A515-3453B33A0738}.Debug|x64.ActiveCfg = Debug|Win32
+		{893DAB1D-356F-4428-A515-3453B33A0738}.Release|ARM.ActiveCfg = Release|Win32
+		{893DAB1D-356F-4428-A515-3453B33A0738}.Release|Win32.ActiveCfg = Release|Win32
+		{893DAB1D-356F-4428-A515-3453B33A0738}.Release|Win32.Build.0 = Release|Win32
+		{893DAB1D-356F-4428-A515-3453B33A0738}.Release|x64.ActiveCfg = Release|Win32
+		{903AE275-174A-4783-9BCE-8EB8CC25102D}.Debug|ARM.ActiveCfg = Debug|Win32
+		{903AE275-174A-4783-9BCE-8EB8CC25102D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{903AE275-174A-4783-9BCE-8EB8CC25102D}.Debug|Win32.Build.0 = Debug|Win32
+		{903AE275-174A-4783-9BCE-8EB8CC25102D}.Debug|x64.ActiveCfg = Debug|Win32
+		{903AE275-174A-4783-9BCE-8EB8CC25102D}.Release|ARM.ActiveCfg = Release|Win32
+		{903AE275-174A-4783-9BCE-8EB8CC25102D}.Release|Win32.ActiveCfg = Release|Win32
+		{903AE275-174A-4783-9BCE-8EB8CC25102D}.Release|Win32.Build.0 = Release|Win32
+		{903AE275-174A-4783-9BCE-8EB8CC25102D}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

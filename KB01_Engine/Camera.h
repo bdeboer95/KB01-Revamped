@@ -3,20 +3,21 @@
 
 #include "Renderer.h"
 #include "Entity.h"
-class Camera: public Entity
+
+class Camera : public Entity
 {
 public:
 	Camera();
 	~Camera(void);
-	D3DXVECTOR3  m_right;
-	D3DXVECTOR3 cameraUpVector;
-	D3DXVECTOR3  cameraTarget;
-	D3DXVECTOR3  cameraPosition;
+	VECTOR3	m_right;
+	VECTOR3	cameraUpVector;
+	VECTOR3  cameraTarget;
+	VECTOR3  cameraPosition;
 
-
-	void SetCamera(Renderer* _renderer);//--转换和和摄影机的设置 
-
+	void SetCamera(Renderer* _renderer);
 };
+
+
 
 
 #endif

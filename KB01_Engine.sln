@@ -1,33 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KB01_Engine", "KB01_Engine\KB01_Engine.vcxproj", "{02AB0373-88EC-451F-93EB-A21D8C241CF1}"
-	ProjectSection(ProjectDependencies) = postProject
-		{903AE275-174A-4783-9BCE-8EB8CC25102D} = {903AE275-174A-4783-9BCE-8EB8CC25102D}
-	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KB01_Game", "KB01_Game\KB01_Game.vcxproj", "{893DAB1D-356F-4428-A515-3453B33A0738}"
+	ProjectSection(ProjectDependencies) = postProject
+		{02AB0373-88EC-451F-93EB-A21D8C241CF1} = {02AB0373-88EC-451F-93EB-A21D8C241CF1}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KB01EngineTest", "KB01EngineTest\KB01EngineTest.vcxproj", "{903AE275-174A-4783-9BCE-8EB8CC25102D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{02AB0373-88EC-451F-93EB-A21D8C241CF1} = {02AB0373-88EC-451F-93EB-A21D8C241CF1}
+	EndProjectSection
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://johnlokerse.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = KB01_Engine\\KB01_Engine.vcxproj
-		SccProjectName1 = KB01_Engine
-		SccLocalPath1 = KB01_Engine
-		SccProjectUniqueName2 = KB01_Game\\KB01_Game.vcxproj
-		SccProjectName2 = KB01_Game
-		SccLocalPath2 = KB01_Game
-		SccProjectUniqueName3 = KB01EngineTest\\KB01EngineTest.vcxproj
-		SccProjectName3 = KB01EngineTest
-		SccLocalPath3 = KB01EngineTest
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
 		Debug|Win32 = Debug|Win32
@@ -64,5 +52,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EEE88A5-D129-4B73-955F-261EC76A9012}
 	EndGlobalSection
 EndGlobal

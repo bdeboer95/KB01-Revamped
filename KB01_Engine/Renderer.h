@@ -4,7 +4,8 @@
 #include <Windows.h>
 #include <string>
 #include "Log.h"
-#include "d3dx9.h"
+#include "VECTOR3.h"
+
 class Renderer
 {
 public:
@@ -29,6 +30,12 @@ public:
 	virtual void			DrawIndexedPrimitive(UINT _numberOfVertices, UINT _primitiveCount) = 0;
 	virtual void			DrawSubset(void* _mesh, UINT _index) = 0;
 	virtual void			SetStreamSource(UINT _vertexSize) = 0;
+	
+	// CAMERA
+	virtual void			SetCamera(VECTOR3 m_right, VECTOR3 cameraPosition, VECTOR3 cameraTarget, VECTOR3 cameraUpVector) = 0;
+
 };
+
+
 
 #endif

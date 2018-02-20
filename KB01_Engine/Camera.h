@@ -9,16 +9,13 @@ class Camera : public Entity
 public:
 	Camera();
 	~Camera(void);
-	VECTOR3	m_right;
-	VECTOR3	cameraUpVector;
-	VECTOR3  cameraTarget;
-	VECTOR3  cameraPosition;
+	Vector3	m_right;
+	Vector3	cameraUpVector;
+	Vector3 cameraTarget;
+	Vector3 cameraPosition;
 
 	void SetCamera(Renderer* _renderer);
 };
-
-
-
 
 #endif
 

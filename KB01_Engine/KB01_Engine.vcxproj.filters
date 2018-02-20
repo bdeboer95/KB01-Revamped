@@ -262,7 +262,7 @@
     <ClInclude Include="Log.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="VECTOR3.h">
+    <ClInclude Include="Vector3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

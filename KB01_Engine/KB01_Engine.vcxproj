@@ -41,7 +41,7 @@
     <ClInclude Include="Terrain.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureLoaderDx.h" />
-    <ClInclude Include="VECTOR3.h" />
+    <ClInclude Include="Vector3.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="WindowManagerFacade.h" />

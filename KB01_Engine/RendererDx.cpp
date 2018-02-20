@@ -297,7 +297,7 @@ void RendererDx::SetStreamSource(UINT _vertexSize)
 	direct3DDevice->SetStreamSource(0, vertexBuffer, 0, _vertexSize);
 }
 
-void RendererDx::SetCamera(VECTOR3 m_right, VECTOR3 cameraPosition, VECTOR3 cameraTarget, VECTOR3 cameraUpVector)
+void RendererDx::SetCamera(Vector3 _m_right, Vector3 _cameraPosition, Vector3 _cameraTarget, Vector3 _cameraUpVector)
 {
 	D3DXMATRIX matWorld, matWorldX, matWorldY, matWorldZ;
 	D3DXMATRIX matView;
@@ -312,11 +312,11 @@ void RendererDx::SetCamera(VECTOR3 m_right, VECTOR3 cameraPosition, VECTOR3 came
 	cameraTarget = D3DXVECTOR3(0, 0, 0);
 	cameraUpVector = D3DXVECTOR3(1, 0, 0);*/
 
-	cameraPosition =  static_cast<VECTOR3>(D3DXVECTOR3(0.0f, 0.0f, 0.0f));
-	cameraTarget = D3DXVECTOR3(0.0f, 0.0f, 5.0f);
-	cameraUpVector = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
-	m_right = D3DXVECTOR3(1.0f, 0.0f, 0.0f);
-	D3DXMatrixLookAtLH(&matView, &cameraPosition, &cameraTarget, &cameraUpVector);
+	_cameraPosition = Vector3(0.0f, 0.0f, 0.0f);
+	_cameraTarget = Vector3(0.0f, 0.0f, 5.0f);
+	_cameraUpVector = Vector3(0.0f, 1.0f, 0.0f);
+	_m_right = Vector3(1.0f, 0.0f, 0.0f);
+	D3DXMatrixLookAtLH(&matView, &_cameraPosition, &_cameraTarget, &_cameraUpVector);
 	static_cast<LPDIRECT3DDEVICE9>(GetDevice())->SetTransform(D3DTS_VIEW, &matView);
 	D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 4, 1.0f, 1.0f, 1000.0f);
 	/*D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 4, 500 / 500, 1, 100);*/

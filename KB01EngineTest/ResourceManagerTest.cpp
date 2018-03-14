@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "..\KB01_engine\ResourceManager.h"
-#include "..\KB01_engine\RendererDx.h"
+#include "ResourceManager.h"
+#include "RendererDx.h"
 
 namespace KB01EngineTest
 {

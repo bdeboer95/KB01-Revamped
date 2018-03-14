@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "..\KB01_engine\Window.h"
-#include "..\KB01_engine\WindowManager.h"
+#include "Window.h"
+#include "WindowManager.h"
 #include <string>
-#include "..\KB01_engine\Log.h"
+#include "Log.h"
 
 namespace KB01EngineTest
 {

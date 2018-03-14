@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "..\KB01_engine\RendererDx.h"
-#include "..\KB01_engine\Window.h"
-#include "..\KB01_engine\WindowManager.h"
+#include "RendererDx.h"
+#include "Window.h"
+#include "WindowManager.h"
 
 namespace KB01EngineTest
 {

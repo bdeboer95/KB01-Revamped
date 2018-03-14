@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "..\\KB01_Engine\\WindowManager.h"
-#include "..\\KB01_Engine\\InputManager.h"
-#include "..\\KB01_Engine\\Kernel.h"
+#include "WindowManager.h"
+#include "InputManager.h"
+#include "Kernel.h"
 
 namespace KB01EngineTest
 {

@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "..\KB01_engine\Log.h"
+#include "Log.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 

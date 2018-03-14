@@ -55,7 +55,7 @@ public:
 	virtual void				SetStreamSource(UINT _vertexSize);
 
 	// CAMERA
-	virtual void				SetCamera(Vector3 _m_right, Vector3 _cameraPosition, Vector3 _cameraTarget, Vector3 _cameraUpVector);
+	virtual void				SetCamera(DXVector3 * const &_m_right, DXVector3 * const &_cameraPosition, DXVector3 * const &_cameraTarget, DXVector3 * const &_cameraUpVector);
 };
 
 

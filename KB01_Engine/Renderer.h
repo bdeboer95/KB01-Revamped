@@ -4,7 +4,7 @@
 #include <Windows.h>
 #include <string>
 #include "Log.h"
-#include "VECTOR3.h"
+#include "DXVector3.h"
 
 class Renderer
 {
@@ -32,8 +32,7 @@ public:
 	virtual void			SetStreamSource(UINT _vertexSize) = 0;
 	
 	// CAMERA
-	virtual void			SetCamera(Vector3 _m_right, Vector3 _cameraPosition, Vector3 _cameraTarget, Vector3 _cameraUpVector) = 0;
-
+	virtual void			SetCamera(DXVector3 * const &_m_right, DXVector3 * const &_cameraPosition, DXVector3 * const &_cameraTarget, DXVector3 * const &_cameraUpVector) = 0;
 };
 
 

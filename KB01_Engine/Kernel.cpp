@@ -10,7 +10,7 @@
 #include <iostream>
 #include <vector>
 //http://jsoncpp.sourceforge.net/annotated.html
-#include <json\json.h>
+//#include <json\json.h>
 
 #include "wtypes.h"
 
@@ -41,9 +41,10 @@ Kernel::~Kernel()
 /// </summary>
 void Kernel::Init()
 {
+	windowManager = new WindowManager();
 	sceneManager = new SceneManager();
 	resourceManager = new ResourceManager();
-	windowManager = new WindowManager();
+	inputManager = new InputManager();
 	renderer = new RendererDx();
 
 	Log::Instance()->LogMessage("Kernel - Scene-, Resource-, WindowManager created.", Log::MESSAGE_INFO);
@@ -53,7 +54,7 @@ void Kernel::Init()
 /// Loads the level.
 /// </summary>
 /// <param name="_level">The _level.</param>
-void Kernel::LoadLevel(std::string _level)
+void Kernel::LoadLevel(const std::string &_level)
 {
 	Log::Instance()->LogMessage("Kernel - Loading level...", Log::MESSAGE_INFO);
 
@@ -185,10 +186,11 @@ void Kernel::Notify(byte state[])
 /// </summary>
 void Kernel::DeleteAllManagers()
 {
-	delete sceneManager;
-	delete resourceManager;
 	delete windowManager;
+	delete resourceManager;
+	delete sceneManager;
 	delete inputManager;
+
 	delete renderer;
 
 	Log::Instance()->LogMessage("Kernel - Renderer and Managers are deleted.", Log::MESSAGE_INFO);

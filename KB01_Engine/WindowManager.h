@@ -2,11 +2,12 @@
 #define __WINDOWMANAGER_H__
 
 #include "RendererDx.h"
+#include "Manager.h"
 #include "Window.h"
 #include <vector>
 #include <windows.h>
 
-class WindowManager
+class WindowManager : Manager
 {
 private:
 	WNDCLASSEX						windowClassEx;
@@ -16,7 +17,6 @@ private:
 	static LRESULT WINAPI			StaticWndProc(HWND _hWnd, UINT _msg, WPARAM _wParam, LPARAM _lParam);
 	LRESULT WINAPI					WndProc(HWND _hWnd, UINT _msg, WPARAM _wParam, LPARAM _lParam); 
 	void							SetWindowClassEx();  
-	Window							GetWindow();
 	
 
 public:
@@ -29,6 +29,8 @@ public:
 	void							DeleteWindow(HWND _hWnd); //TODO:new name: DeleteWindowByHandler
 	Window*							GetActiveWindow();
 	void							DeleteAllWindows();//This needs to be private
+	virtual void Step();
+	virtual bool Running();
 
 private:
 	void							CleanUp(); 

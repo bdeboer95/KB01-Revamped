@@ -9,10 +9,10 @@ class Camera : public Entity
 public:
 	Camera();
 	~Camera(void);
-	Vector3	m_right;
-	Vector3	cameraUpVector;
-	Vector3 cameraTarget;
-	Vector3 cameraPosition;
+	DXVector3 m_right = DXVector3(0.0f, 0.0f, 0.0f);
+	DXVector3 cameraUpVector = DXVector3(0.0f, 0.0f, 0.0f);
+	DXVector3 cameraTarget = DXVector3(0.0f, 0.0f, 0.0f);
+	DXVector3 cameraPosition = DXVector3(0.0f, 0.0f, 0.0f);
 
 	void SetCamera(Renderer* _renderer);
 };

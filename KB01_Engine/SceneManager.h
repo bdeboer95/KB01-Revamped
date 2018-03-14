@@ -2,11 +2,12 @@
 #define __SCENEMANAGER_H__
 
 #include "Scene.h"
+#include "Manager.h"
 #include "Camera.h"
 #include "InputManager.h"
 #include "WindowManager.h"
 
-class SceneManager
+class SceneManager : Manager
 {
 private:
 	std::vector<Scene*> scenes;
@@ -17,6 +18,8 @@ public:
 	SceneManager();
 	~SceneManager();
 
+	virtual void Step();
+	virtual bool Running();
 	void SplitScenes(std::vector<Scene*> _splitScenes, RECT _rectangleBackBuffer);
 	Scene* CreateScene(int _levelIndex, HWND _hWnd, std::string _level);
 	void Cleanup();

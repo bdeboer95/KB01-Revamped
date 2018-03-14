@@ -26,6 +26,17 @@ ResourceManager::~ResourceManager()
 	Log::Instance()->LogMessage("~ResourceManager - ResourceManager cleaned up!", Log::MESSAGE_INFO);
 }
 
+void ResourceManager::Step()
+{
+	std::cout << "Stepping" << std::endl;
+}
+
+bool ResourceManager::Running()
+{
+	std::cout << "Looking good" << std::endl;
+	return false;
+}
+
 bool ResourceManager::InitResourceLoader(void* _device)
 {
 	if (_device)

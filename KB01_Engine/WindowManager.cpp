@@ -27,6 +27,17 @@ WindowManager::~WindowManager()
 	Log::Instance()->LogMessage("~WindowManager - WindowManager cleaned up!", Log::MESSAGE_INFO);
 }
 
+void WindowManager::Step()
+{
+	std::cout << "Stepping" << std::endl;
+}
+
+bool WindowManager::Running()
+{
+	std::cout << "Looking good" << std::endl;
+	return false;
+}
+
 //-----------------------------------------------------------------------------
 // Name: CreateNewWindow()
 // Desc: Create a new window

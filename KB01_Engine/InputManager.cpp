@@ -29,6 +29,17 @@ InputManager::~InputManager()
 	Log::Instance()->LogMessage("~InputManager - InputManager cleaned up!", Log::MESSAGE_INFO);
 }
 
+void InputManager::Step()
+{
+	std::cout << "Stepping" << std::endl;
+}
+
+bool InputManager::Running()
+{
+	std::cout << "Looking good" << std::endl;
+	return false;
+}
+
 ///// <summary>
 ///// Gets the devices.
 ///// </summary>

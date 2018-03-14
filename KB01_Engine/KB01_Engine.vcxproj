@@ -16,6 +16,8 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityModel.h" />
     <ClInclude Include="InputManagerFacade.h" />
+    <ClInclude Include="KernelInterface.h" />
+    <ClInclude Include="Manager.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="ResourceLoader.h" />
     <ClInclude Include="Heightmap.h" />
@@ -41,7 +43,7 @@
     <ClInclude Include="Terrain.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureLoaderDx.h" />
-    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="DXVector3.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="WindowManagerFacade.h" />
@@ -49,6 +51,7 @@
   <ItemGroup>
     <ClCompile Include="BMPLoader.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="DXVector3.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="EntityModel.cpp" />
     <ClCompile Include="Heightmap.cpp" />
@@ -135,7 +138,7 @@
     </Link>
     <Lib>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(SolutionDir)KB01_Engine\Include\DirectX\x86\d3dx9.lib;</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)KB01_Engine\Include\DirectX\Lib\d3dx9d.lib;</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Lib>
     <ProjectReference>
@@ -162,7 +165,7 @@
     </Link>
     <Lib>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(SolutionDir)KB01_Engine\Include\DirectX\x86\d3dx9.lib;</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)KB01_Engine\Include\DirectX\Lib\d3dx9d.lib;</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <LinkTimeCodeGeneration />
     </Lib>

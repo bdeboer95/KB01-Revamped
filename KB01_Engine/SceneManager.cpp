@@ -26,6 +26,17 @@ SceneManager::~SceneManager()
 	Log::Instance()->LogMessage("~SceneManager - SceneManager cleaned up!", Log::MESSAGE_INFO);
 }
 
+void SceneManager::Step()
+{
+	std::cout << "Stepping" << std::endl;
+}
+
+bool SceneManager::Running()
+{
+	std::cout << "Looking good" << std::endl;
+	return false;
+}
+
 /// <summary>
 /// Splits the scenes.
 /// </summary>

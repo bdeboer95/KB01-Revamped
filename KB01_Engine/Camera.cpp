@@ -5,7 +5,11 @@
 /// </summary>
 Camera::Camera()
 {
-	//TODO
+	m_right = DXVector3(1.0f, 0.0f, 0.0f);
+	cameraPosition = DXVector3(0.0f, 0.0f, 0.0f);
+	cameraTarget = DXVector3(0.0f, 0.0f, 5.0f);
+	cameraUpVector = DXVector3(0.0f, 1.0f, 0.0f);
+
 	Log::Instance()->LogMessage("Camera - Camera created.", Log::MESSAGE_INFO);
 }
 
@@ -20,6 +24,6 @@ Camera::~Camera(void)
 
 void Camera::SetCamera(Renderer* _renderer)
 {
-	_renderer->SetCamera(m_right, cameraPosition, cameraTarget, cameraUpVector);
+	_renderer->SetCamera(&m_right, &cameraPosition, &cameraTarget, &cameraUpVector);
 }
 

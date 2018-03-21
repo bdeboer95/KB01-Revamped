@@ -2,9 +2,8 @@
 #define __RENDERERDX_H__
 
 #define D3DFVF_CUSTOMVERTEX (D3DFVF_XYZ|D3DFVF_DIFFUSE)
-#define DIRECT3DTEXTURE(texture) (static_cast<LPDIRECT3DTEXTURE9*>(texture))
+#define DIRECT3DTEXTURE(texture) (static_cast<LPDIRECT3DTEXTURE9*>(texture)) //need to delete these
 #define DIRECT3DMATERIAL(material) (static_cast<D3DMATERIAL9*> (material))
-
 #define DIRECT3DMESH(mesh) (static_cast<LPD3DXMESH>(mesh))
 #define DIRECT3DPRIMITIVETYPE(primitiveType) (static_cast<D3DPRIMITIVETYPE*> (primitiveType))
 
@@ -15,7 +14,6 @@
 #include <DXGI1_2.h>
 #include "Log.h"
 
-
 class RendererDx : public Renderer
 {
 private:
@@ -24,7 +22,7 @@ private:
 	LPDIRECT3DVERTEXBUFFER9		vertexBuffer; // Our vertex buffer
 	LPDIRECT3DINDEXBUFFER9		indexBuffer; // our index buffer
 	LPDIRECT3DSWAPCHAIN9*		swapChain;
-	
+
 	struct CUSTOMVERTEX
 	{
 		FLOAT x, y, z;		// The transformed position for the vertex
@@ -53,10 +51,9 @@ public:
 	virtual float				GetBackBuffferHeight();
 	virtual void				DrawIndexedPrimitive(UINT _numberOfVertices, UINT _primitiveCount);
 	virtual void				SetStreamSource(UINT _vertexSize);
-
-	// CAMERA
-	virtual void				SetCamera(DXVector3 * const &_m_right, DXVector3 * const &_cameraPosition, DXVector3 * const &_cameraTarget, DXVector3 * const &_cameraUpVector);
+	//// CAMERA
+	//virtual void				SetCamera(DXVector3 * const &_m_right, DXVector3 * const &_cameraPosition, DXVector3 * const &_cameraTarget, DXVector3 * const &_cameraUpVector); //todo
 };
 
-
 #endif
+

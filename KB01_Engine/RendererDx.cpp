@@ -1,4 +1,4 @@
-//-----------------------------------------------------------------------------
+ï»¿//-----------------------------------------------------------------------------
 // File: RendererDx.cpp
 //
 // Desc: The RendererDx implements all the methods from Renderer and uses DirextX9.0 3D as it's base
@@ -17,7 +17,7 @@
 RendererDx::RendererDx()
 {
 	direct3D = NULL; // Used to create the D3DDevice
-	//InitDevice(GetForegroundWindow());
+					 //InitDevice(GetForegroundWindow());
 	vertexBuffer = NULL; // Buffer to hold vertices
 }
 
@@ -69,7 +69,7 @@ bool RendererDx::InitDevice(HWND _hWnd)
 	{
 		return false;
 	}
-	D3DDISPLAYMODE d3dmm;   //¶¨ÒåÒ»¸ö±£´æµ±Ç°ÊÊÅäÆ÷ÊôÐÔµÄ½á¹¹    
+	D3DDISPLAYMODE d3dmm;   //å®šä¹‰ä¸€ä¸ªä¿å­˜å½“å‰é€‚é…å™¨å±žæ€§çš„ç»“æž„    
 	if (FAILED(direct3D->GetAdapterDisplayMode(D3DADAPTER_DEFAULT, &d3dmm)))
 	{
 		return E_FAIL;
@@ -295,36 +295,4 @@ void RendererDx::DrawIndexedPrimitive(UINT _numberOfVertices, UINT _primitiveCou
 void RendererDx::SetStreamSource(UINT _vertexSize)
 {
 	direct3DDevice->SetStreamSource(0, vertexBuffer, 0, _vertexSize);
-}
-
-void RendererDx::SetCamera(DXVector3 * const &_m_right, DXVector3 * const &_cameraPosition, DXVector3 * const &_cameraTarget, DXVector3 * const &_cameraUpVector)
-{
-	D3DXMATRIX matWorld, matWorldX, matWorldY, matWorldZ;
-	D3DXMATRIX matView;
-	D3DXMATRIX matProj;
-	//D3DXMatrixRotationX(&matWorldX, 1.0f);  //--ÑØXÖáÐý×ª   
-	//D3DXMatrixRotationY(&matWorldY, 1.0f);  //--ÑØYÖáÐý×ª   
-	//D3DXMatrixRotationZ(&matWorldZ, 1.0f);  //--ÑØZÖáÐý×ª   
-
-	//D3DXMatrixMultiply(&matWorld, &matWorldX, &matWorldY);   //--×éºÏ±ä»»   
-	//D3DXMatrixMultiply(&matWorld, &matWorld, &matWorldZ);
-	/*cameraPosition = D3DXVECTOR3(-45, 0, 60);
-	cameraTarget = D3DXVECTOR3(0, 0, 0);
-	cameraUpVector = D3DXVECTOR3(1, 0, 0);*/
-
-	//D3DXVECTOR3& cameraPosition = _cameraPosition->ToDX;
-	//D3DXVECTOR3& cameraTarget = _cameraTarget->ToDX;
-	//D3DXVECTOR3& cameraUpVector = _cameraUpVector->ToDX;
-	//D3DXVECTOR3& m_right = _m_right->ToDX;
-
-	D3DXVECTOR3 ey = DXVector3::ToDX(_cameraPosition);
-	D3DXVECTOR3 at = DXVector3::ToDX(_cameraTarget);
-	D3DXVECTOR3 up = DXVector3::ToDX(_cameraUpVector);
-
-	D3DXMatrixLookAtLH(&matView, &ey, &at, &up);
-	static_cast<LPDIRECT3DDEVICE9>(GetDevice())->SetTransform(D3DTS_VIEW, &matView);
-	D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 4, 1.0f, 1.0f, 1000.0f);
-	/*D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 4, 500 / 500, 1, 100);*/
-	static_cast<LPDIRECT3DDEVICE9>(GetDevice())->SetTransform(D3DTS_PROJECTION, &matProj);
-	/*static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetTransform(D3DTS_WORLD, &matWorld);*/
 }

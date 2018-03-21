@@ -40,7 +40,8 @@ Mesh* FileLoaderMeshDx::LoadMeshFromFile(std::string _fileName)
 			&materialBuffer, NULL, &numberOfMaterials,
 			&direct3Dmesh)))
 		{
-			Log::Instance()->LogMessage("MeshLoaderDx - Failed to load Mesh using the direct3Ddevice. Could not find the file.", Log::MESSAGE_WARNING);
+			std::string message = "MeshLoaderDx - Failed to load Mesh using the direct3Ddevice.Could not find the file." + _fileName;
+			Log::Instance()->LogMessage(message, Log::MESSAGE_WARNING);
 
 			return 0;
 		}

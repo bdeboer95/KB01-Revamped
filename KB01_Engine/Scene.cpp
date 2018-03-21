@@ -14,8 +14,8 @@ Scene::Scene(int _levelIndex, HWND _hWnd, std::string _level)
 	entityModels.push_back(cam);
 	SceneLoader(_level);
 	//CreateEntityModel("Tiger.x", "luipard.jpg",0, 0, 5);
-	CreateEntityModel("Tiger.x", "zebra.jpg",1, 0, 5);
-	CreateEntityModel("Tiger.x", "zebra3.bmp", 2, 0, 5); 
+	CreateEntityModel("Tiger.x", "zebra.jpg", 1, 0, 5);
+	CreateEntityModel("Tiger.x", "zebra3.bmp", 2, 0, 5);
 	terrain = new Terrain();
 	Log::Instance()->LogMessage("Scene - Scene created.", Log::MESSAGE_INFO);
 }
@@ -89,16 +89,16 @@ HRESULT Scene::SetupGeometry(ResourceManager* _resourceManager, Renderer* _rende
 			}
 		}
 	}
-	//Skybox_Cube sky;
-	//sky.back = "skybox4_back.png";
-	//sky.top = "skybox4_top.png";
-	//sky.left = "skybox4_left.png";
-	//sky.front = "skybox4_front.png";
-	//sky.bottom = "skybox4_bottom.png";
-	//sky.right = "skybox4_right.png";
-	//skybox = new Skybox(sky);
+	Skybox_Cube sky;
+	sky.back = "skybox4_back.png";
+	sky.top = "skybox4_top.png";
+	sky.left = "skybox4_left.png";
+	sky.front = "skybox4_front.png";
+	sky.bottom = "skybox4_bottom.png";
+	sky.right = "skybox4_right.png";
+	skybox = new Skybox(sky);
 	skybox->InitGeometry(_renderer, _resourceManager);
-	terrain->Initialize(_renderer,_resourceManager->LoadTexture("..\\", "terrainbrown.jpg"));
+	terrain->Initialize(_renderer, _resourceManager->LoadTexture("..\\Textures\\Terrain\\", "terrainbrown.jpg"));
 	ShowWindow(hWnd, SW_MAXIMIZE);
 	UpdateWindow(hWnd);
 	return S_OK;
@@ -136,8 +136,8 @@ void Scene::Render(Renderer* _renderer)
 		Log::Instance()->LogMessage("Scene - BeginScene failed", Log::MESSAGE_ERROR);
 	}
 
-	/*skybox->Render(_renderer);*/
-	/*terrain->Render(_renderer);*/
+	skybox->Render(_renderer);
+	terrain->Render(_renderer);
 	for each(Entity* entity in entityModels)
 	{
 		if (dynamic_cast<EntityModel*>(entity))
@@ -153,11 +153,11 @@ void Scene::Render(Renderer* _renderer)
 
 			camera->SetCamera(_renderer);
 		}
-		
+
 	}
 
 
-	
+
 	// End drawing the scene
 	pd3dDevice->EndScene();
 
@@ -282,7 +282,7 @@ void Scene::GetPositionFromFile(std::string line)
 			{
 				positioning.push_back(std::stof(temp));
 			}
-			}
+		}
 
 		if (str.substr(0, 2) == "P3")
 		{

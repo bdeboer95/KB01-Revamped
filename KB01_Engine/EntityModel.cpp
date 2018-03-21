@@ -176,7 +176,7 @@ HRESULT EntityModel::InitGeometry(ResourceManager* _resourceManager)
 {
 	// Load the mesh from the specified file
 	mesh = _resourceManager->LoadMesh(fileName);
-	texture = _resourceManager->LoadTexture("..\\Textures\\",texture->GetFileName());
+	texture = _resourceManager->LoadTexture("..\\Assets\\Textures\\",texture->GetFileName());
 	if (!mesh)
 	{
 		Log::Instance()->LogMessage("EntityModel - Geometry was failed to initialize.", Log::MESSAGE_ERROR);

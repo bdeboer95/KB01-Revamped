@@ -45,7 +45,7 @@ void Terrain::FillVertexBuffer(Renderer* _renderer)
 	CUSTOMVERTEX cv_Vertices[WIDTH * HEIGHT];
 	std::ifstream f_DataFile;
 	//Open the file with the height data with this specific name
-	f_DataFile.open("..\\heightdata.raw", std::ios::binary);
+	f_DataFile.open("..\\Assets\\Heightmaps\\heightdata.raw", std::ios::binary);
 	//If the file is opened
 	if (f_DataFile.is_open())
 	{
@@ -98,7 +98,7 @@ void Terrain::Render(Renderer* _renderer)
 	LPDIRECT3DVERTEXBUFFER9 pvB = static_cast<LPDIRECT3DVERTEXBUFFER9>(_renderer->GetVertexBuffer());
 	//pd3dDevice->SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME);
 	//_renderer->SetStreamSource(sizeof(CUSTOMVERTEX));
-	LPCWSTR result = L"..\\terrainbrown.jpg";
+	LPCWSTR result = L"..\\Assets\\Textures\\Terrain\\terrainbrown.jpg";
 
 	
 	_renderer->SetTexture(texture->GetTextures(), 0);

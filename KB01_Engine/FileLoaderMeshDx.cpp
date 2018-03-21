@@ -30,7 +30,7 @@ Mesh* FileLoaderMeshDx::LoadMeshFromFile(std::string _fileName)
 	DWORD numberOfMaterials = 0L;
 	LPD3DXMESH direct3Dmesh;
 	std::wstring temp = converter.Convert(_fileName);
-	LPCWSTR d = L"..\\Meshes\\";
+	LPCWSTR d = L"..\\Assets\\Meshes\\";
 	std::wstring df = std::wstring(d) + temp;
 	LPCWSTR dfc = df.c_str();
 	

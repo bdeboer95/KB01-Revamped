@@ -31,7 +31,7 @@ void Noob()
 {
 	Kernel kernel = Kernel();
 
-	kernel.LoadLevel("..\\Levels\\level1.txt");
+	kernel.LoadLevel("..\\Assets\\Levels\\level1.txt");
 
 	while (kernel.Run())
 	{

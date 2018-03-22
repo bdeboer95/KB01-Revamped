@@ -1,9 +1,7 @@
 #ifndef __TEXTURE_H__
 #define __TEXTURE_H__
 
-#include <d3dx9.h>
 #include <string>
-#include <d3dx9.h>
 #include "Resource.h"
 
 class Texture: public Resource

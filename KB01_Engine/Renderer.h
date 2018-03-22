@@ -4,7 +4,7 @@
 #include <Windows.h>
 #include <string>
 #include "Log.h"
-#include "d3dx9.h"
+
 class Renderer
 {
 public:

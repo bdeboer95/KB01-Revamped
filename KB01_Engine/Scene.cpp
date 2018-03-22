@@ -90,12 +90,22 @@ HRESULT Scene::SetupGeometry(ResourceManager* _resourceManager, Renderer* _rende
 		}
 	}
 	Skybox_Cube sky;
-	sky.back = "skybox3_back.tga";
-	sky.top = "skybox3_top.tga";
-	sky.left = "skybox3_left.tga";
-	sky.front = "skybox3_front.tga";
+	// DEFAULT
+	//sky.back = "skybox3_back.tga";
+	//sky.top = "skybox3_top.tga";
+	//sky.left = "skybox3_left.tga";
+	//sky.front = "skybox3_front.tga";
+	//sky.bottom = "skybox3_bottom.tga";
+	//sky.right = "skybox3_right.tga";
+
+	// TEST
+	sky.back = "Back.tga";
+	sky.top = "Top.tga";
+	sky.left = "Left.tga";
+	sky.front = "Front.tga";
+	sky.right = "Right.tga";
 	sky.bottom = "skybox3_bottom.tga";
-	sky.right = "skybox3_right.tga";
+
 	skybox = new Skybox(sky);
 	skybox->InitGeometry(_renderer, _resourceManager);
 	terrain->Initialize(_renderer, _resourceManager->LoadTexture("..\\Assets\\Textures\\Terrain\\", "terrainbrown.jpg"));

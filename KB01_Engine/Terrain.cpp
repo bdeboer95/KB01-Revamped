@@ -1,10 +1,9 @@
-
 #include "Terrain.h"
 
 #include <mmsystem.h>
 #include <d3dx9.h>
 #include <fstream>
-#include <d3dx9.h> 
+
 #define WIDTH 64
 #define HEIGHT 64
 /// <summary>

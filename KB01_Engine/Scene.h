@@ -1,8 +1,7 @@
 #ifndef __SCENE_H__
 #define __SCENE_H__
 
-#include "Camera.h"
-#include "EntityModel.h"
+#include "Entity.h"
 #include <vector>
 #include "Skybox.h"
 #include "Terrain.h"
@@ -30,7 +29,7 @@ private:
 public:
 	Scene(int _levelIndex, HWND _hWnd, std::string _level);
 	~Scene();
-	EntityModel* CreateEntityModel(std::string _meshName, std::string _textureName,float _positionX, float _positionY, float _positionZ);
+	Entity* CreateEntityModel(std::string _meshName, std::string _textureName,float _positionX, float _positionY, float _positionZ);
 	void CreateViewPort(RECT _rect);
 	HRESULT SetupGeometry(ResourceManager* _resourceManager, Renderer* _renderer);
 	void DeleteViewPort();

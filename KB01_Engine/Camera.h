@@ -21,6 +21,7 @@
 
 #include "Renderer.h"
 #include "Entity.h"
+
 class Camera : public Entity
 {
 public:

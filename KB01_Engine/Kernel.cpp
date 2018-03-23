@@ -9,8 +9,6 @@
 
 #include <iostream>
 #include <vector>
-//http://jsoncpp.sourceforge.net/annotated.html
-//#include <json\json.h>
 
 #include "wtypes.h"
 

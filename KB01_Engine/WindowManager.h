@@ -1,7 +1,6 @@
 #ifndef __WINDOWMANAGER_H__
 #define __WINDOWMANAGER_H__
 
-#include "RendererDx.h"
 #include "Manager.h"
 #include "Window.h"
 #include <vector>

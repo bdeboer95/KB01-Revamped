@@ -1,0 +1,174 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu Mar 22 18:07:21 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu Mar 22 18:07:21 Information: Kernel - Created.
+Thu Mar 22 18:07:21 Information: WindowManager - SetWindowClassEx successful.
+Thu Mar 22 18:07:21 Information: WindowManager - Created
+Thu Mar 22 18:07:21 Information: SceneManager - SceneManager created
+Thu Mar 22 18:07:21 Information: ResourceManager - Created.
+Thu Mar 22 18:07:21 Information: Kernel - Scene-, Resource-, WindowManager created.
+Thu Mar 22 18:07:21 Information: Kernel - Loading level...
+Thu Mar 22 18:07:21 Information: Window - Created handler for window with title:'Choo Choo'
+Thu Mar 22 18:07:21 Information: Window - Window created.
+Thu Mar 22 18:07:21 Information: Camera - Camera created.
+Thu Mar 22 18:07:21 The following warning is found: Scene - Unable to read level file. (..\Levels\level1.txt)
+Thu Mar 22 18:07:21 Information: Resource - Resource created.
+Thu Mar 22 18:07:21 Information: EntityModel - Created.
+Thu Mar 22 18:07:21 Information: Scene - EntityModel created
+Thu Mar 22 18:07:21 Information: Resource - Resource created.
+Thu Mar 22 18:07:21 Information: EntityModel - Created.
+Thu Mar 22 18:07:21 Information: Scene - EntityModel created
+Thu Mar 22 18:07:21 Information: Terrain - Terrain created.
+Thu Mar 22 18:07:21 Information: Scene - Scene created.
+Thu Mar 22 18:07:21 Information: FileLoaderMeshDx - FileLoaderMeshDx created.
+Thu Mar 22 18:07:21 Information: TextureLoaderDx - TextureLoaderDx created.
+Thu Mar 22 18:07:21 Information: Resource - Resource created.
+Thu Mar 22 18:07:21 Information: ResourceManager - Resource 'Tiger.x' loaded.
+Thu Mar 22 18:07:21 Information: Resource - Resource created.
+Thu Mar 22 18:07:22 Information: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu Mar 22 18:07:22 Information: Resource - Resource created.
+Thu Mar 22 18:07:22 Information: ResourceManager - Resource 'Tiger.x' loaded.
+Thu Mar 22 18:07:22 Information: Resource - Resource created.
+Thu Mar 22 18:07:22 Information: ResourceManager - Texture 'zebra3.bmp' loaded.
+Thu Mar 22 18:07:22 Information: Resource - Resource created.
+Thu Mar 22 18:07:22 Information: ResourceManager - Texture 'skybox4_front.png' loaded.
+Thu Mar 22 18:07:22 Information: Resource - Resource created.
+Thu Mar 22 18:07:22 Information: ResourceManager - Texture 'skybox4_back.png' loaded.
+Thu Mar 22 18:07:22 Information: Resource - Resource created.
+Thu Mar 22 18:07:22 Information: ResourceManager - Texture 'skybox4_left.png' loaded.
+Thu Mar 22 18:07:22 Information: Resource - Resource created.
+Thu Mar 22 18:07:22 Information: ResourceManager - Texture 'skybox4_right.png' loaded.
+Thu Mar 22 18:07:22 Information: Resource - Resource created.
+Thu Mar 22 18:07:23 Information: ResourceManager - Texture 'skybox4_top.png' loaded.
+Thu Mar 22 18:07:23 Information: Resource - Resource created.
+Thu Mar 22 18:07:23 Information: ResourceManager - Texture 'skybox4_bottom.png' loaded.
+Thu Mar 22 18:07:23 Information: Resource - Resource created.
+Thu Mar 22 18:07:23 Information: ResourceManager - Texture 'terrainbrown.jpg' loaded.
+Thu Mar 22 18:07:23 The following warning is found: Terrain - File not found.
+Thu Mar 22 18:07:23 Information: Terrain - VertexBuffer is successfully filled.
+Thu Mar 22 18:07:23 Information: Kernel - Scenes are successfully prepared.
+Thu Mar 22 18:07:23 Information: Mouse - Succesfully Acquired.
+Thu Mar 22 18:07:23 Information: Mouse - Created.
+Thu Mar 22 18:07:23 Information: Keyboard - Created.
+Thu Mar 22 18:07:23 Information: Keyboard - Succesfully Acquired.
+Thu Mar 22 18:07:23 Information: InputManager - InputManager created.
+Thu Mar 22 18:07:23 Information: Kernel - Added as listener.
+Thu Mar 22 18:07:23 Information: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Fri Mar 23 18:42:23 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Fri Mar 23 18:42:23 Information: Kernel - Created.
+Fri Mar 23 18:42:23 Information: WindowManager - SetWindowClassEx successful.
+Fri Mar 23 18:42:23 Information: WindowManager - Created
+Fri Mar 23 18:42:23 Information: SceneManager - SceneManager created
+Fri Mar 23 18:42:23 Information: ResourceManager - Created.
+Fri Mar 23 18:42:23 Information: Kernel - Scene-, Resource-, WindowManager created.
+Fri Mar 23 18:42:23 Information: Kernel - Loading level...
+Fri Mar 23 18:42:23 Information: Window - Created handler for window with title:'Choo Choo'
+Fri Mar 23 18:42:23 Information: Window - Window created.
+Fri Mar 23 18:42:24 Information: Camera - Camera created.
+Fri Mar 23 18:42:24 The following warning is found: Scene - Unable to read level file. (..\Levels\level1.txt)
+Fri Mar 23 18:42:24 Information: Resource - Resource created.
+Fri Mar 23 18:42:24 Information: EntityModel - Created.
+Fri Mar 23 18:42:24 Information: Scene - EntityModel created
+Fri Mar 23 18:42:24 Information: Resource - Resource created.
+Fri Mar 23 18:42:24 Information: EntityModel - Created.
+Fri Mar 23 18:42:24 Information: Scene - EntityModel created
+Fri Mar 23 18:42:24 Information: Terrain - Terrain created.
+Fri Mar 23 18:42:24 Information: Scene - Scene created.
+Fri Mar 23 18:42:24 Information: FileLoaderMeshDx - FileLoaderMeshDx created.
+Fri Mar 23 18:42:24 Information: TextureLoaderDx - TextureLoaderDx created.
+Fri Mar 23 18:42:24 Information: Resource - Resource created.
+Fri Mar 23 18:42:24 Information: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 23 18:42:24 Information: Resource - Resource created.
+Fri Mar 23 18:42:24 Information: ResourceManager - Texture 'zebra.jpg' loaded.
+Fri Mar 23 18:42:24 Information: Resource - Resource created.
+Fri Mar 23 18:42:24 Information: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 23 18:42:24 Information: Resource - Resource created.
+Fri Mar 23 18:42:24 Information: ResourceManager - Texture 'zebra3.bmp' loaded.
+Fri Mar 23 18:42:24 Information: Resource - Resource created.
+Fri Mar 23 18:42:24 Information: ResourceManager - Texture 'skybox4_front.png' loaded.
+Fri Mar 23 18:42:24 Information: Resource - Resource created.
+Fri Mar 23 18:42:25 Information: ResourceManager - Texture 'skybox4_back.png' loaded.
+Fri Mar 23 18:42:25 Information: Resource - Resource created.
+Fri Mar 23 18:42:25 Information: ResourceManager - Texture 'skybox4_left.png' loaded.
+Fri Mar 23 18:42:25 Information: Resource - Resource created.
+Fri Mar 23 18:42:25 Information: ResourceManager - Texture 'skybox4_right.png' loaded.
+Fri Mar 23 18:42:25 Information: Resource - Resource created.
+Fri Mar 23 18:42:25 Information: ResourceManager - Texture 'skybox4_top.png' loaded.
+Fri Mar 23 18:42:25 Information: Resource - Resource created.
+Fri Mar 23 18:42:26 Information: ResourceManager - Texture 'skybox4_bottom.png' loaded.
+Fri Mar 23 18:42:26 Information: Resource - Resource created.
+Fri Mar 23 18:42:26 Information: ResourceManager - Texture 'terrainbrown.jpg' loaded.
+Fri Mar 23 18:42:26 The following warning is found: Terrain - File not found.
+Fri Mar 23 18:42:26 Information: Terrain - VertexBuffer is successfully filled.
+Fri Mar 23 18:42:26 Information: Kernel - Scenes are successfully prepared.
+Fri Mar 23 18:42:26 Information: Mouse - Succesfully Acquired.
+Fri Mar 23 18:42:26 Information: Mouse - Created.
+Fri Mar 23 18:42:26 Information: Keyboard - Created.
+Fri Mar 23 18:42:26 Information: Keyboard - Succesfully Acquired.
+Fri Mar 23 18:42:26 Information: InputManager - InputManager created.
+Fri Mar 23 18:42:26 Information: Kernel - Added as listener.
+Fri Mar 23 18:42:26 Information: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Fri Mar 23 18:42:32 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Fri Mar 23 18:42:32 Information: Kernel - Created.
+Fri Mar 23 18:42:32 Information: WindowManager - SetWindowClassEx successful.
+Fri Mar 23 18:42:32 Information: WindowManager - Created
+Fri Mar 23 18:42:32 Information: SceneManager - SceneManager created
+Fri Mar 23 18:42:32 Information: ResourceManager - Created.
+Fri Mar 23 18:42:32 Information: Kernel - Scene-, Resource-, WindowManager created.
+Fri Mar 23 18:42:32 Information: Kernel - Loading level...
+Fri Mar 23 18:42:32 Information: Window - Created handler for window with title:'Choo Choo'
+Fri Mar 23 18:42:32 Information: Window - Window created.
+Fri Mar 23 18:42:32 Information: Camera - Camera created.
+Fri Mar 23 18:42:32 The following warning is found: Scene - Unable to read level file. (..\Levels\level1.txt)
+Fri Mar 23 18:42:32 Information: Resource - Resource created.
+Fri Mar 23 18:42:32 Information: EntityModel - Created.
+Fri Mar 23 18:42:32 Information: Scene - EntityModel created
+Fri Mar 23 18:42:32 Information: Resource - Resource created.
+Fri Mar 23 18:42:32 Information: EntityModel - Created.
+Fri Mar 23 18:42:32 Information: Scene - EntityModel created
+Fri Mar 23 18:42:32 Information: Terrain - Terrain created.
+Fri Mar 23 18:42:32 Information: Scene - Scene created.
+Fri Mar 23 18:42:32 Information: FileLoaderMeshDx - FileLoaderMeshDx created.
+Fri Mar 23 18:42:32 Information: TextureLoaderDx - TextureLoaderDx created.
+Fri Mar 23 18:42:32 Information: Resource - Resource created.
+Fri Mar 23 18:42:32 Information: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 23 18:42:32 Information: Resource - Resource created.
+Fri Mar 23 18:42:33 Information: ResourceManager - Texture 'zebra.jpg' loaded.
+Fri Mar 23 18:42:33 Information: Resource - Resource created.
+Fri Mar 23 18:42:33 Information: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 23 18:42:33 Information: Resource - Resource created.
+Fri Mar 23 18:42:33 Information: ResourceManager - Texture 'zebra3.bmp' loaded.
+Fri Mar 23 18:42:33 Information: Resource - Resource created.
+Fri Mar 23 18:42:33 Information: ResourceManager - Texture 'skybox4_front.png' loaded.
+Fri Mar 23 18:42:33 Information: Resource - Resource created.
+Fri Mar 23 18:42:33 Information: ResourceManager - Texture 'skybox4_back.png' loaded.
+Fri Mar 23 18:42:33 Information: Resource - Resource created.
+Fri Mar 23 18:42:33 Information: ResourceManager - Texture 'skybox4_left.png' loaded.
+Fri Mar 23 18:42:33 Information: Resource - Resource created.
+Fri Mar 23 18:42:34 Information: ResourceManager - Texture 'skybox4_right.png' loaded.
+Fri Mar 23 18:42:34 Information: Resource - Resource created.
+Fri Mar 23 18:42:34 Information: ResourceManager - Texture 'skybox4_top.png' loaded.
+Fri Mar 23 18:42:34 Information: Resource - Resource created.
+Fri Mar 23 18:42:34 Information: ResourceManager - Texture 'skybox4_bottom.png' loaded.
+Fri Mar 23 18:42:34 Information: Resource - Resource created.
+Fri Mar 23 18:42:34 Information: ResourceManager - Texture 'terrainbrown.jpg' loaded.
+Fri Mar 23 18:42:34 The following warning is found: Terrain - File not found.
+Fri Mar 23 18:42:34 Information: Terrain - VertexBuffer is successfully filled.
+Fri Mar 23 18:42:34 Information: Kernel - Scenes are successfully prepared.
+Fri Mar 23 18:42:34 Information: Mouse - Succesfully Acquired.
+Fri Mar 23 18:42:34 Information: Mouse - Created.
+Fri Mar 23 18:42:34 Information: Keyboard - Created.
+Fri Mar 23 18:42:34 Information: Keyboard - Succesfully Acquired.
+Fri Mar 23 18:42:34 Information: InputManager - InputManager created.
+Fri Mar 23 18:42:34 Information: Kernel - Added as listener.
+Fri Mar 23 18:42:34 Information: Kernel - Level is successfully loaded.

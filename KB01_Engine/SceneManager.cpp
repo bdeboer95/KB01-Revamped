@@ -5,6 +5,7 @@
 //-----------------------------------------------------------------------------
 
 #include "SceneManager.h"
+#include "EntityModel.h"
 #include <iostream>
 #include <vector>
 

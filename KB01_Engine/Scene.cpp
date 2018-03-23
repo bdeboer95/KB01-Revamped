@@ -1,4 +1,6 @@
 #include "Scene.h"
+#include "EntityModel.h"
+#include "Camera.h"
 #include <iostream>
 #include <sstream>
 
@@ -61,7 +63,7 @@ int Scene::GetLevelIndex()
 /// <summary>
 /// Creates the entity model.
 /// </summary>
-EntityModel* Scene::CreateEntityModel(std::string _meshName, std::string _textureName, float _positionX, float _positionY, float _positionZ)
+Entity* Scene::CreateEntityModel(std::string _meshName, std::string _textureName, float _positionX, float _positionY, float _positionZ)
 {
 	EntityModel* entityModel = new EntityModel(_meshName, _textureName, _positionX, _positionY, _positionZ);
 	entityModels.push_back(entityModel);

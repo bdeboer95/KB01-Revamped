@@ -1,5 +1,4 @@
 ﻿#include "Camera.h"
-#include "d3dx9.h"
 
 /// <summary>
 /// Initializes a new instance of the <see cref="Camera"/> class.

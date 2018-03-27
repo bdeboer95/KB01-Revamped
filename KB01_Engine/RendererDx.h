@@ -10,7 +10,6 @@
 #include "Renderer.h"
 #include <mmsystem.h>
 #include <d3dx9.h>
-#include <d3dx9.h>
 #include <DXGI1_2.h>
 #include "Log.h"
 

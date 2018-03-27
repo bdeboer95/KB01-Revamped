@@ -19,7 +19,7 @@
 #ifndef __CAMERA_H__
 #define __CAMERA_H__
 
-#include "Renderer.h"
+#include "RendererDx.h"
 #include "Entity.h"
 class Camera : public Entity
 {

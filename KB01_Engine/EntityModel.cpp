@@ -66,17 +66,13 @@ void EntityModel::ChangeRotation(Renderer* _renderer)
 		//Move forward
 	case 1:
 		positionZ = positionZ + 0.1f;
-		//positionX = positionY + 0.1f;
 		D3DXMatrixRotationX(&matRotateX, rotationX);
 		break;
 		//Move left
 	case 2:
-		//rotationX = -1.0f;
 		positionX = positionX - 0.1f;
 		D3DXMatrixRotationX(&matRotateX, rotationX);
 		D3DXMatrixRotationY(&matRotateX, rotationY);
-		//D3DXMatrixRotationY(&matRotateY, 0.0f);
-		//D3DXMatrixRotationZ(&matRotateZ, 0.0f);
 		break;
 		//Move backwards
 	case 3:

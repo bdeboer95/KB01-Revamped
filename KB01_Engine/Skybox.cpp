@@ -20,8 +20,9 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 
 	Vertex* v = 0;
 	mesh->LockVertexBuffer(0, (void**)&v);   
-	
-					//x   //y    //z    nx   ny       nz  tu       tv
+
+	//The coordinates for the vertices, that will form the cube. Every set of 4 forms a side of the cube
+	//x   //y    //z    nx   ny       nz  tu       tv
 	//v[0] = Vertex(-1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f);
 	//v[1] = Vertex(-1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f);
 	//v[2] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f);
@@ -50,8 +51,9 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 	//v[20] = Vertex(-1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f);
 	//v[21] = Vertex(-1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 1.0f);
 	//v[22] = Vertex(1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f);
-	//v[23] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f);
-
+	//v[23] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f);				
+	
+	//x   //y    //z    nx   ny       nz  tu       tv
 	v[0] = Vertex(-1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f);
 	v[1] = Vertex(-1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f);
 	v[2] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f);  //FRONT

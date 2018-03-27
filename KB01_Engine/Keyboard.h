@@ -5,6 +5,9 @@
 
 class Keyboard : public Device
 {
+private: 
+	byte state[256];
+
 public:
 	Keyboard(HWND _hwnd);
 	~Keyboard();

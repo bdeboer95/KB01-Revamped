@@ -136,7 +136,6 @@ HRESULT Keyboard::PollDevice()
 /// <returns></returns>
 byte* Keyboard::GetKeyboardState()
 {
-	byte state[256];
 	device->GetDeviceState(sizeof(state), (LPVOID)&state);
 	return state;
 }

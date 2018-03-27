@@ -1,8 +1,6 @@
 #ifndef __TEXTURELOADERDX_H__
 #define __TEXTURELOADERDX_H__
 
-#include <string>
-#include <d3dx9.h>
 #include "ResourceLoader.h"
 #include "Texture.h"
 

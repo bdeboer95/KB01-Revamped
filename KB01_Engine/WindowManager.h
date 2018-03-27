@@ -1,12 +1,9 @@
 #ifndef __WINDOWMANAGER_H__
 #define __WINDOWMANAGER_H__
 
-#include "Manager.h"
 #include "Window.h"
-#include <vector>
-#include <windows.h>
 
-class WindowManager : Manager
+class WindowManager 
 {
 private:
 	WNDCLASSEX						windowClassEx;
@@ -28,13 +25,10 @@ public:
 	void							DeleteWindow(HWND _hWnd); //TODO:new name: DeleteWindowByHandler
 	Window*							GetActiveWindow();
 	void							DeleteAllWindows();//This needs to be private
-	virtual void Step();
-	virtual bool Running();
 
 private:
 	void							CleanUp(); 
 	int								CountWindows(); //TODO: remove this if not needed
-	
 };
 
 #endif

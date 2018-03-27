@@ -3,7 +3,6 @@
 
 #include <d3dx9.h>
 #include <string>
-#include <d3dx9.h>
 #include "Resource.h"
 
 class Texture: public Resource

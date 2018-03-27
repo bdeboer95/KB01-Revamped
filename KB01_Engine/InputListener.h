@@ -3,7 +3,6 @@
 
 #include <Windows.h>
 
-
 class InputListener
 {
 public:

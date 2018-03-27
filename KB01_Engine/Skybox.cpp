@@ -1,13 +1,13 @@
 #include "Skybox.h"
-#define DIRECT3DDEVICE(device) (static_cast<LPDIRECT3DDEVICE9>(device))
-Skybox::Skybox(	Skybox_Cube _skyboxCube)
-{
 
+Skybox::Skybox(Skybox_Cube _skyboxCube)
+{
 	skyboxCube = _skyboxCube;
 }
 
-Skybox::~Skybox(void)
+Skybox::~Skybox()
 {
+
 }
 
 bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager)
@@ -16,7 +16,7 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 	
 	hr = D3DXCreateMeshFVF(12,  
 		24,    
-		D3DXMESH_MANAGED, FVF_VERTEX, DIRECT3DDEVICE(_renderer->GetDevice()), &mesh);
+		D3DXMESH_MANAGED, FVF_VERTEX, static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()), &mesh);
 
 	Vertex* v = 0;
 	mesh->LockVertexBuffer(0, (void**)&v);   
@@ -51,8 +51,8 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 	v[21] = Vertex(-1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 1.0f);
 	v[22] = Vertex(1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f);
 	v[23] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f);
-	mesh->UnlockVertexBuffer();
 
+	mesh->UnlockVertexBuffer();
 
 	WORD* i = 0;
 	mesh->LockIndexBuffer(0, (void**)&i);    
@@ -125,6 +125,7 @@ std::wstring Skybox::StrToWStr(std::string str)
 
 	return wstr;
 }
+
 void Skybox::LoadTextures(ResourceManager* _resourceManager)
 {
 	std::string filePath = "..\\Textures\\Skyboxes\\";
@@ -138,12 +139,14 @@ void Skybox::LoadTextures(ResourceManager* _resourceManager)
 
 void Skybox::Render(Renderer* _renderer)
 {
+	LPDIRECT3DDEVICE9 device = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
+
 	D3DXMATRIX matWorld, matWorldX, matWorldY, matWorldZ;
 	D3DXMatrixTranslation(&matWorld, 0, -0.1f, 3);
-	DIRECT3DDEVICE(_renderer->GetDevice())->SetTransform(D3DTS_WORLD, &matWorld);
+	device->SetTransform(D3DTS_WORLD, &matWorld);
 	//Disables the zbuffer for writing
-	DIRECT3DDEVICE(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);
-	DIRECT3DDEVICE(_renderer->GetDevice())->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);
+	static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);
+	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);
 	//Loops through every square side of the cube
 	for (int i = 0; i < 6; i++)
 	{
@@ -151,7 +154,7 @@ void Skybox::Render(Renderer* _renderer)
 		_renderer->DrawSubset(mesh,i); // draws 
 	}
 	
-	DIRECT3DDEVICE(_renderer->GetDevice())->SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW);
+	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW);
 	//Enables the zbuffer for writing
-	DIRECT3DDEVICE(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, true);
+	device->SetRenderState(D3DRS_ZWRITEENABLE, true);
 }

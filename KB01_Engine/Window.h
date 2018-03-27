@@ -1,9 +1,8 @@
 #ifndef __WINDOW_H__
 #define __WINDOW_H__
 
-#include "RendererDx.h"
+#include "Renderer.h"
 #include "Scene.h"
-#include <vector>
 #include "Log.h"
 
 class Window

@@ -1,11 +1,9 @@
 #ifndef __ENTITYMODEL_H__
 #define __ENTITYMODEL_H__
 
-#include "Mesh.h"
-#include "Renderer.h"
+#include "Entity.h"
 #include "ResourceManager.h"
 #include "InputListener.h"
-#include "Entity.h"
 
 class EntityModel: public InputListener, public Entity
 {

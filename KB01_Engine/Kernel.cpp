@@ -157,12 +157,12 @@ void Kernel::Notify(byte state[])
 		std::cout << "DIK_A pressed." << std::endl;
 	}
 
-	if (inputManager->GetMouse()->DeviceState().rgbButtons[0])
+	if (inputManager->GetMouse()->GetMouseState().rgbButtons[0])
 	{
 		/*std::cout << "LINKS" << std::endl;*/
 }
 
-	if (inputManager->GetMouse()->DeviceState().rgbButtons[1])
+	if (inputManager->GetMouse()->GetMouseState().rgbButtons[1])
 {
 		std::cout << "RECHTS" << std::endl;;
 	}

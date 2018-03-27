@@ -1,18 +1,17 @@
-
 #include "Terrain.h"
 
 #include <mmsystem.h>
-#include <d3dx9.h>
 #include <fstream>
 #include <d3dx9.h> 
+
 #define WIDTH 64
 #define HEIGHT 64
+
 /// <summary>
 /// Initializes a new instance of the <see cref="Terrain"/> class.
 /// </summary>
 Terrain::Terrain()
 {
-	
 	Log::Instance()->LogMessage("Terrain - Terrain created.", Log::MESSAGE_INFO);
 }
 
@@ -21,7 +20,6 @@ Terrain::Terrain()
 /// </summary>
 Terrain::~Terrain()
 {
-	//TODO
 	Log::Instance()->LogMessage("~Terrain - Terrain cleaned up!", Log::MESSAGE_INFO);
 }
 
@@ -33,7 +31,6 @@ void Terrain::Initialize(Renderer* _renderer, Texture* _texture)
 	texture = _texture;
 	FillVertexBuffer(_renderer);
 	FillIndexBuffer(_renderer);
-	
 }
 
 void Terrain::FillVertexBuffer(Renderer* _renderer)
@@ -100,24 +97,28 @@ void Terrain::Render(Renderer* _renderer)
 	//_renderer->SetStreamSource(sizeof(CUSTOMVERTEX));
 	LPCWSTR result = L"..\\terrainbrown.jpg";
 
-	
 	_renderer->SetTexture(texture->GetTextures(), 0);
+
 	if (FAILED(pd3dDevice->SetStreamSource(0, pvB, 0, sizeof(CUSTOMVERTEX))))
 	{
 		Log::Instance()->LogMessage("Terrain -Streamsource is not set ", Log::MESSAGE_WARNING);
 	}
 
 	pd3dDevice->SetFVF(D3DFVF_XYZ | D3DFVF_DIFFUSE);
+
 	if (FAILED(pd3dDevice->SetIndices(pIB)))
 	{
 		Log::Instance()->LogMessage("Terrain -Set indices not set ", Log::MESSAGE_WARNING);
 	}
+
 	D3DXMATRIX m_Translation;
 	D3DXMATRIX matRotateY;
 	D3DXMATRIX matWorld;
+
 	D3DXMatrixTranslation(&m_Translation, 0, -64, 5);
 	D3DXMatrixRotationY(&matRotateY, 1.0f);
-	matWorld = m_Translation*matRotateY;
+
+	matWorld = m_Translation * matRotateY;
 	pd3dDevice->SetTransform(D3DTS_WORLD, &matWorld);
 	
 	if (FAILED(pd3dDevice->DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 0, WIDTH * HEIGHT, 0, (WIDTH - 1)*(HEIGHT - 1) * 2)))

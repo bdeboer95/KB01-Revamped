@@ -1,7 +1,6 @@
 #ifndef __RESOURCELOADER_H__
 #define __RESOURCELOADER_H__
 
-#include <Windows.h>
 #include "Resource.h"
 #include "Log.h"
 #include "d3dx9.h"

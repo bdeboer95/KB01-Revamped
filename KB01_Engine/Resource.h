@@ -3,6 +3,7 @@
 
 #include <string>
 #include <Windows.h>
+
 class Resource
 {
 public:

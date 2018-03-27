@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
 #include "SceneManager.h"
+#include "WindowManager.h"
 
 namespace KB01EngineTest
 {

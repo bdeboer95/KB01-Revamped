@@ -1,15 +1,5 @@
 #include "Keyboard.h"
 #include "Log.h"
-#include <dinput.h>
-#include <iostream>
-
-/// <summary>
-/// Initializes a new instance of the <see cref="Keyboard"/> class.
-/// </summary>
-Keyboard::Keyboard()
-{
-	//TODO
-}
 
 /// <summary>
 /// Initializes a new instance of the <see cref="Keyboard"/> class.
@@ -17,12 +7,13 @@ Keyboard::Keyboard()
 /// <param name="_hwnd">The _HWND.</param>
 Keyboard::Keyboard(HWND _hwnd)
 {
-	Log::Instance()->LogMessage("Keyboard - Created.", Log::MESSAGE_INFO);
-	directInput = NULL;
-	keyboard = NULL;
-	hwnd = _hwnd;
+	input = NULL;
+	device = NULL;
+	window = _hwnd;
 
 	InitDevice();
+
+	Log::Instance()->LogMessage("Keyboard - Created.", Log::MESSAGE_INFO);
 }
 
 /// <summary>
@@ -40,16 +31,16 @@ Keyboard::~Keyboard()
 /// <returns></returns>
 bool Keyboard::InitDevice()
 {
-	HRESULT create = DirectInput8Create(GetModuleHandle(NULL), DIRECTINPUT_VERSION, IID_IDirectInput8, (void**)&directInput, NULL);
+	HRESULT create = DirectInput8Create(GetModuleHandle(NULL), DIRECTINPUT_VERSION, IID_IDirectInput8, (void**)&device, NULL);
 	
-	if (directInput == NULL)
+	if (device == NULL)
 	{
 		//Log error
 		Log::Instance()->LogMessage("Keyboard - DirectInput is NULL.", Log::MESSAGE_ERROR);
 		return false;
 	}
 
-	create = directInput->CreateDevice(GUID_SysKeyboard, &keyboard, NULL);
+	create = input->CreateDevice(GUID_SysKeyboard, &device, NULL);
 	
 	if FAILED(create)
 	{
@@ -59,7 +50,7 @@ bool Keyboard::InitDevice()
 	}
 
 	//http://www.falloutsoftware.com/tutorials/di/di2.htm
-	create = keyboard->SetCooperativeLevel(hwnd, DISCL_FOREGROUND | DISCL_NONEXCLUSIVE);
+	create = device->SetCooperativeLevel(window, DISCL_FOREGROUND | DISCL_NONEXCLUSIVE);
 	
 	if FAILED(create)
 	{
@@ -68,7 +59,7 @@ bool Keyboard::InitDevice()
 		return false;
 	}
 
-	create = keyboard->SetDataFormat(&c_dfDIKeyboard);
+	create = device->SetDataFormat(&c_dfDIKeyboard);
 	
 	if FAILED(create)
 	{
@@ -77,7 +68,7 @@ bool Keyboard::InitDevice()
 		return false;
 	}
 
-	create = keyboard->Acquire();
+	create = device->Acquire();
 	
 	if FAILED(create)
 	{
@@ -100,7 +91,7 @@ bool Keyboard::AcquireDevice()
 
 	for (int i = 0; i < times; i++)
 	{
-		if (SUCCEEDED(keyboard->Acquire()))
+		if (SUCCEEDED(device->Acquire()))
 		{
 			Log::Instance()->LogMessage("Keyboard - Succesfully Acquired.", Log::MESSAGE_INFO);
 			return true;
@@ -115,19 +106,19 @@ bool Keyboard::AcquireDevice()
 /// </summary>
 void Keyboard::ReleaseDevice()
 {
-	if (directInput)
+	if (input)
 	{
 		Log::Instance()->LogMessage("Keyboard - Released DirectInput.", Log::MESSAGE_INFO);
-		directInput->Release();
-		directInput = NULL;
+		input->Release();
+		input = NULL;
 	}
 
-	if (keyboard)
+	if (device)
 	{
 		Log::Instance()->LogMessage("Keyboard - Released keyboard.", Log::MESSAGE_INFO);
-		keyboard->Unacquire();
-		keyboard->Release();
-		keyboard = NULL;
+		device->Unacquire();
+		device->Release();
+		device = NULL;
 	}
 }
 
@@ -137,20 +128,16 @@ void Keyboard::ReleaseDevice()
 /// <returns></returns>
 HRESULT Keyboard::PollDevice()
 {
-	return keyboard->Poll();
+	return device->Poll();
 }
 
 /// <summary>
 /// Devices the state.
 /// </summary>
 /// <returns></returns>
-byte* Keyboard::DeviceState()
+byte* Keyboard::GetKeyboardState()
 {
-	keyboard->GetDeviceState(sizeof(state), (LPVOID)&state);
+	byte state[256];
+	device->GetDeviceState(sizeof(state), (LPVOID)&state);
 	return state;
-}
-
-byte Keyboard::KeyAlreadyPressed()
-{
-	return state[0x1E];
 }

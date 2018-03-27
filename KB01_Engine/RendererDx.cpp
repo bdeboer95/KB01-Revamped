@@ -296,3 +296,30 @@ void RendererDx::SetStreamSource(UINT _vertexSize)
 {
 	direct3DDevice->SetStreamSource(0, vertexBuffer, 0, _vertexSize);
 }
+
+void RendererDx::InitCamera()
+{
+	D3DXMATRIX matWorld, matWorldX, matWorldY, matWorldZ;
+	D3DXMATRIX matView;
+	D3DXMATRIX matProj;
+	//D3DXMatrixRotationX(&matWorldX, 1.0f);  //--沿X轴旋转   
+	//D3DXMatrixRotationY(&matWorldY, 1.0f);  //--沿Y轴旋转   
+	//D3DXMatrixRotationZ(&matWorldZ, 1.0f);  //--沿Z轴旋转   
+
+	//D3DXMatrixMultiply(&matWorld, &matWorldX, &matWorldY);   //--组合变换   
+	//D3DXMatrixMultiply(&matWorld, &matWorld, &matWorldZ);
+	/*cameraPosition = D3DXVECTOR3(-45, 0, 60);
+	cameraTarget = D3DXVECTOR3(0, 0, 0);
+	cameraUpVector = D3DXVECTOR3(1, 0, 0);*/
+
+	D3DXVECTOR3 cameraPosition = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
+	D3DXVECTOR3 cameraTarget = D3DXVECTOR3(0.0f, 0.0f, 5.0f);
+	D3DXVECTOR3 cameraUpVector = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
+	D3DXVECTOR3 m_right = D3DXVECTOR3(1.0f, 0.0f, 0.0f);
+	D3DXMatrixLookAtLH(&matView, &cameraPosition, &cameraTarget, &cameraUpVector);
+	static_cast<LPDIRECT3DDEVICE9>(GetDevice())->SetTransform(D3DTS_VIEW, &matView);
+	D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 4, 1.0f, 1.0f, 1000.0f);
+	/*D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 4, 500 / 500, 1, 100);*/
+	static_cast<LPDIRECT3DDEVICE9>(GetDevice())->SetTransform(D3DTS_PROJECTION, &matProj);
+	/*static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetTransform(D3DTS_WORLD, &matWorld);*/
+}

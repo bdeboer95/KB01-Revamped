@@ -3,7 +3,6 @@
 
 #include "ResourceLoader.h"
 #include "Mesh.h"
-#include <d3dx9.h>
 
 class FileLoaderMeshDx: public ResourceLoader
 {

@@ -6,6 +6,10 @@
 
 #include "InputManager.h"
 
+#include "Window.h"
+
+#include <iostream>
+
 /// <summary>
 /// Initializes a new instance of the <see cref="InputManager"/> class.
 /// </summary>
@@ -27,17 +31,6 @@ InputManager::~InputManager()
 	DeleteAllListeners();
 	DeleteAllDevices();
 	Log::Instance()->LogMessage("~InputManager - InputManager cleaned up!", Log::MESSAGE_INFO);
-}
-
-void InputManager::Step()
-{
-	std::cout << "Stepping" << std::endl;
-}
-
-bool InputManager::Running()
-{
-	std::cout << "Looking good" << std::endl;
-	return false;
 }
 
 ///// <summary>
@@ -97,7 +90,7 @@ void InputManager::Update()
 	{
 		if (SUCCEEDED(static_cast<Keyboard*>(devices[i])->PollDevice()))
 		{
-			NotifyListeners(static_cast<Keyboard*>(devices[i])->DeviceState());
+			NotifyListeners(static_cast<Keyboard*>(devices[i])->GetKeyboardState());
 		}
 		else
 		{

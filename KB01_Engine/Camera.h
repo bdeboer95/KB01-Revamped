@@ -27,16 +27,9 @@ class Camera : public Entity
 public:
 	Camera();
 	~Camera(void);
-	D3DXVECTOR3  m_right;
-	D3DXVECTOR3 cameraUpVector;
-	D3DXVECTOR3  cameraTarget;
-	D3DXVECTOR3  cameraPosition;
-
 
 	void SetCamera(Renderer* _renderer);
-
 };
-
 
 #endif
 

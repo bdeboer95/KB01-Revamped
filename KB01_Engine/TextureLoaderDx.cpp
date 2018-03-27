@@ -1,5 +1,6 @@
 #include "TextureLoaderDx.h"
 #include "StringToWStringConverter.h"
+#include <string>
 
 TextureLoaderDx::TextureLoaderDx()
 {

@@ -1,11 +1,10 @@
-#ifndef SKYBOX_H
-#define SKYBOX_H
+#ifndef __SKYBOX_H__
+#define __SKYBOX_H__
 #define FVF_VERTEX (D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1) 
 
 #include "d3dx9.h"
 #include "Renderer.h"
 #include "ResourceManager.h"
-
 
 struct Vertex
 {
@@ -41,14 +40,15 @@ private:
 	Texture*			textures[6];  
 	Skybox_Cube			skyboxCube;
 	void				LoadTextures(ResourceManager* _resourceManager);
+
 public:
-						Skybox(Skybox_Cube skyboxCube);
-						~Skybox();
+	Skybox(Skybox_Cube skyboxCube);
+	~Skybox();
+
 	bool				SetTexture(std::string _TextureFilePath, int id);  
 	bool				InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager);
 	std::wstring		StrToWStr(std::string str);
-	void				Render(Renderer* _renderer);
-					
+	void				Render(Renderer* _renderer);				
 };
 
 #endif

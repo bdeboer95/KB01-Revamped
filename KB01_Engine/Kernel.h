@@ -6,6 +6,7 @@
 #include "InputManager.h"
 #include "ResourceManager.h"
 #include "SceneManager.h"
+#include "RendererDx.h"
 
 class Kernel : public InputListener
 {

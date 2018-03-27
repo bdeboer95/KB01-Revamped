@@ -2,6 +2,7 @@
 #define __WINDOWMANAGERFACADE_H__
 
 #include "InputManager.h"
+#include "Log.h"
 
 class InputManagerFacade
 {

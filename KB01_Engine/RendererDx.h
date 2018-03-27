@@ -10,7 +10,6 @@
 #include "Renderer.h"
 #include <mmsystem.h>
 #include <d3dx9.h>
-#include <d3dx9.h>
 #include <DXGI1_2.h>
 #include "Log.h"
 
@@ -51,8 +50,7 @@ public:
 	virtual float				GetBackBuffferHeight();
 	virtual void				DrawIndexedPrimitive(UINT _numberOfVertices, UINT _primitiveCount);
 	virtual void				SetStreamSource(UINT _vertexSize);
-	//// CAMERA
-	//virtual void				SetCamera(DXVector3 * const &_m_right, DXVector3 * const &_cameraPosition, DXVector3 * const &_cameraTarget, DXVector3 * const &_cameraUpVector); //todo
+	virtual void				InitCamera();
 };
 
 #endif

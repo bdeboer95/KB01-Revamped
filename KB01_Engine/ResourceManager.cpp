@@ -4,8 +4,7 @@
 // Desc: 
 //-----------------------------------------------------------------------------
 #include "ResourceManager.h"
-#include "FileLoaderMeshDx.h"
-#include "TextureLoaderDx.h"
+
 #include <iostream>
 
 /// <summary>
@@ -24,17 +23,6 @@ ResourceManager::~ResourceManager()
 {
 	Cleanup();
 	Log::Instance()->LogMessage("~ResourceManager - ResourceManager cleaned up!", Log::MESSAGE_INFO);
-}
-
-void ResourceManager::Step()
-{
-	std::cout << "Stepping" << std::endl;
-}
-
-bool ResourceManager::Running()
-{
-	std::cout << "Looking good" << std::endl;
-	return false;
 }
 
 bool ResourceManager::InitResourceLoader(void* _device)

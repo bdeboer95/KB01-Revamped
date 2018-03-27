@@ -15,11 +15,11 @@ Mouse::Mouse(HWND _hwnd)
 	dipdw.diph.dwHow		= DIPH_DEVICE;
 	dipdw.dwData			= MOUSEBUFFER;
 
-	directInput	= NULL;
-	mouse		= NULL;
-	hwnd		= _hwnd;
-
+	input = NULL;
+	device = NULL;
+	window = _hwnd;
 	ResetStruct();
+
 	InitDevice();
 
 	Log::Instance()->LogMessage("Mouse - Created.", Log::MESSAGE_INFO);
@@ -42,7 +42,7 @@ void Mouse::SetMouseBuffer()
 	DIDEVICEOBJECTDATA od;
 	DWORD elements = 1;
 
-	HRESULT hr = mouse->GetDeviceData(sizeof(DIDEVICEOBJECTDATA), &od, &elements, 0);
+	HRESULT hr = device->GetDeviceData(sizeof(DIDEVICEOBJECTDATA), &od, &elements, 0);
 
 	switch (od.dwOfs)
 	{
@@ -152,15 +152,15 @@ void Mouse::ResetStruct()
 /// <returns></returns>
 bool Mouse::InitDevice()
 {
-	HRESULT create = DirectInput8Create(GetModuleHandle(NULL), DIRECTINPUT_VERSION, IID_IDirectInput8, (void**)&directInput, NULL);
+	HRESULT create = DirectInput8Create(GetModuleHandle(NULL), DIRECTINPUT_VERSION, IID_IDirectInput8, (void**)&input, NULL);
 	
-	if (directInput == NULL)
+	if (input == NULL)
 	{
 		Log::Instance()->LogMessage("Mouse - DirectInput is NULL.", Log::MESSAGE_ERROR);
 		return false;
 	}
 
-	create = directInput->CreateDevice(GUID_SysMouse, &mouse, NULL);
+	create = input->CreateDevice(GUID_SysMouse, &device, NULL);
 	
 	if FAILED(create)
 	{
@@ -169,7 +169,7 @@ bool Mouse::InitDevice()
 		return false;
 	}
 
-	create = mouse->SetCooperativeLevel(hwnd, DISCL_NONEXCLUSIVE | DISCL_FOREGROUND);
+	create = device->SetCooperativeLevel(window, DISCL_NONEXCLUSIVE | DISCL_FOREGROUND);
 	
 	if FAILED(create)
 	{
@@ -178,7 +178,7 @@ bool Mouse::InitDevice()
 		return false;
 	}
 
-	create = mouse->SetDataFormat(&c_dfDIMouse);
+	create = device->SetDataFormat(&c_dfDIMouse);
 	
 	if FAILED(create)
 	{
@@ -187,7 +187,7 @@ bool Mouse::InitDevice()
 		return false;
 	}
 
-	create = mouse->SetProperty(DIPROP_BUFFERSIZE, &dipdw.diph);
+	create = device->SetProperty(DIPROP_BUFFERSIZE, &dipdw.diph);
 	
 	if FAILED(create)
 	{
@@ -195,7 +195,7 @@ bool Mouse::InitDevice()
 		return false;
 	}
 
-	create = mouse->Acquire();
+	create = device->Acquire();
 	
 	if FAILED(create)
 	{
@@ -218,7 +218,7 @@ bool Mouse::AcquireDevice()
 
 	for (int i = 0; i < times; ++i)
 	{
-		if (SUCCEEDED(mouse->Acquire()))
+		if (SUCCEEDED(device->Acquire()))
 		{
 			Log::Instance()->LogMessage("Mouse - Succesfully Acquired.", Log::MESSAGE_INFO);
 			return true;
@@ -232,19 +232,19 @@ bool Mouse::AcquireDevice()
 /// </summary>
 void Mouse::ReleaseDevice()
 {
-	if (directInput)
+	if (input)
 	{
 		Log::Instance()->LogMessage("Mouse - Released DirectInput.", Log::MESSAGE_INFO);
-		directInput->Release();
-		directInput = NULL;
+		input->Release();
+		input = NULL;
 	}
 
-	if (mouse)
+	if (device)
 	{
 		Log::Instance()->LogMessage("Mouse - Released mouse.", Log::MESSAGE_INFO);
-		mouse->Unacquire();
-		mouse->Release();
-		mouse = NULL;
+		device->Unacquire();
+		device->Release();
+		device = NULL;
 	}
 }
 
@@ -254,16 +254,17 @@ void Mouse::ReleaseDevice()
 /// <returns></returns>
 HRESULT Mouse::PollDevice()
 {
-	return mouse->Poll();
+	return device->Poll();
 }
 
 /// <summary>
 /// Devices the state.
 /// </summary>
 /// <returns></returns>
-DIMOUSESTATE Mouse::DeviceState()
+DIMOUSESTATE Mouse::GetMouseState()
 {
-	mouse->GetDeviceState(sizeof(mouseState), (LPVOID)&mouseState);
+	DIMOUSESTATE mouseState;
+	device->GetDeviceState(sizeof(mouseState), (LPVOID)&mouseState);
 	return mouseState;
 }
 
@@ -273,7 +274,7 @@ DIMOUSESTATE Mouse::DeviceState()
 /// <returns></returns>
 Mouse::MouseStruct Mouse::GetMouseInput()
 {
-	if (!SUCCEEDED(mouse->Poll()))
+	if (!SUCCEEDED(device->Poll()))
 	{
 		AcquireDevice();
 	}

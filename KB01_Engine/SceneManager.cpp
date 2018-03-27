@@ -5,8 +5,10 @@
 //-----------------------------------------------------------------------------
 
 #include "SceneManager.h"
+
 #include "EntityModel.h"
-#include <iostream>
+#include "Camera.h"
+
 #include <vector>
 
 
@@ -27,17 +29,6 @@ SceneManager::~SceneManager()
 	Log::Instance()->LogMessage("~SceneManager - SceneManager cleaned up!", Log::MESSAGE_INFO);
 }
 
-void SceneManager::Step()
-{
-	std::cout << "Stepping" << std::endl;
-}
-
-bool SceneManager::Running()
-{
-	std::cout << "Looking good" << std::endl;
-	return false;
-}
-
 /// <summary>
 /// Splits the scenes.
 /// </summary>
@@ -45,12 +36,12 @@ bool SceneManager::Running()
 /// <param name="_rectangleBackBuffer">The _rectangle back buffer.</param>
 void SceneManager::SplitScenes(std::vector<Scene*> _splitScenes, RECT _rectangleBackBuffer)
 {
-	RECT rect;
+	// Represents the backbuffer on the window
+	RECT rectangleSplitScene;
 	for (int i = 0; i < _splitScenes.size(); i++)
 	{
-		//Creates the rectangle that represents the backbuffer on the window
-		RECT rectangleSplitScene;
 		rectangleSplitScene.left = 0;
+
 		if (i != 0)
 		{
 			rectangleSplitScene.top = i*(_rectangleBackBuffer.bottom / _splitScenes.size());
@@ -59,8 +50,10 @@ void SceneManager::SplitScenes(std::vector<Scene*> _splitScenes, RECT _rectangle
 		{
 			rectangleSplitScene.top = 0;
 		}
+
 		rectangleSplitScene.right = _rectangleBackBuffer.right;
 		rectangleSplitScene.bottom = _rectangleBackBuffer.bottom / _splitScenes.size();
+
 		_splitScenes[i]->CreateViewPort(rectangleSplitScene);
 	}
 }
@@ -73,9 +66,11 @@ Scene* SceneManager::CreateScene(int _levelIndex, HWND _hWnd, std::string _level
 {
 	Scene* scene = new Scene(_levelIndex, _hWnd, _level);
 	scenes.push_back(scene);
+
+	Log::Instance()->LogMessage("Scene created", Log::MessageType::MESSAGE_INFO);
 	return scene;
-	std::cout << "Amount of scenes: " << scenes.size() << std::endl;
 }
+
 HRESULT SceneManager::PrepareScenes(ResourceManager* _resourceManager, Renderer* _renderer)
 {
 	for each(Scene* scene in scenes)
@@ -85,9 +80,11 @@ HRESULT SceneManager::PrepareScenes(ResourceManager* _resourceManager, Renderer*
 			Log::Instance()->LogMessage("SceneManager - Failed to setup Geometry.", Log::MESSAGE_ERROR);
 			return E_FAIL;
 		}
+
 		ShowWindow(scene->GetHandler(), SW_MAXIMIZE);
 		UpdateWindow(scene->GetHandler());
 	}
+
 	return S_OK;
 }
 
@@ -100,8 +97,6 @@ void SceneManager::DrawScene(Renderer* _renderer)
 	{
 		scene->Render(_renderer);
 	}
-
-
 }
 
 /// <summary>
@@ -112,11 +107,15 @@ void SceneManager::DrawScene(Renderer* _renderer)
 std::vector<Scene*> SceneManager::GetScenesByLevelIndex(int _levelIndex)
 {
 	std::vector<Scene*> indexScenes;
+
 	for each(Scene* scene in scenes)
-	if (scene->GetLevelIndex() == _levelIndex)
 	{
-		indexScenes.push_back(scene);
+		if (scene->GetLevelIndex() == _levelIndex)
+		{
+			indexScenes.push_back(scene);
+		}
 	}
+
 	return indexScenes;
 }
 
@@ -130,8 +129,6 @@ void SceneManager::DeleteAllScenes()
 		delete scenes.back();
 		scenes.pop_back();
 	}
-
-
 }
 
 /// <summary>
@@ -143,30 +140,11 @@ void SceneManager::Cleanup()
 }
 
 /// <summary>
-/// Sets the rotation.
-/// </summary>
-/// <param name="_rotation">The _rotation.</param>
-void SceneManager::SetRotation(int _rotation)
-{
-	_rotation = rotation;
-}
-
-/// <summary>
-/// Gets the rotation.
-/// </summary>
-/// <returns></returns>
-int SceneManager::GetRotation()
-{
-	return rotation;
-}
-
-/// <summary>
 /// Adds the listener.
 /// </summary>
 /// <param name="_inputManager">The _input manager.</param>
 void SceneManager::AddListener(InputManager* _inputManager)
 {
-
 	for each (Scene* scene in scenes)
 	{
 		for each (Entity* entityModel in scene->GetEntityModels())
@@ -176,7 +154,6 @@ void SceneManager::AddListener(InputManager* _inputManager)
 				EntityModel* e = dynamic_cast<EntityModel*>(entityModel);
 				_inputManager->AddListener(e);
 			}
-
 		}
 	}
 }

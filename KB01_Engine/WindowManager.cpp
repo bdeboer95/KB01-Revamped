@@ -5,8 +5,11 @@
 //-----------------------------------------------------------------------------
 
 #include "WindowManager.h"
+
 #include <iostream>
 #include <vector>
+#include <vector>
+#include <windows.h>
 
 /// <summary>
 /// Initializes a new instance of the <see cref="WindowManager"/> class.
@@ -27,16 +30,6 @@ WindowManager::~WindowManager()
 	Log::Instance()->LogMessage("~WindowManager - WindowManager cleaned up!", Log::MESSAGE_INFO);
 }
 
-void WindowManager::Step()
-{
-	std::cout << "Stepping" << std::endl;
-}
-
-bool WindowManager::Running()
-{
-	std::cout << "Looking good" << std::endl;
-	return false;
-}
 
 //-----------------------------------------------------------------------------
 // Name: CreateNewWindow()

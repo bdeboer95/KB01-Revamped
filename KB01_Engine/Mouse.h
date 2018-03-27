@@ -6,12 +6,10 @@
 #define MOUSEM	2
 
 #include "Device.h"
-#include <dinput.h>
 
 class Mouse : public Device
 {
 private:
-
 	struct MouseStruct
 	{
 		int positionX = 0;
@@ -27,12 +25,8 @@ private:
 		bool button7 = false;
 	};
 
-	LPDIRECTINPUT8 directInput;	// DirectInput interface
-	LPDIRECTINPUTDEVICE8 mouse;	// Keyboard device
-	HWND hwnd;
 	DIPROPDWORD dipdw;
 	MouseStruct bufferedMouse;
-	DIMOUSESTATE mouseState;
 
 	void SetMouseBuffer();
 	void ResetStruct();
@@ -45,7 +39,8 @@ public:
 	bool AcquireDevice();
 	void ReleaseDevice();
 	HRESULT PollDevice();
-	DIMOUSESTATE DeviceState();
+	DIMOUSESTATE GetMouseState();
+
 	MouseStruct GetMouseInput();
 };
 

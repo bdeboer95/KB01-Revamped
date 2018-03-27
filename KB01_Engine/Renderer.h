@@ -1,10 +1,11 @@
 #ifndef __RENDERER_H__
 #define __RENDERER_H__
 
+#include "Log.h"
+
 #include <Windows.h>
 #include <string>
-#include "Log.h"
-#include "d3dx9.h"
+
 class Renderer
 {
 public:
@@ -29,8 +30,7 @@ public:
 	virtual void			DrawIndexedPrimitive(UINT _numberOfVertices, UINT _primitiveCount) = 0;
 	virtual void			DrawSubset(void* _mesh, UINT _index) = 0;
 	virtual void			SetStreamSource(UINT _vertexSize) = 0;
-	// CAMERA
-	/*virtual void			SetCamera(void* _m_right, void* _cameraPosition, DXVector3 * const &_cameraTarget, DXVector3 * const &_cameraUpVector) = 0;*/
+	virtual void			InitCamera() = 0;
 };
 
 #endif

@@ -5,9 +5,12 @@
 //-----------------------------------------------------------------------------
 
 #include "Window.h"
+
 #include <iostream>
 #include <string>
+#include <vector>
 #include "StringTowStringConverter.h"
+
 /// <summary>
 /// Initializes a new instance of the <see cref="Window"/> class.
 /// </summary>

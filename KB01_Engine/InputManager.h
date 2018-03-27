@@ -15,14 +15,14 @@ private:
 
 	void						DeleteAllListeners();
 	void					    DeleteAllDevices();
-//std::vector<Device*>		GetDevices();
-public:
-								InputManager(HWND _hwnd);
-								InputManager();
-								~InputManager();
+
+public:							
+	InputManager();
+	InputManager(HWND _hwnd);
+	~InputManager();
 	
 	Keyboard*					CreateKeyboard(HWND _hwnd);
-	Mouse*						CreateMouse(HWND _handler);
+	Mouse*						CreateMouse(HWND _hwnd);
 	HRESULT						AddListener(InputListener* listenerPtr);
 	void						NotifyListeners(byte state[]);
 	void						CreateDevice(HWND _hwnd);

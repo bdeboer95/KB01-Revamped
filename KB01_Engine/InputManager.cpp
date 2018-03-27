@@ -22,7 +22,9 @@ InputManager::InputManager(HWND _hwnd)
 
 InputManager::InputManager()
 {
+
 }
+
 /// <summary>
 /// Finalizes an instance of the <see cref="InputManager"/> class.
 /// </summary>
@@ -48,10 +50,15 @@ InputManager::~InputManager()
 /// <param name="_hwnd">The _HWND.</param>
 void InputManager::CreateDevice(HWND _hwnd)
 {
-	
 	CreateMouse(_hwnd);
 	CreateKeyboard(_hwnd);
-	
+}
+
+Mouse* InputManager::CreateMouse(HWND _hwnd)
+{
+	Mouse* mouse = new Mouse(_hwnd);
+	devices.push_back(mouse);
+	return mouse;
 }
 
 Keyboard* InputManager::CreateKeyboard(HWND _hwnd)
@@ -85,7 +92,6 @@ HRESULT InputManager::AddListener(InputListener* listenerPtr)
 /// </summary>
 void InputManager::Update()
 {
-
 	for (int i = 1; i < devices.size(); ++i)
 	{
 		if (SUCCEEDED(static_cast<Keyboard*>(devices[i])->PollDevice()))
@@ -114,12 +120,10 @@ void InputManager::Update()
 /// <param name="state">The state.</param>
 void InputManager::NotifyListeners(byte state[])
 {
-
 	for (unsigned int i = 0; i < listeners.size(); i++)
 	{
 		listeners[i]->Notify(state);
 	}
-
 }
 
 /// <summary>
@@ -127,7 +131,6 @@ void InputManager::NotifyListeners(byte state[])
 /// </summary>
 void InputManager::DeleteAllListeners()
 {
-
 	while (!listeners.empty())
 	{
 		//delete listeners.back();
@@ -152,6 +155,7 @@ void InputManager::DeleteAllDevices()
 		delete devices.back();
 		devices.pop_back();
 	}
+
 	Log::Instance()->LogMessage("InputManager - Deleted all devices.", Log::MESSAGE_INFO);
 }
 
@@ -182,10 +186,4 @@ Keyboard* InputManager::GetKeyboard()
 	}
 	return keyboard;
 
-}
-Mouse* InputManager::CreateMouse(HWND _handler)
-{
-	Mouse* mouse = new Mouse(_handler);
-	devices.push_back(mouse);
-	return mouse;
 }

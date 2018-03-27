@@ -42,7 +42,6 @@ void Kernel::Init()
 	windowManager = new WindowManager();
 	sceneManager = new SceneManager();
 	resourceManager = new ResourceManager();
-	inputManager = new InputManager();
 	renderer = new RendererDx();
 
 	Log::Instance()->LogMessage("Kernel - Scene-, Resource-, WindowManager created.", Log::MESSAGE_INFO);

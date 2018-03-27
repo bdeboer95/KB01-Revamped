@@ -102,16 +102,16 @@ void InputManager::Update()
 		{
 			static_cast<Keyboard*>(devices[i])->AcquireDevice();
 		}
-	}
 
-	//if (SUCCEEDED(static_cast<Mouse*>(devices[0])->PollDevice()))
-	//{
-	//	NotifyListeners(static_cast<Mouse*>(devices[0])->DeviceState().rgbButtons);
-	//}
-	//else
-	//{
-	//	static_cast<Mouse*>(devices[0])->AcquireDevice();
-	//}
+		//if (SUCCEEDED(static_cast<Mouse*>(devices[0])->PollDevice()))
+		//{
+		//	NotifyListeners(static_cast<Mouse*>(devices[0])->GetMouseState().rgbButtons);
+		//}
+		//else
+		//{
+		//	static_cast<Mouse*>(devices[0])->AcquireDevice();
+		//}
+	}
 }
 
 /// <summary>
@@ -170,9 +170,12 @@ Mouse* InputManager::GetMouse()
 	{
 		if (static_cast<Mouse*>(devices[i])) {
 			mouse = static_cast<Mouse*>(devices[i]);
+	
+			Log::Instance()->LogMessage("InputManager - Got a mouse.", Log::MESSAGE_INFO);
+			return mouse;
 		}
 	}
-	return mouse;
+	
 }
 
 Keyboard* InputManager::GetKeyboard()

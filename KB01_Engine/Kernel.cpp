@@ -133,6 +133,8 @@ bool Kernel::Run()
 		return false;
 	}
 
+	Log::Instance()->LogMessage("Kernel - Running.", Log::MESSAGE_INFO);
+
 	return true;
 }
 
@@ -145,6 +147,7 @@ void Kernel::Step()
 	inputManager->Update();
 	sceneManager->DrawScene(renderer);
 }
+
 /// <summary>
 /// Notifies the specified state.
 /// </summary>
@@ -159,10 +162,10 @@ void Kernel::Notify(byte state[])
 	if (inputManager->GetMouse()->GetMouseState().rgbButtons[0])
 	{
 		/*std::cout << "LINKS" << std::endl;*/
-}
+	}
 
 	if (inputManager->GetMouse()->GetMouseState().rgbButtons[1])
-{
+	{
 		std::cout << "RECHTS" << std::endl;;
 	}
 

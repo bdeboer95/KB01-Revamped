@@ -31,9 +31,9 @@ Keyboard::~Keyboard()
 /// <returns></returns>
 bool Keyboard::InitDevice()
 {
-	HRESULT create = DirectInput8Create(GetModuleHandle(NULL), DIRECTINPUT_VERSION, IID_IDirectInput8, (void**)&device, NULL);
+	HRESULT create = DirectInput8Create(GetModuleHandle(NULL), DIRECTINPUT_VERSION, IID_IDirectInput8, (void**)&input, NULL);
 	
-	if (device == NULL)
+	if (input == NULL)
 	{
 		//Log error
 		Log::Instance()->LogMessage("Keyboard - DirectInput is NULL.", Log::MESSAGE_ERROR);
@@ -49,7 +49,6 @@ bool Keyboard::InitDevice()
 		return false;
 	}
 
-	//http://www.falloutsoftware.com/tutorials/di/di2.htm
 	create = device->SetCooperativeLevel(window, DISCL_FOREGROUND | DISCL_NONEXCLUSIVE);
 	
 	if FAILED(create)

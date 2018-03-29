@@ -35,7 +35,6 @@ bool Keyboard::InitDevice()
 	
 	if (input == NULL)
 	{
-		//Log error
 		Log::Instance()->LogMessage("Keyboard - DirectInput is NULL.", Log::MESSAGE_ERROR);
 		return false;
 	}

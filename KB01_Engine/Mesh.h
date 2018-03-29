@@ -8,9 +8,10 @@ class Mesh : public Resource
 {
 private:
 	Texture*					texture;
+
 public:
-								Mesh(std::string _fileName) :Resource(_fileName){};
-								~Mesh();
+	Mesh(std::string _fileName) : Resource(_fileName) {};
+	~Mesh();
 
 	void*						meshTextures; // Textures for our mesh
 	void*						meshMaterials = NULL; // Materials for our mesh

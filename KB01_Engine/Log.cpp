@@ -1,9 +1,10 @@
+#include "Log.h"
+
 #include <iostream>
 #include <iomanip>
 #include <sstream>
 #include <ctime>
 #include <Lmcons.h>
-#include "Log.h"
 #include "Windows.h"
 
 // Global variable to make sure only ONE instance of Log is made.
@@ -90,15 +91,15 @@ void Log::LogMessage(std::string message, MessageType kind)
 	switch (kind)
 	{
 	case MESSAGE_ERROR:
-		fs << GetCurrentDateAndTime().substr(0, 20) + "The following error is found: ";
+		fs << GetCurrentDateAndTime().substr(0, 20) + "ERROR: ";
 		fs << message << std::endl;
 		break;
 	case MESSAGE_WARNING:
-		fs << GetCurrentDateAndTime().substr(0, 20) + "The following warning is found: ";
+		fs << GetCurrentDateAndTime().substr(0, 20) + "WARNING: ";
 		fs << message << std::endl;
 		break;
 	case MESSAGE_INFO:
-		fs << GetCurrentDateAndTime().substr(0, 20) + "Information: ";
+		fs << GetCurrentDateAndTime().substr(0, 20) + "INFO: ";
 		fs << message << std::endl;
 		break;
 	}

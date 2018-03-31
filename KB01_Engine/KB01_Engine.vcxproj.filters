@@ -83,9 +83,6 @@
     <ClCompile Include="Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resource.cpp">
-      <Filter>Source Files\Resources</Filter>
-    </ClCompile>
     <ClCompile Include="Texture.cpp">
       <Filter>Source Files\Resources</Filter>
     </ClCompile>
@@ -152,17 +149,14 @@
     <ClCompile Include="TextureLoaderDx.cpp">
       <Filter>Source Files\Resourceloaders</Filter>
     </ClCompile>
-    <ClCompile Include="FileLoaderMeshDx.cpp">
-      <Filter>Source Files\Resourceloaders</Filter>
-    </ClCompile>
     <ClCompile Include="StringToWStringConverter.cpp">
       <Filter>Source Files\Converters</Filter>
     </ClCompile>
-    <ClCompile Include="ResourceLoader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DXVector3.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshLoaderDx.cpp">
+      <Filter>Source Files\Resourceloaders</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -235,9 +229,6 @@
     <ClInclude Include="Mesh.h">
       <Filter>Header Files\Resources</Filter>
     </ClInclude>
-    <ClInclude Include="FileLoaderMeshDx.h">
-      <Filter>Header Files\Resourceloaders</Filter>
-    </ClInclude>
     <ClInclude Include="ResourceManagerFacade.h">
       <Filter>Header Files\Facades</Filter>
     </ClInclude>
@@ -273,6 +264,9 @@
     </ClInclude>
     <ClInclude Include="Log.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshLoaderDx.h">
+      <Filter>Header Files\Resourceloaders</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

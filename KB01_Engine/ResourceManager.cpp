@@ -1,38 +1,29 @@
-//-----------------------------------------------------------------------------
-// File: ResourceManager.cpp
-//
-// Desc: 
-//-----------------------------------------------------------------------------
 #include "ResourceManager.h"
 
-#include <iostream>
+#include "Renderer.h"
+#include "Log.h"
 
-/// <summary>
-/// Initializes a new instance of the <see cref="ResourceManager"/> class.
-/// </summary>
 ResourceManager::ResourceManager()
 {
-	resources = std::vector<Resource*>();
+	textures = std::vector<Texture*>();
+	meshes = std::vector<Mesh*>();
+
 	Log::Instance()->LogMessage("ResourceManager - Created.", Log::MESSAGE_INFO);
 }
 
-/// <summary>
-/// Finalizes an instance of the <see cref="ResourceManager"/> class.
-/// </summary>
 ResourceManager::~ResourceManager()
 {
 	Cleanup();
+
 	Log::Instance()->LogMessage("~ResourceManager - ResourceManager cleaned up!", Log::MESSAGE_INFO);
 }
 
-bool ResourceManager::InitResourceLoader(void* _device)
+bool ResourceManager::InitResourceLoader(Renderer* _renderer)
 {
-	if (_device)
+	if (_renderer)
 	{
-		meshLoader = new FileLoaderMeshDx();
-		textureLoader = new TextureLoaderDx();
-		meshLoader->SetDevice(_device);
-		textureLoader->SetDevice(_device);
+		meshLoader = new MeshLoaderDx(_renderer);
+		textureLoader = new TextureLoaderDx(_renderer);
 	}
 	return true;
 }
@@ -40,19 +31,19 @@ bool ResourceManager::InitResourceLoader(void* _device)
 // Name: LoadResource(std::string _fileName)
 // Desc: Loads a resource using the filename provided in the parameters
 //-----------------------------------------------------------------------------
-Mesh* ResourceManager::LoadMesh(std::string _fileName)
+Mesh* ResourceManager::LoadMesh(std::string _filePath, std::string _fileName)
 {
-	Mesh* mesh = meshLoader->LoadMeshFromFile(_fileName);
-	resources.push_back(mesh);
+	Mesh* mesh = meshLoader->LoadResource(_filePath, _fileName);
+	meshes.push_back(mesh);
 	Log::Instance()->LogMessage("ResourceManager - Resource '" + _fileName + "' loaded.", Log::MESSAGE_INFO);
 	return mesh;
 
 }
 
-Texture* ResourceManager::LoadTexture(std::string _filePath,std::string _fileName)
+Texture* ResourceManager::LoadTexture(std::string _filePath, std::string _fileName)
 {
-	Texture* texture = textureLoader->LoadTexture(_filePath,_fileName);
-	resources.push_back(texture);
+	Texture* texture = textureLoader->LoadResource(_filePath, _fileName);
+	textures.push_back(texture);
 	//if texture contains something
 	if (texture)
 	{
@@ -66,18 +57,28 @@ Texture* ResourceManager::LoadTexture(std::string _filePath,std::string _fileNam
 /// </summary>
 void ResourceManager::DeleteAllResources()
 {
-	while (!resources.empty())
+	while (!textures.empty())
 	{
-		delete resources.back();
-		resources.pop_back();
+		delete textures.back();
+		textures.pop_back();
 	}
+
+	while (!meshes.empty())
+	{
+		delete meshes.back();
+		meshes.pop_back();
+	}
+
 	Log::Instance()->LogMessage("ResourceManager - Deleted all resources", Log::MESSAGE_INFO);
 }
 
 void ResourceManager::Cleanup()
 {
 	DeleteAllResources();
-	//TODO : DELETE resourceLoaders
+	
+	delete meshLoader;
+	delete textureLoader;
+
 	Log::Instance()->LogMessage("ResourceManager - ResourceManager cleaned up!", Log::MESSAGE_INFO);
 }
 

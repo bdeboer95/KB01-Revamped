@@ -26,7 +26,7 @@
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="Kernel.h" />
     <ClInclude Include="Keyboard.h" />
-    <ClInclude Include="FileLoaderMeshDx.h" />
+    <ClInclude Include="MeshLoaderDx.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="Mouse.h" />
     <ClInclude Include="Renderer.h" />
@@ -60,13 +60,11 @@
     <ClCompile Include="jsoncpp.cpp" />
     <ClCompile Include="Kernel.cpp" />
     <ClCompile Include="Keyboard.cpp" />
-    <ClCompile Include="FileLoaderMeshDx.cpp" />
+    <ClCompile Include="MeshLoaderDx.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="RendererDx.cpp" />
-    <ClCompile Include="Resource.cpp" />
-    <ClCompile Include="ResourceLoader.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="ResourceManagerFacade.cpp" />
     <ClCompile Include="ResourceModel.cpp" />

@@ -2,17 +2,21 @@
 #define __RESOURCELOADER_H__
 
 #include "Resource.h"
+#include "Renderer.h"
 #include "Log.h"
-#include "d3dx9.h"
+
+#include <vector>
 
 class ResourceLoader
 {
 protected:
-	LPDIRECT3D9				direct3D; // Used to create the D3DDevice
-	LPDIRECT3DDEVICE9		direct3DDevice; // Our rendering device
+	Renderer*				renderer;
+
 public:
 	virtual	~ResourceLoader(){};
-	void SetDevice(void* _device);
+
+	virtual Resource*		LoadResource(std::string _filePath, std::string _fileName) = 0;
+	virtual void			Cleanup() = 0;
 };
 
 #endif

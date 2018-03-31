@@ -20,14 +20,14 @@ ResourceManagerFacade::~ResourceManagerFacade()
 	Cleanup();
 }
 
-void ResourceManagerFacade::InitResourceLoaders(void* _device)
+void ResourceManagerFacade::InitResourceLoaders(Renderer* _renderer)
 {
-	resourceManager->InitResourceLoader(_device);
+	resourceManager->InitResourceLoader(_renderer);
 }
 
 void ResourceManagerFacade::LoadNewMesh(std::string _fileName)
 {
-	resourceManager->LoadMesh(_fileName);
+	resourceManager->LoadMesh("..\\Meshes\\", _fileName);
 }
 
 void ResourceManagerFacade::Cleanup()

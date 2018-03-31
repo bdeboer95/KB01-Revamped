@@ -129,7 +129,7 @@ std::wstring Skybox::StrToWStr(std::string str)
 void Skybox::LoadTextures(ResourceManager* _resourceManager)
 {
 	std::string filePath = "..\\Textures\\Skyboxes\\";
-	textures[0] = _resourceManager->LoadTexture(filePath, skyboxCube.front);
+	textures[0] = _resourceManager->LoadTexture(filePath,skyboxCube.front);
 	textures[1] = _resourceManager->LoadTexture(filePath,skyboxCube.back);
 	textures[2] = _resourceManager->LoadTexture(filePath,skyboxCube.left);//back
 	textures[3] = _resourceManager->LoadTexture(filePath,skyboxCube.right);
@@ -140,13 +140,15 @@ void Skybox::LoadTextures(ResourceManager* _resourceManager)
 void Skybox::Render(Renderer* _renderer)
 {
 	LPDIRECT3DDEVICE9 device = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
-
 	D3DXMATRIX matWorld, matWorldX, matWorldY, matWorldZ;
+
 	D3DXMatrixTranslation(&matWorld, 0, -0.1f, 3);
 	device->SetTransform(D3DTS_WORLD, &matWorld);
+
 	//Disables the zbuffer for writing
 	static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);
 	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);
+
 	//Loops through every square side of the cube
 	for (int i = 0; i < 6; i++)
 	{
@@ -155,6 +157,7 @@ void Skybox::Render(Renderer* _renderer)
 	}
 	
 	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW);
+
 	//Enables the zbuffer for writing
 	device->SetRenderState(D3DRS_ZWRITEENABLE, true);
 }

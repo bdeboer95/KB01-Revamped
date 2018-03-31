@@ -6,10 +6,15 @@
 
 class TextureLoaderDx : public ResourceLoader
 {
+private:
+	std::vector<Texture> textures;
+
 public:
-	TextureLoaderDx();
+	TextureLoaderDx(Renderer* _renderer);
 	~TextureLoaderDx();
-	Texture* LoadTexture(std::string _filePath, std::string _fileName);
+
+	virtual Texture*			LoadResource(std::string _filePath, std::string _fileName);
+	virtual void				Cleanup();
 };
 
 #endif

@@ -1,9 +1,13 @@
 #include "Mesh.h"
 
-
+Mesh::Mesh(std::string _fileName)
+{
+	fileName = _fileName;
+}
 
 Mesh::~Mesh()
 {
+
 }
 
 void Mesh::SetNumberOfMaterials(UINT _numberOfMaterials)

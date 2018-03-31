@@ -2,19 +2,17 @@
 #define __RESOURCE_H__
 
 #include <string>
-#include <Windows.h>
 
 class Resource
 {
-public:
-	Resource(std::string _fileName);
-	virtual	~Resource() = 0;
-
-	std::string						GetFileName();
-	virtual void					Cleanup() = 0;
-
-private:
+protected:
 	std::string					    fileName;
+
+public:
+	virtual	~Resource() {};
+
+	virtual std::string				GetFileName() { return fileName; }
+	virtual void					Cleanup() = 0;
 	
 };
 

@@ -81,7 +81,7 @@ void Kernel::LoadLevel(const std::string &_level)
 	//sceneManager->CreateScene(228, 164, 228, 3);
 	//windowManager->AddScenesToWindow(sceneManager->GetScenesByLevelIndex(3), windowManager->GetActiveWindow());
 
-	resourceManager->InitResourceLoader(renderer->GetDevice());
+	resourceManager->InitResourceLoader(renderer);
 
 	if (SUCCEEDED(sceneManager->PrepareScenes(resourceManager, renderer)))
 	{

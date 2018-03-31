@@ -12532,3 +12532,2686 @@ Thu Mar 29 11:30:23 INFO: Kernel - Running.
 Thu Mar 29 11:30:23 INFO: Kernel - Running.
 Thu Mar 29 11:30:23 INFO: Kernel - Running.
 Thu Mar 29 11:30:23 INFO: Kernel - Running.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Fri Mar 30 17:36:43 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Fri Mar 30 17:36:43 INFO: Kernel - Created.
+Fri Mar 30 17:36:43 INFO: WindowManager - SetWindowClassEx successful.
+Fri Mar 30 17:36:43 INFO: WindowManager - Created
+Fri Mar 30 17:36:43 INFO: SceneManager - SceneManager created
+Fri Mar 30 17:36:43 INFO: ResourceManager - Created.
+Fri Mar 30 17:36:43 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Fri Mar 30 17:36:43 INFO: Kernel - Loading level...
+Fri Mar 30 17:36:43 INFO: Window - Created handler for window with title:'Choo Choo'
+Fri Mar 30 17:36:43 INFO: Window - Window created.
+Fri Mar 30 17:36:43 INFO: Camera - Camera created.
+Fri Mar 30 17:36:43 WARNING: Scene - Unable to read level file. (..\Levels\level1.txt)
+Fri Mar 30 17:36:43 INFO: EntityModel - Created.
+Fri Mar 30 17:36:43 INFO: Scene - EntityModel created
+Fri Mar 30 17:36:43 INFO: EntityModel - Created.
+Fri Mar 30 17:36:43 INFO: Scene - EntityModel created
+Fri Mar 30 17:36:43 INFO: Terrain - Terrain created.
+Fri Mar 30 17:36:43 INFO: Scene - Scene created.
+Fri Mar 30 17:36:43 INFO: Scene created
+Fri Mar 30 17:36:43 INFO: MeshLoaderDx - MeshLoaderDx created.
+Fri Mar 30 17:36:43 INFO: TextureLoaderDx - TextureLoaderDx created.
+Fri Mar 30 17:36:43 INFO: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 30 17:36:44 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Fri Mar 30 17:36:44 INFO: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 30 17:36:44 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Fri Mar 30 17:36:44 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox4_front.png
+Fri Mar 30 17:36:44 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox4_back.png
+Fri Mar 30 17:36:44 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox4_left.png
+Fri Mar 30 17:36:44 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox4_right.png
+Fri Mar 30 17:36:44 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox4_top.png
+Fri Mar 30 17:36:44 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox4_bottom.png
+Fri Mar 30 17:36:44 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.terrainbrown.jpg
+Fri Mar 30 17:36:44 WARNING: Terrain - File not found.
+Fri Mar 30 17:36:44 INFO: Terrain - VertexBuffer is successfully filled.
+Fri Mar 30 17:36:44 INFO: Kernel - Scenes are successfully prepared.
+Fri Mar 30 17:36:44 INFO: Mouse - Succesfully Acquired.
+Fri Mar 30 17:36:44 INFO: Mouse - Created.
+Fri Mar 30 17:36:44 INFO: Keyboard - Succesfully Acquired.
+Fri Mar 30 17:36:44 INFO: Keyboard - Created.
+Fri Mar 30 17:36:44 INFO: InputManager - InputManager created.
+Fri Mar 30 17:36:44 INFO: Kernel - Added as listener.
+Fri Mar 30 17:36:44 INFO: Kernel - Level is successfully loaded.
+Fri Mar 30 17:36:44 INFO: Kernel - Running.
+Fri Mar 30 17:36:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 17:36:44 INFO: InputManager - Got a mouse.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Fri Mar 30 18:04:40 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Fri Mar 30 18:04:40 INFO: Kernel - Created.
+Fri Mar 30 18:04:40 INFO: WindowManager - SetWindowClassEx successful.
+Fri Mar 30 18:04:40 INFO: WindowManager - Created
+Fri Mar 30 18:04:40 INFO: SceneManager - SceneManager created
+Fri Mar 30 18:04:40 INFO: ResourceManager - Created.
+Fri Mar 30 18:04:40 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Fri Mar 30 18:04:40 INFO: Kernel - Loading level...
+Fri Mar 30 18:04:40 INFO: Window - Created handler for window with title:'Choo Choo'
+Fri Mar 30 18:04:40 INFO: Window - Window created.
+Fri Mar 30 18:04:40 INFO: Camera - Camera created.
+Fri Mar 30 18:04:40 WARNING: Scene - Unable to read level file. (..\Levels\level1.txt)
+Fri Mar 30 18:04:40 INFO: EntityModel - Created.
+Fri Mar 30 18:04:40 INFO: Scene - EntityModel created
+Fri Mar 30 18:04:40 INFO: EntityModel - Created.
+Fri Mar 30 18:04:40 INFO: Scene - EntityModel created
+Fri Mar 30 18:04:40 INFO: Terrain - Terrain created.
+Fri Mar 30 18:04:40 INFO: Scene - Scene created.
+Fri Mar 30 18:04:40 INFO: Scene created
+Fri Mar 30 18:04:40 INFO: MeshLoaderDx - MeshLoaderDx created.
+Fri Mar 30 18:04:40 INFO: TextureLoaderDx - TextureLoaderDx created.
+Fri Mar 30 18:04:40 INFO: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 30 18:04:41 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Fri Mar 30 18:04:41 INFO: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 30 18:04:41 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Fri Mar 30 18:04:41 INFO: ResourceManager - Texture 'skybox4_front.png' loaded.
+Fri Mar 30 18:04:41 INFO: ResourceManager - Texture 'skybox4_back.png' loaded.
+Fri Mar 30 18:04:41 INFO: ResourceManager - Texture 'skybox4_left.png' loaded.
+Fri Mar 30 18:04:41 INFO: ResourceManager - Texture 'skybox4_right.png' loaded.
+Fri Mar 30 18:04:42 INFO: ResourceManager - Texture 'skybox4_top.png' loaded.
+Fri Mar 30 18:04:42 INFO: ResourceManager - Texture 'skybox4_bottom.png' loaded.
+Fri Mar 30 18:04:42 INFO: ResourceManager - Texture 'terrainbrown.jpg' loaded.
+Fri Mar 30 18:04:42 WARNING: Terrain - File not found.
+Fri Mar 30 18:04:42 INFO: Terrain - VertexBuffer is successfully filled.
+Fri Mar 30 18:04:42 INFO: Kernel - Scenes are successfully prepared.
+Fri Mar 30 18:04:42 INFO: Mouse - Succesfully Acquired.
+Fri Mar 30 18:04:42 INFO: Mouse - Created.
+Fri Mar 30 18:04:42 INFO: Keyboard - Succesfully Acquired.
+Fri Mar 30 18:04:42 INFO: Keyboard - Created.
+Fri Mar 30 18:04:42 INFO: InputManager - InputManager created.
+Fri Mar 30 18:04:42 INFO: Kernel - Added as listener.
+Fri Mar 30 18:04:42 INFO: Kernel - Level is successfully loaded.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: Kernel - Running.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:42 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: Kernel - Running.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:43 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: Kernel - Running.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:44 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: Kernel - Running.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:45 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: Kernel - Running.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:46 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: Kernel - Running.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:47 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: Kernel - Running.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:48 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: Kernel - Running.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:49 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: Kernel - Running.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:50 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: Kernel - Running.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:51 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:52 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:53 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:54 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+Fri Mar 30 18:04:55 INFO: Kernel - Running.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Fri Mar 30 18:09:23 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Fri Mar 30 18:09:23 INFO: Kernel - Created.
+Fri Mar 30 18:09:23 INFO: WindowManager - SetWindowClassEx successful.
+Fri Mar 30 18:09:23 INFO: WindowManager - Created
+Fri Mar 30 18:09:23 INFO: SceneManager - SceneManager created
+Fri Mar 30 18:09:23 INFO: ResourceManager - Created.
+Fri Mar 30 18:09:23 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Fri Mar 30 18:09:23 INFO: Kernel - Loading level...
+Fri Mar 30 18:09:23 INFO: Window - Created handler for window with title:'Choo Choo'
+Fri Mar 30 18:09:23 INFO: Window - Window created.
+Fri Mar 30 18:09:24 INFO: Camera - Camera created.
+Fri Mar 30 18:09:24 WARNING: Scene - Unable to read level file. (..\Levels\level1.txt)
+Fri Mar 30 18:09:24 INFO: EntityModel - Created.
+Fri Mar 30 18:09:24 INFO: Scene - EntityModel created
+Fri Mar 30 18:09:24 INFO: EntityModel - Created.
+Fri Mar 30 18:09:24 INFO: Scene - EntityModel created
+Fri Mar 30 18:09:24 INFO: Terrain - Terrain created.
+Fri Mar 30 18:09:24 INFO: Scene - Scene created.
+Fri Mar 30 18:09:24 INFO: Scene created
+Fri Mar 30 18:09:24 INFO: MeshLoaderDx - MeshLoaderDx created.
+Fri Mar 30 18:09:24 INFO: TextureLoaderDx - TextureLoaderDx created.
+Fri Mar 30 18:09:24 INFO: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 30 18:09:24 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Fri Mar 30 18:09:24 INFO: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 30 18:09:24 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Fri Mar 30 18:09:24 INFO: ResourceManager - Texture 'skybox4_front.png' loaded.
+Fri Mar 30 18:09:24 INFO: ResourceManager - Texture 'skybox4_back.png' loaded.
+Fri Mar 30 18:09:25 INFO: ResourceManager - Texture 'skybox4_left.png' loaded.
+Fri Mar 30 18:09:25 INFO: ResourceManager - Texture 'skybox4_right.png' loaded.
+Fri Mar 30 18:09:25 INFO: ResourceManager - Texture 'skybox4_top.png' loaded.
+Fri Mar 30 18:09:25 INFO: ResourceManager - Texture 'skybox4_bottom.png' loaded.
+Fri Mar 30 18:09:25 INFO: ResourceManager - Texture 'terrainbrown.jpg' loaded.
+Fri Mar 30 18:09:25 WARNING: Terrain - File not found.
+Fri Mar 30 18:09:25 INFO: Terrain - VertexBuffer is successfully filled.
+Fri Mar 30 18:09:25 INFO: Kernel - Scenes are successfully prepared.
+Fri Mar 30 18:09:25 INFO: Mouse - Succesfully Acquired.
+Fri Mar 30 18:09:25 INFO: Mouse - Created.
+Fri Mar 30 18:09:25 INFO: Keyboard - Succesfully Acquired.
+Fri Mar 30 18:09:25 INFO: Keyboard - Created.
+Fri Mar 30 18:09:25 INFO: InputManager - InputManager created.
+Fri Mar 30 18:09:25 INFO: Kernel - Added as listener.
+Fri Mar 30 18:09:25 INFO: Kernel - Level is successfully loaded.
+Fri Mar 30 18:09:25 INFO: Kernel - Running.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: Kernel - Running.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: Kernel - Running.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: Kernel - Running.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: Kernel - Running.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: Kernel - Running.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: Kernel - Running.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: Kernel - Running.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: Kernel - Running.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: Kernel - Running.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:25 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:26 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:27 INFO: Kernel - Running.
+Fri Mar 30 18:09:28 INFO: Kernel - Running.
+Fri Mar 30 18:09:28 INFO: Kernel - Running.
+Fri Mar 30 18:09:28 INFO: Kernel - Running.
+Fri Mar 30 18:09:28 INFO: Kernel - Running.
+Fri Mar 30 18:09:28 INFO: Kernel - Running.
+Fri Mar 30 18:09:28 INFO: Kernel - Running.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Fri Mar 30 18:25:31 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Fri Mar 30 18:25:31 INFO: Kernel - Created.
+Fri Mar 30 18:25:31 INFO: WindowManager - SetWindowClassEx successful.
+Fri Mar 30 18:25:31 INFO: WindowManager - Created
+Fri Mar 30 18:25:31 INFO: SceneManager - SceneManager created
+Fri Mar 30 18:25:31 INFO: ResourceManager - Created.
+Fri Mar 30 18:25:31 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Fri Mar 30 18:25:31 INFO: Kernel - Loading level...
+Fri Mar 30 18:25:31 INFO: Window - Created handler for window with title:'Choo Choo'
+Fri Mar 30 18:25:31 INFO: Window - Window created.
+Fri Mar 30 18:25:31 INFO: Camera - Camera created.
+Fri Mar 30 18:25:31 WARNING: Scene - Unable to read level file. (..\Levels\level1.txt)
+Fri Mar 30 18:25:31 INFO: EntityModel - Created.
+Fri Mar 30 18:25:31 INFO: Scene - EntityModel created
+Fri Mar 30 18:25:31 INFO: EntityModel - Created.
+Fri Mar 30 18:25:31 INFO: Scene - EntityModel created
+Fri Mar 30 18:25:31 INFO: Terrain - Terrain created.
+Fri Mar 30 18:25:31 INFO: Scene - Scene created.
+Fri Mar 30 18:25:31 INFO: Scene created
+Fri Mar 30 18:25:31 INFO: MeshLoaderDx - MeshLoaderDx created.
+Fri Mar 30 18:25:31 INFO: TextureLoaderDx - TextureLoaderDx created.
+Fri Mar 30 18:25:31 INFO: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 30 18:25:31 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Fri Mar 30 18:25:31 INFO: ResourceManager - Resource 'Tiger.x' loaded.
+Fri Mar 30 18:25:31 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Fri Mar 30 18:25:31 INFO: ResourceManager - Texture 'skybox4_front.png' loaded.
+Fri Mar 30 18:25:31 INFO: ResourceManager - Texture 'skybox4_back.png' loaded.
+Fri Mar 30 18:25:32 INFO: ResourceManager - Texture 'skybox4_left.png' loaded.
+Fri Mar 30 18:25:32 INFO: ResourceManager - Texture 'skybox4_right.png' loaded.
+Fri Mar 30 18:25:32 INFO: ResourceManager - Texture 'skybox4_top.png' loaded.
+Fri Mar 30 18:25:32 INFO: ResourceManager - Texture 'skybox4_bottom.png' loaded.
+Fri Mar 30 18:25:32 INFO: ResourceManager - Texture 'terrainbrown.jpg' loaded.
+Fri Mar 30 18:25:32 WARNING: Terrain - File not found.
+Fri Mar 30 18:25:32 INFO: Terrain - VertexBuffer is successfully filled.
+Fri Mar 30 18:25:32 INFO: Kernel - Scenes are successfully prepared.
+Fri Mar 30 18:25:32 INFO: Mouse - Succesfully Acquired.
+Fri Mar 30 18:25:32 INFO: Mouse - Created.
+Fri Mar 30 18:25:32 INFO: Keyboard - Succesfully Acquired.
+Fri Mar 30 18:25:32 INFO: Keyboard - Created.
+Fri Mar 30 18:25:32 INFO: InputManager - InputManager created.
+Fri Mar 30 18:25:32 INFO: Kernel - Added as listener.
+Fri Mar 30 18:25:32 INFO: Kernel - Level is successfully loaded.
+Fri Mar 30 18:25:32 INFO: Kernel - Running.
+Fri Mar 30 18:25:32 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:32 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:32 INFO: Kernel - Running.
+Fri Mar 30 18:25:32 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:32 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:32 INFO: Kernel - Running.
+Fri Mar 30 18:25:32 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:32 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: Kernel - Running.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:33 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: InputManager - Got a mouse.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:34 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:35 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.
+Fri Mar 30 18:25:36 INFO: Kernel - Running.

@@ -68,7 +68,7 @@ void WindowManagerFacade::CreateNewWindow(std::string _name, int _top, int _left
 		sceneManager->SplitScenes(sceneManager->GetScenesByLevelIndex(_levelIndex), windowManager->GetActiveWindow()->GetRectangleBackBuffer(renderer));
 	}
 
-	resourceManager->InitResourceLoader(renderer->GetDevice());
+	resourceManager->InitResourceLoader(renderer);
 	sceneManager->PrepareScenes(resourceManager, renderer);
 
 	if (!inputManager)

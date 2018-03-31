@@ -1,11 +1,13 @@
 #include "Texture.h"
 
-/// <summary>
-/// Finalizes an instance of the <see cref="Texture"/> class.
-/// </summary>
+Texture::Texture(std::string _fileName)
+{
+	fileName = _fileName;
+}
+
 Texture::~Texture()
 {
-
+	
 }
 
 void Texture::SetTextures(void* _meshTextures)

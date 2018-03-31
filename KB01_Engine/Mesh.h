@@ -1,8 +1,10 @@
 #ifndef __MESH_H__
 #define __MESH_H__
 
-#include "Texture.h"
 #include "Resource.h"
+
+#include "Texture.h"
+#include "d3dx9.h"
 
 class Mesh : public Resource
 {
@@ -10,8 +12,10 @@ private:
 	Texture*					texture;
 
 public:
-	Mesh(std::string _fileName) : Resource(_fileName) {};
+	Mesh(std::string _fileName);
 	~Mesh();
+
+	virtual void				Cleanup();
 
 	void*						meshTextures; // Textures for our mesh
 	void*						meshMaterials = NULL; // Materials for our mesh
@@ -26,7 +30,7 @@ public:
 	UINT						GetNumberOfMaterials();
 	void						SetMesh(void* _mesh);
 	void*						GetMesh();
-	virtual void				Cleanup();
+
 };
 
 #endif

@@ -9,7 +9,7 @@ private:
 	ResourceManager* resourceManager;
 //	Renderer* renderer;
 
-	void InitResourceLoaders(void* _device);
+	void InitResourceLoaders(Renderer* _renderer);
 public:
 	ResourceManagerFacade();
 	~ResourceManagerFacade();

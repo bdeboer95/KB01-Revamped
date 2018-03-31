@@ -15215,3 +15215,654 @@ Fri Mar 30 18:25:36 INFO: Kernel - Running.
 Fri Mar 30 18:25:36 INFO: Kernel - Running.
 Fri Mar 30 18:25:36 INFO: Kernel - Running.
 Fri Mar 30 18:25:36 INFO: Kernel - Running.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sat Mar 31 17:50:28 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sat Mar 31 17:50:28 INFO: Kernel - Created.
+Sat Mar 31 17:50:28 INFO: WindowManager - SetWindowClassEx successful.
+Sat Mar 31 17:50:28 INFO: WindowManager - Created
+Sat Mar 31 17:50:28 INFO: SceneManager - SceneManager created
+Sat Mar 31 17:50:28 INFO: ResourceManager - Created.
+Sat Mar 31 17:50:28 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sat Mar 31 17:50:28 INFO: Kernel - Loading level...
+Sat Mar 31 17:50:28 INFO: Window - Created handler for window with title:'Choo Choo'
+Sat Mar 31 17:50:28 INFO: Window - Window created.
+Sat Mar 31 17:50:29 INFO: Camera - Camera created.
+Sat Mar 31 17:50:29 WARNING: Scene - Unable to read level file. (..\Levels\level1.txt)
+Sat Mar 31 17:50:29 INFO: EntityModel - Created.
+Sat Mar 31 17:50:29 INFO: Scene - EntityModel created
+Sat Mar 31 17:50:29 INFO: EntityModel - Created.
+Sat Mar 31 17:50:29 INFO: Scene - EntityModel created
+Sat Mar 31 17:50:29 INFO: Terrain - Terrain created.
+Sat Mar 31 17:50:29 INFO: Scene - Scene created.
+Sat Mar 31 17:50:29 INFO: Scene created
+Sat Mar 31 17:50:29 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sat Mar 31 17:50:29 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sat Mar 31 17:50:29 INFO: ResourceManager - Resource 'Tiger.x' loaded.
+Sat Mar 31 17:50:29 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sat Mar 31 17:50:29 INFO: ResourceManager - Resource 'Tiger.x' loaded.
+Sat Mar 31 17:50:29 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sat Mar 31 17:50:29 INFO: ResourceManager - Texture 'skybox4_front.png' loaded.
+Sat Mar 31 17:50:29 INFO: ResourceManager - Texture 'skybox4_back.png' loaded.
+Sat Mar 31 17:50:30 INFO: ResourceManager - Texture 'skybox4_left.png' loaded.
+Sat Mar 31 17:50:30 INFO: ResourceManager - Texture 'skybox4_right.png' loaded.
+Sat Mar 31 17:50:30 INFO: ResourceManager - Texture 'skybox4_top.png' loaded.
+Sat Mar 31 17:50:30 INFO: ResourceManager - Texture 'skybox4_bottom.png' loaded.
+Sat Mar 31 17:50:30 INFO: ResourceManager - Texture 'terrainbrown.jpg' loaded.
+Sat Mar 31 17:50:30 WARNING: Terrain - File not found.
+Sat Mar 31 17:50:30 INFO: Terrain - VertexBuffer is successfully filled.
+Sat Mar 31 17:50:30 INFO: Kernel - Scenes are successfully prepared.
+Sat Mar 31 17:50:30 ERROR: Mouse - Failed to Acquire mouse.
+Sat Mar 31 17:50:30 INFO: Mouse - Created.
+Sat Mar 31 17:50:30 WARNING: Keyboard - Failed to Acquire keyboard.
+Sat Mar 31 17:50:30 INFO: Keyboard - Created.
+Sat Mar 31 17:50:30 INFO: InputManager - InputManager created.
+Sat Mar 31 17:50:30 INFO: Kernel - Added as listener.
+Sat Mar 31 17:50:30 INFO: Kernel - Level is successfully loaded.
+Sat Mar 31 17:50:30 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:31 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:32 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:33 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: Keyboard - Succesfully Acquired.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: Kernel - Running.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:34 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: Kernel - Running.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:35 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: InputManager - Got a mouse.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:36 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:37 INFO: Kernel - Running.
+Sat Mar 31 17:50:38 INFO: Kernel - Running.
+Sat Mar 31 17:50:38 INFO: Kernel - Running.

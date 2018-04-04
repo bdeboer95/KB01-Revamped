@@ -1,5 +1,7 @@
 #include "Skybox.h"
-
+#define KEYDOWN(name, key) (name[key])
+#define MSTATE(name, key) (name[key])
+#include <dinput.h>
 Skybox::Skybox(Skybox_Cube _skyboxCube)
 {
 	skyboxCube = _skyboxCube;
@@ -9,7 +11,40 @@ Skybox::~Skybox()
 {
 
 }
+/// <summary>
+/// Notifies the specified state.
+/// </summary>
+/// <param name="state">The array with the current state of the devices.</param>
+void Skybox::Notify(byte _state[])
+{
+	if (KEYDOWN(DIK_W, _state))
+	{
+		SetRotation(3);
 
+	}
+
+	if (KEYDOWN(DIK_A, _state))
+	{
+		SetRotation(4);
+
+	}
+
+	if (KEYDOWN(DIK_S, _state))
+	{
+		SetRotation(1);
+
+	}
+
+	if (KEYDOWN(DIK_D, _state))
+	{
+		SetRotation(2);
+
+	}
+	if (MSTATE(0, _state))
+	{
+		std::cout << "LINKS";
+	}
+}
 bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager)
 {
 	HRESULT hr = 0;
@@ -140,7 +175,7 @@ void Skybox::LoadTextures(ResourceManager* _resourceManager)
 void Skybox::Render(Renderer* _renderer)
 {
 	LPDIRECT3DDEVICE9 device = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
-	D3DXMATRIX matWorld, matWorldX, matWorldY, matWorldZ;
+	
 
 	D3DXMatrixTranslation(&matWorld, 0, -0.1f, 3);
 	device->SetTransform(D3DTS_WORLD, &matWorld);

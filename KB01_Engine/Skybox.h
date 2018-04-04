@@ -5,7 +5,7 @@
 #include "d3dx9.h"
 #include "Renderer.h"
 #include "ResourceManager.h"
-
+#include "InputListener.h"
 struct Vertex
 {
 	Vertex(){}     
@@ -33,12 +33,19 @@ struct Skybox_Cube
 	std::string			front;
 };
 
-class Skybox
+class Skybox: public InputListener
 {
 private:
 	LPD3DXMESH          mesh;
 	Texture*			textures[6];  
 	Skybox_Cube			skyboxCube;
+	D3DXMATRIX matRotateX;
+	D3DXMATRIX matRotateY;
+	D3DXMATRIX matRotateZ;
+	D3DXMATRIX matWorld;
+	D3DXMATRIX matWorldX;
+	D3DXMATRIX matWorld;
+	D3DXMATRIX matWorldZ;
 	void				LoadTextures(ResourceManager* _resourceManager);
 
 public:
@@ -48,7 +55,8 @@ public:
 	bool				SetTexture(std::string _TextureFilePath, int id);  
 	bool				InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager);
 	std::wstring		StrToWStr(std::string str);
-	void				Render(Renderer* _renderer);				
+	void				Render(Renderer* _renderer);	
+	virtual void		Notify(byte _state[]);
 };
 
 #endif

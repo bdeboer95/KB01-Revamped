@@ -82,9 +82,9 @@ Texture* ResourceManager::LoadTexture(std::string _filePath, std::string _fileNa
 		Log::Instance()->LogMessage("ResourceManager - Texture '" + _fileName + "' loaded.", Log::MESSAGE_INFO);
 	}
 
-
 	return texture;
 }
+
 /// <summary>
 /// Deletes all resources.
 /// </summary>

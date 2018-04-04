@@ -165,28 +165,22 @@ void InputManager::DeleteAllDevices()
 /// <returns></returns>
 Mouse* InputManager::GetMouse()
 {
-	Mouse* mouse= NULL;
 	for (int i = 0; i < devices.size(); ++i)
 	{
-		if (static_cast<Mouse*>(devices[i])) {
-			mouse = static_cast<Mouse*>(devices[i]);
-	
-			Log::Instance()->LogMessage("InputManager - Got a mouse.", Log::MESSAGE_INFO);
-			return mouse;
+		if (static_cast<Mouse*>(devices[i]))
+		{
+			return static_cast<Mouse*>(devices[i]);
 		}
 	}
-	
 }
 
 Keyboard* InputManager::GetKeyboard()
 {
-	Keyboard* keyboard = NULL;
 	for (int i = 0; i < devices.size(); ++i)
 	{
-		if (static_cast<Keyboard*>(devices[i])) {
-			keyboard = static_cast<Keyboard*>(devices[i]);
+		if (static_cast<Keyboard*>(devices[i])) 
+		{
+			return static_cast<Keyboard*>(devices[i]);
 		}
 	}
-	return keyboard;
-
 }

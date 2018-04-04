@@ -13,8 +13,6 @@ private:
 	TextureLoaderDx* textureLoader;
 	std::vector<Texture*> textures;
 
-	Renderer* renderer;
-
 	void DeleteAllResources();
 	void Cleanup();
 

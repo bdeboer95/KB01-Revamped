@@ -98,9 +98,6 @@
     <ClCompile Include="Mouse.cpp">
       <Filter>Source Files\Devices</Filter>
     </ClCompile>
-    <ClCompile Include="ResourceModel.cpp">
-      <Filter>Source Files\Resources</Filter>
-    </ClCompile>
     <ClCompile Include="Scene.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
@@ -216,9 +213,6 @@
     </ClInclude>
     <ClInclude Include="RendererDx.h">
       <Filter>Header Files\Renderers</Filter>
-    </ClInclude>
-    <ClInclude Include="ResourceModel.h">
-      <Filter>Header Files\Resources</Filter>
     </ClInclude>
     <ClInclude Include="BMPLoader.h">
       <Filter>Header Files</Filter>

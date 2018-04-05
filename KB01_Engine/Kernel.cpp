@@ -135,8 +135,6 @@ bool Kernel::Run()
 		return false;
 	}
 
-	Log::Instance()->LogMessage("Kernel - Running.", Log::MESSAGE_INFO);
-
 	return true;
 }
 

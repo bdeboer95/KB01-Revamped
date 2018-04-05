@@ -18,6 +18,7 @@ Scene::Scene(int _levelIndex, HWND _hWnd, std::string _level)
 	//CreateEntityModel("Tiger.x", "luipard.jpg",0, 0, 5);
 	CreateEntityModel("Tiger.x", "zebra.jpg", 1, 0, 5);
 	CreateEntityModel("Tiger.x", "zebra3.bmp", 2, 0, 5);
+	CreateEntityModel("Tiger.x", "zebra3.bmp", 3, 0, 5);
 	terrain = new Terrain();
 	Log::Instance()->LogMessage("Scene - Scene created.", Log::MESSAGE_INFO);
 }

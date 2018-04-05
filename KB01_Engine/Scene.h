@@ -35,6 +35,7 @@ public:
 	void DeleteViewPort();
 	void SetUpCamera(Renderer* _renderer);
 	int GetLevelIndex();
+	Skybox* GetSkyBox();
 	HWND GetHandler();
 	void Render(Renderer* _renderer);
 	void ChangeRotation(Renderer* _renderer, int _rotation);

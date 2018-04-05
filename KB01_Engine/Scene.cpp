@@ -345,5 +345,9 @@ void Scene::GetTextureNameFromFile(std::string line)
 			textureNames.push_back(str.substr(3));
 		}
 	}
-
+	
+}
+Skybox* Scene::GetSkyBox()
+{
+	return skybox;
 }

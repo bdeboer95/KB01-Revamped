@@ -1,6 +1,6 @@
 #include "Keyboard.h"
 #include "Log.h"
-
+#include "InputListener.h"
 /// <summary>
 /// Initializes a new instance of the <see cref="Keyboard"/> class.
 /// </summary>
@@ -128,13 +128,41 @@ HRESULT Keyboard::PollDevice()
 {
 	return device->Poll();
 }
+/// <summary>
+/// Notifies all the inputlisteners that a key has been pressed
+/// </summary>
+/// <returns></returns>
+void Keyboard::NotifyListeners(std::vector<InputListener*> listeners) 
+{
+		for (int i = 0; i<listeners.size(); i++)
+		{
+			TRANSFORMATIONEVENT devent;
+			if (IsKeyDown(KEYCODE::W)) {
+				listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_BACKWARDS);
+			}
+			if (IsKeyDown(KEYCODE::S)) {
+				listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_FORWARD);
+			}
+			if (IsKeyDown(KEYCODE::D)) {
+				listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_LEFT);
+			}
+			if (IsKeyDown(KEYCODE::A)) {
+				listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_RIGHT);
+			}
+		}
+
+}
+
 
 /// <summary>
 /// Devices the state.
 /// </summary>
 /// <returns></returns>
-byte* Keyboard::GetKeyboardState()
+bool Keyboard::IsKeyDown(KEYCODE _keyCode)
 {
-	device->GetDeviceState(sizeof(state), (LPVOID)&state);
-	return state;
+	
+	//Keyboard_State[Key_Code];
+	device->GetDeviceState(256, (LPVOID)&state);
+	return (state[_keyCode] & 0x80) ? true : false;
 }
+

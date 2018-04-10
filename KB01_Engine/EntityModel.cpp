@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <dinput.h>
+#include "Observee.h"
 
 #define KEYDOWN(name, key) (name[key])
 #define MSTATE(name, key) (name[key])
@@ -9,14 +10,15 @@
 /// <summary>
 /// Initializes a new instance of the <see cref="EntityModel"/> class.
 /// </summary>
-EntityModel::EntityModel(std::string _fileName, std::string _textureName,float _positionX, float _positionY, float _positionZ)
+EntityModel::EntityModel(std::string _fileName, std::string _textureName, float _positionX, float _positionY, float _positionZ)
 {
 	fileName = _fileName;
 	texture = new Texture(_textureName);
 	Log::Instance()->LogMessage("EntityModel - Created.", Log::MESSAGE_INFO);
-	positionX =_positionX;
-	positionY =_positionY;
+	positionX = _positionX;
+	positionY = _positionY;
 	positionZ = _positionZ;
+	speed = 0.1f;
 }
 
 /// <summary>
@@ -49,17 +51,21 @@ void EntityModel::Render(Renderer* _renderer)
 void EntityModel::ChangeRotation(Renderer* _renderer)
 {
 	// Set up world matrix
-	D3DXMATRIXA16 matWorld;
-	D3DXMATRIXA16 matTranslate;
-	D3DXMATRIX matRotateX;
-	D3DXMATRIX matRotateY;
-	D3DXMATRIX matRotateZ;
+
+
 	LPDIRECT3DDEVICE9 pd3dDevice = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
-	
+
 	switch (rotation)
 	{
-		
+
 	case 0:
+		D3DXMatrixScaling(
+			&matScale, // Pointer to recieve computed matrix
+			1, // x=axis scale
+			1, // y-axis scale
+			1 // z-axis scale
+		);
+
 		D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
 		D3DXMatrixRotationX(&matRotateX, rotationX);
 		break;
@@ -91,7 +97,7 @@ void EntityModel::ChangeRotation(Renderer* _renderer)
 		break;
 	}
 	D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
-	matWorld = matTranslate*matRotateX;
+	matWorld = matScale*matTranslate*matRotateY*matRotateX;
 	pd3dDevice->SetTransform(D3DTS_WORLD, &matWorld);
 	SetRotation(0);
 }
@@ -102,8 +108,8 @@ void EntityModel::ChangeRotation(Renderer* _renderer)
 /// <param name="_renderer">The _renderer.</param>
 void EntityModel::SetupMatrices(Renderer* _renderer)
 {
-//	LPDIRECT3DDEVICE9 pd3dDevice = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
-//	D3DXMATRIX trans_matrix;
+	//renderer->setTransform(&matWorld)
+
 //
 //	D3DXMatrixTranslation(&trans_matrix,//Matrix
 //
@@ -175,8 +181,8 @@ void EntityModel::SetupMatrices(Renderer* _renderer)
 HRESULT EntityModel::InitGeometry(ResourceManager* _resourceManager)
 {
 	// Load the mesh from the specified file
-	mesh = _resourceManager->LoadMesh(fileName);
-	texture = _resourceManager->LoadTexture("..\\Assets\\Textures\\",texture->GetFileName());
+	mesh = _resourceManager->LoadMesh("..\\Assets\\Meshes\\", fileName);
+	texture = _resourceManager->LoadTexture("..\\Assets\\Textures\\", texture->GetFileName());
 	if (!mesh)
 	{
 		Log::Instance()->LogMessage("EntityModel - Geometry was failed to initialize.", Log::MESSAGE_ERROR);
@@ -208,33 +214,85 @@ int EntityModel::GetRotation()
 /// Notifies the specified state.
 /// </summary>
 /// <param name="state">The state.</param>
-void EntityModel::Notify(byte _state[])
+void EntityModel::Notify(TRANSFORMATIONEVENT transformationEvent)
 {
-	if (KEYDOWN(DIK_W, _state))
+	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_RIGHT)
 	{
-		SetRotation(3);
-
+		positionX = positionX - speed;
+	}
+	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_LEFT)
+	{
+		positionX = positionX + speed;
+	}
+	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_BACKWARDS)
+	{
+		positionZ = positionZ - speed;
+	}
+	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_FORWARD)
+	{
+		positionZ = positionZ + speed;
+	}
+	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
+	{
+		rotationY = rotationY + 0.010f;
+	}
+	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
+	{
+		rotationY = rotationY - 0.010f;
 	}
 
-	if (KEYDOWN(DIK_A, _state))
-	{
-		SetRotation(4);
-		
-	}
+	//}
+	//if (KEYDOWN(DIK_DOWN, _state)) {
+	//rotationX = rotationX - 0.010f;
 
-	if (KEYDOWN(DIK_S, _state))
-	{
-		SetRotation(1);
-		
-	}
+	//}
 
-	if (KEYDOWN(DIK_D, _state))
-	{
-		SetRotation(2);
-		
-	}
-	if (MSTATE(0, _state))
-	{
-		std::cout << "LINKS";
-	}
+	//if (KEYDOWN(DIK_UP, _state)) {
+	//rotationX = rotationX + 0.010f;
+
+	//}
+	//if (KEYDOWN(DIK_LEFT, _state)) {
+	//	rotationY = rotationY - 0.010f;
+
+	//}
+	//if (KEYDOWN(DIK_RIGHT, _state)) {
+	//	rotationY = rotationY + 0.010f;
+
+	//}
+	//if (KEYDOWN(DIK_A, _state))
+	//{
+
+
+	//	
+
+
+
+	//}
+
+	//if (KEYDOWN(DIK_S, _state))
+	//{
+	//	
+
+	//}
+
+	//if (KEYDOWN(DIK_D, _state))
+	//{
+	//	positionX = positionX + speed;
+
+
+	//}
+	//if (MSTATE(0, _state))
+	//{
+
+	//}
+	//if (rotationY >= 6.28f)
+	//	rotationY = 0.0f;
+
+	//if (rotationX >= 6.28f)
+	//	rotationX = 0.0f;
+
+	D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
+	D3DXMatrixRotationX(&matRotateX, rotationX);
+	D3DXMatrixRotationY(&matRotateY, rotationY);
+	matWorld = matScale*matTranslate*matRotateX*matRotateY;
 }

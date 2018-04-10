@@ -152,33 +152,33 @@ void Kernel::Step()
 /// Notifies the specified state.
 /// </summary>
 /// <param name="state">The state.</param>
-void Kernel::Notify(byte state[])
+void Kernel::Notify(TRANSFORMATIONEVENT transformationEvent)
 {
-	if (KEYDOWN(DIK_A, state))
-	{
-		std::cout << "DIK_A pressed." << std::endl;
-	}
+	//if (KEYDOWN(DIK_A, state))
+	//{
+	//	std::cout << "DIK_A pressed." << std::endl;
+	//}
 
-	if (inputManager->GetMouse()->GetMouseState().rgbButtons[0])
-	{
-		/*std::cout << "LINKS" << std::endl;*/
-	}
+	//if (inputManager->GetMouse()->GetMouseState().rgbButtons[0])
+	//{
+	//	std::cout << "LINKS" << std::endl;
+	//}
 
-	if (inputManager->GetMouse()->GetMouseState().rgbButtons[1])
-	{
-		std::cout << "RECHTS" << std::endl;;
-	}
+	//if (inputManager->GetMouse()->GetMouseState().rgbButtons[1])
+	//{
+	//	std::cout << "RECHTS" << std::endl;;
+	//}
 
-	if (KEYDOWN(DIK_D, state))
-	{
-		//windowManager->DeleteWindow(GetActiveWindow());
-	}
+	//if (KEYDOWN(DIK_D, state))
+	//{
+	//	//windowManager->DeleteWindow(GetActiveWindow());
+	//}
 
-	if (KEYDOWN(DIK_ESCAPE, state))
+	/*if (KEYDOWN(DIK_ESCAPE, state))
 	{
 		windowManager->DeleteAllWindows();
 		delete this;
-	}
+	}*/
 }
 
 /// <summary>

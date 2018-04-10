@@ -6,87 +6,131 @@ Skybox::Skybox(Skybox_Cube _skyboxCube)
 {
 	skyboxCube = _skyboxCube;
 	positionX = 0;
-	positionY = -0.1f;
+	positionY = 0;
 	positionZ = 3;
 	D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
-	matWorld = matTranslate*matRotateY*matRotateX;
+	D3DXMatrixScaling(
+		&matScale, // Pointer to recieve computed matrix
+		1000, // x=axis scale
+		1000, // y-axis scale
+		1000 // z-axis scale
+	);
+	matWorld = matScale*matTranslate*matRotateY*matRotateX;
+	speed = 1.0f;
+
 }
 
 Skybox::~Skybox()
 {
-	positionX = 0;
-	positionY = 0.1f;
-	positionZ = 10;
-	D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
-	matWorld = matTranslate*matRotateY*matRotateX;
+	
 }
 /// <summary>
 /// Notifies the specified state.
 /// </summary>
 /// <param name="state">The array with the current state of the devices.</param>
-void Skybox::Notify(byte _state[])
+void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent)
 {
-	if (KEYDOWN(DIK_W, _state))
+	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_RIGHT)
 	{
-		//move backwards
-		rotationX = 0.0f;
-		positionZ = positionZ - 0.01f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
-
+		positionX = positionX - speed;
 	}
-	if (KEYDOWN(DIK_DOWN, _state)) {
-		rotationX = rotationX - 0.010f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
+	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_LEFT)
+	{
+		positionX = positionX + speed;
 	}
-
-	if (KEYDOWN(DIK_UP, _state)) {
-		rotationX = rotationX + 0.010f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
+	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_BACKWARDS)
+	{
+		positionZ = positionZ - speed;
 	}
-	if (KEYDOWN(DIK_LEFT, _state)) {
-		rotationY = rotationY - 0.010f;
-		
+	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_FORWARD)
+	{
+		positionZ = positionZ + speed;
 	}
-	if (KEYDOWN(DIK_RIGHT, _state)) {
+	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
+	{
 		rotationY = rotationY + 0.010f;
-
 	}
-	if (KEYDOWN(DIK_A, _state))
+	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
 	{
-			/*	[1, 0, 0, 0]
-		Rx =	[0, cos(r), sin(r), 0]
-				[0, -sin(r), cos(r), 0]
-				[0, 0, 0, 1]*/
-
-		positionX = positionX - 0.01f;
+		rotationY = rotationY - 0.010f;
+	}
 	
-		D3DXMatrixRotationX(&matRotateX, rotationX);
+	//if (KEYDOWN(DIK_W, _state))
+	//{
+	//	//move backwards
+	//	positionZ = positionZ - 1.0f;
 
-	}
+	//}
+	//if (KEYDOWN(DIK_DOWN, _state)) {
+	//	rotationX = rotationX - 0.010f;
 
-	if (KEYDOWN(DIK_S, _state))
+	//}
+
+	//if (KEYDOWN(DIK_UP, _state)) {
+	//	rotationX = rotationX + 0.010f;
+
+	//}
+	//if (KEYDOWN(DIK_LEFT, _state)) {
+	//	rotationY = rotationY - 0.010f;
+	//	
+	//}
+	//if (KEYDOWN(DIK_RIGHT, _state)) {
+	//	rotationY = rotationY + 0.010f;
+
+	//}
+	//if (KEYDOWN(DIK_A, _state))
+	//{
+
+
+	//	positionX = positionX - 1.0f;
+	//
+	//	
+
+	//}
+
+	/*if (KEYDOWN(DIK_S, _state))
 	{
-		positionZ = positionZ + 0.01f;
-		//positionX = positionY + 0.1f;
-		//D3DXMatrixRotationX(&matRotateX, rotationX);
+		positionZ = positionZ + speed;
 
 	}
 
 	if (KEYDOWN(DIK_D, _state))
 	{
-		positionX = positionX + 0.01f;
-		rotationX -= 0.010f;
-		//D3DXMatrixRotationX(&matRotateX, rotationX);;
-
-	}
-	if (MSTATE(0, _state))
-	{
+		positionX = positionX + speed;
 	
-	}
+
+	}*/
+	//D3DXVECTOR2 Mouse;
+	//if (MSTATE(0, _state))
+	//{
+
+	//	/*if (Mouse.x > Width) Mouse.x = (float)Width;
+
+	//	if (Mouse.y < 0) Mouse.x = 0;
+
+
+
+	//	if (Mouse.x > Height) Mouse.y = (float)Height;
+
+	//	if (Mouse.y < 0) Mouse.y = 0;
+
+
+
+	//	Camera_Angle.x += Mouse_State.lY;
+
+	//	Camera_Angle.y += Mouse_State.lX;*/
+
+	//}
+	if (rotationY>= 6.28f)
+		rotationY = 0.0f;
+
+	if (rotationX >= 6.28f)
+		rotationX = 0.0f;
 
 	D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
+	D3DXMatrixRotationX(&matRotateX, rotationX);
 	D3DXMatrixRotationY(&matRotateY, rotationY);
-	matWorld = matTranslate*matRotateX*matRotateY;
+	matWorld = matScale*matTranslate*matRotateX*matRotateY;
 	
 }
 
@@ -107,10 +151,7 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 	//v[2] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f);
 	//v[3] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f);
 	//
-	//v[4] = Vertex(-1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
-	//v[5] = Vertex(-1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f);
-	//v[6] = Vertex(1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f);
-	//v[7] = Vertex(1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f);
+	
 	// 
 	//v[8] = Vertex(-1.0f, -1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
 	//v[9] = Vertex(-1.0f, 1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f);
@@ -132,17 +173,16 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 	//v[22] = Vertex(1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f);
 	//v[23] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f);
 
-	v[0] = Vertex(-1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f);
-	v[1] = Vertex(-1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f);
-	v[2] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f);  //FRONT
-	v[3] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f);
+	v[0] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f);
+	v[1] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f);
+	v[2] = Vertex(-1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f);  //FRONT
+	v[3] = Vertex(-1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
 
 	v[4] = Vertex(1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
 	v[5] = Vertex(1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f); //BACK
 	v[6] = Vertex(-1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f);
 	v[7] = Vertex(-1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f);
-	 
-
+	
 	v[8] = Vertex(-1.0f, -1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
 	v[9] = Vertex(-1.0f, 1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f);  //LEFT
 	v[10] = Vertex(-1.0f, 1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f);
@@ -251,10 +291,11 @@ void Skybox::Render(Renderer* _renderer)
 {
 	LPDIRECT3DDEVICE9 device = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
 	
-	device->SetTransform(D3DTS_WORLD, &matWorld);
+	device->SetTransform(D3DTS_WORLD, &matWorld); //settrasnform moet in renderer
 	//device->SetTransform(D3DTS_WORLD, &matRotate);
 	//Disables the zbuffer for writing
-	static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);
+	/*static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);*/
+	device->SetRenderState(D3DRS_ZENABLE, false);
 	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);
 
 	//Loops through every square side of the cube
@@ -264,10 +305,11 @@ void Skybox::Render(Renderer* _renderer)
 		_renderer->DrawSubset(mesh,i); // draws 
 	}
 	
-	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW);
+	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW); //dit ook in renderer
 
 	//Enables the zbuffer for writing
-	device->SetRenderState(D3DRS_ZWRITEENABLE, true);
+	//device->SetRenderState(D3DRS_ZWRITEENABLE, true);
+	device->SetRenderState(D3DRS_ZENABLE, true);
 }
 void Skybox::Multiply(D3DXMATRIX* _originalMat, D3DXMATRIX* _modifiedMat)
 {

@@ -5,7 +5,6 @@
 //-----------------------------------------------------------------------------
 
 #include "InputManager.h"
-
 #include "Window.h"
 
 #include <iostream>
@@ -94,37 +93,12 @@ void InputManager::Update()
 {
 	for (int i = 1; i < devices.size(); ++i)
 	{
-		if (SUCCEEDED(static_cast<Keyboard*>(devices[i])->PollDevice()))
-		{
-			NotifyListeners(static_cast<Keyboard*>(devices[i])->GetKeyboardState());
-		}
-		else
-		{
-			static_cast<Keyboard*>(devices[i])->AcquireDevice();
-		}
-
-		//if (SUCCEEDED(static_cast<Mouse*>(devices[0])->PollDevice()))
-		//{
-		//	NotifyListeners(static_cast<Mouse*>(devices[0])->GetMouseState().rgbButtons);
-		//}
-		//else
-		//{
-		//	static_cast<Mouse*>(devices[0])->AcquireDevice();
-		//}
+		std::cout << "once" << std::endl;
+		devices[i]->NotifyListeners(listeners);
 	}
+	std::cout << "end" << std::endl;
 }
 
-/// <summary>
-/// Notifies the listeners.
-/// </summary>
-/// <param name="state">The state.</param>
-void InputManager::NotifyListeners(byte state[])
-{
-	for (unsigned int i = 0; i < listeners.size(); i++)
-	{
-		listeners[i]->Notify(state);
-	}
-}
 
 /// <summary>
 /// Deletes all listeners.

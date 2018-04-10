@@ -262,5 +262,11 @@
     <ClInclude Include="MeshLoaderDx.h">
       <Filter>Header Files\Resourceloaders</Filter>
     </ClInclude>
+    <ClInclude Include="Observee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationEvent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -6,6 +6,7 @@
 #include "Renderer.h"
 #include "ResourceManager.h"
 #include "InputListener.h"
+#include "Entity.h"
 struct Vertex
 {
 	Vertex(){}     	
@@ -33,7 +34,7 @@ struct Skybox_Cube
 		std::string			front; //filename for front side of the cube
 };
 
-class Skybox: public InputListener
+class Skybox: public InputListener, Entity
 {
 private:
 	LPD3DXMESH          mesh;
@@ -46,13 +47,12 @@ private:
 	float				rotationX;
 	float				rotationY;
 	float				rotationZ;
+	float				speed;
 	D3DXMATRIX matRotateX; //the matrix for the rotation on the x-axis
 	D3DXMATRIX matRotateY;//the matrix for the rotation on the y-axis
 	D3DXMATRIX matRotateZ;//the matrix for the rotation on the z-axis
-	D3DXMATRIX matWorld;
-	D3DXMATRIX* matWorldX;
-	D3DXMATRIX* matWorldY;
-	D3DXMATRIX* matWorldZ;
+	D3DXMATRIX matWorld; //the matrix that contains  the multiplication of all the modification matrices (scale, rotate, translate)
+	D3DXMATRIX matScale; //the matrix for the scaling of the skybox
 	D3DXMATRIX matTranslate;
 	void				LoadTextures(ResourceManager* _resourceManager);
 
@@ -64,7 +64,7 @@ public:
 	bool				InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager);
 	std::wstring		StrToWStr(std::string str); //Convert String to WSTR TODO: do we need this?
 	void				Render(Renderer* _renderer); //	
-	virtual void		Notify(byte _state[]); //The skybox needs to move/rotation every time the system detects a change of state for the devices connected
+	virtual void		Notify(TRANSFORMATIONEVENT transformationEvent); //The skybox needs to move/rotation every time the system detects a change of state for the devices connected
 	virtual void		Multiply(D3DXMATRIX* _originalMat, D3DXMATRIX* _modifiedMat); 
 };
 

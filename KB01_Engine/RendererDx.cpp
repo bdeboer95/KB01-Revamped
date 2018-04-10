@@ -308,7 +308,8 @@ void RendererDx::InitCamera()
 	D3DXVECTOR3 m_right = D3DXVECTOR3(1.0f, 0.0f, 0.0f);
 	D3DXMatrixLookAtLH(&matView, &cameraPosition, &cameraTarget, &cameraUpVector);
 	static_cast<LPDIRECT3DDEVICE9>(GetDevice())->SetTransform(D3DTS_VIEW, &matView);
-	D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 4, 1.0f, 1.0f, 1000.0f);
+	D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 4, 1.0f, 1.0f,2000.0f);
+	                                                          //
 	static_cast<LPDIRECT3DDEVICE9>(GetDevice())->SetTransform(D3DTS_PROJECTION, &matProj);
 
 }

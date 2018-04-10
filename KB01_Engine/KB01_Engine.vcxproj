@@ -19,6 +19,7 @@
     <ClInclude Include="KernelInterface.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Observee.h" />
     <ClInclude Include="ResourceLoader.h" />
     <ClInclude Include="Heightmap.h" />
     <ClInclude Include="Device.h" />
@@ -43,6 +44,7 @@
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureLoaderDx.h" />
     <ClInclude Include="DXVector3.h" />
+    <ClInclude Include="TransformationEvent.hpp" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="WindowManagerFacade.h" />

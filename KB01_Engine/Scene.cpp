@@ -93,15 +93,15 @@ HRESULT Scene::SetupGeometry(ResourceManager* _resourceManager, Renderer* _rende
 		}
 	}
 	Skybox_Cube sky;
-	sky.back = "skybox4_back.png";
-	sky.top = "skybox4_top.png";
-	sky.left = "skybox4_left.png";
-	sky.front = "skybox4_front.png";
-	sky.bottom = "skybox4_bottom.png";
-	sky.right = "skybox4_right.png";
+	sky.back = "skybox3_back.tga";
+	sky.top = "skybox3_top.tga";
+	sky.left = "skybox3_left.tga";
+	sky.front = "skybox3_front.tga";
+	sky.bottom = "skybox3_bottom.tga";
+	sky.right = "skybox3_right.tga";
 	skybox = new Skybox(sky);
 	skybox->InitGeometry(_renderer, _resourceManager);
-	terrain->Initialize(_renderer, _resourceManager->LoadTexture("..\\Textures\\Terrain\\", "terrainbrown.jpg"));
+	terrain->Initialize(_renderer, _resourceManager->LoadTexture("..\\Assets\\Textures\\Terrain\\", "terrainbrown.jpg"));
 	ShowWindow(hWnd, SW_MAXIMIZE);
 	UpdateWindow(hWnd);
 	return S_OK;
@@ -140,7 +140,7 @@ void Scene::Render(Renderer* _renderer)
 	}
 
 	skybox->Render(_renderer);
-	terrain->Render(_renderer);
+	//terrain->Render(_renderer);
 	for each(Entity* entity in entityModels)
 	{
 		if (dynamic_cast<EntityModel*>(entity))

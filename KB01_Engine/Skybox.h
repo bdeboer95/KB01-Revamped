@@ -7,6 +7,7 @@
 #include "ResourceManager.h"
 #include "InputListener.h"
 #include "Entity.h"
+
 struct Vertex
 {
 	Vertex(){}     	

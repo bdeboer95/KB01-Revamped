@@ -11,8 +11,9 @@ Modified : 12/05/2005
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#include "stdafx.h"
 #include "CTerrain.h"
+#include "Log.h"
+#include "Renderer.h"
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 Summary: Default constructor.
@@ -31,7 +32,7 @@ CTerrain::CTerrain()
 	D3DXMatrixTranslation((D3DXMATRIX*)&matTranslate, positionX, positionY, positionZ);
 	D3DXMatrixScaling((D3DXMATRIX*)&matScale, // Pointer to recieve computed matrix
 		10, // x=axis scale
-		2, // y-axis scale
+		2, // y-axis scalee
 		10 // z-axis scale
 	);
 	matWorld = matScale * matTranslate ;
@@ -64,10 +65,10 @@ void CTerrain::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 	{
 
 	}
-	D3DXMatrixTranslation((D3DXMATRIX*)&matTranslate, positionX, positionY, positionZ);
-	D3DXMatrixRotationX((D3DXMATRIX*)&matRotateX, rotationX);
-	D3DXMatrixRotationY((D3DXMATRIX*)&matRotateY, rotationY);
-	matWorld = matScale * matTranslate  * matRotateX* matRotateY;
+	D3DXMatrixTranslation((D3DXMATRIX*)&matTranslate, positionX, positionY, positionZ); //move this to the matrix class todo
+	D3DXMatrixRotationX((D3DXMATRIX*)&matRotateX, rotationX); //move this to the matrix class todo
+	D3DXMatrixRotationY((D3DXMATRIX*)&matRotateY, rotationY); //move this to the matrix class todo
+	matWorld = matScale * matTranslate  * matRotateX* matRotateY; //move this to the matrix class todo
 }
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 Summary: Create a new Terrain object.
@@ -84,45 +85,42 @@ BOOL CTerrain::Initialize( LPDIRECT3DDEVICE9 pDevice, char *rawFile, char *terra
     char path[MAX_PATH] = {0};
    
     std::ifstream heightStream;
-	//Open the file with the height data with this specific name
+	//Open the file with the height data with this specific name and path --> this needs to go to the resource manager TODO
 	heightStream.open(L"..\\Assets\\Heightmaps\\heightMap.raw", std::ios::binary);
 	if (heightStream.fail())
 	{
+		Log::Instance()->LogMessage("Terrain - Heightmap file could not be found.", Log::MESSAGE_WARNING);
+
 		return false;
 	}
-    //{
-    //   // SHOWERROR( "Could not open height file.", __FILE__, __LINE__ );
-    //    return FALSE;
-    //}
-
     // Get number of vertices
-    heightStream.seekg( 0, std::ios::end );
-    m_numVertices = heightStream.tellg();
-    heightStream.seekg( 0, std::ios::beg );
+    heightStream.seekg( 0, std::ios::end ); //use seekg to move the position of the next character to be extracted to the last character
+    m_numVertices = heightStream.tellg();  //read the file and returns the position of this last character
+    heightStream.seekg( 0, std::ios::beg ); //returns the position to the beginning of the file
 
     // Allocate memory and read the data
-    m_pHeight = new UCHAR[m_numVertices];
+    m_pHeight = new unsigned char[m_numVertices];
     heightStream.read( (char *)m_pHeight, m_numVertices );
     heightStream.close();
 
     // Generate vertices
-    UINT width = (int)sqrt( (float)m_numVertices );
-    cuCustomVertex::PositionTextured* pVertices = NULL; 
+    unsigned int width = (int)sqrt( (float)m_numVertices );
+    cuCustomVertex::PositionTextured* pVertices = NULL;  
     CTriangleStripPlane::GeneratePositionTexturedWithHeight( &pVertices, width, width, m_pHeight );
-    m_vb.CreateBuffer( pDevice, m_numVertices, D3DFVF_XYZ | D3DFVF_TEX1, sizeof( cuCustomVertex::PositionTextured ) );
-    m_vb.SetData( m_numVertices, pVertices, 0 );
+    m_vb.CreateBuffer( pDevice, m_numVertices, D3DFVF_XYZ | D3DFVF_TEX1, sizeof( cuCustomVertex::PositionTextured ) ); //move this to the renderer TODO define somewhere
+    m_vb.SetData( m_numVertices, pVertices, 0 );//move this to the renderer TODO
 
     // Generate indices
     int* pIndices = NULL;
-    m_numIndices = CTriangleStripPlane::GenerateIndices( &pIndices, width, width );
-    m_ib.CreateBuffer( pDevice, m_numIndices, D3DFMT_INDEX32 );
-    m_ib.SetData( m_numIndices, pIndices, 0 );
-    m_vb.SetIndexBuffer( &m_ib );
+    m_numIndices = CTriangleStripPlane::GenerateIndices( &pIndices, width, width ); //generate how many indices are needed for the trianglestrip
+    m_ib.CreateBuffer( pDevice, m_numIndices, D3DFMT_INDEX32 ); //put this is in an enum : TODO //move this to the renderer TODO
+    m_ib.SetData( m_numIndices, pIndices, 0 );//move this to the renderer TODO
+    m_vb.SetIndexBuffer( &m_ib );//move this to the renderer TODO
     
 	CUtility::GetMediaFile("terrain.jpg", "..\\Assets\\Textures\\Terrain\\");
-    if ( FAILED( D3DXCreateTextureFromFile( pDevice, L"..\\Assets\\Textures\\Terrain\\terrainorange.jpg", &m_pTexture ) ) )
+    if ( FAILED( D3DXCreateTextureFromFile( pDevice, L"..\\Assets\\Textures\\Terrain\\terrainorange.jpg", &m_pTexture ) ) ) // to the resourcemanager or fileloader
     {
-       // SHOWERROR( "Unable to load terrain textures.", __FILE__, __LINE__ );
+		Log::Instance()->LogMessage("Terrain - Unable to load terrain textures.", Log::MESSAGE_WARNING);
         return FALSE;
 
     }
@@ -134,11 +132,11 @@ Summary: Renders the terrain.
 Parameters:
 [in] pDevice - D3D Device
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-void CTerrain::Render( LPDIRECT3DDEVICE9 pDevice )
+void CTerrain::Render(Renderer* renderer )
 {
-    pDevice->SetTransform( D3DTS_WORLD, &matWorld);
-    pDevice->SetTexture( 0, m_pTexture );
-    m_vb.Render( pDevice, m_numIndices - 2, D3DPT_TRIANGLESTRIP );
+	renderer->SetTransform(D3DTS_WORLD, &matWorld);
+	static_cast<LPDIRECT3DDEVICE9>(renderer->GetDevice())->SetTexture( 0, m_pTexture); // to renderer todo
+    m_vb.Render( static_cast<LPDIRECT3DDEVICE9>(renderer->GetDevice()), m_numIndices - 2, D3DPT_TRIANGLESTRIP ); // renderer->GetVertexBuffer.Render( renderer->GetDevice, m_numIndices - 2, D3DPT_TRIANGLESTRIP ); change for this
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 

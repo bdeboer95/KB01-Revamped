@@ -22,38 +22,41 @@ Modified : 12/05/2005
 #include "CIndexBuffer.h"
 #include "CustomVertex.h"
 #include "InputListener.h"
+#include "Renderer.h"
 
+ //forward declared classes, solution for associtions > dependencies?
 class CTerrain : public CWorldTransform, public InputListener
 {
 public:
 
 	CTerrain();
-	~CTerrain() { Release(); }
+	~CTerrain() { Release(); }//verboden
 	float positionX;
 	float positionY;
 	float positionZ;
 	float rotationX;
 	float rotationY;
 	BOOL Initialize(LPDIRECT3DDEVICE9 pDevice, char* rawFile, char* terrainTexture);
-	void Render(LPDIRECT3DDEVICE9 pDevice);
+	void Render(Renderer* renderer);
 	void Release();
 
 private:
 	CVertexBuffer m_vb;
 	CIndexBuffer m_ib;
 	LPDIRECT3DTEXTURE9 m_pTexture;
-	UCHAR* m_pHeight;
-	UINT m_numVertices;
-	UINT m_numIndices;
-	D3DXMATRIX			 matRotateX; //the matrix for the rotation on the x-axis
-	D3DXMATRIX			 matRotateY;//the matrix for the rotation on the y-axis
-	D3DXMATRIX			 matRotateZ;//the matrix for the rotation on the z-axis
-	D3DXMATRIX			 matWorld; //the matrix that contains  the multiplication of all the modification matrices (scale, rotate, translate)
-	D3DXMATRIX			 matScale; //the matrix for the scaling of the skybox
-	D3DXMATRIX			 matTranslate;
+	UCHAR*			 m_pHeight;
+	UINT			 m_numVertices;
+	UINT			 m_numIndices;
+	Matrix			 matRotateX; //the matrix for the rotation on the x-axis
+	Matrix			 matRotateY;//the matrix for the rotation on the y-axis
+	Matrix			 matRotateZ;//the matrix for the rotation on the z-axis
+	Matrix			 matWorld; //the matrix that contains  the multiplication of all the modification matrices (scale, rotate, translate)
+	Matrix			 matScale; //the matrix for the scaling of the skybox
+	Matrix			 matTranslate; //the matrix for the translation of the 
 	float speed;
 	void Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y);
 
 };
+
 
 #endif

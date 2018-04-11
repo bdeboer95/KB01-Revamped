@@ -400,8 +400,5 @@
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\stdafx.h">
       <Filter>Header Files\Scenes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTerrain.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

@@ -19,7 +19,6 @@
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CIndexBuffer.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CInput.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CMesh.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTerrain.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTimer.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTriangleStripPlane.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CustomVertex.h" />

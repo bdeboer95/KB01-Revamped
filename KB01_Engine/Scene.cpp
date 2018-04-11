@@ -141,7 +141,7 @@ void Scene::Render(Renderer* _renderer)
 	}
 
 	skybox->Render(_renderer);
-	terrain->Render(static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()));
+	terrain->Render(_renderer);
 	for each(Entity* entity in entityModels)
 	{
 		if (dynamic_cast<EntityModel*>(entity))

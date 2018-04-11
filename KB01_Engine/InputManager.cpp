@@ -91,12 +91,11 @@ HRESULT InputManager::AddListener(InputListener* listenerPtr)
 /// </summary>
 void InputManager::Update()
 {
-	for (int i = 1; i < devices.size(); ++i)
+	for (int i = 0; i < devices.size(); i++)
 	{
-		std::cout << "once" << std::endl;
 		devices[i]->NotifyListeners(listeners);
 	}
-	std::cout << "end" << std::endl;
+	
 }
 
 

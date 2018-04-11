@@ -28,8 +28,9 @@ Skybox::~Skybox()
 /// Notifies the specified state.
 /// </summary>
 /// <param name="state">The array with the current state of the devices.</param>
-void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent)
+void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 {
+
 	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_RIGHT)
 	{
 		positionX = positionX - speed;
@@ -48,11 +49,11 @@ void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent)
 	}
 	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
 	{
-		rotationY = rotationY + 0.010f;
+		rotationY = rotationY + x;
 	}
-	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
+	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_RIGHT)
 	{
-		rotationY = rotationY - 0.010f;
+		rotationY = rotationY - x;
 	}
 	
 	//if (KEYDOWN(DIK_W, _state))
@@ -100,9 +101,7 @@ void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent)
 	
 
 	}*/
-	//D3DXVECTOR2 Mouse;
-	//if (MSTATE(0, _state))
-	//{
+	
 
 	//	/*if (Mouse.x > Width) Mouse.x = (float)Width;
 
@@ -292,9 +291,8 @@ void Skybox::Render(Renderer* _renderer)
 	LPDIRECT3DDEVICE9 device = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
 	
 	device->SetTransform(D3DTS_WORLD, &matWorld); //settrasnform moet in renderer
-	//device->SetTransform(D3DTS_WORLD, &matRotate);
 	//Disables the zbuffer for writing
-	/*static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);*/
+	//static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);
 	device->SetRenderState(D3DRS_ZENABLE, false);
 	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);
 

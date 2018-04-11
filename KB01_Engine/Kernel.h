@@ -27,6 +27,6 @@ public:
 	void					LoadLevel(const std::string &_level);
 	bool					Run();
 	void					Step();
-	virtual void			Notify(TRANSFORMATIONEVENT transformationEvent);
+	virtual void			Notify(TRANSFORMATIONEVENT transformationEvent,float x = 0, float y = 0);
 };
 #endif

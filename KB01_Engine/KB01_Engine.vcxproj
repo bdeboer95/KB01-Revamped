@@ -18,6 +18,7 @@
     <ClInclude Include="InputManagerFacade.h" />
     <ClInclude Include="KernelInterface.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="Matrix.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Observee.h" />
     <ClInclude Include="ResourceLoader.h" />
@@ -45,6 +46,8 @@
     <ClInclude Include="TextureLoaderDx.h" />
     <ClInclude Include="DXVector3.h" />
     <ClInclude Include="TransformationEvent.hpp" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="WindowManagerFacade.h" />
@@ -61,6 +64,7 @@
     <ClCompile Include="jsoncpp.cpp" />
     <ClCompile Include="Kernel.cpp" />
     <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="MeshLoaderDx.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="Mesh.cpp" />
@@ -76,6 +80,8 @@
     <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TextureLoaderDx.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vector3.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="WindowManagerFacade.cpp" />

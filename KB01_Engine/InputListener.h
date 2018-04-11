@@ -8,7 +8,7 @@ class InputListener
 {
 
 public:
-	virtual void Notify(TRANSFORMATIONEVENT transformationEvent) = 0;
+	virtual void Notify(TRANSFORMATIONEVENT transformationEvent, float x=0, float y=0) = 0;
 };
 
 

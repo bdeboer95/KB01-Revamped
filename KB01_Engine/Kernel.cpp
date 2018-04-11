@@ -152,7 +152,7 @@ void Kernel::Step()
 /// Notifies the specified state.
 /// </summary>
 /// <param name="state">The state.</param>
-void Kernel::Notify(TRANSFORMATIONEVENT transformationEvent)
+void Kernel::Notify(TRANSFORMATIONEVENT transformationEvent, float x , float y )
 {
 	//if (KEYDOWN(DIK_A, state))
 	//{

@@ -149,6 +149,7 @@ void Keyboard::NotifyListeners(std::vector<InputListener*> listeners)
 			if (IsKeyDown(KEYCODE::A)) {
 				listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_RIGHT);
 			}
+
 		}
 
 }

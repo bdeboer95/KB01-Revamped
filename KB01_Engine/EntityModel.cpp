@@ -214,7 +214,7 @@ int EntityModel::GetRotation()
 /// Notifies the specified state.
 /// </summary>
 /// <param name="state">The state.</param>
-void EntityModel::Notify(TRANSFORMATIONEVENT transformationEvent)
+void EntityModel::Notify(TRANSFORMATIONEVENT transformationEvent,float x, float y)
 {
 	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_RIGHT)
 	{
@@ -234,11 +234,11 @@ void EntityModel::Notify(TRANSFORMATIONEVENT transformationEvent)
 	}
 	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
 	{
-		rotationY = rotationY + 0.010f;
+		rotationY = rotationY + x;
 	}
 	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
 	{
-		rotationY = rotationY - 0.010f;
+		rotationY = rotationY -x;
 	}
 
 	//}

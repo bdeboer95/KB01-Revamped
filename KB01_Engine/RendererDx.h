@@ -24,8 +24,8 @@ private:
 
 	struct CUSTOMVERTEX
 	{
-		FLOAT x, y, z;		// The transformed position for the vertex
-		DWORD color;        // The vertex color
+		float x, y, z;		// The transformed position for the vertex
+		unsigned long color;        // The vertex color
 	};
 
 public:

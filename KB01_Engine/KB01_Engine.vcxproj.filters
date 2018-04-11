@@ -66,6 +66,9 @@
     <Filter Include="Source Files\Converters">
       <UniqueIdentifier>{4ddbe8f0-4578-4ef8-9e9d-5b0869d39811}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{b1c3b052-ae1c-4625-8dec-de2f346f7bed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InputManager.cpp">
@@ -154,6 +157,15 @@
     </ClCompile>
     <ClCompile Include="MeshLoaderDx.cpp">
       <Filter>Source Files\Resourceloaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -266,6 +278,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TransformationEvent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

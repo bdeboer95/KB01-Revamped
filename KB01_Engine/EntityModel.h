@@ -36,7 +36,7 @@ public:
 	void				SetupMatrices(Renderer* _renderer);
 	void				SetRotation(int _rotation);
 	int					GetRotation();
-	virtual void		Notify(TRANSFORMATIONEVENT transformationEvent);
+	virtual void		Notify(TRANSFORMATIONEVENT transformationEvent, float x = 0, float y = 0);
 	HRESULT				InitGeometry(ResourceManager* _resourceManager);
 	void				Render(Renderer* _renderer);	
 };

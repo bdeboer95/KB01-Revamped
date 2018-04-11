@@ -64,7 +64,7 @@ public:
 	bool				InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager);
 	std::wstring		StrToWStr(std::string str); //Convert String to WSTR TODO: do we need this?
 	void				Render(Renderer* _renderer); //	
-	virtual void		Notify(TRANSFORMATIONEVENT transformationEvent); //The skybox needs to move/rotation every time the system detects a change of state for the devices connected
+	virtual void		Notify(TRANSFORMATIONEVENT transformationEvent, float x = 0, float y = 0); //The skybox needs to move/rotation every time the system detects a change of state for the devices connected
 	virtual void		Multiply(D3DXMATRIX* _originalMat, D3DXMATRIX* _modifiedMat); 
 };
 

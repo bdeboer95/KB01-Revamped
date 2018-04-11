@@ -19,13 +19,13 @@ private:
 #pragma pack(2)
 	typedef struct tagBITMAPINFOHEADER
 	{
-		DWORD  biSize;				// size of the structure
+		unsigned long   biSize;				// size of the structure
 		LONG   biWidth;				// image width
 		LONG   biHeight;			// image height
 		WORD   biPlanes;			// bitplanes
 		WORD   biBitCount;			// resolution 
-		DWORD  biCompression;		// compression
-		DWORD  biSizeImage;			// size of the image
+		unsigned long   biCompression;		// compression
+		unsigned long   biSizeImage;			// size of the image
 		LONG   biXPelsPerMeter;		// pixels per meter X
 		LONG   biYPelsPerMeter;		// pixels per meter Y
 		DWORD  biClrUsed;			// colors used

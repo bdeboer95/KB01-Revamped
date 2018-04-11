@@ -2,6 +2,7 @@
 #include "Log.h"
 #include "InputListener.h"
 #include <iostream> //TODO
+#include <math.h>
 
 /// <summary>
 /// Initializes a new instance of the <see cref="Mouse"/> class.
@@ -16,6 +17,8 @@ Mouse::Mouse(HWND _hwnd)
 	dipdw.diph.dwObj = 0;
 	dipdw.diph.dwHow = DIPH_DEVICE;
 	dipdw.dwData = MOUSEBUFFER;
+	mouseCoordinates.x = 0;
+	mouseCoordinates.y = 0;
 
 	input = NULL;
 	device = NULL;
@@ -190,13 +193,13 @@ bool Mouse::InitDevice()
 		return false;
 	}
 
-	//create = device->SetProperty(DIPROP_BUFFERSIZE, &dipdw.diph);
-	//
-	//if FAILED(create)
-	//{
-	//	Log::Instance()->LogMessage("Mouse - Failed to SetProperty.", Log::MESSAGE_ERROR);
-	//	return false;
-	//}
+	create = device->SetProperty(DIPROP_BUFFERSIZE, &dipdw.diph);
+
+	if FAILED(create)
+	{
+		Log::Instance()->LogMessage("Mouse - Failed to SetProperty.", Log::MESSAGE_ERROR);
+		return false;
+	}
 
 	create = device->Acquire();
 
@@ -224,6 +227,8 @@ bool Mouse::AcquireDevice()
 		if (SUCCEEDED(device->Acquire()))
 		{
 			Log::Instance()->LogMessage("Mouse - Succesfully Acquired.", Log::MESSAGE_INFO);
+			mouseCoordinates.x = GetMouseState().lX;
+			mouseCoordinates.y = GetMouseState().lY;
 			return true;
 		}
 	}
@@ -277,46 +282,78 @@ MouseState Mouse::GetMouseState()
 void Mouse::NotifyListeners(std::vector<InputListener*> listeners)
 {
 	RECT rect;
-	int width=0;
-	int height=0;
+	int width = 0;
+	int height = 0;
 	if (GetWindowRect(window, &rect))
 	{
 		width = rect.right - rect.left;
 		height = rect.bottom - rect.top;
 	}
+	MouseState currentState = GetMouseState();
+	float distance = mouseCoordinates.x + currentState.lX;
+	float distanceY = mouseCoordinates.y + currentState.lY;
 	/*std::cout << GetMouseState().lX << std::endl;*/
 
 	for (int i = 0; i < listeners.size(); i++)
 	{
+		if (distance < mouseCoordinates.x || distance < mouseCoordinates.x ||distanceY < mouseCoordinates.y ||distanceY > mouseCoordinates.y) {
+			float deltaY = GetMouseState().lY - mouseCoordinates.y;
+			float deltaX = GetMouseState().lX - mouseCoordinates.x;
+			float angle = (float)atan2(deltaY, deltaX);
 
-		mouseCoordinates.x += GetMouseState().lX;
+			float rotationY = cos(angle) * 0.01f;
+			float rotationX = sin(angle) * 0.01f;
+			if (rotationY >= 6.28f)
+				rotationY = 0.0f;
 
-		mouseCoordinates.y += GetMouseState().lY;
-
-
-
-		if (mouseCoordinates.x > width) mouseCoordinates.x = (float)width;
-
-		if (mouseCoordinates.y < 0) mouseCoordinates.x = 0;
-		UINT
-
-
-		if (mouseCoordinates.x > height) mouseCoordinates.y = (float)height;
-
-		if (mouseCoordinates.y < 0) mouseCoordinates.y = 0;
-		listeners[i]->Notify(TRANSFORMATIONEVENT::ROTATE_LEFT, GetMouseState().lX, GetMouseState().lY);
-		
-		/*if (IsKeyDown(KEYCODE::S)) {
-			listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_FORWARD);
+			if (rotationX >= 6.28f)
+				rotationX = 0.0f;
+			
+			listeners[i]->Notify(TRANSFORMATIONEVENT::ROTATE_LEFT, rotationX, rotationY);
+			mouseCoordinates.x = currentState.lX;
+			mouseCoordinates.y = currentState.lY;
 		}
-		if (IsKeyDown(KEYCODE::D)) {
-			listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_LEFT);
-		}
-		if (IsKeyDown(KEYCODE::A)) {
-			listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_RIGHT);
-		}*/
-
 	}
+}
+/*mouseCoordinates.x -= GetMouseState().lX;
+
+mouseCoordinates.y += GetMouseState().lY;*/
+
+
+
+
+
+//	if (mouseCoordinates.y < 0) {
+//		mouseCoordinates.x = 0;
+//	listeners[i]->Notify(TRANSFORMATIONEVENT::ROTATE_LEFT, 0.001f, 1.0f);*/
+//}
+
+
+
+//	if (mouseCoordinates.x > height) {
+//		mouseCoordinates.y += (float)height;
+//		
+//		/*listeners[i]->Notify(TRANSFORMATIONEVENT::ROTATE_LEFT, 0.001f, 1.0f);*/
+//	}
+//	
+//	if (mouseCoordinates.y < 0) {
+//		mouseCoordinates.y += 0;
+///*		listeners[i]->Notify(TRANSFORMATIONEVENT::ROTATE_LEFT, 0.001f, 1.0f);*/
+//	}
+
+	//listeners[i]->Notify(TRANSFORMATIONEVENT::ROTATE_LEFT, rotationX, rotationY);
+
+	/*if (IsKeyDown(KEYCODE::S)) {
+		listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_FORWARD);
+	}
+	if (IsKeyDown(KEYCODE::D)) {
+		listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_LEFT);
+	}
+	if (IsKeyDown(KEYCODE::A)) {
+		listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_RIGHT);
+	}*/
+
+	//}
 	/*for (int i = 0; i < listeners.size(); i++) {
 		if (GetMouseState().lX < 0) {
 			listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_RIGHT);
@@ -331,20 +368,20 @@ void Mouse::NotifyListeners(std::vector<InputListener*> listeners)
 
 
 
-}
+	//}
 
-///// <summary>
-///// Gets the mouse input.
-///// </summary>
-///// <returns></returns>
-//Mouse::MouseStruct Mouse::GetMouseInput()
-//{
-//	if (!SUCCEEDED(device->Poll()))
-//	{
-//		AcquireDevice();
-//	}
-//
-//	SetMouseBuffer();
-//
-//	return bufferedMouse;
-//}
+	///// <summary>
+	///// Gets the mouse input.
+	///// </summary>
+	///// <returns></returns>
+	//Mouse::MouseStruct Mouse::GetMouseInput()
+	//{
+	//	if (!SUCCEEDED(device->Poll()))
+	//	{
+	//		AcquireDevice();
+	//	}
+	//
+	//	SetMouseBuffer();
+	//
+	//	return bufferedMouse;
+	//}

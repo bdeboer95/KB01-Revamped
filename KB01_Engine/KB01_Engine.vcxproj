@@ -12,7 +12,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BMPLoader.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CFont.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CFramework.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CGameApp.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CGraphics.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CIndexBuffer.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CInput.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CMesh.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTerrain.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTimer.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTriangleStripPlane.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CustomVertex.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CVertexBuffer.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CWorldTransform.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\resource.h" />
+    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\stdafx.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="CUtility.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityModel.h" />
     <ClInclude Include="InputManagerFacade.h" />
@@ -20,7 +36,6 @@
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="Mesh.h" />
-    <ClInclude Include="Observee.h" />
     <ClInclude Include="ResourceLoader.h" />
     <ClInclude Include="Heightmap.h" />
     <ClInclude Include="Device.h" />
@@ -54,7 +69,29 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BMPLoader.cpp" />
+    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CFont.cpp" />
+    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CGameApp.cpp" />
+    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CIndexBuffer.cpp" />
+    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CInput.cpp" />
+    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CMesh.cpp" />
+    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CTimer.cpp" />
+    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CTriangleStripPlane.cpp" />
+    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CVertexBuffer.cpp" />
+    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CWorldTransform.cpp" />
+    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\stdafx.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CFont.cpp" />
+    <ClCompile Include="CFramework.cpp" />
+    <ClCompile Include="CGraphics.cpp" />
+    <ClCompile Include="CIndexBuffer.cpp" />
+    <ClCompile Include="CInput.cpp" />
+    <ClCompile Include="CMesh.cpp" />
+    <ClCompile Include="CTerrain.cpp" />
+    <ClCompile Include="CTimer.cpp" />
+    <ClCompile Include="CTriangleStripPlane.cpp" />
+    <ClCompile Include="CUtility.cpp" />
+    <ClCompile Include="CVertexBuffer.cpp" />
+    <ClCompile Include="CWorldTransform.cpp" />
     <ClCompile Include="DXVector3.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="EntityModel.cpp" />
@@ -76,6 +113,7 @@
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SceneManagerFacade.cpp" />
     <ClCompile Include="Skybox.cpp" />
+    <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="StringToWStringConverter.cpp" />
     <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="Texture.cpp" />

@@ -2,27 +2,29 @@
 #define KEYDOWN(name, key) (name[key])
 #define MSTATE(name, key) (name[key])
 #include <dinput.h>
+
 Skybox::Skybox(Skybox_Cube _skyboxCube)
 {
 	skyboxCube = _skyboxCube;
 	positionX = 0;
 	positionY = 0;
 	positionZ = 3;
-	D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
-	D3DXMatrixScaling(
-		&matScale, // Pointer to recieve computed matrix
+	/*Matrix modifyMatrix= new Matrix()
+	matTranslate +=*/
+	D3DXMatrixTranslation((D3DXMATRIX*)&matTranslate, positionX, positionY, positionZ);
+	D3DXMatrixScaling((D3DXMATRIX*)&matScale, // Pointer to recieve computed matrix
 		1000, // x=axis scale
 		1000, // y-axis scale
 		1000 // z-axis scale
 	);
-	matWorld = matScale*matTranslate*matRotateY*matRotateX;
+	matWorld = matScale * matTranslate *matRotateY* matRotateX;
 	speed = 1.0f;
 
 }
 
 Skybox::~Skybox()
 {
-	
+
 }
 /// <summary>
 /// Notifies the specified state.
@@ -49,13 +51,14 @@ void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 	}
 	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
 	{
-		rotationY = rotationY + x;
+		rotationY = rotationY - y;
+		/*rotationX = rotationX + x;*/
 	}
-	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_RIGHT)
+	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_DOWN)
 	{
-		rotationY = rotationY - x;
+		
 	}
-	
+
 	//if (KEYDOWN(DIK_W, _state))
 	//{
 	//	//move backwards
@@ -98,10 +101,10 @@ void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 	if (KEYDOWN(DIK_D, _state))
 	{
 		positionX = positionX + speed;
-	
+
 
 	}*/
-	
+
 
 	//	/*if (Mouse.x > Width) Mouse.x = (float)Width;
 
@@ -120,57 +123,53 @@ void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 	//	Camera_Angle.y += Mouse_State.lX;*/
 
 	//}
-	if (rotationY>= 6.28f)
-		rotationY = 0.0f;
-
-	if (rotationX >= 6.28f)
-		rotationX = 0.0f;
-
-	D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
-	D3DXMatrixRotationX(&matRotateX, rotationX);
-	D3DXMatrixRotationY(&matRotateY, rotationY);
-	matWorld = matScale*matTranslate*matRotateX*matRotateY;
 	
+
+	D3DXMatrixTranslation((D3DXMATRIX*)&matTranslate, positionX, positionY, positionZ);
+	D3DXMatrixRotationX((D3DXMATRIX*)&matRotateX, rotationX);
+	D3DXMatrixRotationY((D3DXMATRIX*)&matRotateY, rotationY);
+	matWorld = matScale * matTranslate  * matRotateX* matRotateY;
+
 }
 
 bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager)
 {
 	HRESULT hr = 0;
-	
-	hr = D3DXCreateMeshFVF(12,  
-		24,    
+
+	hr = D3DXCreateMeshFVF(12,
+		24,
 		D3DXMESH_MANAGED, FVF_VERTEX, static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()), &mesh);
 
 	Vertex* v = 0;
-	mesh->LockVertexBuffer(0, (void**)&v);   
-	
-					//x   //y    //z    nx   ny       nz  tu       tv
-	//v[0] = Vertex(-1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f);
-	//v[1] = Vertex(-1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f);
-	//v[2] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f);
-	//v[3] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f);
-	//
-	
-	// 
-	//v[8] = Vertex(-1.0f, -1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
-	//v[9] = Vertex(-1.0f, 1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-	//v[10] = Vertex(-1.0f, 1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f);
-	//v[11] = Vertex(-1.0f, -1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f);
+	mesh->LockVertexBuffer(0, (void**)&v);
 
-	//v[12] = Vertex(1.0f, -1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f);
-	//v[13] = Vertex(1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f);
-	//v[14] = Vertex(1.0f, 1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-	//v[15] = Vertex(1.0f, -1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
+	//x   //y    //z    nx   ny       nz  tu       tv
+//v[0] = Vertex(-1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f);
+//v[1] = Vertex(-1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f);
+//v[2] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f);
+//v[3] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f);
+//
 
-	//v[16] = Vertex(-1.0f, 1.0f, -1.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f);
-	//v[17] = Vertex(-1.0f, 1.0f, 1.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f);
-	//v[18] = Vertex(1.0f, 1.0f, 1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f);
-	//v[19] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f);
-	// 
-	//v[20] = Vertex(-1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f);
-	//v[21] = Vertex(-1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 1.0f);
-	//v[22] = Vertex(1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f);
-	//v[23] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f);
+// 
+//v[8] = Vertex(-1.0f, -1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
+//v[9] = Vertex(-1.0f, 1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+//v[10] = Vertex(-1.0f, 1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+//v[11] = Vertex(-1.0f, -1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f);
+
+//v[12] = Vertex(1.0f, -1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f);
+//v[13] = Vertex(1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+//v[14] = Vertex(1.0f, 1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+//v[15] = Vertex(1.0f, -1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
+
+//v[16] = Vertex(-1.0f, 1.0f, -1.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f);
+//v[17] = Vertex(-1.0f, 1.0f, 1.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f);
+//v[18] = Vertex(1.0f, 1.0f, 1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f);
+//v[19] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f);
+// 
+//v[20] = Vertex(-1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f);
+//v[21] = Vertex(-1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 1.0f);
+//v[22] = Vertex(1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f);
+//v[23] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f);
 
 	v[0] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f);
 	v[1] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f);
@@ -181,7 +180,7 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 	v[5] = Vertex(1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f); //BACK
 	v[6] = Vertex(-1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f);
 	v[7] = Vertex(-1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f);
-	
+
 	v[8] = Vertex(-1.0f, -1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
 	v[9] = Vertex(-1.0f, 1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f);  //LEFT
 	v[10] = Vertex(-1.0f, 1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f);
@@ -189,7 +188,7 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 
 	v[12] = Vertex(1.0f, -1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f);
 	v[13] = Vertex(1.0f, 1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f);//RIGHT
-	v[14] = Vertex(1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f); 
+	v[14] = Vertex(1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f);
 	v[15] = Vertex(1.0f, -1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
 
 	v[16] = Vertex(-1.0f, 1.0f, -1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f);
@@ -204,10 +203,10 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 	mesh->UnlockVertexBuffer();
 
 	WORD* i = 0;
-	mesh->LockIndexBuffer(0, (void**)&i);    
-	
+	mesh->LockIndexBuffer(0, (void**)&i);
+
 	//This is made to set the indices for the squares
-	i[0] = 0;  i[1] = 1;    i[2] = 2; 
+	i[0] = 0;  i[1] = 1;    i[2] = 2;
 	i[3] = 0;  i[4] = 2;    i[5] = 3; // FRONT
 
 	i[6] = 4;  i[7] = 5;   i[8] = 6;
@@ -224,13 +223,13 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 
 	i[30] = 20; i[31] = 21;  i[32] = 22;
 	i[33] = 20; i[34] = 22;  i[35] = 23;// BOTTOM
-	mesh->UnlockIndexBuffer();    
+	mesh->UnlockIndexBuffer();
 
 
-	DWORD* attributeBuffer = 0; 
-	
+	DWORD* attributeBuffer = 0;
+
 	//Locks the mesh buffer that contains the mesh attribute data, and returns a pointer to it.
-	mesh->LockAttributeBuffer(0, &attributeBuffer);  
+	mesh->LockAttributeBuffer(0, &attributeBuffer);
 	for (int a = 0; a < 2; a++)     //--triangles 1-4   
 	{
 		attributeBuffer[a] = 0;    //--subset 0   
@@ -255,9 +254,9 @@ bool Skybox::InitGeometry(Renderer* _renderer, ResourceManager* _resourceManager
 	{
 		attributeBuffer[f] = 5;    //--subset 2   
 	}
-	mesh->UnlockAttributeBuffer();   
+	mesh->UnlockAttributeBuffer();
 	LoadTextures(_resourceManager);
-	
+
 	return true;
 }
 
@@ -279,20 +278,21 @@ void Skybox::LoadTextures(ResourceManager* _resourceManager)
 {
 	std::string filePath = "..\\Assets\\Textures\\Skyboxes\\";
 	textures[0] = _resourceManager->LoadTexture(filePath, skyboxCube.front);
-	textures[1] = _resourceManager->LoadTexture(filePath,skyboxCube.back);
-	textures[2] = _resourceManager->LoadTexture(filePath,skyboxCube.left);
-	textures[3] = _resourceManager->LoadTexture(filePath,skyboxCube.right);
-	textures[4] = _resourceManager->LoadTexture(filePath,skyboxCube.top);
-	textures[5] = _resourceManager->LoadTexture(filePath,skyboxCube.bottom);
+	textures[1] = _resourceManager->LoadTexture(filePath, skyboxCube.back);
+	textures[2] = _resourceManager->LoadTexture(filePath, skyboxCube.left);
+	textures[3] = _resourceManager->LoadTexture(filePath, skyboxCube.right);
+	textures[4] = _resourceManager->LoadTexture(filePath, skyboxCube.top);
+	textures[5] = _resourceManager->LoadTexture(filePath, skyboxCube.bottom);
 }
 
 void Skybox::Render(Renderer* _renderer)
 {
 	LPDIRECT3DDEVICE9 device = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
+
 	
-	device->SetTransform(D3DTS_WORLD, &matWorld); //settrasnform moet in renderer
 	//Disables the zbuffer for writing
 	//static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);
+	_renderer->SetTransform(D3DTS_WORLD, &matWorld);
 	device->SetRenderState(D3DRS_ZENABLE, false);
 	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);
 
@@ -300,9 +300,9 @@ void Skybox::Render(Renderer* _renderer)
 	for (int i = 0; i < 6; i++)
 	{
 		_renderer->SetTexture(textures[i]->GetTextures(), 0); //this is what gives a side of the skybox it's texture
-		_renderer->DrawSubset(mesh,i); // draws 
+		_renderer->DrawSubset(mesh, i); // draws 
 	}
-	
+
 	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW); //dit ook in renderer
 
 	//Enables the zbuffer for writing

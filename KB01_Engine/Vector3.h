@@ -30,7 +30,7 @@ public:
 	Vector3 operator * (float) const;
 	Vector3 operator / (float) const;
 
-	friend Vector3 operator * (float, const struct Vector3&);
+	friend Vector3 operator * (float, const Vector3&);
 
 	bool operator == (const Vector3&) const;
 	bool operator != (const Vector3&) const;

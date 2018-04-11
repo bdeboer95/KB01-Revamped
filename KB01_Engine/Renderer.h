@@ -5,6 +5,7 @@
 
 #include <Windows.h>
 #include <string>
+#include "Matrix.h"
 
 class Renderer
 {
@@ -18,7 +19,7 @@ public:
 	virtual void*			GetIndexBuffer() = 0;
 	virtual bool			InitVertexBuffer() = 0;
 	virtual void			SetIndexBuffer(void* _indexBuffer) = 0;
-	/*virtual void			SetTransform() = 0;*/
+	virtual void			SetTransform(unsigned int transformStateType, Matrix* matrix) = 0; //Updates the Transform based on the state type that was given (World, view, etc) with the provided matrix
 	virtual void			SetVertexBuffer(void* _vertexBuffer) = 0;
 	virtual void			ClearBuffer(int R, int G, int B) = 0;
 	virtual void			SetViewPort(void* _viewPort) = 0;

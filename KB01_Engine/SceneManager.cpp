@@ -148,6 +148,7 @@ void SceneManager::AddListener(InputManager* _inputManager)
 	for each (Scene* scene in scenes)
 	{
 		_inputManager->AddListener(scene->GetSkyBox());
+		_inputManager->AddListener(scene->GetTerrain());
 		for each (Entity* entityModel in scene->GetEntityModels())
 		{
 			if (dynamic_cast<EntityModel*>(entityModel))

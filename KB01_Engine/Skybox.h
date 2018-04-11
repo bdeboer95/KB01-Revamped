@@ -48,12 +48,12 @@ private:
 	float				rotationY;
 	float				rotationZ;
 	float				speed;
-	D3DXMATRIX matRotateX; //the matrix for the rotation on the x-axis
-	D3DXMATRIX matRotateY;//the matrix for the rotation on the y-axis
-	D3DXMATRIX matRotateZ;//the matrix for the rotation on the z-axis
-	D3DXMATRIX matWorld; //the matrix that contains  the multiplication of all the modification matrices (scale, rotate, translate)
-	D3DXMATRIX matScale; //the matrix for the scaling of the skybox
-	D3DXMATRIX matTranslate;
+	Matrix matRotateX; //the matrix for the rotation on the x-axis
+	Matrix matRotateY;//the matrix for the rotation on the y-axis
+	Matrix matRotateZ;//the matrix for the rotation on the z-axis
+	Matrix matWorld; //the matrix that contains  the multiplication of all the modification matrices (scale, rotate, translate)
+	Matrix matScale; //the matrix for the scaling of the skybox
+	Matrix matTranslate;
 	void				LoadTextures(ResourceManager* _resourceManager);
 
 public:

@@ -6,7 +6,7 @@ class Matrix
 	public:
 		float m[4][4];
 		Matrix() {};
-		/*Matrix(const float *);*/
+		Matrix(const float *);
 		union {
 			struct {
 				float        _11, _12, _13, _14;
@@ -17,7 +17,7 @@ class Matrix
 			float m[4][4];
 		};
 	/*	Matrix(const D3DMATRIX&);*/
-	/*	Matrix(const D3DXfloat16 *);*/
+		//Matrix(const D3DXfloat16 *);
 		Matrix(float _11, float _12, float _13, float _14,
 			float _21, float _22, float _23, float _24,
 			float _31, float _32, float _33, float _34,

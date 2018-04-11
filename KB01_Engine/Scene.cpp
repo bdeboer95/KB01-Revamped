@@ -19,7 +19,8 @@ Scene::Scene(int _levelIndex, HWND _hWnd, std::string _level)
 	CreateEntityModel("Tiger.x", "zebra.jpg", 1,-10, 25);
 	CreateEntityModel("Tiger.x", "zebra3.bmp", 2,-10, 25);
 	CreateEntityModel("Tiger.x", "zebra3.bmp", 3, -10, 25);
-	terrain = new Terrain();
+	//terrain = new Terrain();
+	terrain = new CTerrain();
 	Log::Instance()->LogMessage("Scene - Scene created.", Log::MESSAGE_INFO);
 }
 
@@ -101,7 +102,7 @@ HRESULT Scene::SetupGeometry(ResourceManager* _resourceManager, Renderer* _rende
 	sky.right = "skybox3_right.tga";
 	skybox = new Skybox(sky);
 	skybox->InitGeometry(_renderer, _resourceManager);
-	terrain->Initialize(_renderer, _resourceManager->LoadTexture("..\\Assets\\Textures\\Terrain\\", "terrainbrown.jpg"));
+	terrain->Initialize(static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()), "heightdata.raw", "terrainbrown.jpg");
 	ShowWindow(hWnd, SW_MAXIMIZE);
 	UpdateWindow(hWnd);
 	return S_OK;
@@ -140,7 +141,7 @@ void Scene::Render(Renderer* _renderer)
 	}
 
 	skybox->Render(_renderer);
-	//terrain->Render(_renderer);
+	terrain->Render(static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()));
 	for each(Entity* entity in entityModels)
 	{
 		if (dynamic_cast<EntityModel*>(entity))
@@ -246,7 +247,7 @@ void Scene::GetEntityModelFromFile(std::string line)
 	{
 		if (str == "E1")
 		{
-			terrain = new Terrain();
+			terrain = new CTerrain();
 		}
 
 		if (str == "E2")
@@ -350,4 +351,8 @@ void Scene::GetTextureNameFromFile(std::string line)
 Skybox* Scene::GetSkyBox()
 {
 	return skybox;
+}
+CTerrain* Scene::GetTerrain()
+{
+	return terrain;
 }

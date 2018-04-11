@@ -234,11 +234,8 @@ void EntityModel::Notify(TRANSFORMATIONEVENT transformationEvent,float x, float 
 	}
 	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
 	{
-		rotationY = rotationY + x;
-	}
-	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
-	{
-		rotationY = rotationY -x;
+		rotationY = rotationY - y;
+		/*rotationX = rotationX + x;*/
 	}
 
 	//}

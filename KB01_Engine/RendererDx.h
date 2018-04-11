@@ -38,6 +38,7 @@ public:
 	virtual void*				GetIndexBuffer();
 	virtual bool				InitVertexBuffer();
 	virtual void				ClearBuffer(int R, int G, int B);
+	virtual void				SetTransform(unsigned int transformStateType, Matrix* matrix);
 	virtual void				SetIndexBuffer(void* _indexBuffer);
 	virtual void				SetVertexBuffer(void* _vertexBuffer);
 	virtual void				SetTexture(void* _texture, UINT _index);

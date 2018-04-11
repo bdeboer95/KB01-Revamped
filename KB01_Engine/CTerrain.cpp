@@ -23,8 +23,8 @@ CTerrain::CTerrain()
     m_pTexture = NULL;
     m_numVertices = m_numIndices = 0;
 	positionX = -100;
-	positionY = -300;
-	positionZ = 50;
+	positionY = -400;
+	positionZ = 500;
 	speed = 0.1f;
 	/*Matrix modifyMatrix= new Matrix()
 	matTranslate +=*/
@@ -32,7 +32,7 @@ CTerrain::CTerrain()
 	D3DXMatrixScaling((D3DXMATRIX*)&matScale, // Pointer to recieve computed matrix
 		10, // x=axis scale
 		2, // y-axis scale
-		2 // z-axis scale
+		10 // z-axis scale
 	);
 	matWorld = matScale * matTranslate ;
 
@@ -119,11 +119,8 @@ BOOL CTerrain::Initialize( LPDIRECT3DDEVICE9 pDevice, char *rawFile, char *terra
     m_ib.SetData( m_numIndices, pIndices, 0 );
     m_vb.SetIndexBuffer( &m_ib );
     
-    CUtility::GetMediaFile( "terrain.jpg", "..\\Assets\\Textures\\Terrain\\");
-	wchar_t wtext[20];
-	mbstowcs(wtext, path, strlen(path) + 1);//Plus null
-	LPWSTR ptr = wtext;
-    if ( FAILED( D3DXCreateTextureFromFile( pDevice, L"..\\Assets\\Textures\\Terrain\\terrain.jpg", &m_pTexture ) ) )
+	CUtility::GetMediaFile("terrain.jpg", "..\\Assets\\Textures\\Terrain\\");
+    if ( FAILED( D3DXCreateTextureFromFile( pDevice, L"..\\Assets\\Textures\\Terrain\\terrainorange.jpg", &m_pTexture ) ) )
     {
        // SHOWERROR( "Unable to load terrain textures.", __FILE__, __LINE__ );
         return FALSE;

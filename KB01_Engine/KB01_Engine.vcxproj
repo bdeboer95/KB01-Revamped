@@ -18,6 +18,7 @@
     <ClInclude Include="InputManagerFacade.h" />
     <ClInclude Include="KernelInterface.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="Matrix.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="ResourceLoader.h" />
     <ClInclude Include="Heightmap.h" />
@@ -59,6 +60,7 @@
     <ClCompile Include="jsoncpp.cpp" />
     <ClCompile Include="Kernel.cpp" />
     <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="MeshLoaderDx.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="Mesh.cpp" />

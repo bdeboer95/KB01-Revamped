@@ -263,11 +263,6 @@ void RendererDx::ClearBuffer(int R, int G, int B)
 	}
 }
 
-
-
-
-
-
 //-----------------------------------------------------------------------------
 // Name: DrawSubset()
 // Desc: Draw the mesh subset for 1 material
@@ -295,6 +290,16 @@ void RendererDx::DrawIndexedPrimitive(UINT _numberOfVertices, UINT _primitiveCou
 void RendererDx::SetStreamSource(UINT _vertexSize)
 {
 	direct3DDevice->SetStreamSource(0, vertexBuffer, 0, _vertexSize);
+}
+
+void RendererDx::SetTransform(TRANSFORMSTATE _state, Matrix* _matrix)
+{
+	direct3DDevice->SetTransform(_state, static_cast<D3DXMATRIX>(_matrix));
+}
+
+void RendererDx::SetRenderState(RENDERSTATE _state, DWORD _value)
+{
+	direct3DDevice->SetRenderState(_state, _value);
 }
 
 void RendererDx::InitCamera()

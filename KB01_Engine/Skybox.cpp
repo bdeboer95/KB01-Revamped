@@ -1,4 +1,5 @@
 #include "Skybox.h"
+#include "Matrix.h"
 
 Skybox::Skybox(Skybox_Cube _skyboxCube)
 {
@@ -139,15 +140,16 @@ void Skybox::LoadTextures(ResourceManager* _resourceManager)
 
 void Skybox::Render(Renderer* _renderer)
 {
-	LPDIRECT3DDEVICE9 device = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
-	D3DXMATRIX matWorld, matWorldX, matWorldY, matWorldZ;
+	Matrix* matWorld;
+	D3DXMATRIX mat;
 
-	D3DXMatrixTranslation(&matWorld, 0, -0.1f, 3);
-	device->SetTransform(D3DTS_WORLD, &matWorld);
+	//D3DXMatrixTranslation(&matWorld, 0, -0.1f, 3);
+	_renderer->SetTransform(WORLD, matWorld);
+	//static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetTransform(D3DTS_WORLD, &matWorld);
 
 	//Disables the zbuffer for writing
-	static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);
-	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);
+	_renderer->SetRenderState(ZWRITEENABLE, false);
+	_renderer->SetRenderState(CULLMODE, CULL_NONE);
 
 	//Loops through every square side of the cube
 	for (int i = 0; i < 6; i++)
@@ -156,8 +158,8 @@ void Skybox::Render(Renderer* _renderer)
 		_renderer->DrawSubset(mesh,i); // draws 
 	}
 	
-	device->SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW);
+	_renderer->SetRenderState(CULLMODE, CULL_CCW);
 
 	//Enables the zbuffer for writing
-	device->SetRenderState(D3DRS_ZWRITEENABLE, true);
+	_renderer->SetRenderState(ZWRITEENABLE, true);
 }

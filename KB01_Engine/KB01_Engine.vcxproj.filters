@@ -66,6 +66,12 @@
     <Filter Include="Source Files\Converters">
       <UniqueIdentifier>{4ddbe8f0-4578-4ef8-9e9d-5b0869d39811}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{88efa154-5445-477b-8259-f4624dbc3cd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{dbcec92d-2dcd-4ae2-800a-cd4fd177fb95}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InputManager.cpp">
@@ -154,6 +160,9 @@
     </ClCompile>
     <ClCompile Include="MeshLoaderDx.cpp">
       <Filter>Source Files\Resourceloaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Source Files\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -261,6 +270,9 @@
     </ClInclude>
     <ClInclude Include="MeshLoaderDx.h">
       <Filter>Header Files\Resourceloaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Header Files\Math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

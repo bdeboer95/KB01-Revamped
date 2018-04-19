@@ -50,6 +50,10 @@ public:
 	virtual float				GetBackBuffferHeight();
 	virtual void				DrawIndexedPrimitive(UINT _numberOfVertices, UINT _primitiveCount);
 	virtual void				SetStreamSource(UINT _vertexSize);
+
+	virtual void				SetTransform(TRANSFORMSTATE _state, Matrix* _matrix);
+	virtual void				SetRenderState(RENDERSTATE _state, DWORD _value);
+	
 	virtual void				InitCamera();
 };
 

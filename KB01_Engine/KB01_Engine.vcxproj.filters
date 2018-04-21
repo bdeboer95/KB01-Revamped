@@ -69,6 +69,9 @@
     <Filter Include="Header Files\Math">
       <UniqueIdentifier>{b1c3b052-ae1c-4625-8dec-de2f346f7bed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{3bc05b05-b139-4e55-a9aa-7a5da49690d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InputManager.cpp">
@@ -158,45 +161,6 @@
     <ClCompile Include="MeshLoaderDx.cpp">
       <Filter>Source Files\Resourceloaders</Filter>
     </ClCompile>
-    <ClCompile Include="Vector2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Matrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CFont.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CGameApp.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CIndexBuffer.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CInput.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CMesh.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CTimer.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CTriangleStripPlane.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CVertexBuffer.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CWorldTransform.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\stdafx.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
     <ClCompile Include="CTerrain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -235,6 +199,15 @@
     </ClCompile>
     <ClCompile Include="CMesh.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Source Files\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -343,62 +316,75 @@
     <ClInclude Include="MeshLoaderDx.h">
       <Filter>Header Files\Resourceloaders</Filter>
     </ClInclude>
-    <ClInclude Include="TransformationEvent.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Vector2.h">
       <Filter>Header Files\Math</Filter>
     </ClInclude>
     <ClInclude Include="Vector3.h">
       <Filter>Header Files\Math</Filter>
     </ClInclude>
-    <ClInclude Include="Matrix.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CUtility.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CFramework.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CGameApp.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CGraphics.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CIndexBuffer.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CInput.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CMesh.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTimer.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTriangleStripPlane.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CustomVertex.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CVertexBuffer.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CWorldTransform.h">
-      <Filter>Header Files\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\resource.h">
       <Filter>Header Files\Scenes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CFont.h">
-      <Filter>Header Files\Scenes</Filter>
+    <ClInclude Include="CFont.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\stdafx.h">
-      <Filter>Header Files\Scenes</Filter>
+    <ClInclude Include="CFramework.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CGameApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CGraphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CIndexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CTriangleStripPlane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomVertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CWorldTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Observee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CTerrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="terrain.jpg" />
+    <Image Include="terraingreen.jpg" />
   </ItemGroup>
 </Project>

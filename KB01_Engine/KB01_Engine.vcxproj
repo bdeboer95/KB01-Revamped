@@ -12,22 +12,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BMPLoader.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CFont.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CFramework.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CGameApp.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CGraphics.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CIndexBuffer.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CInput.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CMesh.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTimer.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CTriangleStripPlane.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CustomVertex.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CVertexBuffer.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\CWorldTransform.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\resource.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\stdafx.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="CFont.h" />
+    <ClInclude Include="CFramework.h" />
+    <ClInclude Include="CGameApp.h" />
+    <ClInclude Include="CGraphics.h" />
+    <ClInclude Include="CIndexBuffer.h" />
+    <ClInclude Include="CInput.h" />
+    <ClInclude Include="CMesh.h" />
+    <ClInclude Include="CTerrain.h" />
+    <ClInclude Include="CTimer.h" />
+    <ClInclude Include="CTriangleStripPlane.h" />
+    <ClInclude Include="CustomVertex.h" />
     <ClInclude Include="CUtility.h" />
+    <ClInclude Include="CVertexBuffer.h" />
+    <ClInclude Include="CWorldTransform.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityModel.h" />
     <ClInclude Include="InputManagerFacade.h" />
@@ -35,6 +35,7 @@
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Observee.h" />
     <ClInclude Include="ResourceLoader.h" />
     <ClInclude Include="Heightmap.h" />
     <ClInclude Include="Device.h" />
@@ -54,30 +55,22 @@
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SceneManagerFacade.h" />
     <ClInclude Include="Skybox.h" />
+    <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringToWStringConverter.h" />
     <ClInclude Include="Terrain.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureLoaderDx.h" />
     <ClInclude Include="DXVector3.h" />
-    <ClInclude Include="TransformationEvent.hpp" />
+    <ClInclude Include="TransformationEvent.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vertex.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="WindowManagerFacade.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BMPLoader.cpp" />
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CFont.cpp" />
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CGameApp.cpp" />
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CIndexBuffer.cpp" />
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CInput.cpp" />
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CMesh.cpp" />
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CTimer.cpp" />
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CTriangleStripPlane.cpp" />
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CVertexBuffer.cpp" />
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\CWorldTransform.cpp" />
-    <ClCompile Include="C:\Users\bdebo\Downloads\CU_Terrain\source\stdafx.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CFont.cpp" />
     <ClCompile Include="CFramework.cpp" />
@@ -122,6 +115,10 @@
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="WindowManagerFacade.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="terrain.jpg" />
+    <Image Include="terraingreen.jpg" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{02AB0373-88EC-451F-93EB-A21D8C241CF1}</ProjectGuid>

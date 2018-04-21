@@ -33,7 +33,6 @@ public:
 	virtual void			DrawIndexedPrimitive(UINT _numberOfVertices, UINT _primitiveCount) = 0;
 	virtual void			DrawSubset(void* _mesh, UINT _index) = 0;
 	virtual void			SetStreamSource(UINT _vertexSize) = 0;
-	virtual void			InitCamera() = 0; //
 };
 
 #endif

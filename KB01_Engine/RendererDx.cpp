@@ -299,19 +299,4 @@ void RendererDx::SetStreamSource(UINT _vertexSize)
 void RendererDx::SetTransform(unsigned int transformStateType, Matrix* matrix) {
 	direct3DDevice->SetTransform(D3DTS_WORLD, reinterpret_cast<D3DXMATRIX*>(matrix)); //CHANGE THE D3DTW_WORLD to trasnformstatetype, which apparently isnt an unsigned int
 }
-void RendererDx::InitCamera()
-{
-	D3DXMATRIX matWorld, matWorldX, matWorldY, matWorldZ;
-	D3DXMATRIX matView;
-	D3DXMATRIX matProj;
-	D3DXVECTOR3 cameraPosition = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-	D3DXVECTOR3 cameraTarget = D3DXVECTOR3(0.0f, 0.0f, 5.0f);
-	D3DXVECTOR3 cameraUpVector = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
-	D3DXVECTOR3 m_right = D3DXVECTOR3(1.0f, 0.0f, 0.0f);
-	D3DXMatrixLookAtLH(&matView, &cameraPosition, &cameraTarget, &cameraUpVector);
-	static_cast<LPDIRECT3DDEVICE9>(GetDevice())->SetTransform(D3DTS_VIEW, &matView);
-	D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 4, 1.0f, 1.0f, 2000.0f);
-	//
-	static_cast<LPDIRECT3DDEVICE9>(GetDevice())->SetTransform(D3DTS_PROJECTION, &matProj);
 
-}

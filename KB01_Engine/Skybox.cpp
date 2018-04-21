@@ -2,6 +2,7 @@
 #define KEYDOWN(name, key) (name[key])
 #define MSTATE(name, key) (name[key])
 #include <dinput.h>
+#include "Vertex.h"
 
 Skybox::Skybox(Skybox_Cube _skyboxCube)
 {

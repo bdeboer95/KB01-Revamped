@@ -1,7 +1,7 @@
 #ifndef __TRANSFORMATIONEVENT_H__
 #define __TRANSFORMATIONEVENT_H__
 
-enum class TRANSFORMATIONEVENT //hpp heeft implementatie in de header, dus het is een .h
+enum class TRANSFORMATIONEVENT 
 {
 	MOVE_LEFT,
 	MOVE_RIGHT,

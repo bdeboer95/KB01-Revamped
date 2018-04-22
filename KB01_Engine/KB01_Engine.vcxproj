@@ -65,6 +65,7 @@
     <ClInclude Include="TransformationEvent.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector3Math.h" />
     <ClInclude Include="Vertex.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
@@ -85,7 +86,6 @@
     <ClCompile Include="CUtility.cpp" />
     <ClCompile Include="CVertexBuffer.cpp" />
     <ClCompile Include="CWorldTransform.cpp" />
-    <ClCompile Include="DXVector3.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="EntityModel.cpp" />
     <ClCompile Include="Heightmap.cpp" />
@@ -114,6 +114,7 @@
     <ClCompile Include="TextureLoaderDx.cpp" />
     <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="Vector3Math.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="WindowManagerFacade.cpp" />

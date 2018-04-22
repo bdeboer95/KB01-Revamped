@@ -299,6 +299,7 @@ void RendererDx::SetStreamSource(UINT _vertexSize)
 	direct3DDevice->SetStreamSource(0, vertexBuffer, 0, _vertexSize);
 }
 void RendererDx::SetTransform(unsigned int transformStateType, Matrix* matrix) {
-	direct3DDevice->SetTransform(D3DTS_WORLD, reinterpret_cast<D3DXMATRIX*>(matrix)); //CHANGE THE D3DTW_WORLD to trasnformstatetype, which apparently isnt an unsigned int
+	
+	direct3DDevice->SetTransform(static_cast<D3DTRANSFORMSTATETYPE>(transformStateType), reinterpret_cast<D3DXMATRIX*>(matrix)); //CHANGE THE D3DTW_WORLD to trasnformstatetype, which apparently isnt an unsigned int
 }
 

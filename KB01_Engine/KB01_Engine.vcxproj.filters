@@ -155,9 +155,6 @@
     <ClCompile Include="StringToWStringConverter.cpp">
       <Filter>Source Files\Converters</Filter>
     </ClCompile>
-    <ClCompile Include="DXVector3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MeshLoaderDx.cpp">
       <Filter>Source Files\Resourceloaders</Filter>
     </ClCompile>
@@ -210,7 +207,10 @@
       <Filter>Source Files\Math</Filter>
     </ClCompile>
     <ClCompile Include="MatrixMath.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3Math.cpp">
+      <Filter>Source Files\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -386,7 +386,10 @@
       <Filter>Header Files\Math</Filter>
     </ClInclude>
     <ClInclude Include="MatrixMath.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3Math.h">
+      <Filter>Header Files\Math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

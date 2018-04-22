@@ -16900,3 +16900,1107 @@ Thu Apr 19 16:09:10 INFO: Keyboard - Created.
 Thu Apr 19 16:09:10 INFO: InputManager - InputManager created.
 Thu Apr 19 16:09:10 INFO: Kernel - Added as listener.
 Thu Apr 19 16:09:10 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 14:13:46 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 14:13:46 INFO: Kernel - Created.
+Sun Apr 22 14:13:46 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 14:13:46 INFO: WindowManager - Created
+Sun Apr 22 14:13:46 INFO: SceneManager - SceneManager created
+Sun Apr 22 14:13:46 INFO: ResourceManager - Created.
+Sun Apr 22 14:13:46 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 14:13:46 INFO: Kernel - Loading level...
+Sun Apr 22 14:13:46 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 14:13:46 INFO: Window - Window created.
+Sun Apr 22 14:13:46 INFO: Camera - Camera created.
+Sun Apr 22 14:13:46 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 14:13:46 INFO: EntityModel - Created.
+Sun Apr 22 14:13:46 INFO: Scene - EntityModel created
+Sun Apr 22 14:13:46 INFO: EntityModel - Created.
+Sun Apr 22 14:13:46 INFO: Scene - EntityModel created
+Sun Apr 22 14:13:46 INFO: EntityModel - Created.
+Sun Apr 22 14:13:46 INFO: Scene - EntityModel created
+Sun Apr 22 14:13:46 INFO: Scene - Scene created.
+Sun Apr 22 14:13:46 INFO: Scene created
+Sun Apr 22 14:13:46 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 14:13:46 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 14:13:46 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 14:13:46 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 14:13:46 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:13:46 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 14:13:46 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:13:46 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 14:13:46 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 14:13:46 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 14:13:46 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 14:13:46 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 14:13:46 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 14:13:46 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 14:13:46 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 14:13:46 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 14:13:46 INFO: Mouse - Created.
+Sun Apr 22 14:13:46 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 14:13:46 INFO: Keyboard - Created.
+Sun Apr 22 14:13:46 INFO: InputManager - InputManager created.
+Sun Apr 22 14:13:46 INFO: Kernel - Added as listener.
+Sun Apr 22 14:13:46 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 14:20:00 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 14:20:00 INFO: Kernel - Created.
+Sun Apr 22 14:20:00 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 14:20:00 INFO: WindowManager - Created
+Sun Apr 22 14:20:00 INFO: SceneManager - SceneManager created
+Sun Apr 22 14:20:00 INFO: ResourceManager - Created.
+Sun Apr 22 14:20:00 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 14:20:00 INFO: Kernel - Loading level...
+Sun Apr 22 14:20:00 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 14:20:00 INFO: Window - Window created.
+Sun Apr 22 14:20:00 INFO: Camera - Camera created.
+Sun Apr 22 14:20:00 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 14:20:00 INFO: EntityModel - Created.
+Sun Apr 22 14:20:00 INFO: Scene - EntityModel created
+Sun Apr 22 14:20:00 INFO: EntityModel - Created.
+Sun Apr 22 14:20:00 INFO: Scene - EntityModel created
+Sun Apr 22 14:20:00 INFO: EntityModel - Created.
+Sun Apr 22 14:20:00 INFO: Scene - EntityModel created
+Sun Apr 22 14:20:00 INFO: Scene - Scene created.
+Sun Apr 22 14:20:00 INFO: Scene created
+Sun Apr 22 14:20:00 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 14:20:00 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 14:20:00 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 14:20:00 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 14:20:00 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:20:00 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 14:20:00 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:20:00 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 14:20:00 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 14:20:00 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 14:20:00 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 14:20:00 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 14:20:00 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 14:20:00 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 14:20:00 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 14:20:00 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 14:20:00 INFO: Mouse - Created.
+Sun Apr 22 14:20:00 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 14:20:00 INFO: Keyboard - Created.
+Sun Apr 22 14:20:00 INFO: InputManager - InputManager created.
+Sun Apr 22 14:20:00 INFO: Kernel - Added as listener.
+Sun Apr 22 14:20:00 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 14:21:42 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 14:21:42 INFO: Kernel - Created.
+Sun Apr 22 14:21:42 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 14:21:42 INFO: WindowManager - Created
+Sun Apr 22 14:21:42 INFO: SceneManager - SceneManager created
+Sun Apr 22 14:21:42 INFO: ResourceManager - Created.
+Sun Apr 22 14:21:42 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 14:21:42 INFO: Kernel - Loading level...
+Sun Apr 22 14:21:42 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 14:21:42 INFO: Window - Window created.
+Sun Apr 22 14:21:42 INFO: Camera - Camera created.
+Sun Apr 22 14:21:42 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 14:21:42 INFO: EntityModel - Created.
+Sun Apr 22 14:21:42 INFO: Scene - EntityModel created
+Sun Apr 22 14:21:42 INFO: EntityModel - Created.
+Sun Apr 22 14:21:42 INFO: Scene - EntityModel created
+Sun Apr 22 14:21:42 INFO: EntityModel - Created.
+Sun Apr 22 14:21:42 INFO: Scene - EntityModel created
+Sun Apr 22 14:21:42 INFO: Scene - Scene created.
+Sun Apr 22 14:21:42 INFO: Scene created
+Sun Apr 22 14:21:42 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 14:21:42 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 14:21:42 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 14:21:42 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 14:21:42 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:21:42 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 14:21:42 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:21:42 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 14:21:42 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 14:21:42 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 14:21:42 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 14:21:42 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 14:21:42 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 14:21:42 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 14:21:42 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 14:21:42 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 14:21:42 INFO: Mouse - Created.
+Sun Apr 22 14:21:42 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 14:21:42 INFO: Keyboard - Created.
+Sun Apr 22 14:21:42 INFO: InputManager - InputManager created.
+Sun Apr 22 14:21:42 INFO: Kernel - Added as listener.
+Sun Apr 22 14:21:42 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 14:21:59 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 14:21:59 INFO: Kernel - Created.
+Sun Apr 22 14:21:59 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 14:21:59 INFO: WindowManager - Created
+Sun Apr 22 14:21:59 INFO: SceneManager - SceneManager created
+Sun Apr 22 14:21:59 INFO: ResourceManager - Created.
+Sun Apr 22 14:21:59 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 14:21:59 INFO: Kernel - Loading level...
+Sun Apr 22 14:21:59 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 14:21:59 INFO: Window - Window created.
+Sun Apr 22 14:21:59 INFO: Camera - Camera created.
+Sun Apr 22 14:21:59 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 14:21:59 INFO: EntityModel - Created.
+Sun Apr 22 14:21:59 INFO: Scene - EntityModel created
+Sun Apr 22 14:21:59 INFO: EntityModel - Created.
+Sun Apr 22 14:21:59 INFO: Scene - EntityModel created
+Sun Apr 22 14:21:59 INFO: EntityModel - Created.
+Sun Apr 22 14:21:59 INFO: Scene - EntityModel created
+Sun Apr 22 14:21:59 INFO: Scene - Scene created.
+Sun Apr 22 14:21:59 INFO: Scene created
+Sun Apr 22 14:21:59 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 14:21:59 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 14:21:59 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 14:21:59 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 14:21:59 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:21:59 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 14:21:59 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:21:59 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 14:21:59 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 14:22:00 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 14:22:00 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 14:22:00 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 14:22:00 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 14:22:00 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 14:22:00 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 14:22:00 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 14:22:00 INFO: Mouse - Created.
+Sun Apr 22 14:22:00 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 14:22:00 INFO: Keyboard - Created.
+Sun Apr 22 14:22:00 INFO: InputManager - InputManager created.
+Sun Apr 22 14:22:00 INFO: Kernel - Added as listener.
+Sun Apr 22 14:22:00 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 14:30:17 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 14:30:17 INFO: Kernel - Created.
+Sun Apr 22 14:30:17 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 14:30:17 INFO: WindowManager - Created
+Sun Apr 22 14:30:17 INFO: SceneManager - SceneManager created
+Sun Apr 22 14:30:17 INFO: ResourceManager - Created.
+Sun Apr 22 14:30:17 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 14:30:17 INFO: Kernel - Loading level...
+Sun Apr 22 14:30:17 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 14:30:17 INFO: Window - Window created.
+Sun Apr 22 14:30:17 INFO: Camera - Camera created.
+Sun Apr 22 14:30:17 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 14:30:17 INFO: EntityModel - Created.
+Sun Apr 22 14:30:17 INFO: Scene - EntityModel created
+Sun Apr 22 14:30:17 INFO: EntityModel - Created.
+Sun Apr 22 14:30:17 INFO: Scene - EntityModel created
+Sun Apr 22 14:30:17 INFO: EntityModel - Created.
+Sun Apr 22 14:30:17 INFO: Scene - EntityModel created
+Sun Apr 22 14:30:17 INFO: Scene - Scene created.
+Sun Apr 22 14:30:17 INFO: Scene created
+Sun Apr 22 14:30:17 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 14:30:17 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 14:30:17 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 14:30:17 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 14:30:17 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:30:17 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 14:30:17 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:30:17 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 14:30:17 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 14:30:17 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 14:30:17 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 14:30:17 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 14:30:17 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 14:30:17 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 14:30:17 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 14:30:17 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 14:30:17 INFO: Mouse - Created.
+Sun Apr 22 14:30:17 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 14:30:17 INFO: Keyboard - Created.
+Sun Apr 22 14:30:17 INFO: InputManager - InputManager created.
+Sun Apr 22 14:30:17 INFO: Kernel - Added as listener.
+Sun Apr 22 14:30:17 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 14:30:55 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 14:30:55 INFO: Kernel - Created.
+Sun Apr 22 14:30:55 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 14:30:55 INFO: WindowManager - Created
+Sun Apr 22 14:30:55 INFO: SceneManager - SceneManager created
+Sun Apr 22 14:30:55 INFO: ResourceManager - Created.
+Sun Apr 22 14:30:55 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 14:30:55 INFO: Kernel - Loading level...
+Sun Apr 22 14:30:55 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 14:30:55 INFO: Window - Window created.
+Sun Apr 22 14:30:55 INFO: Camera - Camera created.
+Sun Apr 22 14:30:55 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 14:30:55 INFO: EntityModel - Created.
+Sun Apr 22 14:30:55 INFO: Scene - EntityModel created
+Sun Apr 22 14:30:55 INFO: EntityModel - Created.
+Sun Apr 22 14:30:55 INFO: Scene - EntityModel created
+Sun Apr 22 14:30:55 INFO: EntityModel - Created.
+Sun Apr 22 14:30:55 INFO: Scene - EntityModel created
+Sun Apr 22 14:30:55 INFO: Scene - Scene created.
+Sun Apr 22 14:30:55 INFO: Scene created
+Sun Apr 22 14:30:55 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 14:30:55 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 14:30:55 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 14:30:55 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 14:30:55 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:30:55 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 14:30:55 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:30:55 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 14:30:55 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 14:30:55 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 14:30:55 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 14:30:55 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 14:30:55 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 14:30:55 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 14:30:55 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 14:30:56 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 14:30:56 INFO: Mouse - Created.
+Sun Apr 22 14:30:56 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 14:30:56 INFO: Keyboard - Created.
+Sun Apr 22 14:30:56 INFO: InputManager - InputManager created.
+Sun Apr 22 14:30:56 INFO: Kernel - Added as listener.
+Sun Apr 22 14:30:56 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 14:31:37 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 14:31:37 INFO: Kernel - Created.
+Sun Apr 22 14:31:37 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 14:31:37 INFO: WindowManager - Created
+Sun Apr 22 14:31:37 INFO: SceneManager - SceneManager created
+Sun Apr 22 14:31:37 INFO: ResourceManager - Created.
+Sun Apr 22 14:31:37 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 14:31:37 INFO: Kernel - Loading level...
+Sun Apr 22 14:31:37 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 14:31:37 INFO: Window - Window created.
+Sun Apr 22 14:31:38 INFO: Camera - Camera created.
+Sun Apr 22 14:31:38 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 14:31:38 INFO: EntityModel - Created.
+Sun Apr 22 14:31:38 INFO: Scene - EntityModel created
+Sun Apr 22 14:31:38 INFO: EntityModel - Created.
+Sun Apr 22 14:31:38 INFO: Scene - EntityModel created
+Sun Apr 22 14:31:38 INFO: EntityModel - Created.
+Sun Apr 22 14:31:38 INFO: Scene - EntityModel created
+Sun Apr 22 14:31:38 INFO: Scene - Scene created.
+Sun Apr 22 14:31:38 INFO: Scene created
+Sun Apr 22 14:31:38 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 14:31:38 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 14:31:38 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 14:31:38 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 14:31:38 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:31:38 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 14:31:38 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 14:31:38 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 14:31:38 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 14:31:38 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 14:31:38 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 14:31:38 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 14:31:38 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 14:31:38 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 14:31:38 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 14:31:38 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 14:31:38 INFO: Mouse - Created.
+Sun Apr 22 14:31:38 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 14:31:38 INFO: Keyboard - Created.
+Sun Apr 22 14:31:38 INFO: InputManager - InputManager created.
+Sun Apr 22 14:31:38 INFO: Kernel - Added as listener.
+Sun Apr 22 14:31:38 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:06:18 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:06:18 INFO: Kernel - Created.
+Sun Apr 22 15:06:18 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:06:18 INFO: WindowManager - Created
+Sun Apr 22 15:06:18 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:06:18 INFO: ResourceManager - Created.
+Sun Apr 22 15:06:18 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:06:18 INFO: Kernel - Loading level...
+Sun Apr 22 15:06:18 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:06:18 INFO: Window - Window created.
+Sun Apr 22 15:06:18 INFO: Camera - Camera created.
+Sun Apr 22 15:06:18 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:06:18 INFO: EntityModel - Created.
+Sun Apr 22 15:06:18 INFO: Scene - EntityModel created
+Sun Apr 22 15:06:18 INFO: EntityModel - Created.
+Sun Apr 22 15:06:18 INFO: Scene - EntityModel created
+Sun Apr 22 15:06:18 INFO: EntityModel - Created.
+Sun Apr 22 15:06:18 INFO: Scene - EntityModel created
+Sun Apr 22 15:06:18 INFO: Scene - Scene created.
+Sun Apr 22 15:06:18 INFO: Scene created
+Sun Apr 22 15:06:18 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:06:18 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:06:18 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:06:19 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:06:19 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:06:19 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:06:19 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:06:19 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:06:19 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:06:19 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:06:19 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:06:19 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:06:19 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:06:19 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:06:19 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:06:19 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:06:19 INFO: Mouse - Created.
+Sun Apr 22 15:06:19 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:06:19 INFO: Keyboard - Created.
+Sun Apr 22 15:06:19 INFO: InputManager - InputManager created.
+Sun Apr 22 15:06:19 INFO: Kernel - Added as listener.
+Sun Apr 22 15:06:19 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:06:43 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:06:43 INFO: Kernel - Created.
+Sun Apr 22 15:06:43 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:06:43 INFO: WindowManager - Created
+Sun Apr 22 15:06:43 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:06:43 INFO: ResourceManager - Created.
+Sun Apr 22 15:06:43 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:06:43 INFO: Kernel - Loading level...
+Sun Apr 22 15:06:43 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:06:43 INFO: Window - Window created.
+Sun Apr 22 15:06:43 INFO: Camera - Camera created.
+Sun Apr 22 15:06:43 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:06:43 INFO: EntityModel - Created.
+Sun Apr 22 15:06:43 INFO: Scene - EntityModel created
+Sun Apr 22 15:06:43 INFO: EntityModel - Created.
+Sun Apr 22 15:06:43 INFO: Scene - EntityModel created
+Sun Apr 22 15:06:43 INFO: EntityModel - Created.
+Sun Apr 22 15:06:43 INFO: Scene - EntityModel created
+Sun Apr 22 15:06:43 INFO: Scene - Scene created.
+Sun Apr 22 15:06:43 INFO: Scene created
+Sun Apr 22 15:06:43 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:06:43 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:06:43 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:06:44 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:06:44 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:06:44 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:06:44 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:06:44 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:06:44 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:06:44 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:06:44 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:06:44 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:06:44 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:06:44 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:06:44 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:06:44 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:06:44 INFO: Mouse - Created.
+Sun Apr 22 15:06:44 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:06:44 INFO: Keyboard - Created.
+Sun Apr 22 15:06:44 INFO: InputManager - InputManager created.
+Sun Apr 22 15:06:44 INFO: Kernel - Added as listener.
+Sun Apr 22 15:06:44 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:16:59 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:17:00 INFO: Kernel - Created.
+Sun Apr 22 15:17:00 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:17:00 INFO: WindowManager - Created
+Sun Apr 22 15:17:00 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:17:00 INFO: ResourceManager - Created.
+Sun Apr 22 15:17:00 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:17:00 INFO: Kernel - Loading level...
+Sun Apr 22 15:17:00 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:17:00 INFO: Window - Window created.
+Sun Apr 22 15:17:00 INFO: Camera - Camera created.
+Sun Apr 22 15:17:00 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:17:00 INFO: EntityModel - Created.
+Sun Apr 22 15:17:00 INFO: Scene - EntityModel created
+Sun Apr 22 15:17:00 INFO: EntityModel - Created.
+Sun Apr 22 15:17:00 INFO: Scene - EntityModel created
+Sun Apr 22 15:17:00 INFO: EntityModel - Created.
+Sun Apr 22 15:17:00 INFO: Scene - EntityModel created
+Sun Apr 22 15:17:00 INFO: Scene - Scene created.
+Sun Apr 22 15:17:00 INFO: Scene created
+Sun Apr 22 15:17:00 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:17:00 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:17:00 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:17:00 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:17:00 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:17:00 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:17:00 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:17:00 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:17:00 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:17:00 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:17:00 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:17:00 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:17:00 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:17:00 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:17:00 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:17:00 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:17:00 INFO: Mouse - Created.
+Sun Apr 22 15:17:00 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:17:00 INFO: Keyboard - Created.
+Sun Apr 22 15:17:00 INFO: InputManager - InputManager created.
+Sun Apr 22 15:17:00 INFO: Kernel - Added as listener.
+Sun Apr 22 15:17:00 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:33:38 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:33:38 INFO: Kernel - Created.
+Sun Apr 22 15:33:38 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:33:38 INFO: WindowManager - Created
+Sun Apr 22 15:33:38 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:33:38 INFO: ResourceManager - Created.
+Sun Apr 22 15:33:38 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:33:38 INFO: Kernel - Loading level...
+Sun Apr 22 15:33:38 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:33:38 INFO: Window - Window created.
+Sun Apr 22 15:33:38 INFO: Camera - Camera created.
+Sun Apr 22 15:33:38 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:33:38 INFO: EntityModel - Created.
+Sun Apr 22 15:33:38 INFO: Scene - EntityModel created
+Sun Apr 22 15:33:38 INFO: EntityModel - Created.
+Sun Apr 22 15:33:38 INFO: Scene - EntityModel created
+Sun Apr 22 15:33:38 INFO: EntityModel - Created.
+Sun Apr 22 15:33:38 INFO: Scene - EntityModel created
+Sun Apr 22 15:33:38 INFO: Scene - Scene created.
+Sun Apr 22 15:33:38 INFO: Scene created
+Sun Apr 22 15:33:38 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:33:38 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:33:38 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:33:39 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:33:39 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:33:39 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:33:39 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:33:39 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:33:39 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:33:39 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:33:39 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:33:39 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:33:39 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:33:39 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:33:39 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:33:39 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:33:39 INFO: Mouse - Created.
+Sun Apr 22 15:33:39 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:33:39 INFO: Keyboard - Created.
+Sun Apr 22 15:33:39 INFO: InputManager - InputManager created.
+Sun Apr 22 15:33:39 INFO: Kernel - Added as listener.
+Sun Apr 22 15:33:39 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:40:40 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:40:40 INFO: Kernel - Created.
+Sun Apr 22 15:40:40 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:40:40 INFO: WindowManager - Created
+Sun Apr 22 15:40:40 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:40:40 INFO: ResourceManager - Created.
+Sun Apr 22 15:40:40 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:40:40 INFO: Kernel - Loading level...
+Sun Apr 22 15:40:40 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:40:40 INFO: Window - Window created.
+Sun Apr 22 15:40:40 INFO: Camera - Camera created.
+Sun Apr 22 15:40:40 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:40:40 INFO: EntityModel - Created.
+Sun Apr 22 15:40:40 INFO: Scene - EntityModel created
+Sun Apr 22 15:40:40 INFO: EntityModel - Created.
+Sun Apr 22 15:40:40 INFO: Scene - EntityModel created
+Sun Apr 22 15:40:40 INFO: EntityModel - Created.
+Sun Apr 22 15:40:40 INFO: Scene - EntityModel created
+Sun Apr 22 15:40:40 INFO: Scene - Scene created.
+Sun Apr 22 15:40:40 INFO: Scene created
+Sun Apr 22 15:40:40 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:40:40 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:40:40 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:40:41 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:40:41 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:40:41 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:40:41 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:40:41 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:40:41 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:40:41 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:40:41 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:40:41 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:40:41 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:40:41 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:40:41 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:40:41 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:40:41 INFO: Mouse - Created.
+Sun Apr 22 15:40:41 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:40:41 INFO: Keyboard - Created.
+Sun Apr 22 15:40:41 INFO: InputManager - InputManager created.
+Sun Apr 22 15:40:41 INFO: Kernel - Added as listener.
+Sun Apr 22 15:40:41 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:40:50 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:40:50 INFO: Kernel - Created.
+Sun Apr 22 15:40:50 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:40:50 INFO: WindowManager - Created
+Sun Apr 22 15:40:50 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:40:50 INFO: ResourceManager - Created.
+Sun Apr 22 15:40:50 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:40:50 INFO: Kernel - Loading level...
+Sun Apr 22 15:40:50 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:40:50 INFO: Window - Window created.
+Sun Apr 22 15:40:50 INFO: Camera - Camera created.
+Sun Apr 22 15:40:50 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:40:50 INFO: EntityModel - Created.
+Sun Apr 22 15:40:50 INFO: Scene - EntityModel created
+Sun Apr 22 15:40:50 INFO: EntityModel - Created.
+Sun Apr 22 15:40:50 INFO: Scene - EntityModel created
+Sun Apr 22 15:40:50 INFO: EntityModel - Created.
+Sun Apr 22 15:40:50 INFO: Scene - EntityModel created
+Sun Apr 22 15:40:50 INFO: Scene - Scene created.
+Sun Apr 22 15:40:50 INFO: Scene created
+Sun Apr 22 15:40:50 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:40:50 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:40:50 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:40:51 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:40:51 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:40:51 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:40:51 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:40:51 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:40:51 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:40:51 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:40:51 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:40:51 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:40:51 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:40:51 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:40:51 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:40:51 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:40:51 INFO: Mouse - Created.
+Sun Apr 22 15:40:51 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:40:51 INFO: Keyboard - Created.
+Sun Apr 22 15:40:51 INFO: InputManager - InputManager created.
+Sun Apr 22 15:40:51 INFO: Kernel - Added as listener.
+Sun Apr 22 15:40:51 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:43:11 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:43:11 INFO: Kernel - Created.
+Sun Apr 22 15:43:11 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:43:11 INFO: WindowManager - Created
+Sun Apr 22 15:43:11 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:43:11 INFO: ResourceManager - Created.
+Sun Apr 22 15:43:11 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:43:11 INFO: Kernel - Loading level...
+Sun Apr 22 15:43:11 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:43:11 INFO: Window - Window created.
+Sun Apr 22 15:43:11 INFO: Camera - Camera created.
+Sun Apr 22 15:43:11 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:43:11 INFO: EntityModel - Created.
+Sun Apr 22 15:43:11 INFO: Scene - EntityModel created
+Sun Apr 22 15:43:11 INFO: EntityModel - Created.
+Sun Apr 22 15:43:11 INFO: Scene - EntityModel created
+Sun Apr 22 15:43:11 INFO: EntityModel - Created.
+Sun Apr 22 15:43:11 INFO: Scene - EntityModel created
+Sun Apr 22 15:43:11 INFO: Scene - Scene created.
+Sun Apr 22 15:43:11 INFO: Scene created
+Sun Apr 22 15:43:11 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:43:11 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:43:11 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:43:11 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:43:11 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:43:11 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:43:11 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:43:11 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:43:11 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:43:11 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:43:11 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:43:11 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:43:11 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:43:11 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:43:11 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:43:11 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:43:11 INFO: Mouse - Created.
+Sun Apr 22 15:43:11 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:43:11 INFO: Keyboard - Created.
+Sun Apr 22 15:43:11 INFO: InputManager - InputManager created.
+Sun Apr 22 15:43:11 INFO: Kernel - Added as listener.
+Sun Apr 22 15:43:11 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:44:20 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:44:20 INFO: Kernel - Created.
+Sun Apr 22 15:44:20 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:44:20 INFO: WindowManager - Created
+Sun Apr 22 15:44:20 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:44:20 INFO: ResourceManager - Created.
+Sun Apr 22 15:44:20 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:44:20 INFO: Kernel - Loading level...
+Sun Apr 22 15:44:20 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:44:20 INFO: Window - Window created.
+Sun Apr 22 15:44:20 INFO: Camera - Camera created.
+Sun Apr 22 15:44:20 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:44:20 INFO: EntityModel - Created.
+Sun Apr 22 15:44:20 INFO: Scene - EntityModel created
+Sun Apr 22 15:44:20 INFO: EntityModel - Created.
+Sun Apr 22 15:44:20 INFO: Scene - EntityModel created
+Sun Apr 22 15:44:20 INFO: EntityModel - Created.
+Sun Apr 22 15:44:20 INFO: Scene - EntityModel created
+Sun Apr 22 15:44:20 INFO: Scene - Scene created.
+Sun Apr 22 15:44:20 INFO: Scene created
+Sun Apr 22 15:44:20 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:44:20 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:44:20 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:44:21 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:44:21 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:44:21 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:44:21 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:44:21 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:44:21 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:44:21 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:44:21 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:44:21 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:44:21 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:44:21 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:44:21 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:44:21 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:44:21 INFO: Mouse - Created.
+Sun Apr 22 15:44:21 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:44:21 INFO: Keyboard - Created.
+Sun Apr 22 15:44:21 INFO: InputManager - InputManager created.
+Sun Apr 22 15:44:21 INFO: Kernel - Added as listener.
+Sun Apr 22 15:44:21 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:44:45 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:44:45 INFO: Kernel - Created.
+Sun Apr 22 15:44:45 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:44:45 INFO: WindowManager - Created
+Sun Apr 22 15:44:45 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:44:45 INFO: ResourceManager - Created.
+Sun Apr 22 15:44:45 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:44:45 INFO: Kernel - Loading level...
+Sun Apr 22 15:44:45 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:44:45 INFO: Window - Window created.
+Sun Apr 22 15:44:45 INFO: Camera - Camera created.
+Sun Apr 22 15:44:45 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:44:45 INFO: EntityModel - Created.
+Sun Apr 22 15:44:45 INFO: Scene - EntityModel created
+Sun Apr 22 15:44:45 INFO: EntityModel - Created.
+Sun Apr 22 15:44:45 INFO: Scene - EntityModel created
+Sun Apr 22 15:44:45 INFO: EntityModel - Created.
+Sun Apr 22 15:44:45 INFO: Scene - EntityModel created
+Sun Apr 22 15:44:45 INFO: Scene - Scene created.
+Sun Apr 22 15:44:45 INFO: Scene created
+Sun Apr 22 15:44:45 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:44:45 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:44:45 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:44:45 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:44:45 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:44:45 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:44:45 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:44:45 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:44:46 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:44:46 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:44:46 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:44:46 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:44:46 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:44:46 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:44:46 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:44:46 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:44:46 INFO: Mouse - Created.
+Sun Apr 22 15:44:46 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:44:46 INFO: Keyboard - Created.
+Sun Apr 22 15:44:46 INFO: InputManager - InputManager created.
+Sun Apr 22 15:44:46 INFO: Kernel - Added as listener.
+Sun Apr 22 15:44:46 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:45:26 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:45:26 INFO: Kernel - Created.
+Sun Apr 22 15:45:26 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:45:26 INFO: WindowManager - Created
+Sun Apr 22 15:45:26 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:45:26 INFO: ResourceManager - Created.
+Sun Apr 22 15:45:26 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:45:26 INFO: Kernel - Loading level...
+Sun Apr 22 15:45:26 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:45:26 INFO: Window - Window created.
+Sun Apr 22 15:45:26 INFO: Camera - Camera created.
+Sun Apr 22 15:45:26 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:45:26 INFO: EntityModel - Created.
+Sun Apr 22 15:45:26 INFO: Scene - EntityModel created
+Sun Apr 22 15:45:26 INFO: EntityModel - Created.
+Sun Apr 22 15:45:26 INFO: Scene - EntityModel created
+Sun Apr 22 15:45:26 INFO: EntityModel - Created.
+Sun Apr 22 15:45:26 INFO: Scene - EntityModel created
+Sun Apr 22 15:45:26 INFO: Scene - Scene created.
+Sun Apr 22 15:45:26 INFO: Scene created
+Sun Apr 22 15:45:26 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:45:26 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:45:26 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:45:26 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:45:26 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:45:26 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:45:26 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:45:26 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:45:26 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:45:26 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:45:26 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:45:26 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:45:26 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:45:26 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:45:26 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:45:26 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:45:26 INFO: Mouse - Created.
+Sun Apr 22 15:45:26 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:45:26 INFO: Keyboard - Created.
+Sun Apr 22 15:45:26 INFO: InputManager - InputManager created.
+Sun Apr 22 15:45:26 INFO: Kernel - Added as listener.
+Sun Apr 22 15:45:26 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:47:32 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:47:32 INFO: Kernel - Created.
+Sun Apr 22 15:47:32 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:47:32 INFO: WindowManager - Created
+Sun Apr 22 15:47:32 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:47:32 INFO: ResourceManager - Created.
+Sun Apr 22 15:47:32 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:47:32 INFO: Kernel - Loading level...
+Sun Apr 22 15:47:32 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:47:32 INFO: Window - Window created.
+Sun Apr 22 15:47:33 INFO: Camera - Camera created.
+Sun Apr 22 15:47:33 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:47:33 INFO: EntityModel - Created.
+Sun Apr 22 15:47:33 INFO: Scene - EntityModel created
+Sun Apr 22 15:47:33 INFO: EntityModel - Created.
+Sun Apr 22 15:47:33 INFO: Scene - EntityModel created
+Sun Apr 22 15:47:33 INFO: EntityModel - Created.
+Sun Apr 22 15:47:33 INFO: Scene - EntityModel created
+Sun Apr 22 15:47:33 INFO: Scene - Scene created.
+Sun Apr 22 15:47:33 INFO: Scene created
+Sun Apr 22 15:47:33 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:47:33 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:47:33 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:47:33 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:47:33 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:47:33 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:47:33 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:47:33 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:47:33 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:47:33 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:47:33 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:47:33 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:47:33 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:47:33 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:47:33 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:47:33 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:47:33 INFO: Mouse - Created.
+Sun Apr 22 15:47:33 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:47:33 INFO: Keyboard - Created.
+Sun Apr 22 15:47:33 INFO: InputManager - InputManager created.
+Sun Apr 22 15:47:33 INFO: Kernel - Added as listener.
+Sun Apr 22 15:47:33 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:48:15 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:48:15 INFO: Kernel - Created.
+Sun Apr 22 15:48:15 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:48:15 INFO: WindowManager - Created
+Sun Apr 22 15:48:15 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:48:15 INFO: ResourceManager - Created.
+Sun Apr 22 15:48:15 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:48:15 INFO: Kernel - Loading level...
+Sun Apr 22 15:48:15 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:48:15 INFO: Window - Window created.
+Sun Apr 22 15:48:16 INFO: Camera - Camera created.
+Sun Apr 22 15:48:16 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:48:16 INFO: EntityModel - Created.
+Sun Apr 22 15:48:16 INFO: Scene - EntityModel created
+Sun Apr 22 15:48:16 INFO: EntityModel - Created.
+Sun Apr 22 15:48:16 INFO: Scene - EntityModel created
+Sun Apr 22 15:48:16 INFO: EntityModel - Created.
+Sun Apr 22 15:48:16 INFO: Scene - EntityModel created
+Sun Apr 22 15:48:16 INFO: Scene - Scene created.
+Sun Apr 22 15:48:16 INFO: Scene created
+Sun Apr 22 15:48:16 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:48:16 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:48:16 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:48:16 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:48:16 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:48:16 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:48:16 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:48:16 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:48:16 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:48:16 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:48:16 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:48:16 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:48:16 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:48:16 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:48:16 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:48:16 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:48:16 INFO: Mouse - Created.
+Sun Apr 22 15:48:16 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:48:16 INFO: Keyboard - Created.
+Sun Apr 22 15:48:16 INFO: InputManager - InputManager created.
+Sun Apr 22 15:48:16 INFO: Kernel - Added as listener.
+Sun Apr 22 15:48:16 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 15:48:45 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 15:48:45 INFO: Kernel - Created.
+Sun Apr 22 15:48:45 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 15:48:45 INFO: WindowManager - Created
+Sun Apr 22 15:48:45 INFO: SceneManager - SceneManager created
+Sun Apr 22 15:48:45 INFO: ResourceManager - Created.
+Sun Apr 22 15:48:45 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 15:48:45 INFO: Kernel - Loading level...
+Sun Apr 22 15:48:45 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 15:48:45 INFO: Window - Window created.
+Sun Apr 22 15:48:45 INFO: Camera - Camera created.
+Sun Apr 22 15:48:45 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 15:48:45 INFO: EntityModel - Created.
+Sun Apr 22 15:48:45 INFO: Scene - EntityModel created
+Sun Apr 22 15:48:45 INFO: EntityModel - Created.
+Sun Apr 22 15:48:45 INFO: Scene - EntityModel created
+Sun Apr 22 15:48:45 INFO: EntityModel - Created.
+Sun Apr 22 15:48:45 INFO: Scene - EntityModel created
+Sun Apr 22 15:48:45 INFO: Scene - Scene created.
+Sun Apr 22 15:48:45 INFO: Scene created
+Sun Apr 22 15:48:45 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 15:48:45 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 15:48:45 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 15:48:45 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 15:48:45 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:48:45 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 15:48:45 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 15:48:45 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 15:48:45 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 15:48:45 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 15:48:45 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 15:48:45 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 15:48:45 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 15:48:45 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 15:48:45 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 15:48:45 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 15:48:45 INFO: Mouse - Created.
+Sun Apr 22 15:48:45 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 15:48:45 INFO: Keyboard - Created.
+Sun Apr 22 15:48:45 INFO: InputManager - InputManager created.
+Sun Apr 22 15:48:45 INFO: Kernel - Added as listener.
+Sun Apr 22 15:48:45 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 16:04:30 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 16:04:30 INFO: Kernel - Created.
+Sun Apr 22 16:04:30 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 16:04:30 INFO: WindowManager - Created
+Sun Apr 22 16:04:30 INFO: SceneManager - SceneManager created
+Sun Apr 22 16:04:30 INFO: ResourceManager - Created.
+Sun Apr 22 16:04:30 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 16:04:30 INFO: Kernel - Loading level...
+Sun Apr 22 16:04:30 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 16:04:30 INFO: Window - Window created.
+Sun Apr 22 16:04:30 INFO: Camera - Camera created.
+Sun Apr 22 16:04:30 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 16:04:30 INFO: EntityModel - Created.
+Sun Apr 22 16:04:30 INFO: Scene - EntityModel created
+Sun Apr 22 16:04:30 INFO: EntityModel - Created.
+Sun Apr 22 16:04:30 INFO: Scene - EntityModel created
+Sun Apr 22 16:04:30 INFO: EntityModel - Created.
+Sun Apr 22 16:04:30 INFO: Scene - EntityModel created
+Sun Apr 22 16:04:30 INFO: Scene - Scene created.
+Sun Apr 22 16:04:30 INFO: Scene created
+Sun Apr 22 16:04:30 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 16:04:30 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 16:04:30 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 16:04:30 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 16:04:30 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 16:04:30 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 16:04:30 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 16:04:30 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 16:04:30 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 16:04:30 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 16:04:30 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 16:04:30 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 16:04:30 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 16:04:30 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 16:04:30 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 16:04:30 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 16:04:30 INFO: Mouse - Created.
+Sun Apr 22 16:04:30 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 16:04:30 INFO: Keyboard - Created.
+Sun Apr 22 16:04:30 INFO: InputManager - InputManager created.
+Sun Apr 22 16:04:30 INFO: Kernel - Added as listener.
+Sun Apr 22 16:04:30 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 16:04:42 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 16:04:42 INFO: Kernel - Created.
+Sun Apr 22 16:04:42 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 16:04:42 INFO: WindowManager - Created
+Sun Apr 22 16:04:42 INFO: SceneManager - SceneManager created
+Sun Apr 22 16:04:42 INFO: ResourceManager - Created.
+Sun Apr 22 16:04:42 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 16:04:42 INFO: Kernel - Loading level...
+Sun Apr 22 16:04:42 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 16:04:42 INFO: Window - Window created.
+Sun Apr 22 16:04:43 INFO: Camera - Camera created.
+Sun Apr 22 16:04:43 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 16:04:43 INFO: EntityModel - Created.
+Sun Apr 22 16:04:43 INFO: Scene - EntityModel created
+Sun Apr 22 16:04:43 INFO: EntityModel - Created.
+Sun Apr 22 16:04:43 INFO: Scene - EntityModel created
+Sun Apr 22 16:04:43 INFO: EntityModel - Created.
+Sun Apr 22 16:04:43 INFO: Scene - EntityModel created
+Sun Apr 22 16:04:43 INFO: Scene - Scene created.
+Sun Apr 22 16:04:43 INFO: Scene created
+Sun Apr 22 16:04:43 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 16:04:43 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 16:04:43 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 16:04:43 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 16:04:43 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 16:04:43 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 16:04:43 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 16:04:43 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 16:04:43 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 16:04:43 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 16:04:43 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 16:04:43 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 16:04:43 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 16:04:43 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 16:04:43 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 16:04:43 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 16:04:43 INFO: Mouse - Created.
+Sun Apr 22 16:04:43 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 16:04:43 INFO: Keyboard - Created.
+Sun Apr 22 16:04:43 INFO: InputManager - InputManager created.
+Sun Apr 22 16:04:43 INFO: Kernel - Added as listener.
+Sun Apr 22 16:04:43 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 16:06:51 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 16:06:51 INFO: Kernel - Created.
+Sun Apr 22 16:06:51 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 16:06:51 INFO: WindowManager - Created
+Sun Apr 22 16:06:51 INFO: SceneManager - SceneManager created
+Sun Apr 22 16:06:51 INFO: ResourceManager - Created.
+Sun Apr 22 16:06:51 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 16:06:51 INFO: Kernel - Loading level...
+Sun Apr 22 16:06:51 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 16:06:51 INFO: Window - Window created.
+Sun Apr 22 16:06:51 INFO: Camera - Camera created.
+Sun Apr 22 16:06:51 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 16:06:51 INFO: EntityModel - Created.
+Sun Apr 22 16:06:51 INFO: Scene - EntityModel created
+Sun Apr 22 16:06:51 INFO: EntityModel - Created.
+Sun Apr 22 16:06:51 INFO: Scene - EntityModel created
+Sun Apr 22 16:06:51 INFO: EntityModel - Created.
+Sun Apr 22 16:06:51 INFO: Scene - EntityModel created
+Sun Apr 22 16:06:51 INFO: Scene - Scene created.
+Sun Apr 22 16:06:51 INFO: Scene created
+Sun Apr 22 16:06:51 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 16:06:51 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 16:06:51 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 16:06:51 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 16:06:51 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 16:06:51 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 16:06:51 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 16:06:51 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 16:06:51 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 16:06:51 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 16:06:51 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 16:06:51 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 16:06:51 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 16:06:51 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 16:06:51 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 16:06:51 ERROR: Mouse - Failed to Acquire mouse.
+Sun Apr 22 16:06:51 INFO: Mouse - Created.
+Sun Apr 22 16:06:51 WARNING: Keyboard - Failed to Acquire keyboard.
+Sun Apr 22 16:06:51 INFO: Keyboard - Created.
+Sun Apr 22 16:06:51 INFO: InputManager - InputManager created.
+Sun Apr 22 16:06:51 INFO: Kernel - Added as listener.
+Sun Apr 22 16:06:51 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Sun Apr 22 16:07:04 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Sun Apr 22 16:07:04 INFO: Kernel - Created.
+Sun Apr 22 16:07:04 INFO: WindowManager - SetWindowClassEx successful.
+Sun Apr 22 16:07:04 INFO: WindowManager - Created
+Sun Apr 22 16:07:04 INFO: SceneManager - SceneManager created
+Sun Apr 22 16:07:04 INFO: ResourceManager - Created.
+Sun Apr 22 16:07:04 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Sun Apr 22 16:07:04 INFO: Kernel - Loading level...
+Sun Apr 22 16:07:04 INFO: Window - Created handler for window with title:'Choo Choo'
+Sun Apr 22 16:07:04 INFO: Window - Window created.
+Sun Apr 22 16:07:04 INFO: Camera - Camera created.
+Sun Apr 22 16:07:04 WARNING: Scene - Unable to read level file. (..\Assets\Levels\level1.txt)
+Sun Apr 22 16:07:04 INFO: EntityModel - Created.
+Sun Apr 22 16:07:04 INFO: Scene - EntityModel created
+Sun Apr 22 16:07:04 INFO: EntityModel - Created.
+Sun Apr 22 16:07:04 INFO: Scene - EntityModel created
+Sun Apr 22 16:07:04 INFO: EntityModel - Created.
+Sun Apr 22 16:07:04 INFO: Scene - EntityModel created
+Sun Apr 22 16:07:04 INFO: Scene - Scene created.
+Sun Apr 22 16:07:04 INFO: Scene created
+Sun Apr 22 16:07:04 INFO: MeshLoaderDx - MeshLoaderDx created.
+Sun Apr 22 16:07:04 INFO: TextureLoaderDx - TextureLoaderDx created.
+Sun Apr 22 16:07:04 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Sun Apr 22 16:07:04 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Sun Apr 22 16:07:04 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 16:07:04 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Sun Apr 22 16:07:04 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Sun Apr 22 16:07:04 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Sun Apr 22 16:07:04 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Sun Apr 22 16:07:04 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Sun Apr 22 16:07:04 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Sun Apr 22 16:07:04 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Sun Apr 22 16:07:04 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Sun Apr 22 16:07:04 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Sun Apr 22 16:07:04 INFO: Kernel - Scenes are successfully prepared.
+Sun Apr 22 16:07:05 INFO: Mouse - Succesfully Acquired.
+Sun Apr 22 16:07:05 INFO: Mouse - Created.
+Sun Apr 22 16:07:05 INFO: Keyboard - Succesfully Acquired.
+Sun Apr 22 16:07:05 INFO: Keyboard - Created.
+Sun Apr 22 16:07:05 INFO: InputManager - InputManager created.
+Sun Apr 22 16:07:05 INFO: Kernel - Added as listener.
+Sun Apr 22 16:07:05 INFO: Kernel - Level is successfully loaded.

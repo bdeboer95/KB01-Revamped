@@ -8,7 +8,6 @@ class Vector3;
 class Matrix
 {
 public:
-	float m[4][4]; //is this necessary?
 	Matrix() {}; //Constructor
 	Matrix(const float *); //Overloaded constructor
 	union {

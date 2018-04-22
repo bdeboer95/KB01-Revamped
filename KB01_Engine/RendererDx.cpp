@@ -10,6 +10,8 @@
 #include <strsafe.h>
 #include <vector>
 #include <iostream>
+#include "Vector3.h"
+#include "Matrix.h"
 
 /// <summary>
 /// Initializes a new instance of the <see cref="RendererDx"/> class.

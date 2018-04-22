@@ -20,9 +20,9 @@
 #define __CAMERA_H__
 
 #include "Renderer.h"
-#include "Entity.h"
 
-class Camera : public Entity
+
+class Camera 
 {
 public:
 	Camera();

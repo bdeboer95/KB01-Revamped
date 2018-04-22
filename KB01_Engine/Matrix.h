@@ -3,6 +3,8 @@
 
 //TODO fix this class with comments and logic
 //TODO make test classes
+class Vector3;
+
 class Matrix
 {
 public:
@@ -56,6 +58,9 @@ public:
 
 	bool operator== (const Matrix&) const; //compare a matrix to another matrix and check if they are the same
 	bool operator!= (const Matrix&) const; //compare a matrix to aother matrix and check if they are not the same
+
+	/*static inline Matrix* MatrixLookAtLH(Matrix* out, const Vector3* eye, const Vector3* at, const Vector3* pup);
+	static inline Matrix* MatrixPerspectiveFovLH (Matrix* out, float fovy, float aspect, float zn, float zf);*/
 
 };
 #endif

@@ -6,11 +6,13 @@
 #include "Skybox.h"
 #include "CTerrain.h"
 
+class Camera;
 class Scene
 {
 private: 
-	CTerrain* terrain;
-	Skybox* skybox;
+	CTerrain* _terrain;
+	Skybox* _skybox;
+	Camera* _camera;
 	std::vector<Entity*> entityModels;
 	std::vector<std::string> meshNames;
 	std::vector<std::string> textureNames;

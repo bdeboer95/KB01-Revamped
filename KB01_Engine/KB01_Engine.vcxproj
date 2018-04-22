@@ -34,6 +34,7 @@
     <ClInclude Include="KernelInterface.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Matrix.h" />
+    <ClInclude Include="MatrixMath.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Observee.h" />
     <ClInclude Include="ResourceLoader.h" />
@@ -94,6 +95,7 @@
     <ClCompile Include="Kernel.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="MatrixMath.cpp" />
     <ClCompile Include="MeshLoaderDx.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="Mesh.cpp" />

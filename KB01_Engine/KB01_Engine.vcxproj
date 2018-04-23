@@ -59,12 +59,13 @@
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureLoaderDx.h" />
     <ClInclude Include="DXVector3.h" />
-    <ClInclude Include="TransformationEvent.hpp" />
+    <ClInclude Include="TransformationEvent.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="WindowManagerFacade.h" />
+    <ClInclude Include="XMLParser.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BMPLoader.cpp" />
@@ -122,6 +123,7 @@
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="WindowManagerFacade.cpp" />
+    <ClCompile Include="XMLParser.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{02AB0373-88EC-451F-93EB-A21D8C241CF1}</ProjectGuid>
@@ -171,7 +173,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)KB01_Engine\Include\DirectX\Header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)KB01_Engine\Include\DirectX\Header;$(SolutionDir)KB01_Engine\Include\XMLParse\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -196,7 +198,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)KB01_Engine\Include\DirectX\Header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)KB01_Engine\Include\DirectX\Header;$(SolutionDir)KB01_Engine\Include\XMLParse\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

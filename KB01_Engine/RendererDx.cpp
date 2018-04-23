@@ -19,7 +19,7 @@
 RendererDx::RendererDx()
 {
 	_direct3D = NULL; // Used to create the D3DDevice
-					  //InitDevice(GetForegroundWindow());
+					 //InitDevice(GetForegroundWindow());
 	_vertexBuffer = NULL; // Buffer to hold vertices
 }
 
@@ -313,6 +313,53 @@ void RendererDx::Present(HWND hWnd)
 {
 	_direct3DDevice->Present(NULL, NULL, hWnd, NULL);
 }
+
+
+
+
+
+
+
+
+
+
+//void RendererDx::CreateSwapChain()
+//{
+//	D3DPRESENT_PARAMETERS swapChainParameters;
+// ZeroMemory(&deviceConfig, sizeof(deviceConfig));
+//	deviceConfig.Windowed = TRUE;
+//	deviceConfig.SwapEffect = D3DSWAPEFFECT_DISCARD;
+//	deviceConfig.BackBufferFormat = D3DFMT_UNKNOWN;
+//	deviceConfig.BackBufferHeight = 1024;
+//	deviceConfig.BackBufferWidth = 768;
+//	deviceConfig.EnableAutoDepthStencil = TRUE;
+//	deviceConfig.AutoDepthStencilFormat = D3DFMT_D16;
+//	
+//
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

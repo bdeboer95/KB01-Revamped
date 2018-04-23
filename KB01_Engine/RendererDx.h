@@ -29,7 +29,7 @@ private:
 	};
 
 public:
-	RendererDx();
+							RendererDx();
 	virtual					~RendererDx();
 
 	virtual bool			Cleanup();
@@ -37,13 +37,13 @@ public:
 	virtual void*			GetDevice();
 
 	virtual void*			GetBackBuffer();
-	virtual float			GetBackBufferWidth();
+	virtual float			GetBackBufferWidth() ;
 	virtual float			GetBackBufferHeight();
 	virtual void			ClearBuffer(int R, int G, int B);
 
 	virtual bool			InitVertexBuffer(); // why no initindexbuffer?
-	virtual void*			GetVertexBuffer();
-	virtual void			SetVertexBuffer(VertexBuffer* _vertexBuffer);
+	virtual void*			GetVertexBuffer() ;
+	virtual void			SetVertexBuffer(VertexBuffer* _vertexBuffer) ;
 
 	virtual void*			GetIndexBuffer();
 	virtual void			SetIndexBuffer(IndexBuffer* _indexBuffer);
@@ -56,7 +56,7 @@ public:
 	virtual void			SetStreamSource(UINT streamNumber, VertexBuffer* streamData, UINT offsetInBytes, UINT strude);
 	virtual void			SetViewPort(void* _viewPort);
 	virtual void			SetMaterial(void* _material, UINT _index);
-	virtual void			SetTexture(void* _texture, UINT _index);
+	virtual void			SetTexture(void* _texture, UINT _index) ;
 	virtual void			SetFVF(DWORD FVF);
 
 	virtual void			Present(HWND _hwnd);

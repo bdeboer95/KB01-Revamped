@@ -6,14 +6,12 @@ MatrixMath::MatrixMath()
 {
 }
 
-
 MatrixMath::~MatrixMath()
 {
 
 }
 
-
-Matrix* MatrixMath::MatrixLookAtLH(Matrix* out, const Vector3* eye, const Vector3* at, const Vector3* pup)
+Matrix* MatrixMath::LookAtLH(Matrix* out, const Vector3* eye, const Vector3* at, const Vector3* pup)
 {
 	Vector3 right, rightn, up, upn, vec, vec2;
 	Vector3Math* vector3Math = new Vector3Math();
@@ -47,7 +45,7 @@ Matrix* MatrixMath::MatrixLookAtLH(Matrix* out, const Vector3* eye, const Vector
 
 }
 
-Matrix* MatrixMath::MatrixPerspectiveFovLH(Matrix* out, float fovy, float aspect, float zn, float zf)
+Matrix* MatrixMath::PerspectiveFovLH(Matrix* out, float fovy, float aspect, float zn, float zf)
 {
 	MatrixIdentity(out);
 	out->m[0][0] = 1.0f / (aspect * tan(fovy / 2.0f));
@@ -58,6 +56,65 @@ Matrix* MatrixMath::MatrixPerspectiveFovLH(Matrix* out, float fovy, float aspect
 	out->m[3][3] = 0.0f;
 	return out;
 }
+
+Matrix* MatrixMath::Translation(Matrix* out, float x, float y, float z)
+{
+	MatrixIdentity(out);
+
+	out->m[3][0] = x;
+	out->m[3][1] = y;
+	out->m[3][2] = z;
+
+	return out;
+}
+
+Matrix* MatrixMath::RotationX(Matrix* out, float angle)
+{
+	MatrixIdentity(out);
+
+	out->m[1][1] = cos(angle);
+	out->m[2][2] = cos(angle);
+	out->m[1][2] = sin(angle);
+	out->m[2][1] = -sin(angle);
+
+	return out;
+}
+
+Matrix* MatrixMath::RotationY(Matrix* out, float angle)
+{
+	MatrixIdentity(out);
+
+	out->m[0][0] = cos(angle);
+	out->m[2][2] = cos(angle);
+	out->m[0][2] = -sin(angle);
+	out->m[2][0] = sin(angle);
+
+	return out;
+}
+
+Matrix* MatrixMath::RotationZ(Matrix* out, float angle)
+{
+	MatrixIdentity(out);
+
+	out->m[0][0] = cos(angle);
+	out->m[1][1] = cos(angle);
+	out->m[0][1] = sin(angle);
+	out->m[1][0] = -sin(angle);
+
+	return out;
+}
+
+Matrix* MatrixMath::Scaling(Matrix* out, float x, float y, float z)
+{
+	MatrixIdentity(out);
+
+	out->m[0][0] = x;
+	out->m[1][1] = y;
+	out->m[2][2] = z;
+
+	return out;
+}
+
 inline  Matrix* MatrixMath::MatrixIdentity(Matrix* out)
 {
 	if (!out) return NULL;

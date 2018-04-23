@@ -1,32 +1,61 @@
 #ifndef __TERRAIN_H__
 #define __TERRAIN_H__
 
-#define D3DFVF_CUSTOMVERTEX (D3DFVF_XYZ|D3DFVF_DIFFUSE) 
+#include "CWorldTransform.h"
+#include "CTriangleStripPlane.h"
+#include "CUtility.h"
+#include "CVertexBuffer.h"
+#include "CIndexBuffer.h"
+#include "CustomVertex.h"
 
-#include "Heightmap.h"
-#include "Renderer.h"
-#include "Texture.h"
+#include "InputListener.h"
+#include "Entity.h"
+#include "VertexBuffer.h"
+#include "IndexBuffer.h"
 
-class Terrain
+class Renderer;
+
+ //forward declared classes, solution for associtions > dependencies?
+class Terrain : public CWorldTransform, public InputListener, public Entity
 {
 public:
-	struct CUSTOMVERTEX
-	{
-		FLOAT x, y, z;		// The transformed position for the vertex
-		DWORD color;        // The vertex color
-	};
-	BITMAPINFOHEADER bmpinfo;
-	int width;
-	int height;
 	Terrain();
 	~Terrain();
-	
-	void Initialize(Renderer* _renderer, Texture* _texture);
-	void FillVertexBuffer(Renderer* _renderer);
-	void FillIndexBuffer(Renderer* _renderer);
-	void Render(Renderer* _renderer);
-private:
-	Texture* texture;
-};
-#endif
 
+	float _positionX;
+	float _positionY;
+	float _positionZ;
+		  
+	float _rotationX;
+	float _rotationY;
+
+
+	bool Initialize(Renderer* renderer, char* rawFile, char* terrainTexture);
+	void Render(Renderer* renderer);
+	void Release();
+
+private:
+	VertexBuffer*		_vertexBuffer;
+	IndexBuffer*		_indexBuffer;
+
+	LPDIRECT3DTEXTURE9	_texture;
+	unsigned char*		_height;
+
+	unsigned int		_numVertices;
+	unsigned int		_numIndices;
+
+	Matrix  			_matRotateX; //the matrix for the rotation on the x-axis
+	Matrix  			_matRotateY;//the matrix for the rotation on the y-axis
+	Matrix  			_matRotateZ;//the matrix for the rotation on the z-axis
+		    
+	Matrix  			_matWorld; //the matrix that contains  the multiplication of all the modification matrices (scale, rotate, translate)
+	Matrix  			_matScale; //the matrix for the scaling of the skybox
+	Matrix  			_matTranslate; //the matrix for the translation of the 
+
+	float				_speed;
+
+	void Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y);
+
+};
+
+#endif

@@ -1,6 +1,7 @@
 ﻿#include "Camera.h"
 #include "MatrixMath.h"
 #include "Vector3.h"
+
 /// <summary>
 /// Initializes a new instance of the <see cref="Camera"/> class.
 /// </summary>
@@ -19,9 +20,8 @@ Camera::~Camera(void)
 	Log::Instance()->LogMessage("~Camera - Camera cleaned up!", Log::MESSAGE_INFO);
 }
 
-void Camera::SetCamera(Renderer* _renderer)
+void Camera::SetCamera(Renderer* renderer)
 {
-
 	Matrix matWorld, matWorldX, matWorldY, matWorldZ;
 	Matrix matView;
 	Matrix matProj;
@@ -32,11 +32,12 @@ void Camera::SetCamera(Renderer* _renderer)
 	Vector3 m_right = Vector3(1.0f, 0.0f, 0.0f);
 
 	// Where to implement these functions???
-	MatrixMath* math = new MatrixMath();
-	math->MatrixLookAtLH(&matView, &cameraPosition, &cameraTarget, &cameraUpVector);
+	MatrixMath* matrix = new MatrixMath();
 
-	_renderer->SetTransform(_renderer->VIEW, &matView);
-	math->MatrixPerspectiveFovLH(&matProj, _renderer->PI / 4, 1.0f, 1.0f, 2000.0f);
-	_renderer->SetTransform(_renderer->PROJECTION, &matProj);
+	matrix->LookAtLH(&matView, &cameraPosition, &cameraTarget, &cameraUpVector);
+	renderer->SetTransform(renderer->VIEW, &matView);
+
+	matrix->PerspectiveFovLH(&matProj, renderer->PI / 4, 1.0f, 1.0f, 2000.0f);
+	renderer->SetTransform(renderer->PROJECTION, &matProj);
 }
 

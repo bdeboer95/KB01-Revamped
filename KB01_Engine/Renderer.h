@@ -8,6 +8,9 @@
 
 class Matrix;
 class Vector3;
+class VertexBuffer;
+class IndexBuffer;
+
 class Renderer
 {
 public:
@@ -24,17 +27,17 @@ public:
 
 	virtual bool			InitVertexBuffer() = 0; // why no initindexbuffer?
 	virtual void*			GetVertexBuffer() = 0;
-	//virtual void			SetVertexBuffer(VertexBuffer* _vertexBuffer) = 0;
+	virtual void			SetVertexBuffer(VertexBuffer* _vertexBuffer) = 0;
 
 	virtual void*			GetIndexBuffer() = 0;
-	//virtual void			SetIndexBuffer(IndexBuffer* _indexBuffer) = 0;
+	virtual void			SetIndexBuffer( IndexBuffer* _indexBuffer) = 0;
 
 	virtual void			DrawIndexedPrimitive(unsigned int primitiveType, UINT baseVertexIndex, UINT minVertexIndex, UINT _numberOfVertices, UINT startIndex, UINT _primitiveCount) = 0;
 	virtual void			DrawPrimitive(unsigned int primitiveType, UINT startVertex, UINT primitiveCount) = 0;
 	virtual void			DrawSubset(void* _mesh, UINT _index) = 0;
 
 	virtual void			SetTransform(unsigned int transformStateType, Matrix* matrix) = 0; //Updates the Transform based on the state type that was given (World, view, etc) with the provided matrix
-	//virtual void			SetStreamSource(UINT streamNumber, VertexBuffer* streamData, UINT offsetInBytes, UINT strude) = 0;
+	virtual void			SetStreamSource(UINT streamNumber, VertexBuffer* streamData, UINT offsetInBytes, UINT strude) = 0;
 	virtual void			SetViewPort(void* _viewPort) = 0;
 	virtual void			SetMaterial(void* _material, UINT _index) = 0;
 	virtual void			SetTexture(void* _texture, UINT _index) = 0;

@@ -11,14 +11,14 @@ Skybox::Skybox(Skybox_Cube _skyboxCube)
 	positionY = 0;
 	positionZ = 3;
 	/*Matrix modifyMatrix= new Matrix()
-	matTranslate +=*/
-	D3DXMatrixTranslation((D3DXMATRIX*)&matTranslate, positionX, positionY, positionZ);
+	_matTranslate +=*/
+	D3DXMatrixTranslation((D3DXMATRIX*)&_matTranslate, positionX, positionY, positionZ);
 	D3DXMatrixScaling((D3DXMATRIX*)&matScale, // Pointer to recieve computed matrix
 		1000, // x=axis scale
 		1000, // y-axis scale
 		1000 // z-axis scale
 	);
-	matWorld = matScale * matTranslate *matRotateY* matRotateX;
+	matWorld = matScale * _matTranslate *_matRotateY* _matRotateX;
 	speed = 1.0f;
 
 }
@@ -126,10 +126,10 @@ void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 	//}
 	
 
-	D3DXMatrixTranslation((D3DXMATRIX*)&matTranslate, positionX, positionY, positionZ);
-	D3DXMatrixRotationX((D3DXMATRIX*)&matRotateX, rotationX);
-	D3DXMatrixRotationY((D3DXMATRIX*)&matRotateY, rotationY);
-	matWorld = matScale * matTranslate  * matRotateX* matRotateY;
+	D3DXMatrixTranslation((D3DXMATRIX*)&_matTranslate, positionX, positionY, positionZ);
+	D3DXMatrixRotationX((D3DXMATRIX*)&_matRotateX, rotationX);
+	D3DXMatrixRotationY((D3DXMATRIX*)&_matRotateY, rotationY);
+	matWorld = matScale * _matTranslate  * _matRotateX* _matRotateY;
 
 }
 

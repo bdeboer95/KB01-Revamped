@@ -28,7 +28,6 @@
     <ClInclude Include="CustomVertex.h" />
     <ClInclude Include="CUtility.h" />
     <ClInclude Include="CVertexBuffer.h" />
-    <ClInclude Include="CWorldTransform.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityModel.h" />
     <ClInclude Include="IndexBuffer.h" />
@@ -38,7 +37,6 @@
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="MatrixMath.h" />
     <ClInclude Include="Mesh.h" />
-    <ClInclude Include="Observee.h" />
     <ClInclude Include="ResourceLoader.h" />
     <ClInclude Include="Heightmap.h" />
     <ClInclude Include="Device.h" />

@@ -215,6 +215,9 @@
     <ClCompile Include="Terrain.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
+    <ClCompile Include="XMLParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Kernel.h">
@@ -361,13 +364,7 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CWorldTransform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CVertexBuffer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Observee.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CTimer.h">

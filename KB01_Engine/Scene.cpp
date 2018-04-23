@@ -15,12 +15,10 @@ Scene::Scene(int _levelIndex, HWND _hWnd, std::string _level)
 	Camera* cam = new Camera();
 	//entityModels.push_back(cam);
 	SceneLoader(_level);
-	//CreateEntityModel("Tiger.x", "luipard.jpg",0, 0, 5);
 	CreateEntityModel("Tiger.x", "zebra.jpg", 1,-10, 25);
 	CreateEntityModel("Tiger.x", "zebra3.bmp", 2,-10, 25);
 	CreateEntityModel("Tiger.x", "zebra3.bmp", 3, -10, 25);
-	//terrain = new Terrain();
-	_terrain = new CTerrain();
+	_terrain = new Terrain();
 	Log::Instance()->LogMessage("Scene - Scene created.", Log::MESSAGE_INFO);
 }
 
@@ -102,7 +100,7 @@ HRESULT Scene::SetupGeometry(ResourceManager* _resourceManager, Renderer* _rende
 	sky.right = "skybox3_right.tga";
 	_skybox = new Skybox(sky);
 	_skybox->InitGeometry(_renderer, _resourceManager);
-	_terrain->Initialize(static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()), "heightdata.raw", "terrainbrown.jpg");
+	_terrain->Initialize(_renderer, "heightdata.raw", "terrainbrown.jpg");
 	ShowWindow(hWnd, SW_MAXIMIZE);
 	UpdateWindow(hWnd);
 	return S_OK;
@@ -242,7 +240,7 @@ void Scene::GetEntityModelFromFile(std::string line)
 	{
 		if (str == "E1")
 		{
-			_terrain = new CTerrain();
+			_terrain = new Terrain();
 		}
 
 		if (str == "E2")
@@ -347,7 +345,7 @@ Skybox* Scene::GetSkyBox()
 {
 	return _skybox;
 }
-CTerrain* Scene::GetTerrain()
+Terrain* Scene::GetTerrain()
 {
 	return _terrain;
 }

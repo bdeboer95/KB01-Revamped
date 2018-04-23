@@ -29,37 +29,36 @@ private:
 	};
 
 public:
-							RendererDx();
+	RendererDx();
 	virtual					~RendererDx();
-
-	virtual bool			Cleanup();
-	virtual bool			InitDevice(HWND _hWnd);
-	virtual void*			GetDevice();
+	virtual bool			Cleanup(); //Deletes all the pointers that have been initialized
+	virtual bool			InitDevice(HWND hWnd); //Initializes the graphical device
+	virtual void*			GetDevice(); //Gets the graphical device
 
 	virtual void*			GetBackBuffer();
-	virtual float			GetBackBufferWidth() ;
+	virtual float			GetBackBufferWidth();
 	virtual float			GetBackBufferHeight();
-	virtual void			ClearBuffer(int R, int G, int B);
+	virtual void			ClearBuffer(int r, int g, int b);
 
 	virtual bool			InitVertexBuffer(); // why no initindexbuffer?
-	virtual void*			GetVertexBuffer() ;
-	virtual void			SetVertexBuffer(VertexBuffer* _vertexBuffer) ;
+	virtual void*			GetVertexBuffer();
+	virtual void			SetVertexBuffer(VertexBuffer* vertexBuffer);
 
 	virtual void*			GetIndexBuffer();
-	virtual void			SetIndexBuffer(IndexBuffer* _indexBuffer);
+	virtual void			SetIndexBuffer(IndexBuffer* indexBuffer);
 
-	virtual void			DrawIndexedPrimitive(unsigned int primitiveType, UINT baseVertexIndex, UINT minVertexIndex, UINT _numberOfVertices, UINT startIndex, UINT _primitiveCount);
+	virtual void			DrawIndexedPrimitive(unsigned int primitiveType, UINT baseVertexIndex, UINT minVertexIndex, UINT numberOfVertices, UINT startIndex, UINT primitiveCount);
 	virtual void			DrawPrimitive(unsigned int primitiveType, UINT startVertex, UINT primitiveCount);
-	virtual void			DrawSubset(void* _mesh, UINT _index);
+	virtual void			DrawSubset(void* mesh, UINT index);
 
-	virtual void			SetTransform(unsigned int transformStateType, Matrix* matrix) = 0; //Updates the Transform based on the state type that was given (World, view, etc) with the provided matrix
+	virtual void			SetTransform(unsigned int transformStateType, Matrix* matrix); //Updates the Transform based on the state type that was given (World, view, etc) with the provided matrix
 	virtual void			SetStreamSource(UINT streamNumber, VertexBuffer* streamData, UINT offsetInBytes, UINT strude);
-	virtual void			SetViewPort(void* _viewPort);
-	virtual void			SetMaterial(void* _material, UINT _index);
-	virtual void			SetTexture(void* _texture, UINT _index) ;
+	virtual void			SetViewPort(void* viewPort);
+	virtual void			SetMaterial(void* material, UINT index);
+	virtual void			SetTexture(void* texture, UINT index);
 	virtual void			SetFVF(DWORD FVF);
+	virtual void			Present(HWND hwnd);
 
-	virtual void			Present(HWND _hwnd);
 };
 
 #endif

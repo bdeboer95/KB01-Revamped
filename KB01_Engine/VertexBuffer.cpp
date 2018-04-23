@@ -24,10 +24,10 @@ bool VertexBuffer::CreateBuffer(Renderer* renderer, unsigned int numVertices, un
 	Renderer::POOL pool = dynamic ? renderer->DEFAULT : renderer->MANAGED;
 	unsigned long usage = dynamic ? renderer->USAGE_WRITEONLY | renderer->USAGE_DYNAMIC : renderer->USAGE_WRITEONLY;
 
-	if (FAILED(renderer->CreateVertexBuffer(_numVertices * _vertexSize, usage, _FVF, pool, &_vertexBuffer, NULL)))
-	{
-		return false;		//SHOWERROR( "CreateVertexBuffer failed.", __FILE__, __LINE__ );
-	}
+	//if (FAILED(renderer->CreateVertexBuffer(_numVertices * _vertexSize, usage, _FVF, pool, &_vertexBuffer, NULL)))
+	//{
+	//	return false;		//SHOWERROR( "CreateVertexBuffer failed.", __FILE__, __LINE__ );
+	//}
 
 	return true;
 }

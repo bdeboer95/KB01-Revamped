@@ -21,6 +21,10 @@ RendererDx::RendererDx()
 	_direct3D = NULL; // Used to create the D3DDevice
 					 //InitDevice(GetForegroundWindow());
 	_vertexBuffer = NULL; // Buffer to hold vertices
+	PI = 3.141592654f;
+	USAGE_DYNAMIC = 0x00000200L;
+	USAGE_WRITEONLY = 0x00000008L;
+	LOCK_DISCARD = 0x00002000L;
 }
 
 /// <summary>
@@ -161,7 +165,7 @@ float RendererDx::GetBackBufferHeight()
 /// <param name="R">The r.</param>
 /// <param name="G">The g.</param>
 /// <param name="B">The b.</param>
-void RendererDx::ClearBuffer(int R, int G, int B)
+void RendererDx::ClearBuffer(int r, int g, int b)
 {
 	if (FAILED(_direct3DDevice->Clear(0, NULL, D3DCLEAR_TARGET /*| D3DCLEAR_ZBUFFER,*/, D3DCOLOR_XRGB(200, 200, 200), 1.0f, 0)))
 	{
@@ -199,7 +203,7 @@ void* RendererDx::GetVertexBuffer()
 
 void RendererDx::SetVertexBuffer(VertexBuffer* vertexBuffer)
 {
-	_vertexBuffer = static_cast<LPDIRECT3DVERTEXBUFFER9>(vertexBuffer);
+	_vertexBuffer = reinterpret_cast<LPDIRECT3DVERTEXBUFFER9>(vertexBuffer);
 }
 
 void* RendererDx::GetIndexBuffer()
@@ -209,7 +213,7 @@ void* RendererDx::GetIndexBuffer()
 
 void RendererDx::SetIndexBuffer(IndexBuffer* indexBuffer)
 {
-	_indexBuffer = static_cast<LPDIRECT3DINDEXBUFFER9>(indexBuffer);
+	_indexBuffer = reinterpret_cast<LPDIRECT3DINDEXBUFFER9>(indexBuffer);
 }
 
 /// <summary>
@@ -258,11 +262,11 @@ void RendererDx::SetTransform(unsigned int transformStateType, Matrix* matrix) {
 /// </summary>
 void RendererDx::SetStreamSource(UINT streamNumber, VertexBuffer* streamData, UINT offsetInBytes, UINT strude)
 {
-	_direct3DDevice->SetStreamSource(
+	/*_direct3DDevice->SetStreamSource(
 		streamNumber,
-		static_cast<IDirect3DVertexBuffer9>(streamData),
+		reinterpret_cast<LPDIRECT3DINDEXBUFFER9>(streamData),
 		offsetInBytes,
-		strude);
+		strude);*/
 }
 
 /// <summary>

@@ -32,12 +32,12 @@ private:
 	float				rotationY;
 	float				rotationZ;
 	float				speed;
-	Matrix matRotateX; //the matrix for the rotation on the x-axis
-	Matrix matRotateY;//the matrix for the rotation on the y-axis
-	Matrix matRotateZ;//the matrix for the rotation on the z-axis
+	Matrix _matRotateX; //the matrix for the rotation on the x-axis
+	Matrix _matRotateY;//the matrix for the rotation on the y-axis
+	Matrix _matRotateZ;//the matrix for the rotation on the z-axis
 	Matrix matWorld; //the matrix that contains  the multiplication of all the modification matrices (scale, rotate, translate)
 	Matrix matScale; //the matrix for the scaling of the skybox
-	Matrix matTranslate;
+	Matrix _matTranslate;
 	void				LoadTextures(ResourceManager* _resourceManager);
 
 public:

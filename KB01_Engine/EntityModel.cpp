@@ -1,8 +1,8 @@
 #include "EntityModel.h"
 #include <iostream>
 #include <vector>
-#include <dinput.h>
-#include "Observee.h"
+#include <dinput.h> //does this also need to be removed?
+#include "MatrixMath.h"
 
 #define KEYDOWN(name, key) (name[key])
 #define MSTATE(name, key) (name[key])
@@ -44,61 +44,43 @@ void EntityModel::Render(Renderer* _renderer)
 
 
 /// <summary>
-/// Changes the rotation.
+/// Handles translation and rotation for the entitymodel
 /// </summary>
-/// <param name="_renderer">The _renderer.</param>
-/// <param name="_rotation">The _rotation.</param>
+/// <param name="_renderer">The renderer used to draw the entitymodels on the backbuffer</param>
 void EntityModel::ChangeRotation(Renderer* _renderer)
 {
 	// Set up world matrix
-
-
-	LPDIRECT3DDEVICE9 pd3dDevice = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
-
 	switch (rotation)
 	{
 
 	case 0:
-		D3DXMatrixScaling(
-			&matScale, // Pointer to recieve computed matrix
-			1, // x=axis scale
-			1, // y-axis scale
-			1 // z-axis scale
-		);
 
-		D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
-		D3DXMatrixRotationX(&matRotateX, rotationX);
 		break;
-		//Move forward
+
 	case 1:
+		//Move forward
 		positionZ = positionZ + 0.1f;
-		//positionX = positionY + 0.1f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
 		break;
-		//Move left
 	case 2:
-		//rotationX = -1.0f;
+		//Move left
 		positionX = positionX - 0.1f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
-		D3DXMatrixRotationY(&matRotateX, rotationY);
-		//D3DXMatrixRotationY(&matRotateY, 0.0f);
-		//D3DXMatrixRotationZ(&matRotateZ, 0.0f);
 		break;
-		//Move backwards
+
 	case 3:
+		//Move backwards
 		positionZ = positionZ - 0.1f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
 		break;
-		//Move right
 	case 4:
-		//rotationX = 1.0f;
+		//Move right
 		positionX = positionX + 0.1f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
 		break;
 	}
-	D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
+	MatrixMath::Scale(&matScale, 1, 1, 1);
+	MatrixMath::Translate(&matTranslate, positionX, positionY, positionZ);
+	MatrixMath::RotateY(&matRotateY, rotationY);
+	MatrixMath::RotateX(&matRotateX, rotationX);
 	matWorld = matScale*matTranslate*matRotateY*matRotateX;
-	pd3dDevice->SetTransform(D3DTS_WORLD, &matWorld);
+	_renderer->SetTransform(_renderer->WORLD, &matWorld);
 	SetRotation(0);
 }
 
@@ -214,7 +196,7 @@ int EntityModel::GetRotation()
 /// Notifies the specified state.
 /// </summary>
 /// <param name="state">The state.</param>
-void EntityModel::Notify(TRANSFORMATIONEVENT transformationEvent,float x, float y)
+void EntityModel::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 {
 	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_RIGHT)
 	{

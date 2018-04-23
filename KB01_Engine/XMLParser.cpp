@@ -9,6 +9,7 @@ XMLParser::XMLParser()
 
 XMLParser::~XMLParser()
 {
+
 }
 std::string XMLParser::GetFile(const std::string& filename)
 {

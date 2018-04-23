@@ -1,16 +1,9 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
 Title : CTerrain.cpp
-Author : Chad Vernon
+
 URL : http://www.c-unit.com
-
-Description : Terrain class
-
-Created :  08/11/2005
-Modified : 12/05/2005
-
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
 #include "CTerrain.h"
 #include "Log.h"
 #include "Renderer.h"

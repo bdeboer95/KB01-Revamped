@@ -79,3 +79,38 @@ inline  Matrix* MatrixMath::MatrixIdentity(Matrix* out)
 	out->m[3][3] = 1.0f;
 	return out;
 }
+Matrix* __stdcall MatrixMath::Scale(Matrix *out, float x, float y, float z)
+{
+	MatrixIdentity(out);
+	out->m[0][0] = x;
+	out->m[1][1] = y;
+	out->m[2][2] = z;
+	return out;
+}
+Matrix* __stdcall MatrixMath::Translate(Matrix *out, float x, float y, float z)
+{
+	MatrixIdentity(out);
+	out->m[3][0] = x;
+	out->m[3][1] = y;
+	out->m[3][2] = z;
+	return out;
+}
+Matrix* __stdcall MatrixMath::RotateX(Matrix *out, float angle)
+{
+	MatrixIdentity(out);
+	out->m[1][1] = cos(angle);
+	out->m[2][2] = cos(angle);
+	out->m[1][2] = sin(angle);
+	out->m[2][1] = -sin(angle);
+	return out;
+}
+
+Matrix* __stdcall MatrixMath::RotateY(Matrix *out, float angle)
+{
+	MatrixIdentity(out);
+	out->m[0][0] = cos(angle);
+	out->m[2][2] = cos(angle);
+	out->m[0][2] = -sin(angle);
+	out->m[2][0] = sin(angle);
+	return out;
+}

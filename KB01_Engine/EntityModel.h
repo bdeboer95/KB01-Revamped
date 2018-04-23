@@ -9,29 +9,27 @@
 class EntityModel: public InputListener, public Entity
 {
 private:
-	Texture*			texture;
-	int					rotation; //float remove this
-	float				positionX;
+	Texture*			texture;	//the texture for this entitymodel
+	int					rotation;	//float remove this
+	float				positionX;	
 	float				positionY;
 	float				positionZ;
 	float				rotationX;
 	float				rotationY;
 	float				rotationZ;
 	float				speed;
-	D3DXMATRIX			matRotateX; //the matrix for the rotation on the x-axis
-	D3DXMATRIX			 matRotateY;//the matrix for the rotation on the y-axis
-	D3DXMATRIX			 matRotateZ;//the matrix for the rotation on the z-axis
-	D3DXMATRIX			 matWorld; //the matrix that contains  the multiplication of all the modification matrices (scale, rotate, translate)
-	D3DXMATRIX			 matScale; //the matrix for the scaling of the skybox
-	D3DXMATRIX			 matTranslate;
-	std::string			fileName;
+	Matrix				matRotateX; //the matrix for the rotation on the x-axis
+	Matrix				matRotateY;	//the matrix for the rotation on the y-axis
+	Matrix				matRotateZ;	//the matrix for the rotation on the z-axis
+	Matrix				matWorld;	//the matrix that contains  the multiplication of all the modification matrices (scale, rotate, translate)
+	Matrix				matScale;	//the matrix for the scaling of the skybox
+	Matrix				matTranslate; //the translation matrix for the entitymodel
+	std::string			fileName; //the filename of the entitymodel's mesh
 
 public:
 	Mesh*				mesh;
-
 						EntityModel(std::string _fileName, std::string _textureName,float _positionX, float _positionY, float _positionZ);
 						~EntityModel();
-
 	void				ChangeRotation(Renderer* _renderer);
 	void				SetupMatrices(Renderer* _renderer);
 	void				SetRotation(int _rotation);

@@ -23,9 +23,10 @@ Modified : 12/05/2005
 #include "CustomVertex.h"
 #include "InputListener.h"
 #include "Renderer.h"
+#include "Entity.h"
 
  //forward declared classes, solution for associtions > dependencies?
-class CTerrain : public CWorldTransform, public InputListener
+class CTerrain : public CWorldTransform, public InputListener, public Entity
 {
 public:
 

@@ -5,8 +5,9 @@
 
 #include <Windows.h>
 #include <string>
-#include "Matrix.h"
 
+class Matrix;
+class Vector3;
 
 class Renderer
 {
@@ -33,7 +34,23 @@ public:
 	virtual void			DrawIndexedPrimitive(UINT _numberOfVertices, UINT _primitiveCount) = 0;
 	virtual void			DrawSubset(void* _mesh, UINT _index) = 0;
 	virtual void			SetStreamSource(UINT _vertexSize) = 0;
-	virtual void			InitCamera() = 0; //
+
+	// Overerving enumerations?
+	typedef enum _TRANSFORMSTATETYPE {
+		VIEW = 2,
+		PROJECTION = 3,
+		TEXTURE0 = 16,
+		TEXTURE1 = 17,
+		TEXTURE2 = 18,
+		TEXTURE3 = 19,
+		TEXTURE4 = 20,
+		TEXTURE5 = 21,
+		TEXTURE6 = 22,
+		TEXTURE7 = 23,
+		FORCE_DWORD = 0x7fffffff, /* force 32-bit size enum */
+	} TRANSFORMSTATETYPE;
+
+	const	float			PI = 3.141592654f;
 };
 
 #endif

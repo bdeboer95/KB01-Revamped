@@ -11,8 +11,8 @@ Modified : 12/01/2005
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#include "..\include\stdafx.h"
-#include "..\include\CIndexBuffer.h"
+#include "stdafx.h"
+#include "CIndexBuffer.h"
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 Summary: Default Constructor

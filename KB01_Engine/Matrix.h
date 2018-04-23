@@ -3,10 +3,11 @@
 
 //TODO fix this class with comments and logic
 //TODO make test classes
+class Vector3;
+
 class Matrix
 {
 public:
-	float m[4][4]; //is this necessary?
 	Matrix() {}; //Constructor
 	Matrix(const float *); //Overloaded constructor
 	union {
@@ -56,6 +57,9 @@ public:
 
 	bool operator== (const Matrix&) const; //compare a matrix to another matrix and check if they are the same
 	bool operator!= (const Matrix&) const; //compare a matrix to aother matrix and check if they are not the same
+
+	/*static inline Matrix* MatrixLookAtLH(Matrix* out, const Vector3* eye, const Vector3* at, const Vector3* pup);
+	static inline Matrix* MatrixPerspectiveFovLH (Matrix* out, float fovy, float aspect, float zn, float zf);*/
 
 };
 #endif

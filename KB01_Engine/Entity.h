@@ -2,6 +2,8 @@
 #define __ENTITY_H__
 
 #include "Renderer.h"
+#include "Matrix.h"
+#include "Vector3.h"
 
 class Entity
 {

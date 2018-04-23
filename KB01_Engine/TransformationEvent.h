@@ -3,13 +3,13 @@
 
 enum class TRANSFORMATIONEVENT 
 {
-	MOVE_LEFT, //Move to the left
-	MOVE_RIGHT, //Move to the right
-	ROTATE_RIGHT, //Rotate to the right
-	ROTATE_UP, //Rotate upwards
-	ROTATE_LEFT, //Rotate to the left
-	ROTATE_DOWN, //Rotate downwards
-	MOVE_FORWARD, //Move forward
-	MOVE_BACKWARDS, //Move to the back
+	MOVE_LEFT,
+	MOVE_RIGHT,
+	ROTATE_RIGHT,
+	ROTATE_UP,
+	ROTATE_LEFT,
+	ROTATE_DOWN,
+	MOVE_FORWARD,
+	MOVE_BACKWARDS,
 };
 #endif

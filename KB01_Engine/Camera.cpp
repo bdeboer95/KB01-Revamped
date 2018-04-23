@@ -1,5 +1,6 @@
 ﻿#include "Camera.h"
-
+#include "MatrixMath.h"
+#include "Vector3.h"
 /// <summary>
 /// Initializes a new instance of the <see cref="Camera"/> class.
 /// </summary>
@@ -20,6 +21,22 @@ Camera::~Camera(void)
 
 void Camera::SetCamera(Renderer* _renderer)
 {
-	_renderer->InitCamera();
+
+	Matrix matWorld, matWorldX, matWorldY, matWorldZ;
+	Matrix matView;
+	Matrix matProj;
+
+	Vector3 cameraPosition = Vector3(0.0f, 0.0f, 0.0f);
+	Vector3 cameraTarget = Vector3(0.0f, 0.0f, 5.0f);
+	Vector3 cameraUpVector = Vector3(0.0f, 1.0f, 0.0f);
+	Vector3 m_right = Vector3(1.0f, 0.0f, 0.0f);
+
+	// Where to implement these functions???
+	MatrixMath* math = new MatrixMath();
+	math->MatrixLookAtLH(&matView, &cameraPosition, &cameraTarget, &cameraUpVector);
+
+	_renderer->SetTransform(_renderer->VIEW, &matView);
+	math->MatrixPerspectiveFovLH(&matProj, _renderer->PI / 4, 1.0f, 1.0f, 2000.0f);
+	_renderer->SetTransform(_renderer->PROJECTION, &matProj);
 }
 

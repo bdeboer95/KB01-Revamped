@@ -3,14 +3,13 @@
 
 #include "Renderer.h"
 
-
 class Camera 
 {
 public:
 	Camera();
 	~Camera(void);
 
-	void SetCamera(Renderer* _renderer);
+	void					SetCamera(Renderer* _renderer);
 };
 
 #endif

@@ -36,7 +36,7 @@ Parameters:
 [in] dynamic - TRUE for dynamic buffer, FALSE for static buffer
 Returns: TRUE on success, FALSE on failure
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-BOOL CVertexBuffer::CreateBuffer( LPDIRECT3DDEVICE9 pDevice, UINT numVertices, DWORD FVF, UINT vertexSize, BOOL dynamic )
+BOOL CVertexBuffer::CreateBuffer(Renderer* renderer, UINT numVertices, DWORD FVF, UINT vertexSize, BOOL dynamic )
 {
     Release();
     m_numVertices = numVertices;
@@ -46,7 +46,7 @@ BOOL CVertexBuffer::CreateBuffer( LPDIRECT3DDEVICE9 pDevice, UINT numVertices, D
     // Dynamic buffers can't be in D3DPOOL_MANAGED
     D3DPOOL pool = dynamic ? D3DPOOL_DEFAULT : D3DPOOL_MANAGED;
     DWORD usage = dynamic ? D3DUSAGE_WRITEONLY | D3DUSAGE_DYNAMIC : D3DUSAGE_WRITEONLY;
-    if ( FAILED( pDevice->CreateVertexBuffer( m_numVertices * m_vertexSize, usage, m_FVF, pool, &m_pVB, NULL ) ) )
+    if ( FAILED(renderer->CreateVertexBuffer( m_numVertices * m_vertexSize, usage, m_FVF, pool, &m_pVB, NULL ) ) )
     {
         //SHOWERROR( "CreateVertexBuffer failed.", __FILE__, __LINE__ );
         return FALSE;
@@ -121,24 +121,26 @@ Parameters:
 [in] numPrimitives - Number of primitives being rendered
 [in] primitiveType - D3DPRIMITIVETYPE
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-void CVertexBuffer::Render( LPDIRECT3DDEVICE9 pDevice, UINT numPrimitives, D3DPRIMITIVETYPE primitiveType )
+void CVertexBuffer::Render(Renderer* renderer, UINT numPrimitives, unsigned int primitiveType )
 {
-    if ( pDevice == NULL )
+	LPDIRECT3DDEVICE9 pDevice;
+
+    if ( renderer == NULL )
     {
         return;
     }
 
-    pDevice->SetStreamSource( 0, m_pVB, 0, m_vertexSize );
-    pDevice->SetFVF( m_FVF );
+    renderer->SetStreamSource( 0, m_pVB, 0, m_vertexSize );
+    renderer->SetFVF( m_FVF );
 
     if ( m_pIB )
     {
-        pDevice->SetIndices( m_pIB->GetBuffer() );
-        pDevice->DrawIndexedPrimitive( primitiveType, 0, 0, m_numVertices, 0, numPrimitives );
+        renderer->SetIndexBuffer( m_pIB->GetBuffer() );
+        renderer->DrawIndexedPrimitive( primitiveType, 0, 0, m_numVertices, 0, numPrimitives );
     }
     else
     {
-        pDevice->SetIndices( NULL );
-        pDevice->DrawPrimitive( primitiveType, 0, numPrimitives );
+        renderer->SetIndexBuffer( NULL );
+        renderer->DrawPrimitive( primitiveType, 0, numPrimitives );
     }
 }

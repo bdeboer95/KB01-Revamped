@@ -110,9 +110,6 @@
     <ClCompile Include="Skybox.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="Terrain.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
     <ClCompile Include="Heightmap.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
@@ -157,9 +154,6 @@
     </ClCompile>
     <ClCompile Include="MeshLoaderDx.cpp">
       <Filter>Source Files\Resourceloaders</Filter>
-    </ClCompile>
-    <ClCompile Include="CTerrain.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CTimer.cpp">
       <Filter>Source Files</Filter>
@@ -212,6 +206,15 @@
     <ClCompile Include="Vector3Math.cpp">
       <Filter>Source Files\Math</Filter>
     </ClCompile>
+    <ClCompile Include="VertexBuffer.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBuffer.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Kernel.h">
@@ -255,9 +258,6 @@
     </ClInclude>
     <ClInclude Include="InputListener.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Terrain.h">
-      <Filter>Header Files\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Header Files\Scenes</Filter>
@@ -373,9 +373,6 @@
     <ClInclude Include="CTimer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CTerrain.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Matrix.h">
       <Filter>Header Files\Math</Filter>
     </ClInclude>
@@ -390,6 +387,18 @@
     </ClInclude>
     <ClInclude Include="Vector3Math.h">
       <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBuffer.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Header Files\Scenes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

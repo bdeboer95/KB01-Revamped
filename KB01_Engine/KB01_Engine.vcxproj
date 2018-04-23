@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BMPLoader.h" />
+    <ClInclude Include="Buffer.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\resource.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="CFont.h" />
@@ -21,7 +22,7 @@
     <ClInclude Include="CIndexBuffer.h" />
     <ClInclude Include="CInput.h" />
     <ClInclude Include="CMesh.h" />
-    <ClInclude Include="CTerrain.h" />
+    <ClInclude Include="Terrain.h" />
     <ClInclude Include="CTimer.h" />
     <ClInclude Include="CTriangleStripPlane.h" />
     <ClInclude Include="CustomVertex.h" />
@@ -30,6 +31,7 @@
     <ClInclude Include="CWorldTransform.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityModel.h" />
+    <ClInclude Include="IndexBuffer.h" />
     <ClInclude Include="InputManagerFacade.h" />
     <ClInclude Include="KernelInterface.h" />
     <ClInclude Include="Manager.h" />
@@ -58,7 +60,6 @@
     <ClInclude Include="Skybox.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringToWStringConverter.h" />
-    <ClInclude Include="Terrain.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureLoaderDx.h" />
     <ClInclude Include="DXVector3.h" />
@@ -67,6 +68,7 @@
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Vector3Math.h" />
     <ClInclude Include="Vertex.h" />
+    <ClInclude Include="VertexBuffer.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="WindowManagerFacade.h" />
@@ -80,7 +82,7 @@
     <ClCompile Include="CIndexBuffer.cpp" />
     <ClCompile Include="CInput.cpp" />
     <ClCompile Include="CMesh.cpp" />
-    <ClCompile Include="CTerrain.cpp" />
+    <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="CTimer.cpp" />
     <ClCompile Include="CTriangleStripPlane.cpp" />
     <ClCompile Include="CUtility.cpp" />
@@ -89,6 +91,7 @@
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="EntityModel.cpp" />
     <ClCompile Include="Heightmap.cpp" />
+    <ClCompile Include="IndexBuffer.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="InputManagerFacade.cpp" />
     <ClCompile Include="jsoncpp.cpp" />
@@ -109,12 +112,12 @@
     <ClCompile Include="Skybox.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="StringToWStringConverter.cpp" />
-    <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TextureLoaderDx.cpp" />
     <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="Vector3.cpp" />
     <ClCompile Include="Vector3Math.cpp" />
+    <ClCompile Include="VertexBuffer.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="WindowManagerFacade.cpp" />

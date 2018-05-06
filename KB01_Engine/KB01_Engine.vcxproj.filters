@@ -212,6 +212,9 @@
     <ClCompile Include="Vector3Math.cpp">
       <Filter>Source Files\Math</Filter>
     </ClCompile>
+    <ClCompile Include="XMLReader.cpp">
+      <Filter>Source Files\Resourceloaders</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Kernel.h">
@@ -390,6 +393,9 @@
     </ClInclude>
     <ClInclude Include="Vector3Math.h">
       <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlReader.h">
+      <Filter>Header Files\Resourceloaders</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

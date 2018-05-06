@@ -21,12 +21,6 @@ private:
 	int levelIndex;
 	bool splitted = false;
 	D3DVIEWPORT9 viewPort;
-	
-	void SceneLoader(std::string _level);
-	void GetEntityModelFromFile(std::string line);
-	void GetPositionFromFile(std::string line);
-	void GetMeshNameFromFile(std::string line);
-	void GetTextureNameFromFile(std::string line);
 
 public:
 	Scene(int _levelIndex, HWND _hWnd, std::string _level);
@@ -43,6 +37,8 @@ public:
 	void Render(Renderer* _renderer);
 	void ChangeRotation(Renderer* _renderer, int _rotation);
 	std::vector<Entity*> GetEntityModels();
+	void ReadLevelFile(const char* fileName);
+
 };
 
 #endif

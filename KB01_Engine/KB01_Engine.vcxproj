@@ -70,6 +70,7 @@
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="WindowManagerFacade.h" />
+    <ClInclude Include="XmlReader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BMPLoader.cpp" />
@@ -118,6 +119,7 @@
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="WindowManagerFacade.cpp" />
+    <ClCompile Include="XMLReader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="terrain.jpg" />

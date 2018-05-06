@@ -1,8 +1,7 @@
 #include "Scene.h"
 #include "EntityModel.h"
 #include "Camera.h"
-#include <iostream>
-#include <sstream>
+#include <vector>
 
 /// <summary>
 /// Initializes a new instance of the <see cref="Scene"/> class.
@@ -13,15 +12,11 @@ Scene::Scene(int _levelIndex, HWND _hWnd, std::string _level)
 	levelIndex = _levelIndex;
 	hWnd = _hWnd;
 	Camera* cam = new Camera();
-	//entityModels.push_back(cam);
-	SceneLoader(_level);
-	//CreateEntityModel("Tiger.x", "luipard.jpg",0, 0, 5);
-	CreateEntityModel("Tiger.x", "zebra.jpg", 1,-10, 25);
-	CreateEntityModel("Tiger.x", "zebra3.bmp", 2,-10, 25);
-	CreateEntityModel("Tiger.x", "zebra3.bmp", 3, -10, 25);
-	//terrain = new Terrain();
 	_terrain = new CTerrain();
-	Log::Instance()->LogMessage("Scene - Scene created.", Log::MESSAGE_INFO);
+
+	ReadLevelFile("../Assets/Levels/levelFile.xml");
+
+	Log::Instance()->LogMessage("Scene - Scene Instantiated.", Log::MESSAGE_INFO);
 }
 
 /// <summary>
@@ -30,6 +25,46 @@ Scene::Scene(int _levelIndex, HWND _hWnd, std::string _level)
 Scene::~Scene()
 {
 	Log::Instance()->LogMessage("~Scene - Scene cleaned up!", Log::MESSAGE_INFO);
+}
+
+void Scene::ReadLevelFile(const char* fileName)
+{
+	XmlReader* reader = new XmlReader(fileName);
+
+	std::vector<std::string> attributes = reader->LoadContents();
+
+	for each (std::string setting in attributes)
+	{
+		if (setting.find("Entity") != std::string::npos)
+		{
+			std::string mesh	= XmlReader::GetValue(setting, "mesh");
+			std::string texture = XmlReader::GetValue(setting, "texture");
+			float x				= std::stof(XmlReader::GetValue(setting, "px"));
+			float y				= std::stof(XmlReader::GetValue(setting, "pz"));
+			float z				= std::stof(XmlReader::GetValue(setting, "py"));
+
+			CreateEntityModel(mesh, texture, x, y, z);
+		}
+		else if (setting.find("Skybox") != std::string::npos)
+		{
+			Skybox_Cube sky;
+
+			sky.back	= XmlReader::GetValue(setting, "back");
+			sky.top		= XmlReader::GetValue(setting, "top");
+			sky.left	= XmlReader::GetValue(setting, "left");
+			sky.front	= XmlReader::GetValue(setting, "front");
+			sky.bottom	= XmlReader::GetValue(setting, "bottom");
+			sky.right	= XmlReader::GetValue(setting, "right");
+
+			_skybox = new Skybox(sky);
+		}
+		else if (setting.find("Terrain") != std::string::npos)
+		{
+			Log::Instance()->LogMessage("~Scene - TODO: implement loading: " + XmlReader::GetValue(setting, "name"), Log::MESSAGE_WARNING);
+		}
+
+		Log::Instance()->LogMessage("~Scene - Created: " + XmlReader::GetValue(setting, "name"), Log::MESSAGE_INFO);
+	}
 }
 
 /// <summary>
@@ -93,28 +128,12 @@ HRESULT Scene::SetupGeometry(ResourceManager* _resourceManager, Renderer* _rende
 			}
 		}
 	}
-	Skybox_Cube sky;
-	sky.back = "skybox3_back.tga";
-	sky.top = "skybox3_top.tga";
-	sky.left = "skybox3_left.tga";
-	sky.front = "skybox3_front.tga";
-	sky.bottom = "skybox3_bottom.tga";
-	sky.right = "skybox3_right.tga";
-	_skybox = new Skybox(sky);
+
 	_skybox->InitGeometry(_renderer, _resourceManager);
 	_terrain->Initialize(static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()), "heightdata.raw", "terrainbrown.jpg");
 	ShowWindow(hWnd, SW_MAXIMIZE);
 	UpdateWindow(hWnd);
 	return S_OK;
-}
-
-/// <summary>
-/// Gets the handler.
-/// </summary>
-/// <returns></returns>
-HWND Scene::GetHandler()
-{
-	return hWnd;
 }
 
 /// <summary>
@@ -155,8 +174,6 @@ void Scene::Render(Renderer* _renderer)
 		}
 	}
 
-
-
 	// End drawing the scene
 	pd3dDevice->EndScene();
 
@@ -164,189 +181,37 @@ void Scene::Render(Renderer* _renderer)
 	_renderer->Present(hWnd);
 }
 
+/// <summary>
+/// Gets the handler.
+/// </summary>
+/// <returns></returns>
+HWND Scene::GetHandler()
+{
+	return hWnd;
+}
+
+/// <summary>
+/// Gets a vector pointer to entity models.
+/// </summary>
+/// <returns></returns>
 std::vector<Entity*> Scene::GetEntityModels()
 {
 	return entityModels;
 }
 
-void Scene::SceneLoader(std::string _level)
-{
-	std::ifstream file(_level);
-	bool successful = file.is_open();
-
-	if (!successful)
-	{
-		Log::Instance()->LogMessage("Scene - Unable to read level file. (" + _level + ")", Log::MESSAGE_WARNING);
-	}
-	else
-	{
-		std::string line;
-		if (file.good())
-		{
-			bool emFound = false, posFound = false, mnFound = false, tnFound = false;
-			for (std::string line; std::getline(file, line);)
-			{
-				if (line.substr(0, 11) == "EntityModel" && !emFound)
-				{
-					emFound = true;
-					GetEntityModelFromFile(line);
-				}
-				else if (!emFound)
-				{
-					Log::Instance()->LogMessage("Scene - EntityModel was not found in level file.", Log::MESSAGE_WARNING);
-				}
-
-				if (line.substr(0, 8) == "Position" && !posFound)
-				{
-					posFound = true;
-					GetPositionFromFile(line);
-				}
-				else if (!posFound)
-				{
-					Log::Instance()->LogMessage("Scene - Position was not found in level file.", Log::MESSAGE_WARNING);
-				}
-
-				if (line.substr(0, 8) == "MeshName" && !mnFound)
-				{
-					mnFound = true;
-					GetMeshNameFromFile(line);
-				}
-				else if (!mnFound)
-				{
-					Log::Instance()->LogMessage("Scene - MeshName was not found in level file.", Log::MESSAGE_WARNING);
-				}
-
-				if (line.substr(0, 11) == "TextureName" && !tnFound)
-				{
-					tnFound = true;
-					GetTextureNameFromFile(line);
-				}
-				else if (!tnFound)
-				{
-					Log::Instance()->LogMessage("Scene - TextureName was not found in level file.", Log::MESSAGE_WARNING);
-				}
-
-			}
-		}
-	}
-
-	file.close();
-}
-
-void Scene::GetEntityModelFromFile(std::string line)
-{
-	std::istringstream ss(line.substr(12));
-	std::string str;
-
-	while (getline(ss, str, ','))
-	{
-		if (str == "E1")
-		{
-			_terrain = new CTerrain();
-		}
-
-		if (str == "E2")
-		{
-			//skybox = new Skybox();
-		}
-
-		if (str == "E3")
-		{
-			CreateEntityModel(meshNames[2] + ".x", textureNames[2] + ".jpg", positioning[6], positioning[7], positioning[8]);
-		}
-	}
-}
-
-void Scene::GetPositionFromFile(std::string line)
-{
-	std::istringstream ss(line.substr(9));
-	std::string str;
-	std::string::size_type sz;
-
-	while (getline(ss, str, ','))
-	{
-		std::string temp = str.substr(3);
-		std::istringstream subss(temp);
-		if (str.substr(0, 2) == "P1")
-		{
-			while (getline(subss, temp, '-'))
-			{
-				positioning.push_back(std::stof(temp));
-			}
-		}
-
-		if (str.substr(0, 2) == "P2")
-		{
-			while (getline(subss, temp, '-'))
-			{
-				positioning.push_back(std::stof(temp));
-			}
-		}
-
-		if (str.substr(0, 2) == "P3")
-		{
-			while (getline(subss, temp, '-'))
-			{
-				positioning.push_back(std::stof(temp));
-			}
-		}
-	}
-
-}
-
-void Scene::GetMeshNameFromFile(std::string line)
-{
-	std::istringstream ss(line.substr(9));
-	std::string str;
-
-	while (getline(ss, str, ','))
-	{
-		if (str.substr(0, 2) == "M1")
-		{
-			meshNames.push_back(str.substr(3));
-		}
-
-		if (str.substr(0, 2) == "M2")
-		{
-			meshNames.push_back(str.substr(3));
-		}
-
-		if (str.substr(0, 2) == "M3")
-		{
-			meshNames.push_back(str.substr(3));
-		}
-	}
-
-}
-
-void Scene::GetTextureNameFromFile(std::string line)
-{
-	std::istringstream ss(line.substr(12));
-	std::string str;
-
-	while (getline(ss, str, ','))
-	{
-		if (str.substr(0, 2) == "T1")
-		{
-			textureNames.push_back(str.substr(3));
-		}
-
-		if (str.substr(0, 2) == "T2")
-		{
-			textureNames.push_back(str.substr(3));
-		}
-
-		if (str.substr(0, 2) == "T3")
-		{
-			textureNames.push_back(str.substr(3));
-		}
-	}
-	
-}
+/// <summary>
+/// Gets a pointer to a skybox.
+/// </summary>
+/// <returns></returns>
 Skybox* Scene::GetSkyBox()
 {
 	return _skybox;
 }
+
+/// <summary>
+/// Gets a pointer to a terrain.
+/// </summary>
+/// <returns></returns>
 CTerrain* Scene::GetTerrain()
 {
 	return _terrain;

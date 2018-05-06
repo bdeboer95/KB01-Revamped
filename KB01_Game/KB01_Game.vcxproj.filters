@@ -15,4 +15,10 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="levelFile.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="engine_log.txt" />
+  </ItemGroup>
 </Project>

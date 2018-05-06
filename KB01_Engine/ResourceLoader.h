@@ -4,6 +4,7 @@
 #include "Resource.h"
 #include "Renderer.h"
 #include "Log.h"
+#include "XmlReader.h"
 
 #include <vector>
 

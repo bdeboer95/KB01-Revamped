@@ -67,7 +67,7 @@ Scene* SceneManager::CreateScene(int _levelIndex, HWND _hWnd, std::string _level
 	Scene* scene = new Scene(_levelIndex, _hWnd, _level);
 	scenes.push_back(scene);
 
-	Log::Instance()->LogMessage("Scene created", Log::MessageType::MESSAGE_INFO);
+	Log::Instance()->LogMessage("SceneManager - Scene created", Log::MessageType::MESSAGE_INFO);
 	return scene;
 }
 

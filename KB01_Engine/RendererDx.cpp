@@ -41,12 +41,7 @@ RendererDx::~RendererDx()
 /// </summary>
 bool RendererDx::Cleanup()
 {
-	if (_vertexBuffer != NULL)
-		if (FAILED(_vertexBuffer->Release()))
-		{
-			return false;
-		}
-
+	
 	if (_direct3DDevice != NULL)
 		if (FAILED(_direct3DDevice->Release()))
 		{
@@ -56,12 +51,27 @@ bool RendererDx::Cleanup()
 	if (_direct3D != NULL)
 		if (FAILED(_direct3D->Release()))
 		{
+			Log::Instance()->LogMessage("~RendererDx - Failed to release direct3d!", Log::MESSAGE_WARNING);
 			return false;
 		}
 
 	return true;
 }
-
+void RendererDx::Release() {
+	if (_vertexBuffer != NULL)
+		if (FAILED(_vertexBuffer->Release()))
+		{
+			Log::Instance()->LogMessage("~RendererDx - Failed to release vertexbuffer!", Log::MESSAGE_WARNING);
+		
+		}
+	if (_indexBuffer != NULL) {
+		if (FAILED(_indexBuffer->Release()))
+		{
+			Log::Instance()->LogMessage("~RendererDx - Failed to release indexbuffer!", Log::MESSAGE_WARNING);
+			
+		}
+	}
+}
 /// <summary>
 /// Initializes the device.
 /// </summary>
@@ -319,7 +329,7 @@ void RendererDx::SetTransform(unsigned int transformStateType, Matrix* matrix) {
 
 	_direct3DDevice->SetTransform(
 		static_cast<D3DTRANSFORMSTATETYPE>(transformStateType),
-		reinterpret_cast<D3DXMATRIX*>(matrix)); //CHANGE THE D3DTW_WORLD to trasnformstatetype, which apparently isnt an unsigned int
+		reinterpret_cast<D3DXMATRIX*>(matrix)); 
 }
 
 /// <summary>
@@ -327,11 +337,14 @@ void RendererDx::SetTransform(unsigned int transformStateType, Matrix* matrix) {
 /// </summary>
 void RendererDx::SetStreamSource(unsigned int streamNumber, unsigned int offsetInBytes, unsigned int stride)
 {
-	_direct3DDevice->SetStreamSource(
+	if (FAILED(_direct3DDevice->SetStreamSource(
 		streamNumber,
 		_vertexBuffer,
 		offsetInBytes,
-		stride);
+		stride))) {
+		Log::Instance()->LogMessage("RendererDx - Failed to set the streamsource ", Log::MESSAGE_WARNING);
+	}
+	
 }
 
 /// <summary>
@@ -375,7 +388,10 @@ void RendererDx::SetTexture(void* texture, unsigned int index)
 /// </summary>
 void RendererDx::SetFVF()
 {
-	_direct3DDevice->SetFVF(_fvf);
+	if (FAILED(_direct3DDevice->SetFVF(_fvf))){
+		Log::Instance()->LogMessage("RendererDx - Failed to set the FVF", Log::MESSAGE_WARNING);
+	}
+	
 }
 
 /// <summary>
@@ -404,7 +420,7 @@ bool RendererDx::FillVertexBuffer(unsigned int numVertices, void *pVertices, uns
 	// Lock the vertex buffer
 	if (FAILED(_vertexBuffer->Lock(0, 0, (void**)&pData, flags)))
 	{
-		Log::Instance()->LogMessage("RendererDx - TIDirect3DVertexBuffer9::Lock failed", Log::MESSAGE_ERROR);
+		Log::Instance()->LogMessage("RendererDx - IDirect3DVertexBuffer9::Lock failed", Log::MESSAGE_ERROR);
 		return false;
 	}
 

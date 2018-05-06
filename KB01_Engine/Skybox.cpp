@@ -12,13 +12,15 @@ Skybox::Skybox(Skybox_Cube _skyboxCube)
 	positionZ = 3;
 	/*Matrix modifyMatrix= new Matrix()
 	_matTranslate +=*/
-	D3DXMatrixTranslation((D3DXMATRIX*)&_matTranslate, positionX, positionY, positionZ);
-	D3DXMatrixScaling((D3DXMATRIX*)&matScale, // Pointer to recieve computed matrix
+	Translate(&_matTranslate, positionX, positionY, positionZ);
+	Scale(&matScale, // Pointer to recieve computed matrix
 		1000, // x=axis scale
 		1000, // y-axis scale
 		1000 // z-axis scale
 	);
-	matWorld = matScale * _matTranslate *_matRotateY* _matRotateX;
+	RotateY(&_matRotateY, _rotationY);
+	RotateX(&_matRotateX, _rotationX);
+	matWorld = matScale * _matTranslate * _matRotateY * _matRotateX;
 	speed = 1.0f;
 
 }
@@ -57,7 +59,7 @@ void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 	}
 	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_DOWN)
 	{
-		
+
 	}
 
 	//if (KEYDOWN(DIK_W, _state))
@@ -124,7 +126,7 @@ void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 	//	Camera_Angle.y += Mouse_State.lX;*/
 
 	//}
-	
+
 
 	D3DXMatrixTranslation((D3DXMATRIX*)&_matTranslate, positionX, positionY, positionZ);
 	D3DXMatrixRotationX((D3DXMATRIX*)&_matRotateX, rotationX);
@@ -290,7 +292,7 @@ void Skybox::Render(Renderer* _renderer)
 {
 	LPDIRECT3DDEVICE9 device = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
 
-	
+
 	//Disables the zbuffer for writing
 	//static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);
 	_renderer->SetTransform(D3DTS_WORLD, &matWorld);

@@ -34,6 +34,7 @@ public:
 	RendererDx();
 	virtual					~RendererDx();
 	virtual bool			Cleanup(); //Deletes all the pointers that have been initialized
+	virtual void			Release();
 	virtual bool			InitDevice(HWND hWnd); //Initializes the graphical device
 	virtual void*			GetDevice(); //Gets the graphical device
 

@@ -12,10 +12,14 @@ Terrain::Terrain()
 	_positionX = -100;
 	_positionY = -400;
 	_positionZ = 500;
+	_rotationY = 0;
+	_rotationX = 0;
 	_speed = 0.1f;
 	Translate(&_matTranslate, _positionX, _positionY, _positionZ);
 	Scale(&_matScale, 10, 2, 10);
-	_matWorld = _matScale * _matTranslate;
+	RotateY(&_matRotateY, _rotationY);
+	RotateX(&_matRotateX, _rotationX);
+	_matWorld = _matScale * _matTranslate*_matRotateY*_matRotateX;
 }
 
 Terrain::~Terrain()
@@ -70,10 +74,10 @@ Parameters:
 bool Terrain::Initialize(Renderer* renderer, char* rawFile, char* terrainTexture)
 {
 
-
+	renderer->Release();
 	// Load height map
 	char path[MAX_PATH] = { 0 };
-
+	
 	std::ifstream heightStream;
 	//Open the file with the height data with this specific name and path --> this needs to go to the resource manager TODO
 	heightStream.open(L"..\\Assets\\Heightmaps\\heightMap.raw", std::ios::binary);
@@ -97,6 +101,7 @@ bool Terrain::Initialize(Renderer* renderer, char* rawFile, char* terrainTexture
 	unsigned int width = (int)sqrt((float)_numVertices);
 	cuCustomVertex::PositionTextured* pVertices = NULL;
 	CTriangleStripPlane::GeneratePositionTexturedWithHeight(&pVertices, width, width, _height);
+	_vertexSize = sizeof(cuCustomVertex::PositionTextured);
 	renderer->CreateVertexBuffer(_numVertices, sizeof(cuCustomVertex::PositionTextured), D3DFVF_XYZ | D3DFVF_TEX1, NULL); //move this to the renderer TODO define somewhere
 	renderer->FillVertexBuffer(_numVertices, pVertices, 0);
 
@@ -110,7 +115,7 @@ bool Terrain::Initialize(Renderer* renderer, char* rawFile, char* terrainTexture
 	CUtility::GetMediaFile("terrain.jpg", "..\\Assets\\Textures\\Terrain\\");
 	if (FAILED(D3DXCreateTextureFromFile(static_cast<LPDIRECT3DDEVICE9>(renderer->GetDevice()), L"..\\assets\\textures\\terrain\\terrainorange.jpg", &_texture))) // todo to the resourcemanager or fileloader
 	{
-		Log::Instance()->LogMessage("terrain - unable to load terrain textures.", Log::MESSAGE_WARNING);
+		Log::Instance()->LogMessage("Terrain - unable to load terrain textures.", Log::MESSAGE_WARNING);
 		return false;
 
 	}
@@ -124,7 +129,7 @@ bool Terrain::Initialize(Renderer* renderer, char* rawFile, char* terrainTexture
 void Terrain::Render(Renderer* renderer)
 {
 	renderer->SetTransform(renderer->WORLD, &_matWorld);
-	static_cast<LPDIRECT3DDEVICE9>(renderer->GetDevice())->SetTexture( 0, _texture);//TODO
+	static_cast<LPDIRECT3DDEVICE9>(renderer->GetDevice())->SetTexture(0, _texture);//TODO
 	//renderer->SetTexture(_texture, 0); // TODO
 	renderer->SetStreamSource(0, 0, _vertexSize);
 	renderer->SetFVF();

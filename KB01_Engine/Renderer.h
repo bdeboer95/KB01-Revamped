@@ -31,8 +31,8 @@ public:
 		SCRATCH = 3,
 	} POOL;
 
-	virtual					~Renderer() {};
-
+	virtual					~Renderer() {}
+	virtual void			Release() = 0; //release the indexbuffer and the vertexbuffer
 	virtual bool			Cleanup() = 0;
 	virtual bool			InitDevice(HWND hWnd) = 0;
 	virtual void*			GetDevice() = 0;
@@ -42,11 +42,11 @@ public:
 	virtual float			GetBackBufferHeight() = 0;
 	virtual void			ClearBuffer(int r, int g, int b) = 0;
 
-	virtual bool			CreateVertexBuffer(unsigned int numVertices, unsigned int vertexSize, unsigned long fvf, HANDLE handle, bool dynamic=false) = 0; // why no initindexbuffer?
+	virtual bool			CreateVertexBuffer(unsigned int numVertices, unsigned int vertexSize, unsigned long fvf, HANDLE handle, bool dynamic = false) = 0; // why no initindexbuffer?
 	virtual void*			GetVertexBuffer() = 0;
 	virtual bool			FillVertexBuffer(unsigned int numVertices, void *pVertices, unsigned long flags) = 0;
 	virtual void			SetIndices() = 0;
-	virtual void			CreateIndexBuffer(unsigned int numIndices, unsigned long format, HANDLE handle, bool dynamic=false) = 0;
+	virtual void			CreateIndexBuffer(unsigned int numIndices, unsigned long format, HANDLE handle, bool dynamic = false) = 0;
 	virtual void*			GetIndexBuffer() = 0;
 	virtual void			FillIndexBuffer(unsigned int numIndices, void *pIndices, unsigned long flags) = 0;
 	virtual void			DrawIndexedPrimitive(unsigned int primitiveType, unsigned int baseVertexIndex, unsigned int minVertexIndex, unsigned int numberOfVertices, unsigned int startIndex, unsigned int primitiveCount) = 0;

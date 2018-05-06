@@ -3,20 +3,26 @@
 #include <math.h>
 #include "Renderer.h"
 
-Entity::Entity() {
+Entity:: Entity() {
 	Reset();
 }
+Entity::~Entity() {
 
+}
 /// <summary>
-/// Resets the matrices to their default matrix values
+/// Resets all the transformation matrices to their default matrix values
 /// </summary>
 void Entity::Reset()
 {
 	MatrixIdentity(&_matTranslate);
-	MatrixIdentity(&_matRotate);
+	MatrixIdentity(&_matRotateX);
+	MatrixIdentity(&_matRotateY);
+	MatrixIdentity(&_matRotateZ);
 	MatrixIdentity(&_matScale);
-	MatrixIdentity(&_matTransform);
-	_matRotateX = _matRotateY = _matRotateZ = 0.0f;
+	MatrixIdentity(&_matWorld);
+	_rotationX = 0.0f;
+	_rotationY = 0.0f;
+	_rotationZ = 0.0f;
 
 }
 
@@ -66,63 +72,6 @@ Matrix* Entity::PerspectiveFovLH(Matrix* out, float fovy, float aspect, float zn
 	return out;
 }
 
-Matrix* Entity::Translation(Matrix* out, float x, float y, float z)
-{
-	MatrixIdentity(out);
-
-	out->m[3][0] = x;
-	out->m[3][1] = y;
-	out->m[3][2] = z;
-
-	return out;
-}
-
-Matrix* Entity::RotationX(Matrix* out, float angle)
-{
-	MatrixIdentity(out);
-
-	out->m[1][1] = cos(angle);
-	out->m[2][2] = cos(angle);
-	out->m[1][2] = sin(angle);
-	out->m[2][1] = -sin(angle);
-
-	return out;
-}
-
-Matrix* Entity::RotationY(Matrix* out, float angle)
-{
-	MatrixIdentity(out);
-
-	out->m[0][0] = cos(angle);
-	out->m[2][2] = cos(angle);
-	out->m[0][2] = -sin(angle);
-	out->m[2][0] = sin(angle);
-
-	return out;
-}
-
-Matrix* Entity::RotationZ(Matrix* out, float angle)
-{
-	MatrixIdentity(out);
-
-	out->m[0][0] = cos(angle);
-	out->m[1][1] = cos(angle);
-	out->m[0][1] = sin(angle);
-	out->m[1][0] = -sin(angle);
-
-	return out;
-}
-
-Matrix* Entity::Scaling(Matrix* out, float x, float y, float z)
-{
-	MatrixIdentity(out);
-
-	out->m[0][0] = x;
-	out->m[1][1] = y;
-	out->m[2][2] = z;
-
-	return out;
-}
 
 Matrix* Entity::MatrixIdentity(Matrix* out)
 {
@@ -153,6 +102,7 @@ Matrix* __stdcall Entity::Scale(Matrix *out, float x, float y, float z)
 	out->m[2][2] = z;
 	return out;
 }
+
 Matrix* __stdcall Entity::Translate(Matrix *out, float x, float y, float z)
 {
 	MatrixIdentity(out);
@@ -161,6 +111,7 @@ Matrix* __stdcall Entity::Translate(Matrix *out, float x, float y, float z)
 	out->m[3][2] = z;
 	return out;
 }
+
 Matrix* __stdcall Entity::RotateX(Matrix *out, float angle)
 {
 	MatrixIdentity(out);

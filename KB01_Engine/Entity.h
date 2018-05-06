@@ -23,17 +23,17 @@ protected:
 	Matrix				_matTranslate; //the translation matrix for the entitymodel
 
 public:
-	 Entity();
-	virtual ~Entity();
-	void Reset();
+	Entity();
+	virtual ~Entity(); //Destructor
+	void Reset(); //Resets the matrix of the entity to its default values
 	Matrix*  LookAtLH(Matrix* out, const Vector3* eye, const Vector3* at, const Vector3* pup); //Builds a left-handed look-at matrix
 	Matrix*  PerspectiveFovLH(Matrix* out, float fovy, float aspect, float zn, float zf); //Builds a left-handed perspective projection matrix based on a field of view
 	Matrix* MatrixIdentity(Matrix* out); //TODO
-	Matrix* __stdcall Translate(Matrix* out, float x, float y, float z);//Used to translate an object containing a matrix with specified x, y and z values
-	Matrix* __stdcall RotateX(Matrix* out, float angle);//Used to rotate an object containing a matrix on the x-axis
-	Matrix* __stdcall RotateY(Matrix* out, float angle);//Used to rotate an object containing a matrix on the y-axis
-	Matrix* __stdcall RotateZ(Matrix* out, float angle);//Used to rotate an object containing a matrix on the z-axis
-	Matrix* __stdcall Scale(Matrix* out, float x, float y, float);//Used to scale an object containing a matrix with an x, y and z value
-
+	Matrix*  __stdcall Translate(Matrix* out, float x, float y, float z);//Used to translate an object containing a matrix with specified x, y and z values
+	Matrix*  __stdcall RotateX(Matrix* out, float angle);//Used to rotate an object containing a matrix on the x-axis
+	Matrix*  __stdcall RotateY(Matrix* out, float angle);//Used to rotate an object containing a matrix on the y-axis
+	//Matrix*  __stdcall RotateZ(Matrix* out, float angle);//Used to rotate an object containing a matrix on the z-axis
+	Matrix*  __stdcall Scale(Matrix* out, float x, float y, float);//Used to scale an object containing a matrix with an x, y and z value
+	//Matrix* __stdcall Scale(Matrix* out, float x, float y, float);//Put back std call if it dont work
 };
 #endif

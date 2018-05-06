@@ -21,6 +21,8 @@ private:
 	LPDIRECT3DVERTEXBUFFER9		_vertexBuffer; // Our vertex buffer
 	LPDIRECT3DINDEXBUFFER9		_indexBuffer; // our index buffer
 	LPDIRECT3DSWAPCHAIN9*		_swapChain;
+	unsigned int				_vertexSize;
+	unsigned long				_fvf;
 
 	struct CUSTOMVERTEX
 	{
@@ -40,23 +42,24 @@ public:
 	virtual float			GetBackBufferHeight();
 	virtual void			ClearBuffer(int r, int g, int b);
 
-	virtual bool			InitVertexBuffer(); // why no initindexbuffer?
+	virtual bool			CreateVertexBuffer(unsigned int numVertices, unsigned int vertexSize, unsigned long fvf, HANDLE handle, bool dynamic=false); // why no initindexbuffer?
 	virtual void*			GetVertexBuffer();
-	virtual void			SetVertexBuffer(VertexBuffer* vertexBuffer);
+	virtual bool			FillVertexBuffer(unsigned int numVertices, void *pVertices, unsigned long flags);
 
+	virtual void			CreateIndexBuffer(unsigned int numIndices, unsigned long format, HANDLE handle, bool dynamic = false);
 	virtual void*			GetIndexBuffer();
-	virtual void			SetIndexBuffer(IndexBuffer* indexBuffer);
-
-	virtual void			DrawIndexedPrimitive(unsigned int primitiveType, UINT baseVertexIndex, UINT minVertexIndex, UINT numberOfVertices, UINT startIndex, UINT primitiveCount);
-	virtual void			DrawPrimitive(unsigned int primitiveType, UINT startVertex, UINT primitiveCount);
-	virtual void			DrawSubset(void* mesh, UINT index);
+	virtual void			FillIndexBuffer(unsigned int numIndices, void *pIndices, unsigned long flags = D3DLOCK_DISCARD);
+	virtual void			SetIndices();
+	virtual void			DrawIndexedPrimitive(unsigned int primitiveType, unsigned int baseVertexIndex, unsigned int minVertexIndex, unsigned int numberOfVertices, unsigned int startIndex, unsigned int primitiveCount);
+	virtual void			DrawPrimitive(unsigned int primitiveType, unsigned int startVertex, unsigned int primitiveCount);
+	virtual void			DrawSubset(void* mesh, unsigned int index);
 
 	virtual void			SetTransform(unsigned int transformStateType, Matrix* matrix); //Updates the Transform based on the state type that was given (World, view, etc) with the provided matrix
-	virtual void			SetStreamSource(UINT streamNumber, VertexBuffer* streamData, UINT offsetInBytes, UINT strude);
+	virtual void			SetStreamSource(unsigned int streamNumber,  unsigned int offsetInBytes, unsigned int stride);
 	virtual void			SetViewPort(void* viewPort);
-	virtual void			SetMaterial(void* material, UINT index);
-	virtual void			SetTexture(void* texture, UINT index);
-	virtual void			SetFVF(DWORD FVF);
+	virtual void			SetMaterial(void* material, unsigned int index);
+	virtual void			SetTexture(void* texture, unsigned int index);
+	virtual void			SetFVF();
 	virtual void			Present(HWND hwnd);
 
 };

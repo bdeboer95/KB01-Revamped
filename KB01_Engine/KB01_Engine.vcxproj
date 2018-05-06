@@ -27,7 +27,6 @@
     <ClInclude Include="CTriangleStripPlane.h" />
     <ClInclude Include="CustomVertex.h" />
     <ClInclude Include="CUtility.h" />
-    <ClInclude Include="CVertexBuffer.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityModel.h" />
     <ClInclude Include="IndexBuffer.h" />
@@ -66,7 +65,6 @@
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Vector3Math.h" />
     <ClInclude Include="Vertex.h" />
-    <ClInclude Include="VertexBuffer.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="WindowManagerFacade.h" />
@@ -85,8 +83,6 @@
     <ClCompile Include="CTimer.cpp" />
     <ClCompile Include="CTriangleStripPlane.cpp" />
     <ClCompile Include="CUtility.cpp" />
-    <ClCompile Include="CVertexBuffer.cpp" />
-    <ClCompile Include="CWorldTransform.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="EntityModel.cpp" />
     <ClCompile Include="Heightmap.cpp" />
@@ -116,7 +112,6 @@
     <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="Vector3.cpp" />
     <ClCompile Include="Vector3Math.cpp" />
-    <ClCompile Include="VertexBuffer.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="WindowManagerFacade.cpp" />

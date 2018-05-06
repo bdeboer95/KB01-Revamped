@@ -13,14 +13,14 @@ Terrain::Terrain()
 	_positionY = -400;
 	_positionZ = 500;
 	_speed = 0.1f;
-	Translate(&__matTranslate, _positionX, _positionY, _positionZ);
+	Translate(&_matTranslate, _positionX, _positionY, _positionZ);
 	Scale(&_matScale, 10, 2, 10);
-	_matWorld = _matScale * __matTranslate;
+	_matWorld = _matScale * _matTranslate;
 }
 
 Terrain::~Terrain()
 {
-	Release();
+
 }
 
 void Terrain::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y) {
@@ -51,13 +51,13 @@ void Terrain::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y) 
 
 	}
 
-	
 
-	Translate(&__matTranslate, _positionX, _positionY, _positionZ);
-	RotateX(&__matRotateX, _rotationX);
-	RotateY(&__matRotateY, _rotationY);
 
-	_matWorld = _matScale * __matTranslate  * __matRotateX * __matRotateY;
+	Translate(&_matTranslate, _positionX, _positionY, _positionZ);
+	RotateX(&_matRotateX, _rotationX);
+	RotateY(&_matRotateY, _rotationY);
+
+	_matWorld = _matScale * _matTranslate  * _matRotateX * _matRotateY;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -69,7 +69,7 @@ Parameters:
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 bool Terrain::Initialize(Renderer* renderer, char* rawFile, char* terrainTexture)
 {
-	Release();
+
 
 	// Load height map
 	char path[MAX_PATH] = { 0 };
@@ -97,24 +97,24 @@ bool Terrain::Initialize(Renderer* renderer, char* rawFile, char* terrainTexture
 	unsigned int width = (int)sqrt((float)_numVertices);
 	cuCustomVertex::PositionTextured* pVertices = NULL;
 	CTriangleStripPlane::GeneratePositionTexturedWithHeight(&pVertices, width, width, _height);
-	//_vertexBuffer = renderer->CreateBuffer( renderer, _numVertices, D3DFVF_XYZ | D3DFVF_TEX1, sizeof( cuCustomVertex::PositionTextured ) ); //move this to the renderer TODO define somewhere
-	//_vertexBuffer.SetData(_numVertices, pVertices, 0 );//move this to the renderer TODO
+	renderer->CreateVertexBuffer(_numVertices, sizeof(cuCustomVertex::PositionTextured), D3DFVF_XYZ | D3DFVF_TEX1, NULL); //move this to the renderer TODO define somewhere
+	renderer->FillVertexBuffer(_numVertices, pVertices, 0);
 
 	// Generate indices
 	int* pIndices = NULL;
 	_numIndices = CTriangleStripPlane::GenerateIndices(&pIndices, width, width); //generate how many indices are needed for the trianglestrip
-	//_indexBuffer = renderer->CreateBuffer(renderer, _numIndices, D3DFMT_INDEX32); //put this is in an enum : TODO //move this to the renderer TODO
-	//_indexBuffer.SetData(_numIndices, pIndices, 0 );//move this to the renderer TODO
+	renderer->CreateIndexBuffer(_numIndices, D3DFMT_INDEX32, NULL); //put this is in an enum : 
+	renderer->FillIndexBuffer(_numIndices, pIndices, 0);//move this to the renderer TODO
 	//_vertexBuffer.SetIndexBuffer(&_indexBuffer);//move this to the renderer TODO
 
 	CUtility::GetMediaFile("terrain.jpg", "..\\Assets\\Textures\\Terrain\\");
-	//if (FAILED(D3DXCreateTextureFromFile(pDevice, L"..\\Assets\\Textures\\Terrain\\terrainorange.jpg", &_texture))) // TODO to the resourcemanager or fileloader
-	//{
-	//	Log::Instance()->LogMessage("Terrain - Unable to load terrain textures.", Log::MESSAGE_WARNING);
-	//	return FALSE;
+	if (FAILED(D3DXCreateTextureFromFile(static_cast<LPDIRECT3DDEVICE9>(renderer->GetDevice()), L"..\\assets\\textures\\terrain\\terrainorange.jpg", &_texture))) // todo to the resourcemanager or fileloader
+	{
+		Log::Instance()->LogMessage("terrain - unable to load terrain textures.", Log::MESSAGE_WARNING);
+		return false;
 
-	//} TODO
-	return TRUE;
+	}
+	return true;
 }
 
 /// <summary>
@@ -124,18 +124,16 @@ bool Terrain::Initialize(Renderer* renderer, char* rawFile, char* terrainTexture
 void Terrain::Render(Renderer* renderer)
 {
 	renderer->SetTransform(renderer->WORLD, &_matWorld);
-	//renderer->SetTexture( 0, _texture); // TODO
-	_vertexBuffer->Render(renderer, _numIndices - 2, renderer->TRIANGLESTRIP); 
-	// renderer->GetVertexBuffer.Render( renderer->GetDevice, m_numIndices - 2, D3DPT_TRIANGLESTRIP ); change for this
+	static_cast<LPDIRECT3DDEVICE9>(renderer->GetDevice())->SetTexture( 0, _texture);//TODO
+	//renderer->SetTexture(_texture, 0); // TODO
+	renderer->SetStreamSource(0, 0, _vertexSize);
+	renderer->SetFVF();
+	renderer->SetIndices();
+	renderer->DrawIndexedPrimitive(Renderer::TRIANGLESTRIP, 0, 0, _numVertices, 0, _numIndices - 2);
+
+
+	//_vertexBuffer->Render(renderer, _numIndices - 2, renderer->TRIANGLESTRIP); 
+	 //renderer->GetVertexBuffer.Render( renderer->GetDevice, _numIndices - 2, D3DPT_TRIANGLESTRIP );
 }
 
-///* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-//Summary: Release resources
-//* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-//void Terrain::Release()
-//{
-//    SAFE_DELETE_ARRAY( m_pHeight );
-//    SAFE_RELEASE( m_pTexture );
-//	_vertexBuffer.Release();
-//	_indexBuffer.Release();
-//}
+

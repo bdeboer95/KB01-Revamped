@@ -13,6 +13,24 @@ class IndexBuffer;
 class Renderer
 {
 public:
+	// Primitives supported by draw-primitive API
+	typedef enum _PRIMITIVETYPE {
+		POINTLIST = 1,
+		LINELIST = 2,
+		LINESTRIP = 3,
+		TRIANGLELIST = 4,
+		TRIANGLESTRIP = 5,
+		TRIANGLEFAN = 6
+	} PRIMITIVETYPE;
+
+	/* Pool types */
+	typedef enum _POOL :unsigned long {
+		DEFAULT = 0, //ask Vincent if we should make this 
+		MANAGED = 1,
+		SYSTEMMEM = 2,
+		SCRATCH = 3,
+	} POOL;
+
 	virtual					~Renderer() {};
 
 	virtual bool			Cleanup() = 0;
@@ -24,23 +42,23 @@ public:
 	virtual float			GetBackBufferHeight() = 0;
 	virtual void			ClearBuffer(int r, int g, int b) = 0;
 
-	virtual bool			InitVertexBuffer() = 0; // why no initindexbuffer?
+	virtual bool			CreateVertexBuffer(unsigned int numVertices, unsigned int vertexSize, unsigned long fvf, HANDLE handle, bool dynamic=false) = 0; // why no initindexbuffer?
 	virtual void*			GetVertexBuffer() = 0;
-	virtual void			SetVertexBuffer(VertexBuffer* vertexBuffer) = 0;
-
+	virtual bool			FillVertexBuffer(unsigned int numVertices, void *pVertices, unsigned long flags) = 0;
+	virtual void			SetIndices() = 0;
+	virtual void			CreateIndexBuffer(unsigned int numIndices, unsigned long format, HANDLE handle, bool dynamic=false) = 0;
 	virtual void*			GetIndexBuffer() = 0;
-	virtual void			SetIndexBuffer(IndexBuffer* indexBuffer) = 0;
-
-	virtual void			DrawIndexedPrimitive(unsigned int primitiveType, UINT baseVertexIndex, UINT minVertexIndex, UINT numberOfVertices, UINT startIndex, UINT primitiveCount) = 0;
-	virtual void			DrawPrimitive(unsigned int primitiveType, UINT startVertex, UINT primitiveCount) = 0;
-	virtual void			DrawSubset(void* mesh, UINT index) = 0;
+	virtual void			FillIndexBuffer(unsigned int numIndices, void *pIndices, unsigned long flags) = 0;
+	virtual void			DrawIndexedPrimitive(unsigned int primitiveType, unsigned int baseVertexIndex, unsigned int minVertexIndex, unsigned int numberOfVertices, unsigned int startIndex, unsigned int primitiveCount) = 0;
+	virtual void			DrawPrimitive(unsigned int primitiveType, unsigned int startVertex, unsigned int primitiveCount) = 0;
+	virtual void			DrawSubset(void* mesh, unsigned int index) = 0;
 
 	virtual void			SetTransform(unsigned int transformStateType, Matrix* matrix) = 0; //Updates the Transform based on the state type that was given (World, view, etc) with the provided matrix
-	virtual void			SetStreamSource(UINT streamNumber, VertexBuffer* streamData, UINT offsetInBytes, UINT strude) = 0;
+	virtual void			SetStreamSource(unsigned int streamNumber, unsigned int offsetInBytes, unsigned int strude) = 0;
 	virtual void			SetViewPort(void* viewPort) = 0;
-	virtual void			SetMaterial(void* material, UINT index) = 0;
-	virtual void			SetTexture(void* texture, UINT index) = 0;
-	virtual void			SetFVF(DWORD FVF);
+	virtual void			SetMaterial(void* material, unsigned int index) = 0;
+	virtual void			SetTexture(void* texture, unsigned int index) = 0;
+	virtual void			SetFVF() = 0;
 
 	virtual void			Present(HWND hwnd) = 0;
 
@@ -60,28 +78,7 @@ public:
 		WORLD = 256
 	} TRANSFORMSTATETYPE;
 
-	// Primitives supported by draw-primitive API
-	typedef enum _PRIMITIVETYPE {
-		POINTLIST = 1,
-		LINELIST = 2,
-		LINESTRIP = 3,
-		TRIANGLELIST = 4,
-		TRIANGLESTRIP = 5,
-		TRIANGLEFAN = 6
-	} PRIMITIVETYPE;
 
-	/* Pool types */
-	typedef enum _POOL {
-		DEFAULT = 0, //ask Vincent if we should make this 
-		MANAGED = 1,
-		SYSTEMMEM = 2,
-		SCRATCH = 3,
-	} POOL;
-
-	static  float	PI;  //pi constant
-	static long	USAGE_DYNAMIC;   // pool usage
-	static long	USAGE_WRITEONLY; // pool usage
-	static unsigned long	LOCK_DISCARD;	   // lock discard
 };
 
 #endif

@@ -2,22 +2,18 @@
 #include "Log.h"
 #include <sstream>
 
-//#include <iostream>
-//#include <fstream>
-//#include <stdlib.h>
-
-XmlReader::XmlReader(const char* fileName) : _fileName(fileName)
+XmlReader::XmlReader(std::string fileName) : _fileName(fileName.c_str())
 {
 	if (Exist())
 	{
-		Log::Instance()->LogMessage("XmlReader - File " + std::string(fileName) + " registrated.", Log::MESSAGE_INFO);
+		Log::Instance()->LogMessage("XmlReader - File " + fileName + " registrated.", Log::MESSAGE_INFO);
 	}
 }
 
 XmlReader::~XmlReader()
 {
 	delete(_file);
-	delete(_fileName);
+	//delete(_fileName);
 }
 
 std::vector<std::string> XmlReader::LoadContents()
@@ -35,7 +31,7 @@ std::vector<std::string> XmlReader::LoadContents()
 	// Compare each tag
 	while (std::getline(buffer, line, '\n'))
 	{
-		if (line.find("Entity") != std::string::npos)
+		if (line.find("Entity"))
 		{
 			result.push_back(line);
 		}
@@ -68,7 +64,7 @@ std::string XmlReader::GetValue(std::string raw, std::string attribute)
 
 bool XmlReader::Exist()
 {
-	if (!fopen_s(&_file, _fileName, "rb"))
+	if (!fopen_s(&_file, _fileName.c_str(), "rb"))
 	{
 		fclose(_file);
 		return true;

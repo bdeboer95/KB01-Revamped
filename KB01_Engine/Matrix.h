@@ -9,22 +9,20 @@ class Matrix
 public:
 	Matrix() {}; //Constructor
 	Matrix(const float *); //Overloaded constructor
-	union {
-		struct {
-			float        _11, _12, _13, _14;
-			float        _21, _22, _23, _24;
-			float        _31, _32, _33, _34;
-			float        _41, _42, _43, _44;
-		};
-		float m[4][4]; //this contains the values _11 through _44 
-	};
-	/*	Matrix(const D3DMATRIX&);*/
-		//Matrix(const D3DXfloat16 *);
 	Matrix(float _11, float _12, float _13, float _14,
 		float _21, float _22, float _23, float _24,
 		float _31, float _32, float _33, float _34,
 		float _41, float _42, float _43, float _44); //overloaded constructor with all the matrix values individually
 
+	union {
+		struct {
+			float _11, _12, _13, _14;
+			float _21, _22, _23, _24;
+			float _31, _32, _33, _34;
+			float _41, _42, _43, _44;
+		};
+		float m[4][4]; //this contains the values _11 through _44 
+	};
 
 	// access grants
 	float& operator() (unsigned int  Row, unsigned int  Col);
@@ -57,8 +55,14 @@ public:
 	bool operator== (const Matrix&) const; //compare a matrix to another matrix and check if they are the same
 	bool operator!= (const Matrix&) const; //compare a matrix to aother matrix and check if they are not the same
 
-	/*static inline Matrix* MatrixLookAtLH(Matrix* out, const Vector3* eye, const Vector3* at, const Vector3* pup);
-	static inline Matrix* MatrixPerspectiveFovLH (Matrix* out, float fovy, float aspect, float zn, float zf);*/
+	void LookAtLH(const Vector3* eye, const Vector3* at, const Vector3* pup);	//Builds a left-handed look-at matrix
+	void PerspectiveFovLH(float fovy, float aspect, float zn, float zf);		//Builds a left-handed perspective projection matrix based on a field of view
+	void Identity();															//TODO
+
+	void Translate(float x, float y, float z);	//Used to translate an object containing a matrix with specified x, y and z values
+	void RotateX(float angle);					//Used to rotate an object containing a matrix on the x-axis
+	void RotateY(float angle);					//Used to rotate an object containing a matrix on the y-axis
+	void Scale(float x, float y, float);		//Used to scale an object containing a matrix with an x, y and z value
 
 };
 #endif

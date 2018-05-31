@@ -3,19 +3,19 @@
 
 #include "ResourceLoader.h"
 
-#include "Mesh.h"
+#include "MeshDx.h"
 
 class MeshLoaderDx: public ResourceLoader
 {
 private:
-	std::vector<Mesh>		meshes;
+	std::vector<MeshDx>		meshes;
 	LPD3DXBUFFER			materialBuffer; //Our material buffer
 	
 public:
 	MeshLoaderDx(Renderer* _renderer);
 	virtual	~MeshLoaderDx();
 
-	virtual Mesh*			LoadResource(std::string _filePath, std::string _fileName);
+	virtual MeshDx*			LoadResource(std::string _filePath, std::string _fileName);
 	virtual void			Cleanup();
 						
 };

@@ -51,17 +51,26 @@ public:
 	virtual void*			GetIndexBuffer();
 	virtual void			FillIndexBuffer(unsigned int numIndices, void *pIndices, unsigned long flags = D3DLOCK_DISCARD);
 	virtual void			SetIndices();
+
+	virtual long			CreateMeshFVF(unsigned long numFaces, unsigned long numVertices, unsigned long options, unsigned long FVF, MeshDx* mesh);
+
 	virtual void			DrawIndexedPrimitive(unsigned int primitiveType, unsigned int baseVertexIndex, unsigned int minVertexIndex, unsigned int numberOfVertices, unsigned int startIndex, unsigned int primitiveCount);
 	virtual void			DrawPrimitive(unsigned int primitiveType, unsigned int startVertex, unsigned int primitiveCount);
 	virtual void			DrawSubset(void* mesh, unsigned int index);
 
+	virtual void			SetRenderState(unsigned int renderStateType, DWORD state);
 	virtual void			SetTransform(unsigned int transformStateType, Matrix* matrix); //Updates the Transform based on the state type that was given (World, view, etc) with the provided matrix
 	virtual void			SetStreamSource(unsigned int streamNumber,  unsigned int offsetInBytes, unsigned int stride);
 	virtual void			SetViewPort(void* viewPort);
 	virtual void			SetMaterial(void* material, unsigned int index);
 	virtual void			SetTexture(void* texture, unsigned int index);
 	virtual void			SetFVF();
+
+	virtual HRESULT			CreateTextureFromFile(LPWSTR sourceFile, void* texture);
+
 	virtual void			Present(HWND hwnd);
+	virtual long			BeginScene();
+	virtual void			EndScene();
 
 };
 

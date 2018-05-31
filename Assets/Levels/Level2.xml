@@ -1,0 +1,8 @@
+<Settings>
+  <EntitieModels>
+    <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+    <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+  </EntitieModels>
+  <Skybox name="Main Skybox" back="cloudtop_back.tga" left ="cloudtop_left.tga" top="cloudtop_top.tga" front="cloudtop_front.tga" bottom="cloudtop_bottom.tga" right="cloudtop_right.tga" />
+  <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="zebra.jpg" /> 
+</Settings>

@@ -2,18 +2,18 @@
 #define __TEXTURELOADERDX_H__
 
 #include "ResourceLoader.h"
-#include "Texture.h"
+#include "TextureDx.h"
 
 class TextureLoaderDx : public ResourceLoader
 {
 private:
-	std::vector<Texture> textures;
+	std::vector<TextureDx> textures;
 
 public:
 	TextureLoaderDx(Renderer* _renderer);
 	~TextureLoaderDx();
 
-	virtual Texture*			LoadResource(std::string _filePath, std::string _fileName);
+	virtual TextureDx*			LoadResource(char* _filePath, char* _fileName);
 	virtual void				Cleanup();
 };
 

@@ -1,7 +1,7 @@
 #include "Matrix.h"
 #include "Vector3.h"
 #include <string.h>
-
+#include <math.h>
 
 //  Matrix::Matrix()
 //{
@@ -197,40 +197,98 @@ bool Matrix::operator!= (const Matrix& mat) const
 	return (memcmp(this, &mat, sizeof(Matrix)) != 0);
 }
 
-// inline Matrix* Matrix::MatrixLookAtLH(Matrix* out, const Vector3* eye, const Vector3* at, const Vector3* pup)
-//{
-//	Vector3 right, rightn, up, upn, vec, vec2 = NULL;
-//	
-//	Vector3::Vec3Subtract(&vec2, at, eye);
-//	Vector3::Vec3Normalize(&vec, &vec2);
-//	Vector3::Vec3Cross(&right, pup, &vec);
-//
-//	Vector3::Vec3Cross(&up, &vec, &right);
-//	Vector3::Vec3Normalize(&rightn, &right);
-//	Vector3::Vec3Normalize(&upn, &up);
-//
-//	out->m[0][0] = rightn._x;
-//	out->m[1][0] = rightn._y;
-//	out->m[2][0] = rightn._z;
-//	out->m[3][0] = - Vector3::Vec3Dot(&rightn, eye);
-//	out->m[0][1] = upn._x;
-//	out->m[1][1] = upn._y;
-//	out->m[2][1] = upn._z;
-//	out->m[3][1] = - Vector3::Vec3Dot(&upn, eye);
-//	out->m[0][2] = vec._x;
-//	out->m[1][2] = vec._y;
-//	out->m[2][2] = vec._z;
-//	out->m[3][2] = - Vector3::Vec3Dot(&vec, eye);
-//	out->m[0][3] = 0.0f;
-//	out->m[1][3] = 0.0f;
-//	out->m[2][3] = 0.0f;
-//	out->m[3][3] = 1.0f;
-//
-//	return out;
-//
-//}
-//
-//Matrix* Matrix::MatrixPerspectiveFovLH (Matrix* out, float fovy, float aspect, float zn, float zf)
-//{
-//	return nullptr;
-//}
+void Matrix::LookAtLH(const Vector3* eye, const Vector3* at, const Vector3* pup)
+{
+	Vector3 right, rightn, up, upn, vec, vec2;
+
+	vec2.Subtract(at, eye);
+	vec.Normalize(&vec2);
+	right.Cross(pup, &vec);
+
+	up.Cross(&vec, &right);
+	rightn.Normalize(&right);
+	upn.Normalize(&up);
+
+	m[0][0] = rightn._x;
+	m[1][0] = rightn._y;
+	m[2][0] = rightn._z;
+	m[3][0] = -rightn.Dot(eye);
+	m[0][1] = upn._x;
+	m[1][1] = upn._y;
+	m[2][1] = upn._z;
+	m[3][1] = -upn.Dot(eye);
+	m[0][2] = vec._x;
+	m[1][2] = vec._y;
+	m[2][2] = vec._z;
+	m[3][2] = -vec.Dot(eye);
+	m[0][3] = 0.0f;
+	m[1][3] = 0.0f;
+	m[2][3] = 0.0f;
+	m[3][3] = 1.0f;
+}
+
+void Matrix::PerspectiveFovLH(float fovy, float aspect, float zn, float zf)
+{
+	Identity();
+	m[0][0] = 1.0f / (aspect * tan(fovy / 2.0f));
+	m[1][1] = 1.0f / tan(fovy / 2.0f);
+	m[2][2] = zf / (zf - zn);
+	m[2][3] = 1.0f;
+	m[3][2] = (zf * zn) / (zn - zf);
+	m[3][3] = 0.0f;
+}
+
+void Matrix::Identity()
+{
+	m[0][1] = 0.0f;
+	m[0][2] = 0.0f;
+	m[0][3] = 0.0f;
+	m[1][0] = 0.0f;
+	m[1][2] = 0.0f;
+	m[1][3] = 0.0f;
+	m[2][0] = 0.0f;
+	m[2][1] = 0.0f;
+	m[2][3] = 0.0f;
+	m[3][0] = 0.0f;
+	m[3][1] = 0.0f;
+	m[3][2] = 0.0f;
+	m[0][0] = 1.0f;
+	m[1][1] = 1.0f;
+	m[2][2] = 1.0f;
+	m[3][3] = 1.0f;
+}
+
+void Matrix::Scale(float x, float y, float z)
+{
+	Identity();
+	m[0][0] = x;
+	m[1][1] = y;
+	m[2][2] = z;
+}
+
+void Matrix::Translate(float x, float y, float z)
+{
+	Identity();
+	m[3][0] = x;
+	m[3][1] = y;
+	m[3][2] = z;
+}
+
+void Matrix::RotateX(float angle)
+{
+	Identity();
+	m[1][1] = cos(angle);
+	m[2][2] = cos(angle);
+	m[1][2] = sin(angle);
+	m[2][1] = -sin(angle);
+}
+
+void Matrix::RotateY(float angle)
+{
+	Identity();
+	m[0][0] = cos(angle);
+	m[2][2] = cos(angle);
+	m[0][2] = -sin(angle);
+	m[2][0] = sin(angle);
+}
+

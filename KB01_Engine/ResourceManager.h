@@ -8,7 +8,7 @@ class ResourceManager
 {
 private:
 	MeshLoaderDx* meshLoader;
-	std::vector<Mesh*> meshes;
+	std::vector<MeshDx*> meshes;
 
 	TextureLoaderDx* textureLoader;
 	std::vector<Texture*> textures;
@@ -22,7 +22,7 @@ public:
 
 	bool InitResourceLoader(Renderer* _renderer);
 
-	Mesh* LoadMesh(std::string _filePath, std::string _fileName);
+	MeshDx* LoadMesh(std::string _filePath, std::string _fileName);
 	Texture* LoadTexture(std::string _filePath, std::string _fileName);
 	
 };

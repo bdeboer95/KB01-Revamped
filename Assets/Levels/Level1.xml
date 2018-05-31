@@ -1,22 +1,7 @@
-<Entity>
-<x value=100>
-<y value=100>
-<z value= 100>
-</Entity>
-
-<Terrain>
-<Heightmap value="heightdata.raw">
-</Heightmap>
-<x value=100>
-<y value=100>
-<z value= 100>
-</Terrain>
-
-<Skybox>
-<x value=100>
-<y value=100>
-<z value= 100>
-<Texture value="Skybox1">
-
-<Texture>
-</Skybox>
+<Settings>
+  <EntitieModels>
+    <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+  </EntitieModels>
+  <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+  <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+</Settings>

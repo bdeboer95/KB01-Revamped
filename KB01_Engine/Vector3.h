@@ -36,11 +36,11 @@ public:
 	bool operator== (const Vector3&) const;
 	bool operator!= (const Vector3&) const;
 
-	/*static  Vector3* Vec3Subtract(Vector3* out, const Vector3* v1, const Vector3* v2);
-	static  Vector3* Vec3Cross(Vector3* out, const Vector3* v1, const Vector3* v2);
-	static  Vector3* Vec3Normalize(Vector3* out, const Vector3* v);
-	static  float Vec3Length(const Vector3* v);
-	static  float Vec3Dot(const Vector3* v1, const Vector3* v2);*/
+	void Subtract(const Vector3* v1, const Vector3* v2);
+	void Cross(const Vector3* v1, const Vector3* v2);
+	void Normalize(const Vector3* v);
+	float Length(const Vector3* v);
+	float Dot(const Vector3* v);
 
 };
 #endif 

@@ -1,0 +1,12 @@
+<Settings>
+  <EntitieModels>
+    <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" /> 
+    <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+    <Entity name="Tiger3" texture="zebra.jpg" mesh="Tiger.x" px="3" py="-10" pz="25" />
+    <Entity name="Tiger4" texture="zebra.jpg" mesh="Tiger.x" px="4" py="-10" pz="25" />
+    <Entity name="Tiger5" texture="zebra3.bmp" mesh="Tiger.x" px="5" py="-10" pz="25" />
+    <Entity name="Tiger6" texture="zebra.jpg" mesh="Tiger.x" px="6" py="-10" pz="25" />
+  </EntitieModels>
+  <Skybox name="Skybox" back="skybox2_back.jpg" left ="skybox2_left.jpg" top="skybox2_top.jpg" front="skybox2_front.jpg" bottom="skybox2_bottom.jpg" right="skybox2_right.jpg" />
+  <Terrain name="Terrain" heightmap="heightdata.raw" texture="terraingreen.jpg" /> 
+</Settings>

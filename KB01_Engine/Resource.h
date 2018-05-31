@@ -6,12 +6,12 @@
 class Resource
 {
 protected:
-	std::string					    fileName;
+	std::string						_fileName;
 
 public:
-	virtual	~Resource() {};
+	virtual	~Resource() = 0;
 
-	virtual std::string				GetFileName() { return fileName; }
+	virtual std::string				GetFileName() = 0;
 	virtual void					Cleanup() = 0;
 	
 };

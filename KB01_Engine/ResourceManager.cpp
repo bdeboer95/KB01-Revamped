@@ -9,7 +9,7 @@
 ResourceManager::ResourceManager()
 {
 	textures = std::vector<Texture*>();
-	meshes = std::vector<Mesh*>();
+	meshes = std::vector<MeshDx*>();
 
 	Log::Instance()->LogMessage("ResourceManager - Created.", Log::MESSAGE_INFO);
 }
@@ -35,16 +35,16 @@ bool ResourceManager::InitResourceLoader(Renderer* _renderer)
 // Name: LoadResource(std::string _fileName)
 // Desc: Loads a resource using the filename provided in the parameters
 //-----------------------------------------------------------------------------
-Mesh* ResourceManager::LoadMesh(std::string _filePath, std::string _fileName)
+MeshDx* ResourceManager::LoadMesh(std::string _filePath, std::string _fileName)
 {
-	Mesh* mesh = NULL;
+	MeshDx* mesh = NULL;
 
-	std::vector<Mesh*>::iterator it = std::find_if(meshes.begin(), meshes.end(), [_fileName](Mesh* temp) { return temp->GetFileName() == _fileName; });
+	std::vector<MeshDx*>::iterator it = std::find_if(meshes.begin(), meshes.end(), [_fileName](MeshDx* temp) { return temp->GetFileName() == _fileName; });
 
 	// if mesh does exist, give it the existing pointer
 	if (it != meshes.end())
 	{
-		mesh = static_cast<Mesh*>(*it);
+		mesh = static_cast<MeshDx*>(*it);
 
 		Log::Instance()->LogMessage("ResourceManager - Mesh '" + _fileName + "' already loaded.'", Log::MESSAGE_INFO);
 	}

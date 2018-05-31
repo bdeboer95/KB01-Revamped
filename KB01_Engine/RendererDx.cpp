@@ -12,19 +12,15 @@
 #include <iostream>
 #include "Vector3.h"
 #include "Matrix.h"
+#include "MeshDx.h"
 
 /// <summary>
 /// Initializes a new instance of the <see cref="RendererDx"/> class.
 /// </summary>
 RendererDx::RendererDx()
 {
-	_direct3D = NULL; // Used to create the D3DDevice
-					 //InitDevice(GetForegroundWindow());
-	_vertexBuffer = NULL; // Buffer to hold vertices
-	//PI = ;
-	//USAGE_DYNAMIC = 0x00000200L;
-	//USAGE_WRITEONLY = 0x00000008L;
-	//LOCK_DISCARD = 0x00002000L;
+	_direct3D = NULL; 
+	_vertexBuffer = NULL; 
 }
 
 /// <summary>
@@ -40,31 +36,39 @@ RendererDx::~RendererDx()
 /// Cleanups this instance and releases the buffers and devices
 /// </summary>
 bool RendererDx::Cleanup()
-{
-	
+{	
 	if (_direct3DDevice != NULL)
+	{
 		if (FAILED(_direct3DDevice->Release()))
 		{
 			return false;
 		}
+	}
 
 	if (_direct3D != NULL)
+	{
 		if (FAILED(_direct3D->Release()))
 		{
 			Log::Instance()->LogMessage("~RendererDx - Failed to release direct3d!", Log::MESSAGE_WARNING);
 			return false;
 		}
+	}
 
 	return true;
 }
-void RendererDx::Release() {
+void RendererDx::Release() 
+{
 	if (_vertexBuffer != NULL)
+	{
 		if (FAILED(_vertexBuffer->Release()))
 		{
 			Log::Instance()->LogMessage("~RendererDx - Failed to release vertexbuffer!", Log::MESSAGE_WARNING);
-		
+
 		}
-	if (_indexBuffer != NULL) {
+	}
+
+	if (_indexBuffer != NULL) 
+	{
 		if (FAILED(_indexBuffer->Release()))
 		{
 			Log::Instance()->LogMessage("~RendererDx - Failed to release indexbuffer!", Log::MESSAGE_WARNING);
@@ -79,7 +83,6 @@ void RendererDx::Release() {
 /// <returns></returns>
 bool RendererDx::InitDevice(HWND hWnd)
 {
-	// Create the D3D object.
 	if (NULL == (_direct3D = Direct3DCreate9(D3D_SDK_VERSION)))
 	{
 		return false;
@@ -103,7 +106,8 @@ bool RendererDx::InitDevice(HWND hWnd)
 	//d3dpp.AutoDepthStencilFormat = D3DFMT_D16;
 	//d3dpp.EnableAutoDepthStencil = true;
 
-	if (FAILED(_direct3D->CreateDevice(D3DADAPTER_DEFAULT,
+	if (FAILED(_direct3D->CreateDevice(
+		D3DADAPTER_DEFAULT,
 		D3DDEVTYPE_HAL,
 		hWnd,
 		D3DCREATE_HARDWARE_VERTEXPROCESSING,
@@ -235,12 +239,32 @@ void* RendererDx::GetVertexBuffer()
 }
 
 void RendererDx::SetIndices() {
-	if (_indexBuffer) {
+	if (_indexBuffer) 
+	{
 		_direct3DDevice->SetIndices(_indexBuffer);
 	}
-	else {
+	else 
+	{
 		_direct3DDevice->SetIndices(NULL);
 	}
+}
+
+HRESULT RendererDx::CreateMeshFVF(unsigned long numFaces, unsigned long numVertices, unsigned long options, unsigned long FVF, MeshDx* mesh)
+{
+	LPD3DXMESH pMesh ;
+	if (FAILED(D3DXCreateMeshFVF(
+		numFaces,
+		numVertices,
+		options,
+		FVF,
+		_direct3DDevice,
+		&pMesh)))
+	{
+		return E_FAIL;
+	}
+
+	mesh->SetMesh(pMesh);
+	return S_OK;
 }
 
 void* RendererDx::GetIndexBuffer()
@@ -254,7 +278,6 @@ void RendererDx::FillIndexBuffer(unsigned int numIndices, void *pIndices, unsign
 	if (_indexBuffer == NULL)
 	{
 		Log::Instance()->LogMessage("RendererDx - Indexbuffer is null", Log::MESSAGE_ERROR);
-
 	}
 
 	char *pData;
@@ -274,11 +297,8 @@ void RendererDx::FillIndexBuffer(unsigned int numIndices, void *pIndices, unsign
 	// Unlock index buffer
 	if (FAILED(_indexBuffer->Unlock()))
 	{
-
 		Log::Instance()->LogMessage("RendererDx - Failed to unlock indexbuffer", Log::MESSAGE_ERROR);
 	}
-
-
 }
 
 /// <summary>
@@ -293,11 +313,13 @@ void RendererDx::DrawIndexedPrimitive(unsigned int primitiveType, unsigned int b
 			minVertexIndex,
 			numberOfVertices,
 			startIndex,
-			primitiveCount))) {
+			primitiveCount))) 
+		{
 			Log::Instance()->LogMessage("RendererDx - Failed to draw indexed primitive", Log::MESSAGE_ERROR);
 		}
 	}
-	else {
+	else 
+	{
 		_direct3DDevice->DrawPrimitive(static_cast<D3DPRIMITIVETYPE>(primitiveType), 0, primitiveCount);
 	}
 }
@@ -308,7 +330,8 @@ void RendererDx::DrawPrimitive(unsigned int primitiveType, unsigned int startVer
 	if (FAILED(_direct3DDevice->DrawPrimitive(
 		static_cast<D3DPRIMITIVETYPE>(primitiveType),
 		startVertex,
-		primitiveCount))) {
+		primitiveCount))) 
+	{
 		Log::Instance()->LogMessage("RendererDx - Failed to draw primitive", Log::MESSAGE_ERROR);
 	}
 }
@@ -323,6 +346,13 @@ void RendererDx::DrawSubset(void* mesh, unsigned int index)
 	{
 		Log::Instance()->LogMessage("RendererDx - The subset could not be drawn with number: ", Log::MESSAGE_ERROR);
 	}
+}
+
+void RendererDx::SetRenderState(unsigned int renderStateType, DWORD state)
+{
+	_direct3DDevice->SetRenderState(
+		static_cast<D3DRENDERSTATETYPE>(renderStateType), 
+		state);
 }
 
 void RendererDx::SetTransform(unsigned int transformStateType, Matrix* matrix) {
@@ -364,7 +394,7 @@ void RendererDx::SetMaterial(void* material, unsigned int index)
 {
 	//Unsigned ints can hold a larger positive value, and no negative value.
 	//Signed ints can not hold a less large positive value and negative values.
-	if (FAILED(_direct3DDevice->SetMaterial(&DIRECT3DMATERIAL(material)[index])))
+	if (FAILED(_direct3DDevice->SetMaterial(&(static_cast<D3DMATERIAL9*>(material)[index]))))
 	{
 		Log::Instance()->LogMessage("RendererDx - Material was failed to be set to the direct3DDevice.", Log::MESSAGE_ERROR);
 	}
@@ -375,12 +405,10 @@ void RendererDx::SetMaterial(void* material, unsigned int index)
 /// </summary>
 void RendererDx::SetTexture(void* texture, unsigned int index)
 {
-
 	if (FAILED(_direct3DDevice->SetTexture(0, DIRECT3DTEXTURE(texture)[index])))
 	{
 		Log::Instance()->LogMessage("RendererDx - Texture was failed to set to the direct3DDevice", Log::MESSAGE_ERROR);
 	}
-
 }
 
 /// <summary>
@@ -388,10 +416,15 @@ void RendererDx::SetTexture(void* texture, unsigned int index)
 /// </summary>
 void RendererDx::SetFVF()
 {
-	if (FAILED(_direct3DDevice->SetFVF(_fvf))){
+	if (FAILED(_direct3DDevice->SetFVF(_fvf)))
+	{
 		Log::Instance()->LogMessage("RendererDx - Failed to set the FVF", Log::MESSAGE_WARNING);
 	}
-	
+}
+
+HRESULT RendererDx::CreateTextureFromFile(LPWSTR sourceFile, void * texture)
+{
+	return D3DXCreateTextureFromFile(_direct3DDevice, sourceFile, static_cast<LPDIRECT3DTEXTURE9*>(texture));
 }
 
 /// <summary>
@@ -401,6 +434,17 @@ void RendererDx::Present(HWND hWnd)
 {
 	_direct3DDevice->Present(NULL, NULL, hWnd, NULL);
 }
+
+long RendererDx::BeginScene()
+{
+	return _direct3DDevice->BeginScene();
+}
+
+void RendererDx::EndScene()
+{
+	_direct3DDevice->EndScene();
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 Summary: Fill up the vertex buffer
 Parameters:

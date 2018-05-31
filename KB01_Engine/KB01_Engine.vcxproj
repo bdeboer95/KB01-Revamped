@@ -13,7 +13,6 @@
   <ItemGroup>
     <ClInclude Include="BMPLoader.h" />
     <ClInclude Include="Buffer.h" />
-    <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\resource.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="CFont.h" />
     <ClInclude Include="CFramework.h" />
@@ -22,6 +21,7 @@
     <ClInclude Include="CIndexBuffer.h" />
     <ClInclude Include="CInput.h" />
     <ClInclude Include="CMesh.h" />
+    <ClInclude Include="Mesh.h" />
     <ClInclude Include="Terrain.h" />
     <ClInclude Include="CTimer.h" />
     <ClInclude Include="CTriangleStripPlane.h" />
@@ -35,7 +35,7 @@
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="MatrixMath.h" />
-    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshDx.h" />
     <ClInclude Include="ResourceLoader.h" />
     <ClInclude Include="Heightmap.h" />
     <ClInclude Include="Device.h" />
@@ -58,6 +58,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringToWStringConverter.h" />
     <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureDx.h" />
     <ClInclude Include="TextureLoaderDx.h" />
     <ClInclude Include="DXVector3.h" />
     <ClInclude Include="TransformationEvent.h" />
@@ -96,7 +97,7 @@
     <ClCompile Include="MatrixMath.cpp" />
     <ClCompile Include="MeshLoaderDx.cpp" />
     <ClCompile Include="Log.cpp" />
-    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MeshDx.cpp" />
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="RendererDx.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
@@ -107,7 +108,7 @@
     <ClCompile Include="Skybox.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="StringToWStringConverter.cpp" />
-    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureDx.cpp" />
     <ClCompile Include="TextureLoaderDx.cpp" />
     <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="Vector3.cpp" />

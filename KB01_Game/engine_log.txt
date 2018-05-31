@@ -1,638 +1,1424 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Fri May  4 18:20:32 2018
+chris          [Thu May 10 11:23:08 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Fri May  4 18:20:32 INFO: Kernel - Created.
-Fri May  4 18:20:32 INFO: WindowManager - SetWindowClassEx successful.
-Fri May  4 18:20:32 INFO: WindowManager - Created
-Fri May  4 18:20:32 INFO: SceneManager - SceneManager created
-Fri May  4 18:20:32 INFO: ResourceManager - Created.
-Fri May  4 18:20:32 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Fri May  4 18:20:32 INFO: Kernel - Loading level...
-Fri May  4 18:20:32 INFO: Window - Created handler for window with title:'Choo Choo'
-Fri May  4 18:20:32 INFO: Window - Window created.
-Fri May  4 18:20:32 INFO: Camera - Camera created.
-Fri May  4 18:20:32 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Fri May  4 18:20:32 INFO: XmlReader - Read <Settings>
-Fri May  4 18:20:32 INFO: XmlReader - Read   <EntitieModels>
-Fri May  4 18:20:32 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25"/>
-Fri May  4 18:20:32 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25"/>
-Fri May  4 18:20:32 INFO: XmlReader - Read   </EntitieModels>
-Fri May  4 18:20:32 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga"/>
-Fri May  4 18:20:32 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg"/> 
-Fri May  4 18:20:32 INFO: XmlReader - Read </Settings>
-Fri May  4 18:20:45 INFO: EntityModel - Created.
-Fri May  4 18:20:45 INFO: Scene - EntityModel created
-Fri May  4 18:20:47 INFO: ~Scene - Created: Tiger1
-Fri May  4 18:20:54 INFO: EntityModel - Created.
-Fri May  4 18:20:54 INFO: Scene - EntityModel created
-Fri May  4 18:20:55 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:23:08 INFO: Kernel - Created.
+Thu May 10 11:23:08 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:23:08 INFO: WindowManager - Created
+Thu May 10 11:23:08 INFO: SceneManager - SceneManager created
+Thu May 10 11:23:08 INFO: ResourceManager - Created.
+Thu May 10 11:23:08 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:23:08 INFO: Kernel - Loading level...
+Thu May 10 11:23:08 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:23:08 INFO: Window - Window created.
+Thu May 10 11:23:08 INFO: Camera - Camera created.
+Thu May 10 11:23:08 INFO: XmlReader - File ../Assets/Levels/Level3.xml registrated.
+Thu May 10 11:23:08 INFO: XmlReader - Read <Settings>
+Thu May 10 11:23:08 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:23:08 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:23:08 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+Thu May 10 11:23:08 INFO: XmlReader - Read     <Entity name="Tiger3" texture="zebra.jpg" mesh="Tiger.x" px="3" py="-10" pz="25" />
+Thu May 10 11:23:08 INFO: XmlReader - Read     <Entity name="Tiger4" texture="zebra.jpg" mesh="Tiger.x" px="4" py="-10" pz="25" />
+Thu May 10 11:23:08 INFO: XmlReader - Read     <Entity name="Tiger5" texture="zebra3.bmp" mesh="Tiger.x" px="5" py="-10" pz="25" />
+Thu May 10 11:23:08 INFO: XmlReader - Read     <Entity name="Tiger6" texture="zebra.jpg" mesh="Tiger.x" px="6" py="-10" pz="25" />
+Thu May 10 11:23:08 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:23:08 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox2_back.jpg" left ="skybox2_left.jpg" top="skybox2_top.jpg" front="skybox2_front.jpg" bottom="skybox2_bottom.jpg" right="skybox2_right.jpg" />
+Thu May 10 11:23:08 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terraingreen.jpg" /> 
+Thu May 10 11:23:08 INFO: XmlReader - Read </Settings>
+Thu May 10 11:23:08 INFO: Scene - EntityModel created
+Thu May 10 11:23:08 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:23:08 INFO: Scene - EntityModel created
+Thu May 10 11:23:08 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:23:08 INFO: Scene - EntityModel created
+Thu May 10 11:23:08 INFO: ~Scene - Created: Tiger3
+Thu May 10 11:23:08 INFO: Scene - EntityModel created
+Thu May 10 11:23:08 INFO: ~Scene - Created: Tiger4
+Thu May 10 11:23:08 INFO: Scene - EntityModel created
+Thu May 10 11:23:08 INFO: ~Scene - Created: Tiger5
+Thu May 10 11:23:08 INFO: Scene - EntityModel created
+Thu May 10 11:23:08 INFO: ~Scene - Created: Tiger6
+Thu May 10 11:23:08 INFO: ~Scene - Created: Skybox
+Thu May 10 11:23:08 INFO: ~Scene - Created: Skybox
+Thu May 10 11:23:08 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:23:08 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:23:08 INFO: Scene - Scene Instantiated.
+Thu May 10 11:23:08 INFO: SceneManager - Scene created
+Thu May 10 11:23:08 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:23:08 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:23:08 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:23:08 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Thu May 10 11:23:08 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:23:08 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:23:08 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Thu May 10 11:23:08 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'skybox2_front.jpg' loaded.
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'skybox2_back.jpg' loaded.
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'skybox2_left.jpg' loaded.
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'skybox2_right.jpg' loaded.
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'skybox2_top.jpg' loaded.
+Thu May 10 11:23:08 INFO: ResourceManager - Texture 'skybox2_bottom.jpg' loaded.
+Thu May 10 11:23:08 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:23:08 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:23:08 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:23:08 INFO: Mouse - Created.
+Thu May 10 11:23:08 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:23:08 INFO: Keyboard - Created.
+Thu May 10 11:23:08 INFO: InputManager - InputManager created.
+Thu May 10 11:23:08 INFO: Kernel - Added as listener.
+Thu May 10 11:23:08 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Fri May  4 18:22:13 2018
+chris          [Thu May 10 11:24:34 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Fri May  4 18:22:13 INFO: Kernel - Created.
-Fri May  4 18:22:13 INFO: WindowManager - SetWindowClassEx successful.
-Fri May  4 18:22:13 INFO: WindowManager - Created
-Fri May  4 18:22:13 INFO: SceneManager - SceneManager created
-Fri May  4 18:22:13 INFO: ResourceManager - Created.
-Fri May  4 18:22:13 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Fri May  4 18:22:13 INFO: Kernel - Loading level...
-Fri May  4 18:22:13 INFO: Window - Created handler for window with title:'Choo Choo'
-Fri May  4 18:22:13 INFO: Window - Window created.
-Fri May  4 18:22:13 INFO: Camera - Camera created.
-Fri May  4 18:22:13 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Fri May  4 18:22:13 INFO: XmlReader - Read <Settings>
-Fri May  4 18:22:13 INFO: XmlReader - Read   <EntitieModels>
-Fri May  4 18:22:13 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25"/>
-Fri May  4 18:22:13 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25"/>
-Fri May  4 18:22:13 INFO: XmlReader - Read   </EntitieModels>
-Fri May  4 18:22:13 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga"/>
-Fri May  4 18:22:13 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg"/> 
-Fri May  4 18:22:13 INFO: XmlReader - Read </Settings>
-Fri May  4 18:22:17 INFO: EntityModel - Created.
-Fri May  4 18:22:17 INFO: Scene - EntityModel created
-Fri May  4 18:22:18 INFO: ~Scene - Created: Tiger1
-Fri May  4 18:22:22 INFO: EntityModel - Created.
-Fri May  4 18:22:22 INFO: Scene - EntityModel created
-Fri May  4 18:22:23 INFO: ~Scene - Created: Tiger2
-Fri May  4 18:22:36 INFO: ~Scene - Created: Mai
-Fri May  4 18:22:41 WARNING: ~Scene - TODO: implement loading: Mai
-Fri May  4 18:22:43 INFO: ~Scene - Created: Mai
-Fri May  4 18:22:56 INFO: Scene - Scene Instantiated.
-Fri May  4 18:22:56 INFO: SceneManager - Scene created
-Fri May  4 18:22:56 INFO: MeshLoaderDx - MeshLoaderDx created.
-Fri May  4 18:22:56 INFO: TextureLoaderDx - TextureLoaderDx created.
-Fri May  4 18:22:56 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Fri May  4 18:22:57 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Fri May  4 18:22:57 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Fri May  4 18:22:57 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Fri May  4 18:22:57 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Fri May  4 18:22:57 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Fri May  4 18:22:57 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Fri May  4 18:22:57 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox3_right.tga"/
-Fri May  4 18:22:57 INFO: ResourceManager - Texture 'skybox3_right.tga"/' loaded.
+Thu May 10 11:24:34 INFO: Kernel - Created.
+Thu May 10 11:24:34 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:24:34 INFO: WindowManager - Created
+Thu May 10 11:24:34 INFO: SceneManager - SceneManager created
+Thu May 10 11:24:34 INFO: ResourceManager - Created.
+Thu May 10 11:24:34 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:24:34 INFO: Kernel - Loading level...
+Thu May 10 11:24:34 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:24:34 INFO: Window - Window created.
+Thu May 10 11:24:34 INFO: Camera - Camera created.
+Thu May 10 11:24:34 INFO: XmlReader - File ../Assets/Levels/Level3.xml registrated.
+Thu May 10 11:24:34 INFO: XmlReader - Read <Settings>
+Thu May 10 11:24:34 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:24:34 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:24:34 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+Thu May 10 11:24:34 INFO: XmlReader - Read     <Entity name="Tiger3" texture="zebra.jpg" mesh="Tiger.x" px="3" py="-10" pz="25" />
+Thu May 10 11:24:34 INFO: XmlReader - Read     <Entity name="Tiger4" texture="zebra.jpg" mesh="Tiger.x" px="4" py="-10" pz="25" />
+Thu May 10 11:24:34 INFO: XmlReader - Read     <Entity name="Tiger5" texture="zebra3.bmp" mesh="Tiger.x" px="5" py="-10" pz="25" />
+Thu May 10 11:24:34 INFO: XmlReader - Read     <Entity name="Tiger6" texture="zebra.jpg" mesh="Tiger.x" px="6" py="-10" pz="25" />
+Thu May 10 11:24:34 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:24:34 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox2_back.jpg" left ="skybox2_left.jpg" top="skybox2_top.jpg" front="skybox2_front.jpg" bottom="skybox2_bottom.jpg" right="skybox2_right.jpg" />
+Thu May 10 11:24:34 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terraingreen.jpg" /> 
+Thu May 10 11:24:34 INFO: XmlReader - Read </Settings>
+Thu May 10 11:25:19 INFO: Scene - EntityModel created
+Thu May 10 11:25:19 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:25:31 INFO: Scene - EntityModel created
+Thu May 10 11:25:31 INFO: ~Scene - Created: Tiger2
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Fri May  4 18:56:16 2018
+chris          [Thu May 10 11:28:50 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Fri May  4 18:56:16 INFO: Kernel - Created.
-Fri May  4 18:56:16 INFO: WindowManager - SetWindowClassEx successful.
-Fri May  4 18:56:16 INFO: WindowManager - Created
-Fri May  4 18:56:16 INFO: SceneManager - SceneManager created
-Fri May  4 18:56:16 INFO: ResourceManager - Created.
-Fri May  4 18:56:16 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Fri May  4 18:56:16 INFO: Kernel - Loading level...
-Fri May  4 18:56:16 INFO: Window - Created handler for window with title:'Choo Choo'
-Fri May  4 18:56:16 INFO: Window - Window created.
-Fri May  4 18:56:16 INFO: Camera - Camera created.
-Fri May  4 18:56:16 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Fri May  4 18:56:16 INFO: XmlReader - Read <Settings>
-Fri May  4 18:56:16 INFO: XmlReader - Read   <EntitieModels>
-Fri May  4 18:56:16 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25"/>
-Fri May  4 18:56:16 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25"/>
-Fri May  4 18:56:16 INFO: XmlReader - Read   </EntitieModels>
-Fri May  4 18:56:16 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga"/>
-Fri May  4 18:56:16 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg"/> 
-Fri May  4 18:56:16 INFO: XmlReader - Read </Settings>
-Fri May  4 18:56:16 INFO: EntityModel - Created.
-Fri May  4 18:56:16 INFO: Scene - EntityModel created
-Fri May  4 18:56:16 INFO: ~Scene - Created: Tiger1
-Fri May  4 18:56:16 INFO: EntityModel - Created.
-Fri May  4 18:56:16 INFO: Scene - EntityModel created
-Fri May  4 18:56:16 INFO: ~Scene - Created: Tiger2
-Fri May  4 18:56:16 INFO: ~Scene - Created: Mai
-Fri May  4 18:56:16 WARNING: ~Scene - TODO: implement loading: Mai
-Fri May  4 18:56:16 INFO: ~Scene - Created: Mai
-Fri May  4 18:56:16 INFO: Scene - Scene Instantiated.
-Fri May  4 18:56:16 INFO: SceneManager - Scene created
-Fri May  4 18:56:16 INFO: MeshLoaderDx - MeshLoaderDx created.
-Fri May  4 18:56:16 INFO: TextureLoaderDx - TextureLoaderDx created.
-Fri May  4 18:56:16 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Fri May  4 18:56:17 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Fri May  4 18:56:17 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Fri May  4 18:56:17 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Fri May  4 18:56:17 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Fri May  4 18:56:17 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Fri May  4 18:56:17 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Fri May  4 18:56:17 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox3_right.tga"/
-Fri May  4 18:56:17 INFO: ResourceManager - Texture 'skybox3_right.tga"/' loaded.
+Thu May 10 11:28:50 INFO: Kernel - Created.
+Thu May 10 11:28:50 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:28:50 INFO: WindowManager - Created
+Thu May 10 11:28:50 INFO: SceneManager - SceneManager created
+Thu May 10 11:28:50 INFO: ResourceManager - Created.
+Thu May 10 11:28:50 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:28:50 INFO: Kernel - Loading level...
+Thu May 10 11:28:50 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:28:50 INFO: Window - Window created.
+Thu May 10 11:28:50 INFO: Camera - Camera created.
+Thu May 10 11:28:50 INFO: XmlReader - File ../Assets/Levels/Level3.xml registrated.
+Thu May 10 11:28:50 INFO: XmlReader - Read <Settings>
+Thu May 10 11:28:50 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:28:50 INFO: XmlReader - Read     <!--<Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" /> -->
+Thu May 10 11:28:50 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+Thu May 10 11:28:50 INFO: XmlReader - Read     <Entity name="Tiger3" texture="zebra.jpg" mesh="Tiger.x" px="3" py="-10" pz="25" />
+Thu May 10 11:28:50 INFO: XmlReader - Read     <Entity name="Tiger4" texture="zebra.jpg" mesh="Tiger.x" px="4" py="-10" pz="25" />
+Thu May 10 11:28:50 INFO: XmlReader - Read     <Entity name="Tiger5" texture="zebra3.bmp" mesh="Tiger.x" px="5" py="-10" pz="25" />
+Thu May 10 11:28:50 INFO: XmlReader - Read     <Entity name="Tiger6" texture="zebra.jpg" mesh="Tiger.x" px="6" py="-10" pz="25" />
+Thu May 10 11:28:50 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:28:50 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox2_back.jpg" left ="skybox2_left.jpg" top="skybox2_top.jpg" front="skybox2_front.jpg" bottom="skybox2_bottom.jpg" right="skybox2_right.jpg" />
+Thu May 10 11:28:50 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terraingreen.jpg" /> 
+Thu May 10 11:28:50 INFO: XmlReader - Read </Settings>
+Thu May 10 11:28:54 INFO: Scene - EntityModel created
+Thu May 10 11:28:54 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:28:54 INFO: Scene - EntityModel created
+Thu May 10 11:28:54 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:28:54 INFO: Scene - EntityModel created
+Thu May 10 11:28:54 INFO: ~Scene - Created: Tiger3
+Thu May 10 11:28:54 INFO: Scene - EntityModel created
+Thu May 10 11:28:54 INFO: ~Scene - Created: Tiger4
+Thu May 10 11:28:54 INFO: Scene - EntityModel created
+Thu May 10 11:28:54 INFO: ~Scene - Created: Tiger5
+Thu May 10 11:28:54 INFO: Scene - EntityModel created
+Thu May 10 11:28:54 INFO: ~Scene - Created: Tiger6
+Thu May 10 11:28:54 INFO: ~Scene - Created: Skybox
+Thu May 10 11:28:54 INFO: ~Scene - Created: Skybox
+Thu May 10 11:28:54 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:28:54 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:28:54 INFO: Scene - Scene Instantiated.
+Thu May 10 11:28:54 INFO: SceneManager - Scene created
+Thu May 10 11:28:54 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:28:54 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:28:54 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:28:54 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Thu May 10 11:28:54 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:28:54 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:28:54 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Thu May 10 11:28:54 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'skybox2_front.jpg' loaded.
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'skybox2_back.jpg' loaded.
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'skybox2_left.jpg' loaded.
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'skybox2_right.jpg' loaded.
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'skybox2_top.jpg' loaded.
+Thu May 10 11:28:54 INFO: ResourceManager - Texture 'skybox2_bottom.jpg' loaded.
+Thu May 10 11:28:54 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:28:54 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:28:54 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:28:54 INFO: Mouse - Created.
+Thu May 10 11:28:54 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:28:54 INFO: Keyboard - Created.
+Thu May 10 11:28:54 INFO: InputManager - InputManager created.
+Thu May 10 11:28:54 INFO: Kernel - Added as listener.
+Thu May 10 11:28:54 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Fri May  4 18:56:31 2018
+chris          [Thu May 10 11:29:11 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Fri May  4 18:56:31 INFO: Kernel - Created.
-Fri May  4 18:56:31 INFO: WindowManager - SetWindowClassEx successful.
-Fri May  4 18:56:31 INFO: WindowManager - Created
-Fri May  4 18:56:31 INFO: SceneManager - SceneManager created
-Fri May  4 18:56:31 INFO: ResourceManager - Created.
-Fri May  4 18:56:31 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Fri May  4 18:56:31 INFO: Kernel - Loading level...
-Fri May  4 18:56:31 INFO: Window - Created handler for window with title:'Choo Choo'
-Fri May  4 18:56:31 INFO: Window - Window created.
-Fri May  4 18:56:31 INFO: Camera - Camera created.
-Fri May  4 18:56:31 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Fri May  4 18:56:31 INFO: XmlReader - Read <Settings>
-Fri May  4 18:56:31 INFO: XmlReader - Read   <EntitieModels>
-Fri May  4 18:56:31 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25"/>
-Fri May  4 18:56:31 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25"/>
-Fri May  4 18:56:31 INFO: XmlReader - Read   </EntitieModels>
-Fri May  4 18:56:31 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga"/>
-Fri May  4 18:56:31 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg"/> 
-Fri May  4 18:56:31 INFO: XmlReader - Read </Settings>
-Fri May  4 18:56:31 INFO: EntityModel - Created.
-Fri May  4 18:56:31 INFO: Scene - EntityModel created
-Fri May  4 18:56:31 INFO: ~Scene - Created: Tiger1
-Fri May  4 18:56:31 INFO: EntityModel - Created.
-Fri May  4 18:56:31 INFO: Scene - EntityModel created
-Fri May  4 18:56:31 INFO: ~Scene - Created: Tiger2
-Fri May  4 18:56:31 INFO: ~Scene - Created: Mai
-Fri May  4 18:56:31 WARNING: ~Scene - TODO: implement loading: Mai
-Fri May  4 18:56:31 INFO: ~Scene - Created: Mai
-Fri May  4 18:56:31 INFO: Scene - Scene Instantiated.
-Fri May  4 18:56:31 INFO: SceneManager - Scene created
-Fri May  4 18:56:31 INFO: MeshLoaderDx - MeshLoaderDx created.
-Fri May  4 18:56:31 INFO: TextureLoaderDx - TextureLoaderDx created.
-Fri May  4 18:56:31 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Fri May  4 18:57:23 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Fri May  4 18:57:43 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Fri May  4 18:57:53 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Fri May  4 18:58:35 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Fri May  4 18:58:57 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Fri May  4 18:59:02 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Fri May  4 18:59:05 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox3_right.tga"/
-Fri May  4 18:59:05 INFO: ResourceManager - Texture 'skybox3_right.tga"/' loaded.
+Thu May 10 11:29:11 INFO: Kernel - Created.
+Thu May 10 11:29:11 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:29:11 INFO: WindowManager - Created
+Thu May 10 11:29:11 INFO: SceneManager - SceneManager created
+Thu May 10 11:29:11 INFO: ResourceManager - Created.
+Thu May 10 11:29:11 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:29:11 INFO: Kernel - Loading level...
+Thu May 10 11:29:11 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:29:11 INFO: Window - Window created.
+Thu May 10 11:29:11 INFO: Camera - Camera created.
+Thu May 10 11:29:11 INFO: XmlReader - File ../Assets/Levels/Level3.xml registrated.
+Thu May 10 11:29:11 INFO: XmlReader - Read <Settings>
+Thu May 10 11:29:11 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:29:11 INFO: XmlReader - Read     <!--<Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" /> -->
+Thu May 10 11:29:11 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+Thu May 10 11:29:11 INFO: XmlReader - Read     <Entity name="Tiger3" texture="zebra.jpg" mesh="Tiger.x" px="3" py="-10" pz="25" />
+Thu May 10 11:29:11 INFO: XmlReader - Read     <Entity name="Tiger4" texture="zebra.jpg" mesh="Tiger.x" px="4" py="-10" pz="25" />
+Thu May 10 11:29:11 INFO: XmlReader - Read     <Entity name="Tiger5" texture="zebra3.bmp" mesh="Tiger.x" px="5" py="-10" pz="25" />
+Thu May 10 11:29:11 INFO: XmlReader - Read     <Entity name="Tiger6" texture="zebra.jpg" mesh="Tiger.x" px="6" py="-10" pz="25" />
+Thu May 10 11:29:11 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:29:11 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox2_back.jpg" left ="skybox2_left.jpg" top="skybox2_top.jpg" front="skybox2_front.jpg" bottom="skybox2_bottom.jpg" right="skybox2_right.jpg" />
+Thu May 10 11:29:11 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terraingreen.jpg" /> 
+Thu May 10 11:29:11 INFO: XmlReader - Read </Settings>
+Thu May 10 11:29:11 INFO: Scene - EntityModel created
+Thu May 10 11:29:11 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:29:11 INFO: Scene - EntityModel created
+Thu May 10 11:29:11 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:29:11 INFO: Scene - EntityModel created
+Thu May 10 11:29:11 INFO: ~Scene - Created: Tiger3
+Thu May 10 11:29:11 INFO: Scene - EntityModel created
+Thu May 10 11:29:11 INFO: ~Scene - Created: Tiger4
+Thu May 10 11:29:11 INFO: Scene - EntityModel created
+Thu May 10 11:29:11 INFO: ~Scene - Created: Tiger5
+Thu May 10 11:29:11 INFO: Scene - EntityModel created
+Thu May 10 11:29:11 INFO: ~Scene - Created: Tiger6
+Thu May 10 11:29:11 INFO: ~Scene - Created: Skybox
+Thu May 10 11:29:11 INFO: ~Scene - Created: Skybox
+Thu May 10 11:29:11 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:29:11 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:29:11 INFO: Scene - Scene Instantiated.
+Thu May 10 11:29:11 INFO: SceneManager - Scene created
+Thu May 10 11:29:11 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:29:11 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:29:11 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:29:11 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Thu May 10 11:29:11 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:29:11 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:29:11 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Thu May 10 11:29:11 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'skybox2_front.jpg' loaded.
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'skybox2_back.jpg' loaded.
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'skybox2_left.jpg' loaded.
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'skybox2_right.jpg' loaded.
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'skybox2_top.jpg' loaded.
+Thu May 10 11:29:11 INFO: ResourceManager - Texture 'skybox2_bottom.jpg' loaded.
+Thu May 10 11:29:11 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:29:11 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:29:12 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:29:12 INFO: Mouse - Created.
+Thu May 10 11:29:12 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:29:12 INFO: Keyboard - Created.
+Thu May 10 11:29:12 INFO: InputManager - InputManager created.
+Thu May 10 11:29:12 INFO: Kernel - Added as listener.
+Thu May 10 11:29:12 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Fri May  4 19:00:18 2018
+chris          [Thu May 10 11:30:19 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Fri May  4 19:00:18 INFO: Kernel - Created.
-Fri May  4 19:00:18 INFO: WindowManager - SetWindowClassEx successful.
-Fri May  4 19:00:18 INFO: WindowManager - Created
-Fri May  4 19:00:18 INFO: SceneManager - SceneManager created
-Fri May  4 19:00:18 INFO: ResourceManager - Created.
-Fri May  4 19:00:18 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Fri May  4 19:00:18 INFO: Kernel - Loading level...
-Fri May  4 19:00:18 INFO: Window - Created handler for window with title:'Choo Choo'
-Fri May  4 19:00:18 INFO: Window - Window created.
-Fri May  4 19:00:18 INFO: Camera - Camera created.
-Fri May  4 19:00:18 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Fri May  4 19:00:18 INFO: XmlReader - Read <Settings>
-Fri May  4 19:00:18 INFO: XmlReader - Read   <EntitieModels>
-Fri May  4 19:00:18 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25"/>
-Fri May  4 19:00:18 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25"/>
-Fri May  4 19:00:18 INFO: XmlReader - Read   </EntitieModels>
-Fri May  4 19:00:18 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga"/>
-Fri May  4 19:00:18 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg"/> 
-Fri May  4 19:00:18 INFO: XmlReader - Read </Settings>
-Fri May  4 19:00:18 INFO: EntityModel - Created.
-Fri May  4 19:00:18 INFO: Scene - EntityModel created
-Fri May  4 19:00:18 INFO: ~Scene - Created: Tiger1
-Fri May  4 19:00:18 INFO: EntityModel - Created.
-Fri May  4 19:00:18 INFO: Scene - EntityModel created
-Fri May  4 19:00:18 INFO: ~Scene - Created: Tiger2
-Fri May  4 19:00:18 INFO: ~Scene - Created: Mai
-Fri May  4 19:00:18 WARNING: ~Scene - TODO: implement loading: Mai
-Fri May  4 19:00:18 INFO: ~Scene - Created: Mai
-Fri May  4 19:00:18 INFO: Scene - Scene Instantiated.
-Fri May  4 19:00:18 INFO: SceneManager - Scene created
-Fri May  4 19:00:18 INFO: MeshLoaderDx - MeshLoaderDx created.
-Fri May  4 19:00:18 INFO: TextureLoaderDx - TextureLoaderDx created.
-Fri May  4 19:00:18 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Fri May  4 19:00:23 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Fri May  4 19:00:23 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Fri May  4 19:00:23 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Fri May  4 19:00:23 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Fri May  4 19:00:23 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Fri May  4 19:00:23 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Fri May  4 19:00:23 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox3_right.tga"/
-Fri May  4 19:00:23 INFO: ResourceManager - Texture 'skybox3_right.tga"/' loaded.
+Thu May 10 11:30:19 INFO: Kernel - Created.
+Thu May 10 11:30:19 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:30:19 INFO: WindowManager - Created
+Thu May 10 11:30:19 INFO: SceneManager - SceneManager created
+Thu May 10 11:30:19 INFO: ResourceManager - Created.
+Thu May 10 11:30:19 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:30:19 INFO: Kernel - Loading level...
+Thu May 10 11:30:19 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:30:19 INFO: Window - Window created.
+Thu May 10 11:30:19 INFO: Camera - Camera created.
+Thu May 10 11:30:19 INFO: XmlReader - File ../Assets/Levels/Level3.xml registrated.
+Thu May 10 11:30:19 INFO: XmlReader - Read <Settings>
+Thu May 10 11:30:19 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:30:19 INFO: XmlReader - Read     <!--<Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" /> -->
+Thu May 10 11:30:19 INFO: XmlReader - Read     <!--<Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" /> -->
+Thu May 10 11:30:19 INFO: XmlReader - Read     <!--<Entity name="Tiger3" texture="zebra.jpg" mesh="Tiger.x" px="3" py="-10" pz="25" /> -->
+Thu May 10 11:30:19 INFO: XmlReader - Read     <Entity name="Tiger4" texture="zebra.jpg" mesh="Tiger.x" px="4" py="-10" pz="25" />
+Thu May 10 11:30:19 INFO: XmlReader - Read     <Entity name="Tiger5" texture="zebra3.bmp" mesh="Tiger.x" px="5" py="-10" pz="25" />
+Thu May 10 11:30:19 INFO: XmlReader - Read     <Entity name="Tiger6" texture="zebra.jpg" mesh="Tiger.x" px="6" py="-10" pz="25" />
+Thu May 10 11:30:19 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:30:19 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox2_back.jpg" left ="skybox2_left.jpg" top="skybox2_top.jpg" front="skybox2_front.jpg" bottom="skybox2_bottom.jpg" right="skybox2_right.jpg" />
+Thu May 10 11:30:19 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terraingreen.jpg" /> 
+Thu May 10 11:30:19 INFO: XmlReader - Read </Settings>
+Thu May 10 11:30:19 INFO: Scene - EntityModel created
+Thu May 10 11:30:19 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:30:19 INFO: Scene - EntityModel created
+Thu May 10 11:30:19 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:30:19 INFO: Scene - EntityModel created
+Thu May 10 11:30:19 INFO: ~Scene - Created: Tiger3
+Thu May 10 11:30:19 INFO: Scene - EntityModel created
+Thu May 10 11:30:19 INFO: ~Scene - Created: Tiger4
+Thu May 10 11:30:19 INFO: Scene - EntityModel created
+Thu May 10 11:30:19 INFO: ~Scene - Created: Tiger5
+Thu May 10 11:30:19 INFO: Scene - EntityModel created
+Thu May 10 11:30:19 INFO: ~Scene - Created: Tiger6
+Thu May 10 11:30:19 INFO: ~Scene - Created: Skybox
+Thu May 10 11:30:19 INFO: ~Scene - Created: Skybox
+Thu May 10 11:30:19 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:30:19 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:30:19 INFO: Scene - Scene Instantiated.
+Thu May 10 11:30:19 INFO: SceneManager - Scene created
+Thu May 10 11:30:19 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:30:19 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:30:19 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:30:20 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Thu May 10 11:30:20 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:30:20 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:30:20 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Thu May 10 11:30:20 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'skybox2_front.jpg' loaded.
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'skybox2_back.jpg' loaded.
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'skybox2_left.jpg' loaded.
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'skybox2_right.jpg' loaded.
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'skybox2_top.jpg' loaded.
+Thu May 10 11:30:20 INFO: ResourceManager - Texture 'skybox2_bottom.jpg' loaded.
+Thu May 10 11:30:20 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:30:20 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:30:20 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:30:20 INFO: Mouse - Created.
+Thu May 10 11:30:20 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:30:20 INFO: Keyboard - Created.
+Thu May 10 11:30:20 INFO: InputManager - InputManager created.
+Thu May 10 11:30:20 INFO: Kernel - Added as listener.
+Thu May 10 11:30:20 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Sun May  6 15:43:50 2018
+chris          [Thu May 10 11:30:45 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Sun May  6 15:43:50 INFO: Kernel - Created.
-Sun May  6 15:43:50 INFO: WindowManager - SetWindowClassEx successful.
-Sun May  6 15:43:50 INFO: WindowManager - Created
-Sun May  6 15:43:50 INFO: SceneManager - SceneManager created
-Sun May  6 15:43:50 INFO: ResourceManager - Created.
-Sun May  6 15:43:50 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Sun May  6 15:43:50 INFO: Kernel - Loading level...
-Sun May  6 15:43:50 INFO: Window - Created handler for window with title:'Choo Choo'
-Sun May  6 15:43:50 INFO: Window - Window created.
-Sun May  6 15:43:50 INFO: Camera - Camera created.
-Sun May  6 15:43:50 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Sun May  6 15:43:50 INFO: XmlReader - Read <Settings>
-Sun May  6 15:43:50 INFO: XmlReader - Read   <EntitieModels>
-Sun May  6 15:43:50 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25"/>
-Sun May  6 15:43:50 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25"/>
-Sun May  6 15:43:50 INFO: XmlReader - Read   </EntitieModels>
-Sun May  6 15:43:50 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga"/>
-Sun May  6 15:43:50 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg"/> 
-Sun May  6 15:43:50 INFO: XmlReader - Read </Settings>
-Sun May  6 15:43:50 INFO: EntityModel - Created.
-Sun May  6 15:43:50 INFO: Scene - EntityModel created
-Sun May  6 15:43:50 INFO: ~Scene - Created: Tiger1
-Sun May  6 15:43:50 INFO: EntityModel - Created.
-Sun May  6 15:43:50 INFO: Scene - EntityModel created
-Sun May  6 15:43:50 INFO: ~Scene - Created: Tiger2
-Sun May  6 15:43:50 INFO: ~Scene - Created: Mai
-Sun May  6 15:43:50 WARNING: ~Scene - TODO: implement loading: Mai
-Sun May  6 15:43:50 INFO: ~Scene - Created: Mai
-Sun May  6 15:43:50 INFO: Scene - Scene Instantiated.
-Sun May  6 15:43:50 INFO: SceneManager - Scene created
-Sun May  6 15:43:50 INFO: MeshLoaderDx - MeshLoaderDx created.
-Sun May  6 15:43:50 INFO: TextureLoaderDx - TextureLoaderDx created.
-Sun May  6 15:43:50 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Sun May  6 15:43:50 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Sun May  6 15:43:50 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Sun May  6 15:43:50 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Sun May  6 15:43:50 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Sun May  6 15:43:50 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Sun May  6 15:43:50 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Sun May  6 15:43:50 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox3_right.tga"/
-Sun May  6 15:43:50 INFO: ResourceManager - Texture 'skybox3_right.tga"/' loaded.
+Thu May 10 11:30:45 INFO: Kernel - Created.
+Thu May 10 11:30:45 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:30:45 INFO: WindowManager - Created
+Thu May 10 11:30:45 INFO: SceneManager - SceneManager created
+Thu May 10 11:30:45 INFO: ResourceManager - Created.
+Thu May 10 11:30:45 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:30:45 INFO: Kernel - Loading level...
+Thu May 10 11:30:45 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:30:45 INFO: Window - Window created.
+Thu May 10 11:30:45 INFO: Camera - Camera created.
+Thu May 10 11:30:45 INFO: XmlReader - File ../Assets/Levels/Level2.xml registrated.
+Thu May 10 11:30:45 INFO: XmlReader - Read <Settings>
+Thu May 10 11:30:45 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:30:45 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:30:45 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+Thu May 10 11:30:45 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:30:45 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="cloudtop_back.tga" left ="cloudtop_left.tga" top="cloudtop_top.tga" front="cloudtop_front.tga" bottom="cloudtop_bottom.tga" right="cloudtop_right.tga" />
+Thu May 10 11:30:45 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="zebra.jpg" /> 
+Thu May 10 11:30:45 INFO: XmlReader - Read </Settings>
+Thu May 10 11:30:45 INFO: Scene - EntityModel created
+Thu May 10 11:30:45 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:30:45 INFO: Scene - EntityModel created
+Thu May 10 11:30:45 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:30:45 INFO: ~Scene - Created: Mai
+Thu May 10 11:30:45 INFO: ~Scene - Created: Mai
+Thu May 10 11:30:45 WARNING: ~Scene - TODO: implement loading: Mai
+Thu May 10 11:30:45 WARNING: ~Scene - TODO: implement loading: Mai
+Thu May 10 11:30:45 INFO: Scene - Scene Instantiated.
+Thu May 10 11:30:45 INFO: SceneManager - Scene created
+Thu May 10 11:30:45 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:30:45 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:30:46 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:30:46 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:30:46 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:30:46 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Thu May 10 11:30:46 INFO: ResourceManager - Texture 'cloudtop_front.tga' loaded.
+Thu May 10 11:30:46 INFO: ResourceManager - Texture 'cloudtop_back.tga' loaded.
+Thu May 10 11:30:46 INFO: ResourceManager - Texture 'cloudtop_left.tga' loaded.
+Thu May 10 11:30:46 INFO: ResourceManager - Texture 'cloudtop_right.tga' loaded.
+Thu May 10 11:30:46 INFO: ResourceManager - Texture 'cloudtop_left.tga' already loaded'
+Thu May 10 11:30:46 INFO: ResourceManager - Texture 'cloudtop_bottom.tga' loaded.
+Thu May 10 11:30:46 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:30:46 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:30:46 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:30:46 INFO: Mouse - Created.
+Thu May 10 11:30:46 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:30:46 INFO: Keyboard - Created.
+Thu May 10 11:30:46 INFO: InputManager - InputManager created.
+Thu May 10 11:30:46 INFO: Kernel - Added as listener.
+Thu May 10 11:30:46 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Sun May  6 15:45:37 2018
+chris          [Thu May 10 11:31:00 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Sun May  6 15:45:37 INFO: Kernel - Created.
-Sun May  6 15:45:37 INFO: WindowManager - SetWindowClassEx successful.
-Sun May  6 15:45:37 INFO: WindowManager - Created
-Sun May  6 15:45:37 INFO: SceneManager - SceneManager created
-Sun May  6 15:45:37 INFO: ResourceManager - Created.
-Sun May  6 15:45:37 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Sun May  6 15:45:37 INFO: Kernel - Loading level...
-Sun May  6 15:45:37 INFO: Window - Created handler for window with title:'Choo Choo'
-Sun May  6 15:45:37 INFO: Window - Window created.
-Sun May  6 15:45:37 INFO: Camera - Camera created.
-Sun May  6 15:45:37 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Sun May  6 15:45:37 INFO: XmlReader - Read <Settings>
-Sun May  6 15:45:37 INFO: XmlReader - Read   <EntitieModels>
-Sun May  6 15:45:37 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25"/>
-Sun May  6 15:45:37 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25"/>
-Sun May  6 15:45:37 INFO: XmlReader - Read   </EntitieModels>
-Sun May  6 15:45:37 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga"/>
-Sun May  6 15:45:37 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg"/> 
-Sun May  6 15:45:37 INFO: XmlReader - Read </Settings>
-Sun May  6 15:45:37 INFO: EntityModel - Created.
-Sun May  6 15:45:37 INFO: Scene - EntityModel created
-Sun May  6 15:45:37 INFO: ~Scene - Created: Tiger1
-Sun May  6 15:45:37 INFO: EntityModel - Created.
-Sun May  6 15:45:37 INFO: Scene - EntityModel created
-Sun May  6 15:45:37 INFO: ~Scene - Created: Tiger2
-Sun May  6 15:45:37 INFO: ~Scene - Created: Mai
-Sun May  6 15:45:37 WARNING: ~Scene - TODO: implement loading: Mai
-Sun May  6 15:45:37 INFO: ~Scene - Created: Mai
-Sun May  6 15:45:37 INFO: Scene - Scene Instantiated.
-Sun May  6 15:45:37 INFO: SceneManager - Scene created
-Sun May  6 15:45:37 INFO: MeshLoaderDx - MeshLoaderDx created.
-Sun May  6 15:45:37 INFO: TextureLoaderDx - TextureLoaderDx created.
-Sun May  6 15:45:37 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Sun May  6 15:46:06 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Sun May  6 15:46:06 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Sun May  6 15:46:36 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Sun May  6 15:46:55 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Sun May  6 15:47:10 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Sun May  6 15:47:37 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Sun May  6 15:47:42 WARNING: TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file.skybox3_right.tga"/
-Sun May  6 15:47:42 INFO: ResourceManager - Texture 'skybox3_right.tga"/' loaded.
+Thu May 10 11:31:00 INFO: Kernel - Created.
+Thu May 10 11:31:00 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:31:00 INFO: WindowManager - Created
+Thu May 10 11:31:00 INFO: SceneManager - SceneManager created
+Thu May 10 11:31:00 INFO: ResourceManager - Created.
+Thu May 10 11:31:00 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:31:00 INFO: Kernel - Loading level...
+Thu May 10 11:31:00 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:31:00 INFO: Window - Window created.
+Thu May 10 11:31:00 INFO: Camera - Camera created.
+Thu May 10 11:31:00 INFO: XmlReader - File ../Assets/Levels/Level3.xml registrated.
+Thu May 10 11:31:00 INFO: XmlReader - Read <Settings>
+Thu May 10 11:31:00 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:31:00 INFO: XmlReader - Read     <!--<Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" /> -->
+Thu May 10 11:31:00 INFO: XmlReader - Read     <!--<Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" /> -->
+Thu May 10 11:31:00 INFO: XmlReader - Read     <!--<Entity name="Tiger3" texture="zebra.jpg" mesh="Tiger.x" px="3" py="-10" pz="25" /> -->
+Thu May 10 11:31:00 INFO: XmlReader - Read     <Entity name="Tiger4" texture="zebra.jpg" mesh="Tiger.x" px="4" py="-10" pz="25" />
+Thu May 10 11:31:00 INFO: XmlReader - Read     <Entity name="Tiger5" texture="zebra3.bmp" mesh="Tiger.x" px="5" py="-10" pz="25" />
+Thu May 10 11:31:00 INFO: XmlReader - Read     <Entity name="Tiger6" texture="zebra.jpg" mesh="Tiger.x" px="6" py="-10" pz="25" />
+Thu May 10 11:31:00 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:31:00 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox2_back.jpg" left ="skybox2_left.jpg" top="skybox2_top.jpg" front="skybox2_front.jpg" bottom="skybox2_bottom.jpg" right="skybox2_right.jpg" />
+Thu May 10 11:31:00 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terraingreen.jpg" /> 
+Thu May 10 11:31:00 INFO: XmlReader - Read </Settings>
+Thu May 10 11:31:00 INFO: Scene - EntityModel created
+Thu May 10 11:31:00 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:31:00 INFO: Scene - EntityModel created
+Thu May 10 11:31:00 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:31:00 INFO: Scene - EntityModel created
+Thu May 10 11:31:00 INFO: ~Scene - Created: Tiger3
+Thu May 10 11:31:00 INFO: Scene - EntityModel created
+Thu May 10 11:31:00 INFO: ~Scene - Created: Tiger4
+Thu May 10 11:31:00 INFO: Scene - EntityModel created
+Thu May 10 11:31:00 INFO: ~Scene - Created: Tiger5
+Thu May 10 11:31:00 INFO: Scene - EntityModel created
+Thu May 10 11:31:00 INFO: ~Scene - Created: Tiger6
+Thu May 10 11:31:00 INFO: ~Scene - Created: Skybox
+Thu May 10 11:31:00 INFO: ~Scene - Created: Skybox
+Thu May 10 11:31:00 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:31:00 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:31:00 INFO: Scene - Scene Instantiated.
+Thu May 10 11:31:00 INFO: SceneManager - Scene created
+Thu May 10 11:31:00 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:31:00 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:31:00 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:31:00 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Thu May 10 11:31:00 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:31:00 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:31:00 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Thu May 10 11:31:00 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'skybox2_front.jpg' loaded.
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'skybox2_back.jpg' loaded.
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'skybox2_left.jpg' loaded.
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'skybox2_right.jpg' loaded.
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'skybox2_top.jpg' loaded.
+Thu May 10 11:31:00 INFO: ResourceManager - Texture 'skybox2_bottom.jpg' loaded.
+Thu May 10 11:31:00 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:31:00 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:31:00 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:31:00 INFO: Mouse - Created.
+Thu May 10 11:31:00 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:31:00 INFO: Keyboard - Created.
+Thu May 10 11:31:00 INFO: InputManager - InputManager created.
+Thu May 10 11:31:00 INFO: Kernel - Added as listener.
+Thu May 10 11:31:00 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Sun May  6 15:53:38 2018
+chris          [Thu May 10 11:31:16 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Sun May  6 15:53:38 INFO: Kernel - Created.
-Sun May  6 15:53:38 INFO: WindowManager - SetWindowClassEx successful.
-Sun May  6 15:53:38 INFO: WindowManager - Created
-Sun May  6 15:53:38 INFO: SceneManager - SceneManager created
-Sun May  6 15:53:38 INFO: ResourceManager - Created.
-Sun May  6 15:53:38 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Sun May  6 15:53:38 INFO: Kernel - Loading level...
-Sun May  6 15:53:38 INFO: Window - Created handler for window with title:'Choo Choo'
-Sun May  6 15:53:38 INFO: Window - Window created.
-Sun May  6 15:53:38 INFO: Camera - Camera created.
-Sun May  6 15:53:38 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Sun May  6 15:53:38 INFO: XmlReader - Read <Settings>
-Sun May  6 15:53:38 INFO: XmlReader - Read   <EntitieModels>
-Sun May  6 15:53:38 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
-Sun May  6 15:53:38 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
-Sun May  6 15:53:38 INFO: XmlReader - Read   </EntitieModels>
-Sun May  6 15:53:38 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
-Sun May  6 15:53:38 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
-Sun May  6 15:53:38 INFO: XmlReader - Read </Settings>
-Sun May  6 15:53:38 INFO: EntityModel - Created.
-Sun May  6 15:53:38 INFO: Scene - EntityModel created
-Sun May  6 15:53:38 INFO: ~Scene - Created: Tiger1
-Sun May  6 15:53:38 INFO: EntityModel - Created.
-Sun May  6 15:53:38 INFO: Scene - EntityModel created
-Sun May  6 15:53:38 INFO: ~Scene - Created: Tiger2
-Sun May  6 15:53:38 INFO: ~Scene - Created: Mai
-Sun May  6 15:53:38 WARNING: ~Scene - TODO: implement loading: Mai
-Sun May  6 15:53:38 INFO: ~Scene - Created: Mai
-Sun May  6 15:53:38 INFO: Scene - Scene Instantiated.
-Sun May  6 15:53:38 INFO: SceneManager - Scene created
-Sun May  6 15:53:38 INFO: MeshLoaderDx - MeshLoaderDx created.
-Sun May  6 15:53:38 INFO: TextureLoaderDx - TextureLoaderDx created.
-Sun May  6 15:53:38 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Sun May  6 15:53:41 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Sun May  6 15:53:41 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Sun May  6 15:53:41 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Sun May  6 15:53:42 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Sun May  6 15:53:52 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:31:16 INFO: Kernel - Created.
+Thu May 10 11:31:16 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:31:16 INFO: WindowManager - Created
+Thu May 10 11:31:16 INFO: SceneManager - SceneManager created
+Thu May 10 11:31:16 INFO: ResourceManager - Created.
+Thu May 10 11:31:16 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:31:16 INFO: Kernel - Loading level...
+Thu May 10 11:31:16 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:31:16 INFO: Window - Window created.
+Thu May 10 11:31:16 INFO: Camera - Camera created.
+Thu May 10 11:31:16 INFO: XmlReader - File ../Assets/Levels/Level3.xml registrated.
+Thu May 10 11:31:16 INFO: XmlReader - Read <Settings>
+Thu May 10 11:31:16 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:31:16 INFO: XmlReader - Read 
+Thu May 10 11:31:16 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+Thu May 10 11:31:16 INFO: XmlReader - Read     <Entity name="Tiger3" texture="zebra.jpg" mesh="Tiger.x" px="3" py="-10" pz="25" />
+Thu May 10 11:31:16 INFO: XmlReader - Read     <Entity name="Tiger4" texture="zebra.jpg" mesh="Tiger.x" px="4" py="-10" pz="25" />
+Thu May 10 11:31:16 INFO: XmlReader - Read     <Entity name="Tiger5" texture="zebra3.bmp" mesh="Tiger.x" px="5" py="-10" pz="25" />
+Thu May 10 11:31:16 INFO: XmlReader - Read     <Entity name="Tiger6" texture="zebra.jpg" mesh="Tiger.x" px="6" py="-10" pz="25" />
+Thu May 10 11:31:16 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:31:16 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox2_back.jpg" left ="skybox2_left.jpg" top="skybox2_top.jpg" front="skybox2_front.jpg" bottom="skybox2_bottom.jpg" right="skybox2_right.jpg" />
+Thu May 10 11:31:16 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terraingreen.jpg" /> 
+Thu May 10 11:31:16 INFO: XmlReader - Read </Settings>
+Thu May 10 11:31:16 INFO: Scene - EntityModel created
+Thu May 10 11:31:16 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:31:16 INFO: Scene - EntityModel created
+Thu May 10 11:31:16 INFO: ~Scene - Created: Tiger3
+Thu May 10 11:31:16 INFO: Scene - EntityModel created
+Thu May 10 11:31:16 INFO: ~Scene - Created: Tiger4
+Thu May 10 11:31:16 INFO: Scene - EntityModel created
+Thu May 10 11:31:16 INFO: ~Scene - Created: Tiger5
+Thu May 10 11:31:16 INFO: Scene - EntityModel created
+Thu May 10 11:31:16 INFO: ~Scene - Created: Tiger6
+Thu May 10 11:31:16 INFO: ~Scene - Created: Skybox
+Thu May 10 11:31:16 INFO: ~Scene - Created: Skybox
+Thu May 10 11:31:16 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:31:16 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:31:16 INFO: Scene - Scene Instantiated.
+Thu May 10 11:31:16 INFO: SceneManager - Scene created
+Thu May 10 11:31:16 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:31:16 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:31:16 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Thu May 10 11:31:16 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:31:16 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:31:16 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Thu May 10 11:31:16 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'skybox2_front.jpg' loaded.
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'skybox2_back.jpg' loaded.
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'skybox2_left.jpg' loaded.
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'skybox2_right.jpg' loaded.
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'skybox2_top.jpg' loaded.
+Thu May 10 11:31:16 INFO: ResourceManager - Texture 'skybox2_bottom.jpg' loaded.
+Thu May 10 11:31:16 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:31:17 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:31:17 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:31:17 INFO: Mouse - Created.
+Thu May 10 11:31:17 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:31:17 INFO: Keyboard - Created.
+Thu May 10 11:31:17 INFO: InputManager - InputManager created.
+Thu May 10 11:31:17 INFO: Kernel - Added as listener.
+Thu May 10 11:31:17 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Sun May  6 15:56:25 2018
+chris          [Thu May 10 11:32:13 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Sun May  6 15:56:25 INFO: Kernel - Created.
-Sun May  6 15:56:25 INFO: WindowManager - SetWindowClassEx successful.
-Sun May  6 15:56:25 INFO: WindowManager - Created
-Sun May  6 15:56:25 INFO: SceneManager - SceneManager created
-Sun May  6 15:56:25 INFO: ResourceManager - Created.
-Sun May  6 15:56:25 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Sun May  6 15:56:25 INFO: Kernel - Loading level...
-Sun May  6 15:56:25 INFO: Window - Created handler for window with title:'Choo Choo'
-Sun May  6 15:56:25 INFO: Window - Window created.
-Sun May  6 15:56:25 INFO: Camera - Camera created.
-Sun May  6 15:56:25 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Sun May  6 15:56:25 INFO: XmlReader - Read <Settings>
-Sun May  6 15:56:25 INFO: XmlReader - Read   <EntitieModels>
-Sun May  6 15:56:25 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
-Sun May  6 15:56:25 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
-Sun May  6 15:56:25 INFO: XmlReader - Read   </EntitieModels>
-Sun May  6 15:56:25 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
-Sun May  6 15:56:25 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
-Sun May  6 15:56:25 INFO: XmlReader - Read </Settings>
-Sun May  6 15:56:25 INFO: EntityModel - Created.
-Sun May  6 15:56:25 INFO: Scene - EntityModel created
-Sun May  6 15:56:25 INFO: ~Scene - Created: Tiger1
-Sun May  6 15:56:25 INFO: EntityModel - Created.
-Sun May  6 15:56:25 INFO: Scene - EntityModel created
-Sun May  6 15:56:25 INFO: ~Scene - Created: Tiger2
-Sun May  6 15:58:06 INFO: ~Scene - Created: Mai
-Sun May  6 15:58:06 WARNING: ~Scene - TODO: implement loading: Mai
-Sun May  6 15:58:06 INFO: ~Scene - Created: Mai
-Sun May  6 15:58:06 INFO: Scene - Scene Instantiated.
-Sun May  6 15:58:06 INFO: SceneManager - Scene created
-Sun May  6 15:58:06 INFO: MeshLoaderDx - MeshLoaderDx created.
-Sun May  6 15:58:06 INFO: TextureLoaderDx - TextureLoaderDx created.
-Sun May  6 15:58:06 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Sun May  6 15:58:07 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Sun May  6 15:58:07 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Sun May  6 15:58:08 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Sun May  6 15:58:12 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Sun May  6 15:58:12 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Sun May  6 15:58:12 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Sun May  6 15:58:12 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
-Sun May  6 15:58:12 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
-Sun May  6 15:58:12 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
-Sun May  6 15:58:12 INFO: Kernel - Scenes are successfully prepared.
-Sun May  6 15:58:12 ERROR: Mouse - Failed to Acquire mouse.
-Sun May  6 15:58:12 INFO: Mouse - Created.
-Sun May  6 15:58:12 WARNING: Keyboard - Failed to Acquire keyboard.
-Sun May  6 15:58:12 INFO: Keyboard - Created.
-Sun May  6 15:58:12 INFO: InputManager - InputManager created.
-Sun May  6 15:58:12 INFO: Kernel - Added as listener.
-Sun May  6 15:58:12 INFO: Kernel - Level is successfully loaded.
+Thu May 10 11:32:13 INFO: Kernel - Created.
+Thu May 10 11:32:13 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:32:13 INFO: WindowManager - Created
+Thu May 10 11:32:13 INFO: SceneManager - SceneManager created
+Thu May 10 11:32:13 INFO: ResourceManager - Created.
+Thu May 10 11:32:13 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:32:13 INFO: Kernel - Loading level...
+Thu May 10 11:32:13 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:32:13 INFO: Window - Window created.
+Thu May 10 11:32:13 INFO: Camera - Camera created.
+Thu May 10 11:32:13 INFO: XmlReader - File ../Assets/Levels/Level3.xml registrated.
+Thu May 10 11:32:13 INFO: XmlReader - Read <Settings>
+Thu May 10 11:32:13 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:32:13 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" /> 
+Thu May 10 11:32:13 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+Thu May 10 11:32:13 INFO: XmlReader - Read     <Entity name="Tiger3" texture="zebra.jpg" mesh="Tiger.x" px="3" py="-10" pz="25" />
+Thu May 10 11:32:13 INFO: XmlReader - Read     <Entity name="Tiger4" texture="zebra.jpg" mesh="Tiger.x" px="4" py="-10" pz="25" />
+Thu May 10 11:32:13 INFO: XmlReader - Read     <Entity name="Tiger5" texture="zebra3.bmp" mesh="Tiger.x" px="5" py="-10" pz="25" />
+Thu May 10 11:32:13 INFO: XmlReader - Read     <Entity name="Tiger6" texture="zebra.jpg" mesh="Tiger.x" px="6" py="-10" pz="25" />
+Thu May 10 11:32:13 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:32:13 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox2_back.jpg" left ="skybox2_left.jpg" top="skybox2_top.jpg" front="skybox2_front.jpg" bottom="skybox2_bottom.jpg" right="skybox2_right.jpg" />
+Thu May 10 11:32:13 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terraingreen.jpg" /> 
+Thu May 10 11:32:13 INFO: XmlReader - Read </Settings>
+Thu May 10 11:32:13 INFO: Scene - EntityModel created
+Thu May 10 11:32:13 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:32:13 INFO: Scene - EntityModel created
+Thu May 10 11:32:13 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:32:13 INFO: Scene - EntityModel created
+Thu May 10 11:32:13 INFO: ~Scene - Created: Tiger3
+Thu May 10 11:32:13 INFO: Scene - EntityModel created
+Thu May 10 11:32:13 INFO: ~Scene - Created: Tiger4
+Thu May 10 11:32:13 INFO: Scene - EntityModel created
+Thu May 10 11:32:13 INFO: ~Scene - Created: Tiger5
+Thu May 10 11:32:13 INFO: Scene - EntityModel created
+Thu May 10 11:32:13 INFO: ~Scene - Created: Tiger6
+Thu May 10 11:32:13 INFO: ~Scene - Created: Skybox
+Thu May 10 11:32:13 INFO: ~Scene - Created: Skybox
+Thu May 10 11:32:13 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:32:13 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:32:13 INFO: Scene - Scene Instantiated.
+Thu May 10 11:32:13 INFO: SceneManager - Scene created
+Thu May 10 11:32:13 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:32:13 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:32:13 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:32:13 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Thu May 10 11:32:13 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:32:13 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:32:13 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'zebra3.bmp' already loaded'
+Thu May 10 11:32:13 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'zebra.jpg' already loaded'
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'skybox2_front.jpg' loaded.
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'skybox2_back.jpg' loaded.
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'skybox2_left.jpg' loaded.
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'skybox2_right.jpg' loaded.
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'skybox2_top.jpg' loaded.
+Thu May 10 11:32:13 INFO: ResourceManager - Texture 'skybox2_bottom.jpg' loaded.
+Thu May 10 11:32:13 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:32:14 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:32:14 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:32:14 INFO: Mouse - Created.
+Thu May 10 11:32:14 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:32:14 INFO: Keyboard - Created.
+Thu May 10 11:32:14 INFO: InputManager - InputManager created.
+Thu May 10 11:32:14 INFO: Kernel - Added as listener.
+Thu May 10 11:32:14 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Sun May  6 15:58:44 2018
+chris          [Thu May 10 11:34:27 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Sun May  6 15:58:44 INFO: Kernel - Created.
-Sun May  6 15:58:44 INFO: WindowManager - SetWindowClassEx successful.
-Sun May  6 15:58:44 INFO: WindowManager - Created
-Sun May  6 15:58:44 INFO: SceneManager - SceneManager created
-Sun May  6 15:58:44 INFO: ResourceManager - Created.
-Sun May  6 15:58:44 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Sun May  6 15:58:44 INFO: Kernel - Loading level...
-Sun May  6 15:58:44 INFO: Window - Created handler for window with title:'Choo Choo'
-Sun May  6 15:58:44 INFO: Window - Window created.
-Sun May  6 15:58:44 INFO: Camera - Camera created.
-Sun May  6 15:58:44 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Sun May  6 15:58:44 INFO: XmlReader - Read <Settings>
-Sun May  6 15:58:44 INFO: XmlReader - Read   <EntitieModels>
-Sun May  6 15:58:44 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
-Sun May  6 15:58:44 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
-Sun May  6 15:58:44 INFO: XmlReader - Read   </EntitieModels>
-Sun May  6 15:58:44 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
-Sun May  6 15:58:44 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
-Sun May  6 15:58:44 INFO: XmlReader - Read </Settings>
-Sun May  6 15:58:44 INFO: EntityModel - Created.
-Sun May  6 15:58:44 INFO: Scene - EntityModel created
-Sun May  6 15:58:44 INFO: ~Scene - Created: Tiger1
-Sun May  6 15:58:44 INFO: EntityModel - Created.
-Sun May  6 15:58:44 INFO: Scene - EntityModel created
-Sun May  6 15:58:44 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:34:27 INFO: Kernel - Created.
+Thu May 10 11:34:27 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:34:27 INFO: WindowManager - Created
+Thu May 10 11:34:27 INFO: SceneManager - SceneManager created
+Thu May 10 11:34:27 INFO: ResourceManager - Created.
+Thu May 10 11:34:27 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:34:27 INFO: Kernel - Loading level...
+Thu May 10 11:34:27 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:34:27 INFO: Window - Window created.
+Thu May 10 11:34:27 INFO: Camera - Camera created.
+Thu May 10 11:34:27 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:34:27 INFO: XmlReader - Read <Settings>
+Thu May 10 11:34:27 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:34:27 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:34:27 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:34:27 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:34:27 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:34:27 INFO: XmlReader - Read </Settings>
+Thu May 10 11:34:27 INFO: Scene - EntityModel created
+Thu May 10 11:34:27 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:34:27 INFO: ~Scene - Created: Skybox
+Thu May 10 11:34:27 INFO: ~Scene - Created: Skybox
+Thu May 10 11:34:27 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:34:27 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:34:27 INFO: Scene - Scene Instantiated.
+Thu May 10 11:34:27 INFO: SceneManager - Scene created
+Thu May 10 11:34:27 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:34:27 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:34:27 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:34:27 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:34:27 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:34:27 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:34:27 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:34:27 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:34:27 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:34:27 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:34:27 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:34:28 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:34:28 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:34:28 INFO: Mouse - Created.
+Thu May 10 11:34:28 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:34:28 INFO: Keyboard - Created.
+Thu May 10 11:34:28 INFO: InputManager - InputManager created.
+Thu May 10 11:34:28 INFO: Kernel - Added as listener.
+Thu May 10 11:34:28 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Sun May  6 15:58:50 2018
+chris          [Thu May 10 11:38:36 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Sun May  6 15:58:50 INFO: Kernel - Created.
-Sun May  6 15:58:50 INFO: WindowManager - SetWindowClassEx successful.
-Sun May  6 15:58:50 INFO: WindowManager - Created
-Sun May  6 15:58:50 INFO: SceneManager - SceneManager created
-Sun May  6 15:58:50 INFO: ResourceManager - Created.
-Sun May  6 15:58:50 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Sun May  6 15:58:50 INFO: Kernel - Loading level...
-Sun May  6 15:58:50 INFO: Window - Created handler for window with title:'Choo Choo'
-Sun May  6 15:58:50 INFO: Window - Window created.
-Sun May  6 15:58:50 INFO: Camera - Camera created.
-Sun May  6 15:58:50 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Sun May  6 15:58:50 INFO: XmlReader - Read <Settings>
-Sun May  6 15:58:50 INFO: XmlReader - Read   <EntitieModels>
-Sun May  6 15:58:50 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
-Sun May  6 15:58:50 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
-Sun May  6 15:58:50 INFO: XmlReader - Read   </EntitieModels>
-Sun May  6 15:58:50 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
-Sun May  6 15:58:50 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
-Sun May  6 15:58:50 INFO: XmlReader - Read </Settings>
-Sun May  6 15:58:50 INFO: EntityModel - Created.
-Sun May  6 15:58:50 INFO: Scene - EntityModel created
-Sun May  6 15:58:50 INFO: ~Scene - Created: Tiger1
-Sun May  6 15:58:50 INFO: EntityModel - Created.
-Sun May  6 15:58:50 INFO: Scene - EntityModel created
-Sun May  6 15:58:50 INFO: ~Scene - Created: Tiger2
-Sun May  6 15:58:50 INFO: ~Scene - Created: Mai
-Sun May  6 15:58:50 WARNING: ~Scene - TODO: implement loading: Mai
-Sun May  6 15:58:50 INFO: ~Scene - Created: Mai
-Sun May  6 15:58:50 INFO: Scene - Scene Instantiated.
-Sun May  6 15:58:50 INFO: SceneManager - Scene created
-Sun May  6 15:58:50 INFO: MeshLoaderDx - MeshLoaderDx created.
-Sun May  6 15:58:50 INFO: TextureLoaderDx - TextureLoaderDx created.
-Sun May  6 15:58:50 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Sun May  6 15:58:51 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Sun May  6 15:58:51 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Sun May  6 15:58:51 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Sun May  6 15:58:51 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Sun May  6 15:58:51 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Sun May  6 15:58:51 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Sun May  6 15:58:51 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
-Sun May  6 15:58:51 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
-Sun May  6 15:58:51 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
-Sun May  6 15:58:51 INFO: Kernel - Scenes are successfully prepared.
-Sun May  6 15:58:51 INFO: Mouse - Succesfully Acquired.
-Sun May  6 15:58:51 INFO: Mouse - Created.
-Sun May  6 15:58:51 INFO: Keyboard - Succesfully Acquired.
-Sun May  6 15:58:51 INFO: Keyboard - Created.
-Sun May  6 15:58:51 INFO: InputManager - InputManager created.
-Sun May  6 15:58:51 INFO: Kernel - Added as listener.
-Sun May  6 15:58:51 INFO: Kernel - Level is successfully loaded.
+Thu May 10 11:38:36 INFO: Kernel - Created.
+Thu May 10 11:38:36 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:38:36 INFO: WindowManager - Created
+Thu May 10 11:38:36 INFO: SceneManager - SceneManager created
+Thu May 10 11:38:36 INFO: ResourceManager - Created.
+Thu May 10 11:38:36 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:38:36 INFO: Kernel - Loading level...
+Thu May 10 11:38:36 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:38:36 INFO: Window - Window created.
+Thu May 10 11:38:36 INFO: Camera - Camera created.
+Thu May 10 11:38:36 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:38:36 INFO: XmlReader - Read <Settings>
+Thu May 10 11:38:36 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:38:36 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:38:36 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:38:36 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:38:36 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:38:36 INFO: XmlReader - Read </Settings>
+Thu May 10 11:38:36 INFO: Scene - EntityModel created
+Thu May 10 11:38:36 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:38:36 INFO: ~Scene - Created: Skybox
+Thu May 10 11:38:36 INFO: ~Scene - Created: Skybox
+Thu May 10 11:38:36 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:38:36 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:38:36 INFO: Scene - Scene Instantiated.
+Thu May 10 11:38:36 INFO: SceneManager - Scene created
+Thu May 10 11:38:36 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:38:36 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:38:36 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:38:36 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:38:36 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:38:36 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:38:36 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:38:36 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:38:36 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:38:36 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:38:36 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:38:36 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:38:36 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:38:36 INFO: Mouse - Created.
+Thu May 10 11:38:36 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:38:36 INFO: Keyboard - Created.
+Thu May 10 11:38:36 INFO: InputManager - InputManager created.
+Thu May 10 11:38:36 INFO: Kernel - Added as listener.
+Thu May 10 11:38:36 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Sun May  6 16:02:08 2018
+chris          [Thu May 10 11:43:15 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Sun May  6 16:02:08 INFO: Kernel - Created.
-Sun May  6 16:02:08 INFO: WindowManager - SetWindowClassEx successful.
-Sun May  6 16:02:08 INFO: WindowManager - Created
-Sun May  6 16:02:08 INFO: SceneManager - SceneManager created
-Sun May  6 16:02:08 INFO: ResourceManager - Created.
-Sun May  6 16:02:08 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Sun May  6 16:02:08 INFO: Kernel - Loading level...
-Sun May  6 16:02:08 INFO: Window - Created handler for window with title:'Choo Choo'
-Sun May  6 16:02:08 INFO: Window - Window created.
-Sun May  6 16:02:08 INFO: Camera - Camera created.
-Sun May  6 16:02:08 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Sun May  6 16:02:08 INFO: XmlReader - Read <Settings>
-Sun May  6 16:02:08 INFO: XmlReader - Read   <EntitieModels>
-Sun May  6 16:02:08 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
-Sun May  6 16:02:08 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
-Sun May  6 16:02:08 INFO: XmlReader - Read   </EntitieModels>
-Sun May  6 16:02:08 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
-Sun May  6 16:02:08 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
-Sun May  6 16:02:08 INFO: XmlReader - Read </Settings>
-Sun May  6 16:02:08 INFO: EntityModel - Created.
-Sun May  6 16:02:08 INFO: Scene - EntityModel created
-Sun May  6 16:02:08 INFO: ~Scene - Created: Tiger1
-Sun May  6 16:02:08 INFO: EntityModel - Created.
-Sun May  6 16:02:08 INFO: Scene - EntityModel created
-Sun May  6 16:02:08 INFO: ~Scene - Created: Tiger2
-Sun May  6 16:02:08 INFO: ~Scene - Created: Mai
-Sun May  6 16:02:08 WARNING: ~Scene - TODO: implement loading: Mai
-Sun May  6 16:02:08 INFO: ~Scene - Created: Mai
-Sun May  6 16:02:08 INFO: Scene - Scene Instantiated.
-Sun May  6 16:02:08 INFO: SceneManager - Scene created
-Sun May  6 16:02:08 INFO: MeshLoaderDx - MeshLoaderDx created.
-Sun May  6 16:02:08 INFO: TextureLoaderDx - TextureLoaderDx created.
-Sun May  6 16:02:08 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Sun May  6 16:02:08 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Sun May  6 16:02:08 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Sun May  6 16:02:08 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Sun May  6 16:02:08 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Sun May  6 16:02:08 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Sun May  6 16:02:08 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Sun May  6 16:02:08 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
-Sun May  6 16:02:08 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
-Sun May  6 16:02:08 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:43:15 INFO: Kernel - Created.
+Thu May 10 11:43:15 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:43:15 INFO: WindowManager - Created
+Thu May 10 11:43:15 INFO: SceneManager - SceneManager created
+Thu May 10 11:43:15 INFO: ResourceManager - Created.
+Thu May 10 11:43:15 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:43:15 INFO: Kernel - Loading level...
+Thu May 10 11:43:16 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:43:16 INFO: Window - Window created.
+Thu May 10 11:43:16 INFO: Camera - Camera created.
+Thu May 10 11:43:16 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:43:16 INFO: XmlReader - Read <Settings>
+Thu May 10 11:43:16 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:43:16 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:43:16 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:43:16 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:43:16 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:43:16 INFO: XmlReader - Read </Settings>
+Thu May 10 11:43:16 INFO: Scene - EntityModel created
+Thu May 10 11:43:16 INFO: Scene - Scene Instantiated.
+Thu May 10 11:43:16 INFO: SceneManager - Scene created
+Thu May 10 11:43:16 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:43:16 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:43:16 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:43:16 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Sun May  6 16:18:15 2018
+chris          [Thu May 10 11:44:05 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Sun May  6 16:18:15 INFO: Kernel - Created.
-Sun May  6 16:18:15 INFO: WindowManager - SetWindowClassEx successful.
-Sun May  6 16:18:15 INFO: WindowManager - Created
-Sun May  6 16:18:15 INFO: SceneManager - SceneManager created
-Sun May  6 16:18:15 INFO: ResourceManager - Created.
-Sun May  6 16:18:15 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Sun May  6 16:18:15 INFO: Kernel - Loading level...
-Sun May  6 16:18:15 INFO: Window - Created handler for window with title:'Choo Choo'
-Sun May  6 16:18:15 INFO: Window - Window created.
-Sun May  6 16:18:15 INFO: Camera - Camera created.
-Sun May  6 16:18:15 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Sun May  6 16:18:15 INFO: XmlReader - Read <Settings>
-Sun May  6 16:18:15 INFO: XmlReader - Read   <EntitieModels>
-Sun May  6 16:18:15 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
-Sun May  6 16:18:15 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
-Sun May  6 16:18:15 INFO: XmlReader - Read   </EntitieModels>
-Sun May  6 16:18:15 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
-Sun May  6 16:18:15 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
-Sun May  6 16:18:15 INFO: XmlReader - Read </Settings>
-Sun May  6 16:18:15 INFO: EntityModel - Created.
-Sun May  6 16:18:15 INFO: Scene - EntityModel created
-Sun May  6 16:18:15 INFO: ~Scene - Created: Tiger1
-Sun May  6 16:18:15 INFO: EntityModel - Created.
-Sun May  6 16:18:15 INFO: Scene - EntityModel created
-Sun May  6 16:18:15 INFO: ~Scene - Created: Tiger2
-Sun May  6 16:18:15 INFO: ~Scene - Created: Mai
-Sun May  6 16:18:15 WARNING: ~Scene - TODO: implement loading: Mai
-Sun May  6 16:18:15 INFO: ~Scene - Created: Mai
-Sun May  6 16:18:15 INFO: Scene - Scene Instantiated.
-Sun May  6 16:18:15 INFO: SceneManager - Scene created
-Sun May  6 16:18:15 INFO: MeshLoaderDx - MeshLoaderDx created.
-Sun May  6 16:18:15 INFO: TextureLoaderDx - TextureLoaderDx created.
-Sun May  6 16:18:15 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Sun May  6 16:18:15 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Sun May  6 16:18:15 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Sun May  6 16:18:15 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Sun May  6 16:18:15 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Sun May  6 16:18:15 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Sun May  6 16:18:15 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Sun May  6 16:18:15 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
-Sun May  6 16:18:15 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
-Sun May  6 16:18:15 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:44:05 INFO: Kernel - Created.
+Thu May 10 11:44:05 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:44:05 INFO: WindowManager - Created
+Thu May 10 11:44:05 INFO: SceneManager - SceneManager created
+Thu May 10 11:44:05 INFO: ResourceManager - Created.
+Thu May 10 11:44:05 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:44:05 INFO: Kernel - Loading level...
+Thu May 10 11:44:05 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:44:05 INFO: Window - Window created.
+Thu May 10 11:44:05 INFO: Camera - Camera created.
+Thu May 10 11:44:05 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:44:05 INFO: XmlReader - Read <Settings>
+Thu May 10 11:44:05 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:44:05 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:44:05 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:44:05 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:44:05 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:44:05 INFO: XmlReader - Read </Settings>
+Thu May 10 11:44:05 INFO: ~Scene - Created: Skybox
+Thu May 10 11:44:05 INFO: ~Scene - Created: Skybox
+Thu May 10 11:44:05 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:44:05 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:44:05 INFO: Scene - EntityModel created
+Thu May 10 11:44:05 INFO: Scene - Scene Instantiated.
+Thu May 10 11:44:05 INFO: SceneManager - Scene created
+Thu May 10 11:44:05 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:44:05 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:44:05 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:44:06 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:44:06 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:44:06 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:44:06 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:44:06 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:44:06 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:44:06 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:44:06 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:44:06 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:44:06 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:44:06 INFO: Mouse - Created.
+Thu May 10 11:44:06 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:44:06 INFO: Keyboard - Created.
+Thu May 10 11:44:06 INFO: InputManager - InputManager created.
+Thu May 10 11:44:06 INFO: Kernel - Added as listener.
+Thu May 10 11:44:06 INFO: Kernel - Level is successfully loaded.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Username       [Date And Time         ]      Operating System         Directory                                              
-chris          [Sun May  6 16:20:02 2018
+chris          [Thu May 10 11:44:33 2018
 ]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
 
-Sun May  6 16:20:02 INFO: Kernel - Created.
-Sun May  6 16:20:02 INFO: WindowManager - SetWindowClassEx successful.
-Sun May  6 16:20:02 INFO: WindowManager - Created
-Sun May  6 16:20:02 INFO: SceneManager - SceneManager created
-Sun May  6 16:20:02 INFO: ResourceManager - Created.
-Sun May  6 16:20:02 INFO: Kernel - Scene-, Resource-, WindowManager created.
-Sun May  6 16:20:02 INFO: Kernel - Loading level...
-Sun May  6 16:20:02 INFO: Window - Created handler for window with title:'Choo Choo'
-Sun May  6 16:20:02 INFO: Window - Window created.
-Sun May  6 16:20:02 INFO: Camera - Camera created.
-Sun May  6 16:20:02 INFO: XmlReader - File ../Assets/Levels/levelFile.xml registrated.
-Sun May  6 16:20:02 INFO: XmlReader - Read <Settings>
-Sun May  6 16:20:02 INFO: XmlReader - Read   <EntitieModels>
-Sun May  6 16:20:02 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
-Sun May  6 16:20:02 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
-Sun May  6 16:20:02 INFO: XmlReader - Read   </EntitieModels>
-Sun May  6 16:20:02 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
-Sun May  6 16:20:02 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
-Sun May  6 16:20:02 INFO: XmlReader - Read </Settings>
-Sun May  6 16:20:02 INFO: EntityModel - Created.
-Sun May  6 16:20:02 INFO: Scene - EntityModel created
-Sun May  6 16:20:02 INFO: ~Scene - Created: Tiger1
-Sun May  6 16:20:02 INFO: EntityModel - Created.
-Sun May  6 16:20:02 INFO: Scene - EntityModel created
-Sun May  6 16:20:02 INFO: ~Scene - Created: Tiger2
-Sun May  6 16:20:02 INFO: ~Scene - Created: Mai
-Sun May  6 16:20:02 WARNING: ~Scene - TODO: implement loading: Mai
-Sun May  6 16:20:02 INFO: ~Scene - Created: Mai
-Sun May  6 16:20:02 INFO: Scene - Scene Instantiated.
-Sun May  6 16:20:02 INFO: SceneManager - Scene created
-Sun May  6 16:20:02 INFO: MeshLoaderDx - MeshLoaderDx created.
-Sun May  6 16:20:02 INFO: TextureLoaderDx - TextureLoaderDx created.
-Sun May  6 16:20:02 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
-Sun May  6 16:20:02 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
-Sun May  6 16:20:02 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
-Sun May  6 16:20:02 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
-Sun May  6 16:20:02 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
-Sun May  6 16:20:02 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
-Sun May  6 16:20:02 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
-Sun May  6 16:20:02 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
-Sun May  6 16:20:02 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
-Sun May  6 16:20:02 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
-Sun May  6 16:30:20 INFO: Kernel - Scenes are successfully prepared.
-Sun May  6 16:30:20 ERROR: Mouse - Failed to Acquire mouse.
-Sun May  6 16:30:20 INFO: Mouse - Created.
-Sun May  6 16:30:20 WARNING: Keyboard - Failed to Acquire keyboard.
-Sun May  6 16:30:20 INFO: Keyboard - Created.
-Sun May  6 16:30:20 INFO: InputManager - InputManager created.
-Sun May  6 16:30:20 INFO: Kernel - Added as listener.
-Sun May  6 16:30:20 INFO: Kernel - Level is successfully loaded.
+Thu May 10 11:44:33 INFO: Kernel - Created.
+Thu May 10 11:44:33 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:44:33 INFO: WindowManager - Created
+Thu May 10 11:44:33 INFO: SceneManager - SceneManager created
+Thu May 10 11:44:33 INFO: ResourceManager - Created.
+Thu May 10 11:44:33 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:44:33 INFO: Kernel - Loading level...
+Thu May 10 11:44:33 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:44:33 INFO: Window - Window created.
+Thu May 10 11:44:33 INFO: Camera - Camera created.
+Thu May 10 11:44:33 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:44:33 INFO: XmlReader - Read <Settings>
+Thu May 10 11:44:33 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:44:33 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:44:33 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:44:33 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:44:33 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:44:33 INFO: XmlReader - Read </Settings>
+Thu May 10 11:44:33 INFO: ~Scene - Created: Skybox
+Thu May 10 11:44:33 INFO: ~Scene - Created: Skybox
+Thu May 10 11:44:33 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:44:33 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:44:33 INFO: Scene - EntityModel created
+Thu May 10 11:44:33 INFO: Scene - Scene Instantiated.
+Thu May 10 11:44:33 INFO: SceneManager - Scene created
+Thu May 10 11:44:33 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:44:33 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:44:33 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:44:34 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:44:34 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:44:34 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:44:34 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:44:34 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:44:34 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:44:34 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:44:34 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:44:34 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:44:34 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:44:34 INFO: Mouse - Created.
+Thu May 10 11:44:34 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:44:34 INFO: Keyboard - Created.
+Thu May 10 11:44:34 INFO: InputManager - InputManager created.
+Thu May 10 11:44:34 INFO: Kernel - Added as listener.
+Thu May 10 11:44:34 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:44:53 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:44:53 INFO: Kernel - Created.
+Thu May 10 11:44:53 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:44:53 INFO: WindowManager - Created
+Thu May 10 11:44:53 INFO: SceneManager - SceneManager created
+Thu May 10 11:44:53 INFO: ResourceManager - Created.
+Thu May 10 11:44:53 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:44:53 INFO: Kernel - Loading level...
+Thu May 10 11:44:53 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:44:53 INFO: Window - Window created.
+Thu May 10 11:44:53 INFO: Camera - Camera created.
+Thu May 10 11:44:53 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:44:53 INFO: XmlReader - Read <Settings>
+Thu May 10 11:44:53 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:44:53 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:44:53 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:44:53 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:44:53 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:44:53 INFO: XmlReader - Read </Settings>
+Thu May 10 11:44:53 INFO: ~Scene - Created: Skybox
+Thu May 10 11:44:53 INFO: ~Scene - Created: Skybox
+Thu May 10 11:44:53 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:44:53 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:44:53 INFO: Scene - EntityModel created
+Thu May 10 11:44:53 INFO: Scene - Scene Instantiated.
+Thu May 10 11:44:53 INFO: SceneManager - Scene created
+Thu May 10 11:44:53 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:44:53 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:44:53 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:44:53 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:44:53 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:44:53 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:44:53 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:44:53 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:44:53 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:44:53 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:44:53 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:44:53 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:44:53 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:44:53 INFO: Mouse - Created.
+Thu May 10 11:44:53 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:44:53 INFO: Keyboard - Created.
+Thu May 10 11:44:53 INFO: InputManager - InputManager created.
+Thu May 10 11:44:53 INFO: Kernel - Added as listener.
+Thu May 10 11:44:53 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:45:25 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:45:25 INFO: Kernel - Created.
+Thu May 10 11:45:25 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:45:25 INFO: WindowManager - Created
+Thu May 10 11:45:25 INFO: SceneManager - SceneManager created
+Thu May 10 11:45:25 INFO: ResourceManager - Created.
+Thu May 10 11:45:25 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:45:25 INFO: Kernel - Loading level...
+Thu May 10 11:45:25 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:45:25 INFO: Window - Window created.
+Thu May 10 11:45:25 INFO: Camera - Camera created.
+Thu May 10 11:45:25 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:45:25 INFO: XmlReader - Read <Settings>
+Thu May 10 11:45:25 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:45:25 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:45:25 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:45:25 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:45:25 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:45:25 INFO: XmlReader - Read </Settings>
+Thu May 10 11:45:25 INFO: ~Scene - Created: Skybox
+Thu May 10 11:45:25 INFO: ~Scene - Created: Skybox
+Thu May 10 11:45:25 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:45:25 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:45:25 INFO: Scene - EntityModel created
+Thu May 10 11:45:25 INFO: Scene - Scene Instantiated.
+Thu May 10 11:45:25 INFO: SceneManager - Scene created
+Thu May 10 11:45:25 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:45:25 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:45:25 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:45:25 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:45:25 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:45:25 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:45:25 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:45:25 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:45:25 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:45:25 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:45:25 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:45:25 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:45:25 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:45:25 INFO: Mouse - Created.
+Thu May 10 11:45:25 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:45:25 INFO: Keyboard - Created.
+Thu May 10 11:45:25 INFO: InputManager - InputManager created.
+Thu May 10 11:45:25 INFO: Kernel - Added as listener.
+Thu May 10 11:45:25 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:45:37 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:45:37 INFO: Kernel - Created.
+Thu May 10 11:45:37 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:45:37 INFO: WindowManager - Created
+Thu May 10 11:45:37 INFO: SceneManager - SceneManager created
+Thu May 10 11:45:37 INFO: ResourceManager - Created.
+Thu May 10 11:45:37 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:45:37 INFO: Kernel - Loading level...
+Thu May 10 11:45:37 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:45:37 INFO: Window - Window created.
+Thu May 10 11:45:37 INFO: Camera - Camera created.
+Thu May 10 11:45:37 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:45:37 INFO: XmlReader - Read <Settings>
+Thu May 10 11:45:37 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:45:37 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:45:37 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:45:37 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:45:37 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:45:37 INFO: XmlReader - Read </Settings>
+Thu May 10 11:45:37 INFO: ~Scene - Created: Skybox
+Thu May 10 11:45:37 INFO: ~Scene - Created: Skybox
+Thu May 10 11:45:37 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:45:37 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:45:37 INFO: Scene - EntityModel created
+Thu May 10 11:45:37 INFO: Scene - Scene Instantiated.
+Thu May 10 11:45:37 INFO: SceneManager - Scene created
+Thu May 10 11:45:37 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:45:37 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:45:37 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:45:38 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:45:38 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:45:38 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:45:38 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:45:38 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:45:38 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:45:38 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:45:38 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:45:38 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:45:38 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:45:38 INFO: Mouse - Created.
+Thu May 10 11:45:38 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:45:38 INFO: Keyboard - Created.
+Thu May 10 11:45:38 INFO: InputManager - InputManager created.
+Thu May 10 11:45:38 INFO: Kernel - Added as listener.
+Thu May 10 11:45:38 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:48:05 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:48:05 INFO: Kernel - Created.
+Thu May 10 11:48:05 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:48:05 INFO: WindowManager - Created
+Thu May 10 11:48:05 INFO: SceneManager - SceneManager created
+Thu May 10 11:48:05 INFO: ResourceManager - Created.
+Thu May 10 11:48:05 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:48:05 INFO: Kernel - Loading level...
+Thu May 10 11:48:05 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:48:05 INFO: Window - Window created.
+Thu May 10 11:48:05 INFO: Camera - Camera created.
+Thu May 10 11:48:05 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:48:05 INFO: XmlReader - Read <Settings>
+Thu May 10 11:48:05 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:48:05 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:48:05 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:48:05 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:48:05 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:48:05 INFO: XmlReader - Read </Settings>
+Thu May 10 11:48:05 INFO: Scene - EntityModel created
+Thu May 10 11:48:05 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:48:05 INFO: ~Scene - Created: Skybox
+Thu May 10 11:48:05 INFO: ~Scene - Created: Skybox
+Thu May 10 11:48:05 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:48:05 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:48:05 INFO: Scene - Scene Instantiated.
+Thu May 10 11:48:05 INFO: SceneManager - Scene created
+Thu May 10 11:48:05 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:48:05 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:48:05 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:48:06 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:48:06 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:48:06 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:48:06 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:48:06 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:48:06 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:48:06 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:48:06 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:48:06 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:48:06 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:48:06 INFO: Mouse - Created.
+Thu May 10 11:48:06 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:48:06 INFO: Keyboard - Created.
+Thu May 10 11:48:06 INFO: InputManager - InputManager created.
+Thu May 10 11:48:06 INFO: Kernel - Added as listener.
+Thu May 10 11:48:06 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:48:23 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:48:23 INFO: Kernel - Created.
+Thu May 10 11:48:23 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:48:23 INFO: WindowManager - Created
+Thu May 10 11:48:23 INFO: SceneManager - SceneManager created
+Thu May 10 11:48:23 INFO: ResourceManager - Created.
+Thu May 10 11:48:23 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:48:23 INFO: Kernel - Loading level...
+Thu May 10 11:48:23 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:48:23 INFO: Window - Window created.
+Thu May 10 11:48:23 INFO: Camera - Camera created.
+Thu May 10 11:48:23 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:48:23 INFO: XmlReader - Read <Settings>
+Thu May 10 11:48:23 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:48:23 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:48:23 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:48:23 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:48:23 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:48:23 INFO: XmlReader - Read </Settings>
+Thu May 10 11:48:23 INFO: Scene - EntityModel created
+Thu May 10 11:48:23 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:48:23 INFO: ~Scene - Created: Skybox
+Thu May 10 11:48:23 INFO: ~Scene - Created: Skybox
+Thu May 10 11:48:23 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:48:23 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:48:23 INFO: Scene - Scene Instantiated.
+Thu May 10 11:48:23 INFO: SceneManager - Scene created
+Thu May 10 11:48:23 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:48:23 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:48:23 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:48:24 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:48:24 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:48:24 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:48:24 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:48:24 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:48:24 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:48:24 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:48:24 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:48:24 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:48:24 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:48:24 INFO: Mouse - Created.
+Thu May 10 11:48:24 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:48:24 INFO: Keyboard - Created.
+Thu May 10 11:48:24 INFO: InputManager - InputManager created.
+Thu May 10 11:48:24 INFO: Kernel - Added as listener.
+Thu May 10 11:48:24 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:48:44 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:48:44 INFO: Kernel - Created.
+Thu May 10 11:48:44 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:48:44 INFO: WindowManager - Created
+Thu May 10 11:48:44 INFO: SceneManager - SceneManager created
+Thu May 10 11:48:44 INFO: ResourceManager - Created.
+Thu May 10 11:48:44 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:48:44 INFO: Kernel - Loading level...
+Thu May 10 11:48:44 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:48:44 INFO: Window - Window created.
+Thu May 10 11:48:44 INFO: Camera - Camera created.
+Thu May 10 11:48:44 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:48:44 INFO: XmlReader - Read <Settings>
+Thu May 10 11:48:44 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:48:44 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:48:44 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:48:44 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:48:44 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:48:44 INFO: XmlReader - Read </Settings>
+Thu May 10 11:48:44 INFO: Scene - EntityModel created
+Thu May 10 11:48:44 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:48:44 INFO: ~Scene - Created: Skybox
+Thu May 10 11:48:44 INFO: ~Scene - Created: Skybox
+Thu May 10 11:48:44 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:48:44 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:48:44 INFO: Scene - Scene Instantiated.
+Thu May 10 11:48:44 INFO: SceneManager - Scene created
+Thu May 10 11:48:44 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:48:44 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:48:44 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:48:45 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:48:45 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:48:45 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:48:45 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:48:45 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:48:45 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:48:45 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:48:45 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:48:45 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:48:45 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:48:45 INFO: Mouse - Created.
+Thu May 10 11:48:45 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:48:45 INFO: Keyboard - Created.
+Thu May 10 11:48:45 INFO: InputManager - InputManager created.
+Thu May 10 11:48:45 INFO: Kernel - Added as listener.
+Thu May 10 11:48:45 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:49:25 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:49:25 INFO: Kernel - Created.
+Thu May 10 11:49:25 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:49:25 INFO: WindowManager - Created
+Thu May 10 11:49:25 INFO: SceneManager - SceneManager created
+Thu May 10 11:49:25 INFO: ResourceManager - Created.
+Thu May 10 11:49:25 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:49:25 INFO: Kernel - Loading level...
+Thu May 10 11:49:25 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:49:25 INFO: Window - Window created.
+Thu May 10 11:49:25 INFO: Camera - Camera created.
+Thu May 10 11:49:25 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:49:25 INFO: XmlReader - Read <Settings>
+Thu May 10 11:49:25 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:49:25 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:49:25 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:49:25 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:49:25 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:49:25 INFO: XmlReader - Read </Settings>
+Thu May 10 11:49:25 INFO: Scene - EntityModel created
+Thu May 10 11:49:25 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:49:25 INFO: ~Scene - Created: Skybox
+Thu May 10 11:49:25 INFO: ~Scene - Created: Skybox
+Thu May 10 11:49:25 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:49:25 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:49:25 INFO: Scene - Scene Instantiated.
+Thu May 10 11:49:25 INFO: SceneManager - Scene created
+Thu May 10 11:49:25 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:49:25 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:49:25 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:49:25 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:50:54 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:50:54 INFO: Kernel - Created.
+Thu May 10 11:50:54 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:50:54 INFO: WindowManager - Created
+Thu May 10 11:50:54 INFO: SceneManager - SceneManager created
+Thu May 10 11:50:54 INFO: ResourceManager - Created.
+Thu May 10 11:50:54 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:50:54 INFO: Kernel - Loading level...
+Thu May 10 11:50:54 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:50:54 INFO: Window - Window created.
+Thu May 10 11:50:54 INFO: Camera - Camera created.
+Thu May 10 11:50:54 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:50:54 INFO: XmlReader - Read <Settings>
+Thu May 10 11:50:54 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:50:54 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:50:54 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:50:54 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:50:54 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox2_back.jpg" left ="skybox2_left.jpg" top="skybox2_top.jpg" front="skybox2_front.jpg" bottom="skybox2_bottom.jpg" right="skybox2_right.jpg" />
+Thu May 10 11:50:54 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:50:54 INFO: XmlReader - Read </Settings>
+Thu May 10 11:50:54 INFO: Scene - EntityModel created
+Thu May 10 11:50:54 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:50:54 INFO: ~Scene - Created: Skybox
+Thu May 10 11:50:54 INFO: ~Scene - Created: Skybox
+Thu May 10 11:50:54 INFO: ~Scene - Created: Skybox
+Thu May 10 11:50:54 INFO: ~Scene - Created: Skybox
+Thu May 10 11:50:54 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:50:54 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:50:54 INFO: Scene - Scene Instantiated.
+Thu May 10 11:50:54 INFO: SceneManager - Scene created
+Thu May 10 11:50:54 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:50:54 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:50:54 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:50:54 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:50:54 INFO: ResourceManager - Texture 'skybox2_front.jpg' loaded.
+Thu May 10 11:50:54 INFO: ResourceManager - Texture 'skybox2_back.jpg' loaded.
+Thu May 10 11:50:54 INFO: ResourceManager - Texture 'skybox2_left.jpg' loaded.
+Thu May 10 11:50:54 INFO: ResourceManager - Texture 'skybox2_right.jpg' loaded.
+Thu May 10 11:50:54 INFO: ResourceManager - Texture 'skybox2_top.jpg' loaded.
+Thu May 10 11:50:54 INFO: ResourceManager - Texture 'skybox2_bottom.jpg' loaded.
+Thu May 10 11:50:54 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:50:55 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:50:55 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:50:55 INFO: Mouse - Created.
+Thu May 10 11:50:55 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:50:55 INFO: Keyboard - Created.
+Thu May 10 11:50:55 INFO: InputManager - InputManager created.
+Thu May 10 11:50:55 INFO: Kernel - Added as listener.
+Thu May 10 11:50:55 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:53:32 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:53:32 INFO: Kernel - Created.
+Thu May 10 11:53:32 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:53:32 INFO: WindowManager - Created
+Thu May 10 11:53:32 INFO: SceneManager - SceneManager created
+Thu May 10 11:53:32 INFO: ResourceManager - Created.
+Thu May 10 11:53:32 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:53:32 INFO: Kernel - Loading level...
+Thu May 10 11:53:32 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:53:32 INFO: Window - Window created.
+Thu May 10 11:53:32 INFO: Camera - Camera created.
+Thu May 10 11:53:32 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:53:32 INFO: XmlReader - Read <Settings>
+Thu May 10 11:53:32 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:53:32 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:53:32 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:53:32 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:53:32 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:53:32 INFO: XmlReader - Read </Settings>
+Thu May 10 11:53:32 INFO: Scene - EntityModel created
+Thu May 10 11:53:32 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:53:32 INFO: ~Scene - Created: Skybox
+Thu May 10 11:53:32 INFO: ~Scene - Created: Skybox
+Thu May 10 11:53:32 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:53:32 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:53:32 INFO: Scene - Scene Instantiated.
+Thu May 10 11:53:32 INFO: SceneManager - Scene created
+Thu May 10 11:53:32 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:53:32 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:53:32 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:53:32 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:53:32 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:53:32 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:53:32 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:53:32 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:53:32 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:53:32 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:53:32 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:53:32 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:53:32 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:53:32 INFO: Mouse - Created.
+Thu May 10 11:53:32 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:53:32 INFO: Keyboard - Created.
+Thu May 10 11:53:32 INFO: InputManager - InputManager created.
+Thu May 10 11:53:32 INFO: Kernel - Added as listener.
+Thu May 10 11:53:32 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:56:59 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:56:59 INFO: Kernel - Created.
+Thu May 10 11:56:59 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:56:59 INFO: WindowManager - Created
+Thu May 10 11:56:59 INFO: SceneManager - SceneManager created
+Thu May 10 11:56:59 INFO: ResourceManager - Created.
+Thu May 10 11:56:59 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:56:59 INFO: Kernel - Loading level...
+Thu May 10 11:56:59 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:56:59 INFO: Window - Window created.
+Thu May 10 11:56:59 INFO: Camera - Camera created.
+Thu May 10 11:56:59 INFO: XmlReader - File ../Assets/Levels/Level1.xml registrated.
+Thu May 10 11:56:59 INFO: XmlReader - Read <Settings>
+Thu May 10 11:56:59 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:56:59 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:56:59 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:56:59 INFO: XmlReader - Read   <Skybox name="Skybox" back="skybox3_back.tga" left ="skybox3_left.tga" top="skybox3_top.tga" front="skybox3_front.tga" bottom="skybox3_bottom.tga" right="skybox3_right.tga" />
+Thu May 10 11:56:59 INFO: XmlReader - Read   <Terrain name="Terrain" heightmap="heightdata.raw" texture="terrainbrown.jpg" /> 
+Thu May 10 11:56:59 INFO: XmlReader - Read </Settings>
+Thu May 10 11:56:59 INFO: Scene - EntityModel created
+Thu May 10 11:56:59 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:56:59 INFO: ~Scene - Created: Skybox
+Thu May 10 11:56:59 INFO: ~Scene - Created: Skybox
+Thu May 10 11:56:59 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:56:59 WARNING: ~Scene - TODO: implement loading: Terrain
+Thu May 10 11:56:59 INFO: Scene - Scene Instantiated.
+Thu May 10 11:56:59 INFO: SceneManager - Scene created
+Thu May 10 11:56:59 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:56:59 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:56:59 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:57:00 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:57:00 INFO: ResourceManager - Texture 'skybox3_front.tga' loaded.
+Thu May 10 11:57:00 INFO: ResourceManager - Texture 'skybox3_back.tga' loaded.
+Thu May 10 11:57:00 INFO: ResourceManager - Texture 'skybox3_left.tga' loaded.
+Thu May 10 11:57:00 INFO: ResourceManager - Texture 'skybox3_right.tga' loaded.
+Thu May 10 11:57:00 INFO: ResourceManager - Texture 'skybox3_top.tga' loaded.
+Thu May 10 11:57:00 INFO: ResourceManager - Texture 'skybox3_bottom.tga' loaded.
+Thu May 10 11:57:00 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:57:00 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:57:00 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:57:00 INFO: Mouse - Created.
+Thu May 10 11:57:00 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:57:00 INFO: Keyboard - Created.
+Thu May 10 11:57:00 INFO: InputManager - InputManager created.
+Thu May 10 11:57:00 INFO: Kernel - Added as listener.
+Thu May 10 11:57:00 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:58:39 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:58:39 INFO: Kernel - Created.
+Thu May 10 11:58:39 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:58:39 INFO: WindowManager - Created
+Thu May 10 11:58:39 INFO: SceneManager - SceneManager created
+Thu May 10 11:58:39 INFO: ResourceManager - Created.
+Thu May 10 11:58:39 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:58:39 INFO: Kernel - Loading level...
+Thu May 10 11:58:39 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:58:39 INFO: Window - Window created.
+Thu May 10 11:58:39 INFO: Camera - Camera created.
+Thu May 10 11:58:39 INFO: XmlReader - File ../Assets/Levels/Level2.xml registrated.
+Thu May 10 11:58:39 INFO: XmlReader - Read <Settings>
+Thu May 10 11:58:39 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:58:39 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:58:39 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+Thu May 10 11:58:39 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:58:39 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="cloudtop_back.tga" left ="cloudtop_left.tga" top="cloudtop_top.tga" front="cloudtop_front.tga" bottom="cloudtop_bottom.tga" right="cloudtop_right.tga" />
+Thu May 10 11:58:39 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="zebra.jpg" /> 
+Thu May 10 11:58:39 INFO: XmlReader - Read </Settings>
+Thu May 10 11:58:39 INFO: Scene - EntityModel created
+Thu May 10 11:58:39 INFO: ~Scene - Created: Tiger1
+Thu May 10 11:58:39 INFO: Scene - EntityModel created
+Thu May 10 11:58:39 INFO: ~Scene - Created: Tiger2
+Thu May 10 11:58:39 INFO: ~Scene - Created: Mai
+Thu May 10 11:58:39 INFO: ~Scene - Created: Mai
+Thu May 10 11:58:39 WARNING: ~Scene - TODO: implement loading: Mai
+Thu May 10 11:58:39 WARNING: ~Scene - TODO: implement loading: Mai
+Thu May 10 11:58:39 INFO: Scene - Scene Instantiated.
+Thu May 10 11:58:39 INFO: SceneManager - Scene created
+Thu May 10 11:58:39 INFO: MeshLoaderDx - MeshLoaderDx created.
+Thu May 10 11:58:39 INFO: TextureLoaderDx - TextureLoaderDx created.
+Thu May 10 11:58:39 INFO: ResourceManager - Mesh 'Tiger.x' loaded.
+Thu May 10 11:58:39 INFO: ResourceManager - Texture 'zebra.jpg' loaded.
+Thu May 10 11:58:39 INFO: ResourceManager - Mesh 'Tiger.x' already loaded.'
+Thu May 10 11:58:39 INFO: ResourceManager - Texture 'zebra3.bmp' loaded.
+Thu May 10 11:58:39 INFO: ResourceManager - Texture 'cloudtop_front.tga' loaded.
+Thu May 10 11:58:39 INFO: ResourceManager - Texture 'cloudtop_back.tga' loaded.
+Thu May 10 11:58:39 INFO: ResourceManager - Texture 'cloudtop_left.tga' loaded.
+Thu May 10 11:58:39 INFO: ResourceManager - Texture 'cloudtop_right.tga' loaded.
+Thu May 10 11:58:39 INFO: ResourceManager - Texture 'cloudtop_left.tga' already loaded'
+Thu May 10 11:58:39 INFO: ResourceManager - Texture 'cloudtop_bottom.tga' loaded.
+Thu May 10 11:58:39 INFO: RendererDx - Vertexbuffer is created
+Thu May 10 11:58:39 INFO: Kernel - Scenes are successfully prepared.
+Thu May 10 11:58:39 INFO: Mouse - Succesfully Acquired.
+Thu May 10 11:58:39 INFO: Mouse - Created.
+Thu May 10 11:58:39 INFO: Keyboard - Succesfully Acquired.
+Thu May 10 11:58:39 INFO: Keyboard - Created.
+Thu May 10 11:58:39 INFO: InputManager - InputManager created.
+Thu May 10 11:58:39 INFO: Kernel - Added as listener.
+Thu May 10 11:58:39 INFO: Kernel - Level is successfully loaded.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 11:59:39 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 11:59:39 INFO: Kernel - Created.
+Thu May 10 11:59:39 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 11:59:39 INFO: WindowManager - Created
+Thu May 10 11:59:39 INFO: SceneManager - SceneManager created
+Thu May 10 11:59:39 INFO: ResourceManager - Created.
+Thu May 10 11:59:39 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 11:59:39 INFO: Kernel - Loading level...
+Thu May 10 11:59:39 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 11:59:39 INFO: Window - Window created.
+Thu May 10 11:59:39 INFO: Camera - Camera created.
+Thu May 10 11:59:39 INFO: XmlReader - File ../Assets/Levels/Level2.xml registrated.
+Thu May 10 11:59:39 INFO: XmlReader - Read <Settings>
+Thu May 10 11:59:39 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 11:59:39 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 11:59:39 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+Thu May 10 11:59:39 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 11:59:39 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="cloudtop_back.tga" left ="cloudtop_left.tga" top="cloudtop_top.tga" front="cloudtop_front.tga" bottom="cloudtop_bottom.tga" right="cloudtop_right.tga" />
+Thu May 10 11:59:39 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="zebra.jpg" /> 
+Thu May 10 11:59:39 INFO: XmlReader - Read </Settings>
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Username       [Date And Time         ]      Operating System         Directory                                              
+chris          [Thu May 10 12:06:23 2018
+]   Windows                  C:\Users\chris\Source\Repos\KB01-Revamped\Debug\KB01_Game.exe
+
+Thu May 10 12:06:23 INFO: Kernel - Created.
+Thu May 10 12:06:23 INFO: WindowManager - SetWindowClassEx successful.
+Thu May 10 12:06:23 INFO: WindowManager - Created
+Thu May 10 12:06:23 INFO: SceneManager - SceneManager created
+Thu May 10 12:06:23 INFO: ResourceManager - Created.
+Thu May 10 12:06:23 INFO: Kernel - Scene-, Resource-, WindowManager created.
+Thu May 10 12:06:23 INFO: Kernel - Loading level...
+Thu May 10 12:06:23 INFO: Window - Created handler for window with title:'Choo Choo'
+Thu May 10 12:06:23 INFO: Window - Window created.
+Thu May 10 12:06:23 INFO: Camera - Camera created.
+Thu May 10 12:06:23 INFO: XmlReader - File ../Assets/Levels/Level2.xml registrated.
+Thu May 10 12:06:23 INFO: XmlReader - Read <Settings>
+Thu May 10 12:06:23 INFO: XmlReader - Read   <EntitieModels>
+Thu May 10 12:06:23 INFO: XmlReader - Read     <Entity name="Tiger1" texture="zebra.jpg" mesh="Tiger.x" px="1" py="-10" pz="25" />
+Thu May 10 12:06:23 INFO: XmlReader - Read     <Entity name="Tiger2" texture="zebra3.bmp" mesh="Tiger.x" px="2" py="-10" pz="25" />
+Thu May 10 12:06:23 INFO: XmlReader - Read   </EntitieModels>
+Thu May 10 12:06:23 INFO: XmlReader - Read   <Skybox name="Main Skybox" back="cloudtop_back.tga" left ="cloudtop_left.tga" top="cloudtop_top.tga" front="cloudtop_front.tga" bottom="cloudtop_bottom.tga" right="cloudtop_right.tga" />
+Thu May 10 12:06:23 INFO: XmlReader - Read   <Terrain name="Main Terrain" heightmap="heightdata.raw" texture="zebra.jpg" /> 
+Thu May 10 12:06:23 INFO: XmlReader - Read </Settings>

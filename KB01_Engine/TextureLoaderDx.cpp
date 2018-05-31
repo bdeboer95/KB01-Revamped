@@ -4,6 +4,8 @@
 #include "StringToWStringConverter.h"
 #include <string>
 
+#include "d3dx9.h"
+
 TextureLoaderDx::TextureLoaderDx(Renderer* _renderer)
 {
 	renderer = _renderer;
@@ -14,12 +16,11 @@ TextureLoaderDx::TextureLoaderDx(Renderer* _renderer)
 TextureLoaderDx::~TextureLoaderDx()
 {
 	Log::Instance()->LogMessage("~TextureLoaderDx - TextureLoaderDx cleaned up!", Log::MESSAGE_INFO);
-
 }
 
-Texture* TextureLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
+TextureDx* TextureLoaderDx::LoadResource(char* _filePath, char* _fileName)
 {
-	Texture* texture = new Texture(_fileName);
+	TextureDx* texture = new TextureDx(_fileName);
 
 	LPDIRECT3DTEXTURE9* meshTextures = new LPDIRECT3DTEXTURE9();
 
@@ -35,7 +36,7 @@ Texture* TextureLoaderDx::LoadResource(std::string _filePath, std::string _fileN
 		directory,
 		meshTextures)))
 	{
-		Log::Instance()->LogMessage("TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file." + _fileName, Log::MESSAGE_WARNING);
+		Log::Instance()->LogMessage("TextureLoaderDx - Failed to load Texture using the direct3Ddevice. Could not find the file." + std::string(_fileName), Log::MESSAGE_WARNING);
 		return NULL;
 	}
 

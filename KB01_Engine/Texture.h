@@ -5,26 +5,27 @@
 
 class Texture : public Resource
 {
-	//In renderer zit een API-specifieke vertaler voor de resources
-private:
-	void* meshTextures;
-
-	int width;
-	int height;
-
 public:
-	Texture(std::string _fileName);
-	~Texture();
+	virtual ~Texture() = 0;
 
-	virtual void			Cleanup();
+	virtual std::string		GetFileName() = 0;
+	virtual void			Cleanup() = 0;
 
-	void					SetTextures(void* _meshTextures);
-	void*					GetTextures();
+	virtual void			SetTextures(void* meshTextures) = 0;
+	virtual void*			GetTextures() = 0;
 
-	int						GetWidth();
-	int						GetHeight();
+	virtual int				GetWidth() = 0;
+	virtual int				GetHeight() = 0;
 
-	void					SetWidth(int _width);
-	void					SetHeight(int _height);
+	virtual void			SetWidth(int width) = 0;
+	virtual void			SetHeight(int height) = 0;
+
+protected:
+	char*					_textureLocation;
+	void*					_meshTextures;
+
+	int						_width;
+	int						_height;
+
 };
 #endif

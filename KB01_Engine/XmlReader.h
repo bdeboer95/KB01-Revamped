@@ -7,14 +7,14 @@
 class XmlReader
 {
 public: 
-	XmlReader(const char* fileName);	//Constructor
+	XmlReader(std::string fileName);	//Constructor
 	~XmlReader();						//Destructor
 
 	std::vector<std::string> LoadContents();
 	static std::string GetValue(std::string raw, std::string attribute);
 
 private:
-	const char* _fileName;
+	std::string _fileName;
 	FILE* _file;
 
 	bool Exist();

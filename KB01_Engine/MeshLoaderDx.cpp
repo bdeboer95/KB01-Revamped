@@ -1,5 +1,4 @@
 #include "MeshLoaderDx.h"
-#include "Mesh.h"
 #include <iostream>
 #include <Windows.h>
 #include "StringToWStringConverter.h"
@@ -22,9 +21,9 @@ MeshLoaderDx::~MeshLoaderDx()
 // Name: LoadMeshFromFile(LPCTSTR _fileName)
 // Desc:  Load the mesh from the specified file using dirextX9
 //-----------------------------------------------------------------------------
-Mesh* MeshLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
+MeshDx* MeshLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
 {
-	Mesh* mesh = new Mesh(_fileName);
+	MeshDx* mesh = new MeshDx(_fileName);
 
 	LPD3DXMESH direct3Dmesh;
 	DWORD numberOfMaterials = 0L;

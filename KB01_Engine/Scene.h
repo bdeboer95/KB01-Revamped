@@ -4,13 +4,13 @@
 #include "Entity.h"
 #include <vector>
 #include "Skybox.h"
-#include "CTerrain.h"
+#include "Terrain.h"
 
 class Camera;
 class Scene
 {
 private: 
-	CTerrain* _terrain;
+	Terrain* _terrain;
 	Skybox* _skybox;
 	Camera* _camera;
 	std::vector<Entity*> entityModels;
@@ -25,7 +25,7 @@ private:
 public:
 	Scene(int _levelIndex, HWND _hWnd, std::string _level);
 	~Scene();
-	CTerrain* GetTerrain(); //gets the terrain entity on the scene
+	Terrain* GetTerrain(); //gets the terrain entity on the scene
 	Entity* CreateEntityModel(std::string _meshName, std::string _textureName,float _positionX, float _positionY, float _positionZ);
 	void CreateViewPort(RECT _rect);
 	HRESULT SetupGeometry(ResourceManager* _resourceManager, Renderer* _renderer);

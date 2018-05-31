@@ -130,7 +130,7 @@ HRESULT Scene::SetupGeometry(ResourceManager* _resourceManager, Renderer* _rende
 	}
 
 	_skybox->InitGeometry(_renderer, _resourceManager);
-	_terrain->Initialize(static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()), "heightdata.raw", "terrainbrown.jpg");
+	_terrain->Initialize(_renderer, "heightdata.raw", "terrainbrown.jpg");
 	ShowWindow(hWnd, SW_MAXIMIZE);
 	UpdateWindow(hWnd);
 	return S_OK;
@@ -207,12 +207,7 @@ Skybox* Scene::GetSkyBox()
 {
 	return _skybox;
 }
-
-/// <summary>
-/// Gets a pointer to a terrain.
-/// </summary>
-/// <returns></returns>
-CTerrain* Scene::GetTerrain()
+Terrain* Scene::GetTerrain()
 {
 	return _terrain;
 }

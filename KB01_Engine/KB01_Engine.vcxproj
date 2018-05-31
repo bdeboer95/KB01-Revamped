@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BMPLoader.h" />
+    <ClInclude Include="Buffer.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\resource.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="CFont.h" />
@@ -21,22 +22,20 @@
     <ClInclude Include="CIndexBuffer.h" />
     <ClInclude Include="CInput.h" />
     <ClInclude Include="CMesh.h" />
-    <ClInclude Include="CTerrain.h" />
+    <ClInclude Include="Terrain.h" />
     <ClInclude Include="CTimer.h" />
     <ClInclude Include="CTriangleStripPlane.h" />
     <ClInclude Include="CustomVertex.h" />
     <ClInclude Include="CUtility.h" />
-    <ClInclude Include="CVertexBuffer.h" />
-    <ClInclude Include="CWorldTransform.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityModel.h" />
+    <ClInclude Include="IndexBuffer.h" />
     <ClInclude Include="InputManagerFacade.h" />
     <ClInclude Include="KernelInterface.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="MatrixMath.h" />
     <ClInclude Include="Mesh.h" />
-    <ClInclude Include="Observee.h" />
     <ClInclude Include="ResourceLoader.h" />
     <ClInclude Include="Heightmap.h" />
     <ClInclude Include="Device.h" />
@@ -58,7 +57,6 @@
     <ClInclude Include="Skybox.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringToWStringConverter.h" />
-    <ClInclude Include="Terrain.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureLoaderDx.h" />
     <ClInclude Include="DXVector3.h" />
@@ -81,15 +79,14 @@
     <ClCompile Include="CIndexBuffer.cpp" />
     <ClCompile Include="CInput.cpp" />
     <ClCompile Include="CMesh.cpp" />
-    <ClCompile Include="CTerrain.cpp" />
+    <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="CTimer.cpp" />
     <ClCompile Include="CTriangleStripPlane.cpp" />
     <ClCompile Include="CUtility.cpp" />
-    <ClCompile Include="CVertexBuffer.cpp" />
-    <ClCompile Include="CWorldTransform.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="EntityModel.cpp" />
     <ClCompile Include="Heightmap.cpp" />
+    <ClCompile Include="IndexBuffer.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="InputManagerFacade.cpp" />
     <ClCompile Include="jsoncpp.cpp" />
@@ -110,7 +107,6 @@
     <ClCompile Include="Skybox.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="StringToWStringConverter.cpp" />
-    <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TextureLoaderDx.cpp" />
     <ClCompile Include="Vector2.cpp" />
@@ -173,7 +169,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)KB01_Engine\Include\DirectX\Header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)KB01_Engine\Include\DirectX\Header;$(SolutionDir)KB01_Engine\Include\XMLParse\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -198,7 +194,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)KB01_Engine\Include\DirectX\Header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)KB01_Engine\Include\DirectX\Header;$(SolutionDir)KB01_Engine\Include\XMLParse\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

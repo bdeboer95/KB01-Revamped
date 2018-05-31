@@ -4,7 +4,6 @@
 //TODO fix this class with comments and logic
 //TODO make test classes
 class Vector3;
-
 class Matrix
 {
 public:

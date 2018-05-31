@@ -1,8 +1,7 @@
 #include "EntityModel.h"
 #include <iostream>
 #include <vector>
-#include <dinput.h>
-#include "Observee.h"
+#include <dinput.h> //does this also need to be removed?
 
 #define KEYDOWN(name, key) (name[key])
 #define MSTATE(name, key) (name[key])
@@ -15,10 +14,10 @@ EntityModel::EntityModel(std::string _fileName, std::string _textureName, float 
 	fileName = _fileName;
 	texture = new Texture(_textureName);
 	Log::Instance()->LogMessage("EntityModel - Created.", Log::MESSAGE_INFO);
-	positionX = _positionX;
-	positionY = _positionY;
-	positionZ = _positionZ;
-	speed = 0.1f;
+	_positionX = _positionX;
+	_positionY = _positionY;
+	_positionZ = _positionZ;
+	_speed = 0.1f;
 }
 
 /// <summary>
@@ -44,61 +43,43 @@ void EntityModel::Render(Renderer* _renderer)
 
 
 /// <summary>
-/// Changes the rotation.
+/// Handles translation and rotation for the entitymodel
 /// </summary>
-/// <param name="_renderer">The _renderer.</param>
-/// <param name="_rotation">The _rotation.</param>
+/// <param name="_renderer">The renderer used to draw the entitymodels on the backbuffer</param>
 void EntityModel::ChangeRotation(Renderer* _renderer)
 {
 	// Set up world matrix
-
-
-	LPDIRECT3DDEVICE9 pd3dDevice = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
-
 	switch (rotation)
 	{
 
 	case 0:
-		D3DXMatrixScaling(
-			&matScale, // Pointer to recieve computed matrix
-			1, // x=axis scale
-			1, // y-axis scale
-			1 // z-axis scale
-		);
 
-		D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
-		D3DXMatrixRotationX(&matRotateX, rotationX);
 		break;
-		//Move forward
+
 	case 1:
-		positionZ = positionZ + 0.1f;
-		//positionX = positionY + 0.1f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
+		//Move forward
+		_positionZ = _positionZ + 0.1f;
 		break;
-		//Move left
 	case 2:
-		//rotationX = -1.0f;
-		positionX = positionX - 0.1f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
-		D3DXMatrixRotationY(&matRotateX, rotationY);
-		//D3DXMatrixRotationY(&matRotateY, 0.0f);
-		//D3DXMatrixRotationZ(&matRotateZ, 0.0f);
+		//Move left
+		_positionX = _positionX - 0.1f;
 		break;
-		//Move backwards
+
 	case 3:
-		positionZ = positionZ - 0.1f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
+		//Move backwards
+		_positionZ = _positionZ - 0.1f;
 		break;
-		//Move right
 	case 4:
-		//rotationX = 1.0f;
-		positionX = positionX + 0.1f;
-		D3DXMatrixRotationX(&matRotateX, rotationX);
+		//Move right
+		_positionX = _positionX + 0.1f;
 		break;
 	}
-	D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
-	matWorld = matScale*matTranslate*matRotateY*matRotateX;
-	pd3dDevice->SetTransform(D3DTS_WORLD, &matWorld);
+	Scale(&_matScale, 1, 1, 1);
+	Translate(&_matTranslate, _positionX, _positionY, _positionZ);
+	RotateY(&_matRotateY, _rotationY);
+	RotateX(&_matRotateX, _rotationX);
+	_matWorld = _matScale*_matTranslate*_matRotateY*_matRotateX;
+	_renderer->SetTransform(_renderer->WORLD, &_matWorld);
 	SetRotation(0);
 }
 
@@ -120,9 +101,9 @@ void EntityModel::SetupMatrices(Renderer* _renderer)
 //		100);          //Z offset
 
 	//pd3dDevice->SetTransform(D3DTS_WORLD, &trans_matrix);
-	//D3DXMATRIX matTranslate;    // a matrix to store the translation information
+	//D3DXMATRIX _matTranslate;    // a matrix to store the translation information
 	//// build a matrix to move the model 12 units along the x-axis and 4 units along the y-axis
-	//// store it to matTranslate
+	//// store it to _matTranslate
 	//D3DXMATRIX world_matrix;
 	//D3DXMATRIX translation_matrix;
 	//D3DXMATRIX rotation_matrix;
@@ -214,27 +195,27 @@ int EntityModel::GetRotation()
 /// Notifies the specified state.
 /// </summary>
 /// <param name="state">The state.</param>
-void EntityModel::Notify(TRANSFORMATIONEVENT transformationEvent,float x, float y)
+void EntityModel::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 {
 	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_RIGHT)
 	{
-		positionX = positionX - speed;
+		_positionX = _positionX - _speed;
 	}
 	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_LEFT)
 	{
-		positionX = positionX + speed;
+		_positionX = _positionX + _speed;
 	}
 	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_BACKWARDS)
 	{
-		positionZ = positionZ - speed;
+		_positionZ = _positionZ - _speed;
 	}
 	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_FORWARD)
 	{
-		positionZ = positionZ + speed;
+		_positionZ = _positionZ + _speed;
 	}
 	if (transformationEvent == TRANSFORMATIONEVENT::ROTATE_LEFT)
 	{
-		rotationY = rotationY - y;
+		_rotationY = _rotationY - y;
 		/*rotationX = rotationX + x;*/
 	}
 
@@ -288,8 +269,8 @@ void EntityModel::Notify(TRANSFORMATIONEVENT transformationEvent,float x, float 
 	//if (rotationX >= 6.28f)
 	//	rotationX = 0.0f;
 
-	D3DXMatrixTranslation(&matTranslate, positionX, positionY, positionZ);
-	D3DXMatrixRotationX(&matRotateX, rotationX);
-	D3DXMatrixRotationY(&matRotateY, rotationY);
-	matWorld = matScale*matTranslate*matRotateX*matRotateY;
+	Translate(&_matTranslate, _positionX, _positionY, _positionZ);
+	RotateX(&_matRotateX, _rotationX);
+	RotateY(&_matRotateY, _rotationY);
+	_matWorld = _matScale*_matTranslate*_matRotateX*_matRotateY;
 }

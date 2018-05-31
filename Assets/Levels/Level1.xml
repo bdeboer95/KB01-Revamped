@@ -1,0 +1,22 @@
+<Entity>
+<x value=100>
+<y value=100>
+<z value= 100>
+</Entity>
+
+<Terrain>
+<Heightmap value="heightdata.raw">
+</Heightmap>
+<x value=100>
+<y value=100>
+<z value= 100>
+</Terrain>
+
+<Skybox>
+<x value=100>
+<y value=100>
+<z value= 100>
+<Texture value="Skybox1">
+
+<Texture>
+</Skybox>

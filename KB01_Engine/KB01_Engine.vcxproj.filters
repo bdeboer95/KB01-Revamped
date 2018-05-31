@@ -110,9 +110,6 @@
     <ClCompile Include="Skybox.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="Terrain.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
     <ClCompile Include="Heightmap.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
@@ -158,9 +155,6 @@
     <ClCompile Include="MeshLoaderDx.cpp">
       <Filter>Source Files\Resourceloaders</Filter>
     </ClCompile>
-    <ClCompile Include="CTerrain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CTimer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -168,12 +162,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CUtility.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CVertexBuffer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CWorldTransform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
@@ -258,9 +246,6 @@
     </ClInclude>
     <ClInclude Include="InputListener.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Terrain.h">
-      <Filter>Header Files\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Header Files\Scenes</Filter>
@@ -364,19 +349,7 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CWorldTransform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CVertexBuffer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Observee.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CTimer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CTerrain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Matrix.h">

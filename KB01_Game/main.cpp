@@ -20,7 +20,7 @@ void Sandbox()
 {
 	WindowManagerFacade* wmf = new WindowManagerFacade();
 
-	wmf->CreateNewWindow("test_facade1", 100, 100, 100, 500, 1, 1);
+	wmf->CreateNewWindow(R"(test_facade1)", 100, 100, 100, 500, 1, 1);
 	wmf->UpdateWindows();
 }
 
@@ -31,7 +31,7 @@ void Noob()
 {
 	Kernel kernel = Kernel();
 
-	kernel.LoadLevel("..\\Assets\\Levels\\level1.txt");
+	kernel.LoadLevel(R"(..\Assets\Levels\level1.txt)");
 
 	while (kernel.Run())
 	{

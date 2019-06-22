@@ -2,7 +2,7 @@
 #define __SKYBOX_H__
 #define FVF_VERTEX (D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1) 
 
-#include "d3dx9.h"
+#include <d3dx9.h>
 #include "Renderer.h"
 #include "ResourceManager.h"
 #include "InputListener.h"

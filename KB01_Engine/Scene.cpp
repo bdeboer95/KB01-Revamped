@@ -1,8 +1,9 @@
 #include "Scene.h"
 #include "EntityModel.h"
 #include "Camera.h"
+#include "Log.h"
 #include <vector>
-
+#include "XmlReader.h"
 /// <summary>
 /// Initializes a new instance of the <see cref="Scene"/> class.
 /// </summary>
@@ -52,12 +53,12 @@ void Scene::ReadLevelFile(std::string fileName)
 		{
 			Skybox_Cube sky;
 
-			sky.back	= XmlReader::GetValue(setting, "back");
-			sky.top		= XmlReader::GetValue(setting, "top");
-			sky.left	= XmlReader::GetValue(setting, "left");
-			sky.front	= XmlReader::GetValue(setting, "front");
-			sky.bottom	= XmlReader::GetValue(setting, "bottom");
-			sky.right	= XmlReader::GetValue(setting, "right");
+			sky._back	= XmlReader::GetValue(setting, "back");
+			sky._top		= XmlReader::GetValue(setting, "top");
+			sky._left	= XmlReader::GetValue(setting, "left");
+			sky._front	= XmlReader::GetValue(setting, "front");
+			sky._bottom	= XmlReader::GetValue(setting, "bottom");
+			sky._right	= XmlReader::GetValue(setting, "right");
 
 			_skybox = new Skybox(sky);
 

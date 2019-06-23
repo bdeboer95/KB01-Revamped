@@ -7,13 +7,19 @@
 #include "Terrain.h"
 
 class Camera;
+
+/**
+**Name: Scene
+**Description: The scene is the complete picture that the user sees while playing the game, including the sky, the ground and the entities onit
+**
+*/
 class Scene
 {
 private: 
-	Terrain* _terrain;
-	Skybox* _skybox;
-	Camera* _camera;
-	std::vector<Entity*> entityModels;
+	Terrain* _terrain; //the ground element for the game
+	Skybox* _skybox; //the sky element for the game
+	Camera* _camera; //the camera through which the player of the game is looking through
+	std::vector<Entity*> entityModels; //The collection with entities that are displayed on the scene, f.e a tiger or a person
 	std::vector<std::string> meshNames;
 	std::vector<std::string> textureNames;
 	std::vector<float> positioning;

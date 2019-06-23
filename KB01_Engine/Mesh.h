@@ -4,7 +4,8 @@
 #include "Resource.h"
 
 #include "Texture.h"
-#include "d3dx9.h"
+#include <d3d9.h>
+#include "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9.h"
 
 class Mesh : public Resource
 {

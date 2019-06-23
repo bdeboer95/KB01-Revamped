@@ -11,22 +11,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CFont.h" />
+    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CFramework.h" />
+    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CGraphics.h" />
+    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CIndexBuffer.h" />
+    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CInput.h" />
+    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CMesh.h" />
+    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CTimer.h" />
+    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CTriangleStripPlane.h" />
     <ClInclude Include="BMPLoader.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\resource.h" />
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="CFont.h" />
-    <ClInclude Include="CFramework.h" />
-    <ClInclude Include="CGameApp.h" />
-    <ClInclude Include="CGraphics.h" />
-    <ClInclude Include="CIndexBuffer.h" />
-    <ClInclude Include="CInput.h" />
-    <ClInclude Include="CMesh.h" />
     <ClInclude Include="Terrain.h" />
-    <ClInclude Include="CTimer.h" />
-    <ClInclude Include="CTriangleStripPlane.h" />
     <ClInclude Include="CustomVertex.h" />
-    <ClInclude Include="CUtility.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityModel.h" />
     <ClInclude Include="IndexBuffer.h" />
@@ -55,7 +53,6 @@
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SceneManagerFacade.h" />
     <ClInclude Include="Skybox.h" />
-    <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringToWStringConverter.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureLoaderDx.h" />
@@ -73,7 +70,6 @@
   <ItemGroup>
     <ClCompile Include="BMPLoader.cpp" />
     <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="CFont.cpp" />
     <ClCompile Include="CFramework.cpp" />
     <ClCompile Include="CGraphics.cpp" />
     <ClCompile Include="CIndexBuffer.cpp" />
@@ -105,7 +101,6 @@
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SceneManagerFacade.cpp" />
     <ClCompile Include="Skybox.cpp" />
-    <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="StringToWStringConverter.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TextureLoaderDx.cpp" />
@@ -129,7 +124,7 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccLocalPath>SAK</SccLocalPath>
     <SccProvider>SAK</SccProvider>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -157,27 +152,30 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(ExecutablePath);$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86</ExecutablePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64;$(DXSDK_DIR)Lib\x86</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)KB01_Engine\Include\DirectX\Header;$(SolutionDir)KB01_Engine\Include\XMLParse\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)KB01_Engine\Include\DirectX\x86;$(SolutionDir)KB01_Engine\Include\DirectX\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d3d9.lib;d3dx9.lib; dxguid.lib;dinput8.lib;WinMM.lib;d3dxof.lib;d3dx9d.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(DXSDK_DIR)Lib\x64;$(DXSDK_DIR)Lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Lib>
     <ProjectReference>

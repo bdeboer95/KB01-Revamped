@@ -2,7 +2,9 @@
 #define __SKYBOX_H__
 #define FVF_VERTEX (D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1) 
 
-#include "d3dx9.h"
+#include "d3d9.h"
+#include "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9.h"
+	/*#include <d3dx9.h>*/
 #include "Renderer.h"
 #include "ResourceManager.h"
 #include "InputListener.h"
@@ -12,7 +14,7 @@ struct Skybox_Cube
 {
 		std::string			left; //filename for left part of the cube
 		std::string			right; //filename for right side of the cube
-		std::string			bottom; //filename for bottom side of the cube
+		std::string			bottom; //filename for bottom side of the cube F
 		std::string			top; //filename for top side of the cube
 		std::string			back; //filename for back side of the cube
 		std::string			front; //filename for front side of the cube

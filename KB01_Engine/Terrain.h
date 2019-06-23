@@ -4,37 +4,41 @@
 #include "CTriangleStripPlane.h"
 #include "CUtility.h"
 #include "CustomVertex.h"
-
 #include "InputListener.h"
 #include "Entity.h"
 
 class Renderer;
 
- //forward declared classes, solution for associtions > dependencies?
+/*
+** Name: Terrain
+** Description: The ground of the game that can be customized with a texture and placed on a position 
+** Parent: InputListener, so that it moves based on the keyboard and mouse input of the user
+** Parent: Entity, because it has a position in the world 
+*/
 class Terrain : public InputListener, public Entity
 {
 public:
-	Terrain();
-	~Terrain();
+	Terrain(); //Constructor
+	~Terrain(); //Deconstructor
 
-	float _positionX;
-	float _positionY;
-	float _positionZ;
+	float _positionX;  //position on the horizontal axis
+	float _positionY; //position on the vertical axis
+	float _positionZ; // position on the depth axis
 		  
-	float _rotationX;
-	float _rotationY;
+	float _rotationX; //horizontal rotation
+	float _rotationY; // vertical rotation
 
 
-	bool Initialize(Renderer* renderer, char* rawFile, char* terrainTexture);
-	void Render(Renderer* renderer);
+	bool Initialize(Renderer* renderer, char* rawFile, char* terrainTexture); //Initialize the terrain 
+	void Render(Renderer* renderer); //Function that is used to draw the terrain so that it is visible at all times
 
 private:
-	LPDIRECT3DTEXTURE9	_texture;
-	unsigned char*		_height;
+	LPDIRECT3DTEXTURE9	_texture; //the texture that is used to customize the terrain's looks
+	unsigned char*		_height; //the height of the terrain
 
-	unsigned int		_numVertices;
-	unsigned int		_numIndices;
-	unsigned int		_vertexSize;
+	unsigned int		_numVertices; //the amount of vertices that is used to draw the terrain
+	unsigned int		_numIndices; //the amount of indices that is used to draw the terrain
+	unsigned int		_vertexSize; //the size of one vertex that is used to draw the terrain
 	Matrix  			_matRotateX; //the matrix for the rotation on the x-axis
 	Matrix  			_matRotateY;//the matrix for the rotation on the y-axis
 	Matrix  			_matRotateZ;//the matrix for the rotation on the z-axis
@@ -43,9 +47,9 @@ private:
 	Matrix  			_matScale; //the matrix for the scaling of the skybox
 	Matrix  			_matTranslate; //the matrix for the translation of the 
 
-	float				_speed;
+	float				_speed; //the speed on which the terrain is moving
 
-	void Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y);
+	void Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y); //the function that notifies the Renderer if the terrain should be drawn on another way
 
 	/*void Reset();
 	void TranslateAbs(float x, float y, float z);

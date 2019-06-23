@@ -14,7 +14,6 @@ protected:
 
 public:
 	virtual	~ResourceLoader(){};
-
 	virtual Resource*		LoadResource(std::string _filePath, std::string _fileName) = 0;
 	virtual void			Cleanup() = 0;
 };

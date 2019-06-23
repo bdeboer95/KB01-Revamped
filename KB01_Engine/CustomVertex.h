@@ -14,7 +14,30 @@ Modified : 12/04/2005
 #ifndef CUCUSTOMVERTEX_H
 #define CUCUSTOMVERTEX_H
 
-#include "stdafx.h"
+// Windows Header Files:
+#include <windows.h>
+
+// C RunTime Header Files
+#include <stdio.h>
+#include <stdlib.h>
+#include <malloc.h>
+#include <memory.h>
+#include <tchar.h>
+
+// DirectX Header Files
+#include <d3d9.h>
+#include "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9.h"
+#include <dinput.h>
+
+#include <ctime>
+#include <fstream>
+#include "resource.h"
+
+// Useful macros
+#define SAFE_RELEASE(x) if( x ) { (x)->Release(); (x) = NULL; }
+#define SAFE_DELETE(x) if( x ) { delete(x); (x) = NULL; }
+#define SAFE_DELETE_ARRAY(x) if( x ) { delete [] (x); (x) = NULL; }
+#define SHOWERROR(s,f,l) char buf[1024]; sprintf( buf, "File: %s\nLine: %d\n%s",f,l,s); MessageBox( 0, buf, "Error", 0 );
 
 namespace cuCustomVertex
 {

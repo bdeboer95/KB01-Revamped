@@ -9,18 +9,20 @@
 
 #include "Renderer.h"
 #include <mmsystem.h>
-#include <d3dx9.h>
+#include "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9.h"
 #include <DXGI1_2.h>
 #include "Log.h"
 
 class RendererDx : public Renderer
 {
 private:
-	LPDIRECT3D9					direct3D; // Used to create the D3DDevice
-	LPDIRECT3DDEVICE9			direct3DDevice; // Our rendering device
-	LPDIRECT3DVERTEXBUFFER9		vertexBuffer; // Our vertex buffer
-	LPDIRECT3DINDEXBUFFER9		indexBuffer; // our index buffer
-	LPDIRECT3DSWAPCHAIN9*		swapChain;
+	LPDIRECT3D9					_direct3D; // Used to create the D3DDevice
+	LPDIRECT3DDEVICE9			_direct3DDevice; // Our rendering device
+	LPDIRECT3DVERTEXBUFFER9		_vertexBuffer; // Our vertex buffer
+	LPDIRECT3DINDEXBUFFER9		_indexBuffer; // our index buffer
+	LPDIRECT3DSWAPCHAIN9*		_swapChain;
+	unsigned int				_vertexSize;
+	unsigned long				_fvf;
 
 	struct CUSTOMVERTEX
 	{
@@ -30,27 +32,37 @@ private:
 
 public:
 	RendererDx();
-	virtual						~RendererDx();
-	virtual bool				Cleanup();
-	virtual bool				InitDevice(HWND _hWnd);
-	virtual void*				GetDevice();
-	virtual void*				GetVertexBuffer();
-	virtual void*				GetIndexBuffer();
-	virtual bool				InitVertexBuffer();
-	virtual void				ClearBuffer(int R, int G, int B);
-	virtual void				SetTransform(unsigned int transformStateType, Matrix* matrix);
-	virtual void				SetIndexBuffer(void* _indexBuffer);
-	virtual void				SetVertexBuffer(void* _vertexBuffer);
-	virtual void				SetTexture(void* _texture, UINT _index);
-	virtual void				SetMaterial(void* _material, UINT _index);
-	virtual void				DrawSubset(void* _mesh, UINT _index);
-	virtual void				SetViewPort(void* _viewPort);
-	virtual void				Present(HWND _hwnd);
-	virtual void*				GetBackBuffer();
-	virtual float				GetBackBufferWidth();
-	virtual float				GetBackBuffferHeight();
-	virtual void				DrawIndexedPrimitive(UINT _numberOfVertices, UINT _primitiveCount);
-	virtual void				SetStreamSource(UINT _vertexSize);
+	virtual					~RendererDx();
+	virtual bool			Cleanup(); //Deletes all the pointers that have been initialized
+	virtual void			Release();
+	virtual bool			InitDevice(HWND hWnd); //Initializes the graphical device
+	virtual void*			GetDevice(); //Gets the graphical device
+
+	virtual void*			GetBackBuffer();
+	virtual float			GetBackBufferWidth();
+	virtual float			GetBackBufferHeight();
+	virtual void			ClearBuffer(int r, int g, int b);
+
+	virtual bool			CreateVertexBuffer(unsigned int numVertices, unsigned int vertexSize, unsigned long fvf, HANDLE handle, bool dynamic=false); // why no initindexbuffer?
+	virtual void*			GetVertexBuffer();
+	virtual bool			FillVertexBuffer(unsigned int numVertices, void *pVertices, unsigned long flags);
+
+	virtual void			CreateIndexBuffer(unsigned int numIndices, unsigned long format, HANDLE handle, bool dynamic = false);
+	virtual void*			GetIndexBuffer();
+	virtual void			FillIndexBuffer(unsigned int numIndices, void *pIndices, unsigned long flags = D3DLOCK_DISCARD);
+	virtual void			SetIndices();
+	virtual void			DrawIndexedPrimitive(unsigned int primitiveType, unsigned int baseVertexIndex, unsigned int minVertexIndex, unsigned int numberOfVertices, unsigned int startIndex, unsigned int primitiveCount);
+	virtual void			DrawPrimitive(unsigned int primitiveType, unsigned int startVertex, unsigned int primitiveCount);
+	virtual void			DrawSubset(void* mesh, unsigned int index);
+
+	virtual void			SetTransform(unsigned int transformStateType, Matrix* matrix); //Updates the Transform based on the state type that was given (World, view, etc) with the provided matrix
+	virtual void			SetStreamSource(unsigned int streamNumber,  unsigned int offsetInBytes, unsigned int stride);
+	virtual void			SetViewPort(void* viewPort);
+	virtual void			SetMaterial(void* material, unsigned int index);
+	virtual void			SetTexture(void* texture, unsigned int index);
+	virtual void			SetFVF();
+	virtual void			Present(HWND hwnd);
+
 };
 
 #endif

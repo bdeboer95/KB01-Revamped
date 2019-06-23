@@ -3,7 +3,7 @@
 
 #include "Device.h"
 #include "InputListener.h"
-#include "d3dx9.h"
+#include "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9.h"
 #include "Vector2.h"
 struct MouseState {
 	LONG    lX;

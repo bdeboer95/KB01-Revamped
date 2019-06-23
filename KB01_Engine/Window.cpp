@@ -55,7 +55,7 @@ RECT Window::GetRectangleBackBuffer(Renderer* _renderer)
 	rectangleBackBuffer.top = 0;
 	rectangleBackBuffer.left = 0;
 	rectangleBackBuffer.right = _renderer->GetBackBufferWidth();
-	rectangleBackBuffer.bottom = _renderer->GetBackBuffferHeight();
+	rectangleBackBuffer.bottom = _renderer->GetBackBufferHeight();
 
 	return rectangleBackBuffer;
 }

@@ -1,5 +1,4 @@
 #include "ResourceManagerFacade.h"
-#include "Renderer.h"
 
 
 /// <summary>

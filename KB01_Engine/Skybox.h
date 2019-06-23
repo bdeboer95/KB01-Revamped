@@ -2,7 +2,7 @@
 #define __SKYBOX_H__
 #define FVF_VERTEX (D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1) 
 
-#include "d3d9.h"
+
 #include "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9.h"
 	/*#include <d3dx9.h>*/
 #include "Renderer.h"

@@ -235,12 +235,6 @@
     <ClInclude Include="EntityModel.h">
       <Filter>Header Files\Entities</Filter>
     </ClInclude>
-    <ClInclude Include="Device.h">
-      <Filter>Header Files\Devices</Filter>
-    </ClInclude>
-    <ClInclude Include="Keyboard.h">
-      <Filter>Header Files\Devices</Filter>
-    </ClInclude>
     <ClInclude Include="Mouse.h">
       <Filter>Header Files\Devices</Filter>
     </ClInclude>
@@ -248,9 +242,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="Skybox.h">
       <Filter>Header Files\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="Renderer.h">
@@ -368,6 +359,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CFramework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUtility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

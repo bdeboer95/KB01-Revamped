@@ -5,9 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source Files\Managers">
-      <UniqueIdentifier>{422c022c-a7d7-4b08-b8e4-5724f1f69999}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
@@ -15,38 +12,11 @@
     <Filter Include="Source Files\Managers">
       <UniqueIdentifier>{422c022c-a7d7-4b08-b8e4-5724f1f69999}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Resources">
-      <UniqueIdentifier>{95eda61f-66eb-4be3-9433-0bae1919f4e5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Resources">
-      <UniqueIdentifier>{4c23f6a9-d46e-4c77-abdf-02838c9257b9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Devices">
-      <UniqueIdentifier>{bf6681cd-50c1-4add-b249-c0984ea9c10f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Entities">
-      <UniqueIdentifier>{a8ab62b6-2a4a-480d-b5ee-0dbd43397f7b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Entities">
-      <UniqueIdentifier>{9eb74fe7-b498-4051-aa1b-4f659c70b2fd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Managers">
-      <UniqueIdentifier>{466ce8e8-7316-4a2c-9e09-fba3109d93bb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Renderers">
-      <UniqueIdentifier>{e4718469-0cc8-4b7d-a04e-675504bb68e1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Scenes">
       <UniqueIdentifier>{8a9da31b-1b7e-4748-b2d1-1b7bbb22ada4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Scenes">
       <UniqueIdentifier>{8654e005-72b5-4472-914a-3bba63fb697d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Renderers">
-      <UniqueIdentifier>{4152abe9-20fd-43c8-80e8-a38d98a4359b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Devices">
-      <UniqueIdentifier>{a6caec0f-163d-4b4f-bf7d-3e08c531f706}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Facades">
       <UniqueIdentifier>{c7438819-babe-4c7a-ae70-1e7acce811d1}</UniqueIdentifier>
@@ -57,55 +27,19 @@
     <Filter Include="Header Files\Resourceloaders">
       <UniqueIdentifier>{55e8ea14-cf7c-4150-bff8-531d47f4e947}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Resourceloaders">
-      <UniqueIdentifier>{0a94220a-7155-4cd1-861d-2d96bf60c89c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Converters">
       <UniqueIdentifier>{2a172d1c-117f-4c8f-85b9-2d2869b6d551}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Converters">
-      <UniqueIdentifier>{4ddbe8f0-4578-4ef8-9e9d-5b0869d39811}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Math">
       <UniqueIdentifier>{b1c3b052-ae1c-4625-8dec-de2f346f7bed}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Math">
-      <UniqueIdentifier>{3bc05b05-b139-4e55-a9aa-7a5da49690d4}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="InputManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="ResourceManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="WindowManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Source Files\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="EntityModel.cpp">
-      <Filter>Source Files\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="Mouse.cpp">
-      <Filter>Source Files\Devices</Filter>
-    </ClCompile>
     <ClCompile Include="Scene.cpp">
       <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="Heightmap.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="RendererDx.cpp">
-      <Filter>Source Files\Renderers</Filter>
     </ClCompile>
     <ClCompile Include="BMPLoader.cpp">
       <Filter>Source Files\Scenes</Filter>
@@ -131,39 +65,6 @@
     <ClCompile Include="InputManagerFacade.cpp">
       <Filter>Source Files\Facades</Filter>
     </ClCompile>
-    <ClCompile Include="Entity.cpp">
-      <Filter>Source Files\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="TextureLoaderDx.cpp">
-      <Filter>Source Files\Resourceloaders</Filter>
-    </ClCompile>
-    <ClCompile Include="StringToWStringConverter.cpp">
-      <Filter>Source Files\Converters</Filter>
-    </ClCompile>
-    <ClCompile Include="MeshLoaderDx.cpp">
-      <Filter>Source Files\Resourceloaders</Filter>
-    </ClCompile>
-    <ClCompile Include="CInput.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CMesh.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Matrix.cpp">
-      <Filter>Source Files\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector2.cpp">
-      <Filter>Source Files\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector3.cpp">
-      <Filter>Source Files\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="MatrixMath.cpp">
-      <Filter>Source Files\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="IndexBuffer.cpp">
-      <Filter>Source Files\Math</Filter>
-    </ClCompile>
     <ClCompile Include="Terrain.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
@@ -188,22 +89,61 @@
     <ClCompile Include="Mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StringToWStringConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshLoaderDx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureLoaderDx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RendererDx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Kernel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="WindowManager.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
     <ClInclude Include="Window.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Camera.h">
-      <Filter>Header Files\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="EntityModel.h">
-      <Filter>Header Files\Entities</Filter>
     </ClInclude>
     <ClInclude Include="InputListener.h">
       <Filter>Header Files</Filter>
@@ -213,9 +153,6 @@
     </ClInclude>
     <ClInclude Include="ResourceLoader.h">
       <Filter>Header Files\Resourceloaders</Filter>
-    </ClInclude>
-    <ClInclude Include="Mesh.h">
-      <Filter>Header Files\Resources</Filter>
     </ClInclude>
     <ClInclude Include="ResourceManagerFacade.h">
       <Filter>Header Files\Facades</Filter>
@@ -234,9 +171,6 @@
     </ClInclude>
     <ClInclude Include="StringToWStringConverter.h">
       <Filter>Header Files\Converters</Filter>
-    </ClInclude>
-    <ClInclude Include="DXVector3.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="KernelInterface.h">
       <Filter>Header Files</Filter>
@@ -265,12 +199,6 @@
     <ClInclude Include="XMLParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CInput.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CMesh.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Skybox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -292,9 +220,6 @@
     <ClInclude Include="Resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Heightmap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -305,9 +230,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CustomVertex.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CInput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TextureContainer.h">
@@ -338,6 +260,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RendererDx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

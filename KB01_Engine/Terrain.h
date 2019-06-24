@@ -10,12 +10,10 @@ class Renderer;
 class TextureContainer;
 class ResourceManager;
 
-/*
-** Name: Terrain
-** Description: The ground of the game that can be customized with a texture and placed on a position 
-** Parent: InputListener, so that it moves based on the keyboard and mouse input of the user
-** Parent: Entity, because it has a position in the world 
-*/
+
+/// <summary>
+/// The ground of the game that can be customized with a texture and placed on a position 
+/// </summary>
 class Terrain : public InputListener, public Entity
 {
 public:
@@ -30,9 +28,8 @@ public:
 
 	bool						Initialize(Renderer* renderer, char* rawFile, char* terrainTexture);	//Initialize the terrain by setting it's initial position and vertices
 	void						Render(Renderer* renderer);												//Function that is used to draw the terrain so that it is visible at all times
-	void						LoadTexture(ResourceManager* resourceManager, std::string textureName);							//retrieve the texture using a resource manager and saves it
+	void						LoadTexture(ResourceManager* resourceManager, std::string textureName); //Load the texture of the terrain using a resource manager					//retrieve the texture using a resource manager and saves it
 private:
-	//LPDIRECT3DTEXTURE9			_texture;															//the texture that is used to customize the terrain's looks
 	unsigned char*				_height;																//the height of the terrain
 	float						_speed;																	//the speed on which the terrain is moving
 	unsigned int				_numVertices;															//the amount of vertices that is used to draw the terrain
@@ -48,33 +45,7 @@ private:
 
 	void						Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y);		//the function that notifies the Renderer if the terrain should be drawn on another way
 	void						CleanUp();																//Deletes all pointers and variables that may cause memory leaks
-	/*void Reset();
-	void TranslateAbs(float x, float y, float z);
-	void TranslateRel(float x, float y, float z);
-	void RotateAbs(float x, float y, float z);
-	void RotateRel(float x, float y, float z);
-	void ScaleAbs(float x, float y, float z);
-	void ScaleRel(float x, float y, float z);
 
-	D3DXMATRIX* GetTransform();
-	float GetXPosition() { return m_translate._41; }
-	float GetYPosition() { return m_translate._42; }
-	float GetZPosition() { return m_translate._43; }
-	float GetXRotation() { return m_rotationX; }
-	float GetYRotation() { return m_rotationY; }
-	float GetZRotation() { return m_rotationZ; }
-	float GetXScale() { return m_scale._11; }
-	float GetYScale() { return m_scale._22; }
-	float GetZScale() { return m_scale._33; }
-	void SetXPosition(float x) { m_translate._41 = x; }
-	void SetYPosition(float y) { m_translate._42 = y; }
-	void SetZPosition(float z) { m_translate._43 = z; }
-	void SetXRotation(float x) { RotateAbs(x, m_rotationY, m_rotationZ); }
-	void SetYRotation(float y) { RotateAbs(m_rotationX, y, m_rotationZ); }
-	void SetZRotation(float z) { RotateAbs(m_rotationX, m_rotationY, z); }
-	void SetXScale(float x) { m_scale._11 = x; }
-	void SetYScale(float y) { m_scale._22 = y; }
-	void SetZScale(float z) { m_scale._33 = z; }*/
 };
 
 #endif

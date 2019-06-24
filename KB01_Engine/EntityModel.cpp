@@ -2,10 +2,6 @@
 #include <iostream>
 #include <vector>
 #include "Vector3.h"
-//#include <dinput.h> //does this also need to be removed?
-
-//#define KEYDOWN(name, key) (name[key])
-//#define MSTATE(name, key) (name[key])
 
 /// <summary>
 /// Initializes a new instance of the <see cref="EntityModel"/> class.

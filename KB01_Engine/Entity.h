@@ -6,6 +6,9 @@
 
 class Renderer;
 
+/// <summary>
+/// An entity is an object in the game that contains a position in the world that can be modified with matrices
+/// </summary>
 class Entity
 {
 protected:
@@ -33,10 +36,10 @@ public:
 	Matrix*				LookAtLH(Matrix* out, const Vector3* eye, const Vector3* at, const Vector3* pup);	//Builds a left-handed look-at matrix
 	Matrix*				PerspectiveFovLH(Matrix* out, float fovy, float aspect, float zn, float zf);		//Builds a left-handed perspective projection matrix based on a field of view
 	Matrix*				ResetMatrix(Matrix* out); //TODO
-	Matrix*				 Translate(Matrix* out, float x, float y, float z);						//Used to translate an object containing a matrix with specified x, y and z values
-	Matrix*				 RotateX(Matrix* out, float angle);										//Used to rotate an object containing a matrix on the x-axis
-	Matrix*				 RotateY(Matrix* out, float angle);										//Used to rotate an object containing a matrix on the y-axis
-	Matrix*				Scale(Matrix* out, float x, float y, float);								//Used to scale an object containing a matrix with an x, y and z value
-	Matrix*				 Scale(Matrix* out, Vector3 scaleVector);											//scale using a vector that contains the x,y and z value
+	Matrix*				Translate(Matrix* out, float x, float y, float z);									//Used to translate an object containing a matrix with specified x, y and z values
+	Matrix*				RotateX(Matrix* out, float angle);													//Used to rotate an object containing a matrix on the x-axis
+	Matrix*				RotateY(Matrix* out, float angle);													//Used to rotate an object containing a matrix on the y-axis
+	Matrix*				Scale(Matrix* out, float x, float y, float);										//Used to scale an object containing a matrix with an x, y and z value
+	Matrix*				Scale(Matrix* out, Vector3 scaleVector);											//Scale using a vector that contains the x,y and z value
 };
 #endif

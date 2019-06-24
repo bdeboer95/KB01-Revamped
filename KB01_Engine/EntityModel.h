@@ -4,9 +4,10 @@
 #include "Entity.h"
 #include "ResourceManager.h"
 #include "InputListener.h"
-#include "Device.h"
 
-
+/// <summary>
+/// The entitymodel is an entity that contains a mesh and texture
+/// </summary>
 class EntityModel : public InputListener, public Entity
 {
 private:

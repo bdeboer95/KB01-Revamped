@@ -1,9 +1,3 @@
-//-----------------------------------------------------------------------------
-// File: InputManager.cpp
-//
-// Desc: 
-//-----------------------------------------------------------------------------
-
 #include "InputManager.h"
 #include "Window.h"
 #include <iostream>
@@ -36,14 +30,6 @@ InputManager::~InputManager()
 	Log::Instance()->LogMessage("~InputManager - InputManager cleaned up!", Log::MESSAGE_INFO);
 }
 
-///// <summary>
-///// Gets the devices.
-///// </summary>
-///// <returns></returns>
-//std::vector<Device*> InputManager::GetDevices()
-//{
-//	return devices;
-//}
 
 /// <summary>
 /// Creates the device.
@@ -99,7 +85,7 @@ HRESULT InputManager::AddListener(InputListener* listenerPtr)
 }
 
 /// <summary>
-/// Updates this instance.
+/// Updates all the listeners that there may be notifications from the input devices
 /// </summary>
 void InputManager::Update()
 {

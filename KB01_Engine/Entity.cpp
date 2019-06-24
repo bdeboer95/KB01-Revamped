@@ -182,12 +182,12 @@ Matrix*  Entity::Translate(Matrix *out, float x, float y, float z)
 }
 
 /// <summary>
-/// Rotates the x.
+/// Transforms the matrix so that the values show rotation on the x-axis
 /// </summary>
 /// <param name="out">The out.</param>
 /// <param name="angle">The angle.</param>
 /// <returns></returns>
-Matrix*  Entity::RotateX(Matrix *out, float angle)
+Matrix* Entity::RotateX(Matrix *out, float angle)
 {
 	ResetMatrix(out);
 	out->m[1][1] = cos(angle);
@@ -198,7 +198,7 @@ Matrix*  Entity::RotateX(Matrix *out, float angle)
 }
 
 /// <summary>
-/// Rotates the y.
+///Transforms the matrix so that the values show rotation on the y-axis
 /// </summary>
 /// <param name="out">The out.</param>
 /// <param name="angle">The angle.</param>

@@ -17,9 +17,9 @@ TextureLoaderDx::~TextureLoaderDx()
 
 }
 
-Texture* TextureLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
+TextureContainer* TextureLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
 {
-	Texture* texture = new Texture(_fileName);
+	TextureContainer* texture = new TextureContainer(_fileName);
 
 	LPDIRECT3DTEXTURE9* meshTextures = new LPDIRECT3DTEXTURE9();
 
@@ -39,12 +39,12 @@ Texture* TextureLoaderDx::LoadResource(std::string _filePath, std::string _fileN
 		return NULL;
 	}
 
-	texture->SetTextures(meshTextures);
+	texture->SetTexture(meshTextures);
 
 	return texture;
 }
 
-void TextureLoaderDx::Cleanup()
+void TextureLoaderDx::CleanUp()
 {
-
+ //todo
 }

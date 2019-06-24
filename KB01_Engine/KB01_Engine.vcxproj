@@ -11,21 +11,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CFont.h" />
-    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CFramework.h" />
-    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CGraphics.h" />
-    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CIndexBuffer.h" />
     <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CInput.h" />
     <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CMesh.h" />
-    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CTimer.h" />
-    <ClInclude Include="..\..\KB01-2019\KB01-Revamped\KB01_Engine\CTriangleStripPlane.h" />
     <ClInclude Include="BMPLoader.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\resource.h" />
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="CUtility.h" />
-    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="CInput.h" />
     <ClInclude Include="CustomVertex.h" />
+    <ClInclude Include="NoobFacade.h" />
+    <ClInclude Include="Terrain.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityModel.h" />
     <ClInclude Include="IndexBuffer.h" />
@@ -33,7 +28,6 @@
     <ClInclude Include="KernelInterface.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Matrix.h" />
-    <ClInclude Include="MatrixMath.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="ResourceLoader.h" />
     <ClInclude Include="Heightmap.h" />
@@ -55,13 +49,13 @@
     <ClInclude Include="SceneManagerFacade.h" />
     <ClInclude Include="Skybox.h" />
     <ClInclude Include="StringToWStringConverter.h" />
-    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureContainer.h" />
     <ClInclude Include="TextureLoaderDx.h" />
     <ClInclude Include="DXVector3.h" />
     <ClInclude Include="TransformationEvent.h" />
+    <ClInclude Include="TriangleStripGenerator.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector3.h" />
-    <ClInclude Include="Vector3Math.h" />
     <ClInclude Include="Vertex.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
@@ -71,15 +65,10 @@
   <ItemGroup>
     <ClCompile Include="BMPLoader.cpp" />
     <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="CFramework.cpp" />
-    <ClCompile Include="CGraphics.cpp" />
-    <ClCompile Include="CIndexBuffer.cpp" />
     <ClCompile Include="CInput.cpp" />
     <ClCompile Include="CMesh.cpp" />
+    <ClCompile Include="NoobFacade.cpp" />
     <ClCompile Include="Terrain.cpp" />
-    <ClCompile Include="CTimer.cpp" />
-    <ClCompile Include="CTriangleStripPlane.cpp" />
-    <ClCompile Include="CUtility.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="EntityModel.cpp" />
     <ClCompile Include="Heightmap.cpp" />
@@ -103,11 +92,11 @@
     <ClCompile Include="SceneManagerFacade.cpp" />
     <ClCompile Include="Skybox.cpp" />
     <ClCompile Include="StringToWStringConverter.cpp" />
-    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureContainer.cpp" />
     <ClCompile Include="TextureLoaderDx.cpp" />
+    <ClCompile Include="TriangleStripGenerator.cpp" />
     <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="Vector3.cpp" />
-    <ClCompile Include="Vector3Math.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="WindowManagerFacade.cpp" />
@@ -116,6 +105,9 @@
   <ItemGroup>
     <Image Include="terrain.jpg" />
     <Image Include="terraingreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{02AB0373-88EC-451F-93EB-A21D8C241CF1}</ProjectGuid>
@@ -168,6 +160,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(DXSDK_DIR)Include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -175,12 +168,15 @@
     </Link>
     <Lib>
       <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d3d9.lib;d3dx9.lib; dxguid.lib;dinput8.lib;WinMM.lib;d3dxof.lib;d3dx9d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Lib>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
     </ProjectReference>
+    <Xdcmake>
+      <OutputFile>$(OutDir)$(TargetName)_API.xml</OutputFile>
+    </Xdcmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -212,5 +208,12 @@
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\TinyXml.SilverHorn.2.6.2.1\build\TinyXml.SilverHorn.targets" Condition="Exists('..\packages\TinyXml.SilverHorn.2.6.2.1\build\TinyXml.SilverHorn.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\TinyXml.SilverHorn.2.6.2.1\build\TinyXml.SilverHorn.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TinyXml.SilverHorn.2.6.2.1\build\TinyXml.SilverHorn.targets'))" />
+  </Target>
 </Project>

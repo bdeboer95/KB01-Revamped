@@ -12,6 +12,7 @@ namespace KB01EngineTest
 		
 		TEST_METHOD(MessageInfo)
 		{
+		
 			Log::Instance()->LogMessage("MessageInfo - Test Log", Log::MESSAGE_INFO);
 		}
 		TEST_METHOD(MessageWarning)

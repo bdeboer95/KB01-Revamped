@@ -11,6 +11,9 @@ namespace KB01EngineTest
 	{
 	public:
 
+		/// <summary>
+		/// Creates the new keyboard.
+		/// </summary>
 		TEST_METHOD(CreateNewKeyboard)
 		{
 			InputManager* inputManager = new InputManager();

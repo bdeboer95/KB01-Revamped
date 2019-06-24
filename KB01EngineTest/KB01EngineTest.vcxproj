@@ -57,7 +57,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(VCInstallDir)UnitTest\include;$(SolutionDir)KB01_Engine\Include\DirectX\Header;$(SolutionDir)KB01_Engine;%(AdditionalIncludeDirectories)$(SolutionDir)Include\Header;;$(SolutionDir)\Debug\KB01_Engine.lib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(VCInstallDir)UnitTest\include;$(DXSDK_DIR)Include;$(SolutionDir)KB01_Engine</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
     </ClCompile>

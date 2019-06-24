@@ -38,7 +38,7 @@ public:
 	Scene(int _levelIndex, HWND _hWnd, std::string _level);
 	~Scene();
 	Terrain* GetTerrain(); //gets the terrain entity on the scene
-	Entity* CreateEntityModel(std::string _meshName, std::string _textureName,float _positionX, float _positionY, float _positionZ);
+	Entity* CreateEntityModel(std::string _meshName, std::string _textureName,float _positionX, float _positionY, float _positionZ, Vector3 scaleVector);
 	void CreateViewPort(RECT _rect);
 	HRESULT SetupGeometry(ResourceManager* _resourceManager, Renderer* _renderer);
 	void DeleteViewPort();

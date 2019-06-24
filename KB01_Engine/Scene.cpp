@@ -15,10 +15,10 @@ Scene::Scene(int _levelIndex, HWND _hWnd, std::string _level)
 	Camera* cam = new Camera();
 	//entityModels.push_back(cam);
 	SceneLoader(_level);
-	CreateEntityModel("Tiger.x", "zebra.jpg", 1,-10, 25);
-	CreateEntityModel("Tiger.x", "zebra3.bmp", 2,-10, 25);
-	CreateEntityModel("Tiger.x", "zebra3.bmp", 3, -10, 25);
-	_terrain = new Terrain();
+	CreateEntityModel("Tiger.x", "zebra.jpg", 1,-20, 50, Vector3(5, 5, 5));
+	CreateEntityModel("Tiger.x", "zebra3.bmp", 6,-20, 50, Vector3(5, 5, 5));
+	CreateEntityModel("boxman.x", "tiger.bmp", 11, -20, 50,Vector3(0.1,0.1,0.1));
+	_terrain = new Terrain("terrain.jpg");
 	Log::Instance()->LogMessage("Scene - Scene created.", Log::MESSAGE_INFO);
 }
 
@@ -63,9 +63,9 @@ int Scene::GetLevelIndex()
 /// <summary>
 /// Creates the entity model.
 /// </summary>
-Entity* Scene::CreateEntityModel(std::string _meshName, std::string _textureName, float _positionX, float _positionY, float _positionZ)
+Entity* Scene::CreateEntityModel(std::string _meshName, std::string _textureName, float _positionX, float _positionY, float _positionZ, Vector3 scaleVector)
 {
-	EntityModel* entityModel = new EntityModel(_meshName, _textureName, _positionX, _positionY, _positionZ);
+	EntityModel* entityModel = new EntityModel(_meshName, _textureName, _positionX, _positionY, _positionZ, scaleVector);
 	entityModels.push_back(entityModel);
 	Log::Instance()->LogMessage("Scene - EntityModel created", Log::MESSAGE_INFO);
 	return entityModel;
@@ -100,6 +100,7 @@ HRESULT Scene::SetupGeometry(ResourceManager* _resourceManager, Renderer* _rende
 	sky.right = "skybox3_right.tga";
 	_skybox = new Skybox(sky);
 	_skybox->InitGeometry(_renderer, _resourceManager);
+	_terrain->LoadTexture(_resourceManager, "terrainbrown.jpg");
 	_terrain->Initialize(_renderer, "heightdata.raw", "terrainbrown.jpg");
 	ShowWindow(hWnd, SW_MAXIMIZE);
 	UpdateWindow(hWnd);
@@ -238,9 +239,9 @@ void Scene::GetEntityModelFromFile(std::string line)
 
 	while (getline(ss, str, ','))
 	{
-		if (str == "E1")
+		if (str == "<EntityModel>")
 		{
-			_terrain = new Terrain();
+			_terrain = new Terrain("terrain.jpg"); //todo filename
 		}
 
 		if (str == "E2")
@@ -250,7 +251,7 @@ void Scene::GetEntityModelFromFile(std::string line)
 
 		if (str == "E3")
 		{
-			CreateEntityModel(meshNames[2] + ".x", textureNames[2] + ".jpg", positioning[6], positioning[7], positioning[8]);
+			CreateEntityModel(meshNames[2] + ".x", textureNames[2] + ".jpg", positioning[6], positioning[7], positioning[8], Vector3(1,1,1));
 		}
 	}
 }

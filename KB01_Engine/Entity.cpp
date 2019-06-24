@@ -1,56 +1,79 @@
 #include "Entity.h"
-#include "Vector3Math.h"
 #include <math.h>
 #include "Renderer.h"
+#include "Vector3.h"
 
-Entity:: Entity() {
+
+/// <summary>
+/// Initializes a new instance of the <see cref="Entity"/> class.
+/// </summary>
+Entity::Entity() {
 	Reset();
 }
-Entity::~Entity() {
 
+
+/// <summary>
+/// Finalizes an instance of the <see cref="Entity"/> class.
+/// </summary>
+Entity::~Entity() {
+	delete _matTranslate;
+	delete _matRotateX;
+	delete _matRotateY;
+	delete _matRotateZ;
+	delete _matScale;
+	delete _matWorld;
+	//todo
 }
+
 /// <summary>
 /// Resets all the transformation matrices to their default matrix values
 /// </summary>
 void Entity::Reset()
 {
-	MatrixIdentity(&_matTranslate);
-	MatrixIdentity(&_matRotateX);
-	MatrixIdentity(&_matRotateY);
-	MatrixIdentity(&_matRotateZ);
-	MatrixIdentity(&_matScale);
-	MatrixIdentity(&_matWorld);
+	ResetMatrix(&_matTranslate);
+	ResetMatrix(&_matRotateX);
+	ResetMatrix(&_matRotateY);
+	ResetMatrix(&_matRotateZ);
+	ResetMatrix(&_matScale);
+	ResetMatrix(&_matWorld);
 	_rotationX = 0.0f;
 	_rotationY = 0.0f;
 	_rotationZ = 0.0f;
 
 }
 
+/// <summary>
+/// Looks at lh.
+/// </summary>
+/// <param name="out">The out.</param>
+/// <param name="eye">The eye.</param>
+/// <param name="at">At.</param>
+/// <param name="pup">The pup.</param>
+/// <returns></returns>
 Matrix* Entity::LookAtLH(Matrix* out, const Vector3* eye, const Vector3* at, const Vector3* pup)
 {
 	Vector3 right, rightn, up, upn, vec, vec2;
-	Vector3Math* vector3Math = new Vector3Math();
 
-	vector3Math->Vec3Subtract(&vec2, at, eye);
-	vector3Math->Vec3Normalize(&vec, &vec2);
-	vector3Math->Vec3Cross(&right, pup, &vec);
+	Vector3::Vec3Subtract(&vec2, at, eye);
+	Vector3::Vec3Normalize(&vec, &vec2);
+	Vector3::Vec3Cross(&right, pup, &vec);
 
-	vector3Math->Vec3Cross(&up, &vec, &right);
-	vector3Math->Vec3Normalize(&rightn, &right);
-	vector3Math->Vec3Normalize(&upn, &up);
+	Vector3::Vec3Cross(&up, &vec, &right);
+	Vector3::Vec3Normalize(&rightn, &right);
+	Vector3::Vec3Normalize(&upn, &up);
 
-	out->m[0][0] = rightn._x;
-	out->m[1][0] = rightn._y;
-	out->m[2][0] = rightn._z;
-	out->m[3][0] = -vector3Math->Vec3Dot(&rightn, eye);
-	out->m[0][1] = upn._x;
-	out->m[1][1] = upn._y;
-	out->m[2][1] = upn._z;
-	out->m[3][1] = -vector3Math->Vec3Dot(&upn, eye);
-	out->m[0][2] = vec._x;
-	out->m[1][2] = vec._y;
-	out->m[2][2] = vec._z;
-	out->m[3][2] = -vector3Math->Vec3Dot(&vec, eye);
+	out->m[0][0] = rightn.GetX();
+	out->m[1][0] = rightn.GetY();
+	out->m[2][0] = rightn.GetZ();
+	out->m[3][0] = Vector3::Vec3Dot(&rightn, eye);
+	out->m[0][1] = upn.GetX();
+	out->m[1][1] = upn.GetY();
+	out->m[2][1] = upn.GetZ();
+	out->m[3][1] = Vector3::Vec3Dot(&upn, eye);
+	out->m[0][2] = vec.GetX();
+	out->m[1][2] = vec.GetY();
+	out->m[2][2] = vec.GetZ();
+	out->m[3][2] = Vector3::Vec3Dot(&vec, eye);
 	out->m[0][3] = 0.0f;
 	out->m[1][3] = 0.0f;
 	out->m[2][3] = 0.0f;
@@ -60,9 +83,18 @@ Matrix* Entity::LookAtLH(Matrix* out, const Vector3* eye, const Vector3* at, con
 
 }
 
+/// <summary>
+/// Perspectives the fov lh.
+/// </summary>
+/// <param name="out">The out.</param>
+/// <param name="fovy">The fovy.</param>
+/// <param name="aspect">The aspect.</param>
+/// <param name="zn">The zn.</param>
+/// <param name="zf">The zf.</param>
+/// <returns></returns>
 Matrix* Entity::PerspectiveFovLH(Matrix* out, float fovy, float aspect, float zn, float zf)
 {
-	MatrixIdentity(out);
+	ResetMatrix(out);
 	out->m[0][0] = 1.0f / (aspect * tan(fovy / 2.0f));
 	out->m[1][1] = 1.0f / tan(fovy / 2.0f);
 	out->m[2][2] = zf / (zf - zn);
@@ -72,8 +104,13 @@ Matrix* Entity::PerspectiveFovLH(Matrix* out, float fovy, float aspect, float zn
 	return out;
 }
 
-
-Matrix* Entity::MatrixIdentity(Matrix* out)
+/// <summary>
+/// Resets the matrix to the default matrix values
+/// The last 4 would be 1, while the rest is 0
+/// </summary>
+/// <param name="out"> The matrix that needs to be reset </param>
+/// <returns>the matrix that was resetted</returns>
+Matrix* Entity::ResetMatrix(Matrix* out)
 {
 	if (!out) return NULL;
 	out->m[0][1] = 0.0f;
@@ -94,27 +131,65 @@ Matrix* Entity::MatrixIdentity(Matrix* out)
 	out->m[3][3] = 1.0f;
 	return out;
 }
-Matrix* __stdcall Entity::Scale(Matrix *out, float x, float y, float z)
+
+/// <summary>
+/// Scales the specified matrix with separate x, y and z values
+/// </summary>
+/// <param name="out">The out.</param>
+/// <param name="x">The x.</param>
+/// <param name="y">The y.</param>
+/// <param name="z">The z.</param>
+/// <returns></returns>
+Matrix*  Entity::Scale(Matrix* out, float x, float y, float z)
 {
-	MatrixIdentity(out);
-	out->m[0][0] = x;
-	out->m[1][1] = y;
-	out->m[2][2] = z;
+	ResetMatrix(out);
+	out->m[0][0] = x; //set the x-scale in the array
+	out->m[1][1] = y; //set the y-scale in the matrix array
+	out->m[2][2] = z; //set the z-scale in the matrix array
 	return out;
 }
 
-Matrix* __stdcall Entity::Translate(Matrix *out, float x, float y, float z)
+/// <summary>
+/// Scales the specified matrix with a scale vector
+/// </summary>
+/// <param name="out">The out.</param>
+/// <param name="scaleVector">The scale vector.</param>
+/// <returns></returns>
+Matrix* Entity::Scale(Matrix* out, Vector3 scaleVector)
 {
-	MatrixIdentity(out);
+	ResetMatrix(out);
+	out->m[0][0] = scaleVector.GetX(); //set the x-scale in the array
+	out->m[1][1] = scaleVector.GetY(); //set the y-scale in the matrix array
+	out->m[2][2] = scaleVector.GetZ(); //set the z-scale in the matrix array
+	return out;
+}
+
+/// <summary>
+/// Translates the specified out.
+/// </summary>
+/// <param name="out">The out.</param>
+/// <param name="x">The x.</param>
+/// <param name="y">The y.</param>
+/// <param name="z">The z.</param>
+/// <returns></returns>
+Matrix*  Entity::Translate(Matrix *out, float x, float y, float z)
+{
+	ResetMatrix(out);
 	out->m[3][0] = x;
 	out->m[3][1] = y;
 	out->m[3][2] = z;
 	return out;
 }
 
-Matrix* __stdcall Entity::RotateX(Matrix *out, float angle)
+/// <summary>
+/// Rotates the x.
+/// </summary>
+/// <param name="out">The out.</param>
+/// <param name="angle">The angle.</param>
+/// <returns></returns>
+Matrix*  Entity::RotateX(Matrix *out, float angle)
 {
-	MatrixIdentity(out);
+	ResetMatrix(out);
 	out->m[1][1] = cos(angle);
 	out->m[2][2] = cos(angle);
 	out->m[1][2] = sin(angle);
@@ -122,107 +197,18 @@ Matrix* __stdcall Entity::RotateX(Matrix *out, float angle)
 	return out;
 }
 
-Matrix* __stdcall Entity::RotateY(Matrix *out, float angle)
+/// <summary>
+/// Rotates the y.
+/// </summary>
+/// <param name="out">The out.</param>
+/// <param name="angle">The angle.</param>
+/// <returns></returns>
+Matrix*  Entity::RotateY(Matrix *out, float angle)
 {
-	MatrixIdentity(out);
+	ResetMatrix(out);
 	out->m[0][0] = cos(angle);
 	out->m[2][2] = cos(angle);
 	out->m[0][2] = -sin(angle);
 	out->m[2][0] = sin(angle);
 	return out;
 }
-///* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-//Summary: Absolute translation
-//Parameters:
-//[in] x - X position
-//[in] y - Y position
-//[in] z - Z position
-//* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-//void CWorldTransform::TranslateAbs(float x, float y, float z)
-//{
-//	m_translate._41 = x;
-//	m_translate._42 = y;
-//	m_translate._43 = z;
-//}
-//
-///* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-//Summary: Relative translation
-//Parameters:
-//[in] x - X amount
-//[in] y - Y amount
-//[in] z - Z amount
-//* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-//void CWorldTransform::TranslateRel(float x, float y, float z)
-//{
-//	m_translate._41 += x;
-//	m_translate._42 += y;
-//	m_translate._43 += z;
-//}
-//
-///* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-//Summary: Absolute rotation
-//Parameters:
-//[in] x - X radians
-//[in] y - Y radians
-//[in] z - Z radians
-//* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-//void CWorldTransform::RotateAbs(float x, float y, float z)
-//{
-//	m_rotationX = x;
-//	m_rotationY = y;
-//	m_rotationZ = z;
-//	D3DXMatrixRotationYawPitchRoll(&m_rotate, y, x, z);
-//}
-//
-///* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-//Summary: Relative rotation
-//Parameters:
-//[in] x - X radians
-//[in] y - Y radians
-//[in] z - Z radians
-//* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-//void CWorldTransform::RotateRel(float x, float y, float z)
-//{
-//	m_rotationX += x;
-//	m_rotationY += y;
-//	m_rotationZ += z;
-//	D3DXMatrixRotationYawPitchRoll(&m_rotate, m_rotationY, m_rotationX, m_rotationZ);
-//}
-//
-///* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-//Summary: Absolute scale.
-//Parameters:
-//[in] x - X size
-//[in] y - Y size
-//[in] z - Z size
-//* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-//void CWorldTransform::ScaleAbs(float x, float y, float z)
-//{
-//	m_scale._11 = x;
-//	m_scale._22 = y;
-//	m_scale._33 = z;
-//}
-//
-///* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-//Summary: Relative scale.
-//Parameters:
-//[in] x - X size
-//[in] y - Y size
-//[in] z - Z size
-//* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-//void CWorldTransform::ScaleRel(float x, float y, float z)
-//{
-//	m_scale._11 += x;
-//	m_scale._22 += y;
-//	m_scale._33 += z;
-//}
-//
-///* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-//Summary: Get the transformation matrix
-//* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-//D3DXMATRIX* CWorldTransform::GetTransform()
-//{
-//
-//	m_transform = m_scale * m_rotate * m_translate;
-//	return &m_transform;
-//}

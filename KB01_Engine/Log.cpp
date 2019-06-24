@@ -25,14 +25,15 @@ Log* Log::instancePtr;
 	- Each line in a file stored in the Common Log Format has the following syntax:
 
 	user				date					description			status					operating system	directory
-	Christiaan Modes	[Nov 17 2015 18:40:16]	"This is an error"	"Build not succesful"	Windows             C://Users/Jeroen/Desktop/KB01_Engine.exe
+	Babita de Boer	[Nov 17 2015 18:40:16]	"This is an error"	"Build not succesful"	Windows             C://Users/bdeboer/Desktop/KB01_Engine.exe
 	*/
 
 
-/// <summary>
-/// Instances this instance.
-/// </summary>
-/// <returns></returns>
+
+	/// <summary>
+	/// Instances this instance.
+	/// </summary>
+	/// <returns></returns>
 Log* Log::Instance()
 {
 	if (!instancePtr)
@@ -51,7 +52,7 @@ Log* Log::Instance()
 /// </summary>
 Log::Log()
 {
-	fs.open("engine_log.txt", std::fstream::in | std::fstream::out | std::fstream::app);
+	fs.open("KB01_Engine_Log.txt", std::fstream::in | std::fstream::out | std::fstream::app);
 
 	std::string dateAndTime = GetCurrentDateAndTime();
 	std::string userName = GetCurrentUser();
@@ -139,14 +140,13 @@ std::string Log::GetOperatingSystem()
 /// <summary>
 /// Gets the directory.
 /// tempPath << charPath --> converts the path from char to stringstream (a char can not be returned as a string)
-///	tempPatg >> s		--> converts the stringstream object to a string so we can return it
 ///	_pgmptr				--> global variable that contains the full path to the executable file associated with the process (application)
 ///	_get_pgmptr			--> gets the value of the pgmptr variable, which in this case is f.e C:\Users\BdeBoer\Source\Workspaces\Workspace\KB01\KB01_Engine\Debug\KB01_Engine.exe
 /// </summary>
 /// <returns></returns>
 std::string Log::GetDirectory()
 {
-	std::stringstream tempPath;
+	std::stringstream tempPath;// converts the stringstream object to a string so we can return it
 	std::string stringPath;
 	CHAR buffer[MAX_PATH];
 	char* charPath;

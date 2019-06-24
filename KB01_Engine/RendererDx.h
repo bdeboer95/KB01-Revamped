@@ -2,14 +2,14 @@
 #define __RENDERERDX_H__
 
 #define D3DFVF_CUSTOMVERTEX (D3DFVF_XYZ|D3DFVF_DIFFUSE)
-#define DIRECT3DTEXTURE(texture) (static_cast<LPDIRECT3DTEXTURE9*>(texture)) //need to delete these
+//#define DIRECT3DTEXTURE(texture) () //need to delete these
 #define DIRECT3DMATERIAL(material) (static_cast<D3DMATERIAL9*> (material))
 #define DIRECT3DMESH(mesh) (static_cast<LPD3DXMESH>(mesh))
 #define DIRECT3DPRIMITIVETYPE(primitiveType) (static_cast<D3DPRIMITIVETYPE*> (primitiveType))
 
 #include "Renderer.h"
 #include <mmsystem.h>
-#include "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9.h"
+#include "d3dx9.h"
 #include <DXGI1_2.h>
 #include "Log.h"
 

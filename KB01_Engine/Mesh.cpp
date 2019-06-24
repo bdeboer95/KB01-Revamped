@@ -2,15 +2,18 @@
 
 Mesh::Mesh(std::string _fileName)
 {
-	fileName = _fileName;
+	_fileName = _fileName;
 }
 
+/// <summary>
+/// Destructor
+/// </summary>
 Mesh::~Mesh()
 {
 
 }
 
-void Mesh::SetNumberOfMaterials(UINT _numberOfMaterials)
+void Mesh::SetNumberOfMaterials(unsigned int _numberOfMaterials)
 {
 	numberOfMaterials = _numberOfMaterials;
 }
@@ -35,17 +38,12 @@ void* Mesh::GetMeshTextures()
 	return meshTextures;
 }
 
-UINT Mesh::GetNumberOfMaterials()
+unsigned int Mesh::GetNumberOfMaterials()
 {
 	return numberOfMaterials;
 }
 
-void Mesh::Cleanup()
-{
-	delete meshMaterials;
-	delete meshTextures;
-	//delete numberOfMaterials;
-}
+
 
 void Mesh::SetMesh(void* _mesh)
 {
@@ -55,4 +53,13 @@ void Mesh::SetMesh(void* _mesh)
 void* Mesh::GetMesh()
 {
 	return mesh;
+}
+/// <summary>
+/// Deletes all pointers and/or variables that may cause memory leaks
+/// </summary>
+void Mesh::CleanUp()
+{
+	delete meshMaterials;
+	delete meshTextures;
+	//delete numberOfMaterials;
 }

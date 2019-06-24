@@ -10,12 +10,12 @@
 class ResourceLoader
 {
 protected:
-	Renderer*				renderer;
+	Renderer*				renderer;			//The renderer that is used to load the resources
 
 public:
-	virtual	~ResourceLoader(){};
-	virtual Resource*		LoadResource(std::string _filePath, std::string _fileName) = 0;
-	virtual void			Cleanup() = 0;
+	virtual					~ResourceLoader(){}; //Deconstructor
+	virtual Resource*		LoadResource(std::string _filePath, std::string _fileName) = 0; //Load a resource from a file path and filename
+	virtual void			CleanUp() = 0; //The resourceLoader does not have an implementation for this function, but all his children do
 };
 
 #endif

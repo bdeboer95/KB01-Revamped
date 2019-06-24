@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--   VSdocman config file.-->
+<appSettings>
+  <add key="VBdocman_xmlCommentLinePrefixVb"><![CDATA[''']]></add>
+  <add key="VBdocman_checkForUpdatesInterval"><![CDATA[7]]></add>
+  <add key="VBdocman_nonModalEditorAutoApply"><![CDATA[-1]]></add>
+  <add key="VBdocman_SourceViewBackgroundColor"><![CDATA[#FFFFFF]]></add>
+  <add key="VBdocman_AutoCommentSettings"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<!--Auto-commenting settings-->
+<comment_settings>
+  <comment_setting id="method">
+    <common_comments>$IFNOTEMPTY$ $TYPE-PARAMETERS$
+$TYPE-PARAMETERS$$END-IFNOTEMPTY$&lt;remarks&gt;&lt;/remarks&gt;</common_comments>
+    <try_inherit>yes</try_inherit>
+    <rules>
+      <comment_rule kind="method">
+        <protected>no</protected>
+        <name>Finalize method</name>
+        <comment_template>&lt;summary&gt;
+$CURSOR$Releases unmanaged resources and performs other cleanup operations before
+the &lt;see cref="$DECLARING-TYPE-CREF$"/&gt; is reclaimed by garbage collection. 
+&lt;/summary&gt;$IFNOTEMPTY$ $PARAMETERS$
+$PARAMETERS$$END-IFNOTEMPTY$</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Method Name</input_display_name>
+            <pattern>.*\.Finalize</pattern>
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Return Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+      <comment_rule kind="method">
+        <protected>no</protected>
+        <name>Dispose method</name>
+        <comment_template>$IFNOTEMPTY$ $PARAMETERS$
+&lt;summary&gt;
+$CURSOR$Releases the unmanaged resources used by the 
+&lt;see cref="$DECLARING-TYPE-CREF$"/&gt; and optionally releases the managed resources.
+&lt;/summary&gt;$PARAMETERS$$ELSEIF$&lt;summary&gt;
+Releases all resources used by the.
+&lt;see cref="$DECLARING-TYPE-CREF$"/&gt;
+&lt;/summary&gt;$END-IFNOTEMPTY$</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Method Name</input_display_name>
+            <pattern>.*\.Dispose</pattern>
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Return Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+      <comment_rule kind="method">
+        <protected>no</protected>
+        <name>Method with no return value</name>
+        <comment_template>&lt;summary&gt;
+$CURSOR$
+&lt;/summary&gt;$IFNOTEMPTY$ $PARAMETERS$
+$PARAMETERS$$END-IFNOTEMPTY$</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Method Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Return Type</input_display_name>
+            <pattern>(|System\.Void)</pattern>
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+      <comment_rule kind="method">
+        <protected>yes</protected>
+        <name>Default Method Comment</name>
+        <comment_template>&lt;summary&gt;
+$CURSOR$
+&lt;/summary&gt;$IFNOTEMPTY$ $PARAMETERS$
+$PARAMETERS$$END-IFNOTEMPTY$
+&lt;returns&gt;&lt;/returns&gt;</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Method Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Return Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+    </rules>
+  </comment_setting>
+  <comment_setting id="constructor">
+    <common_comments>$IFNOTEMPTY$ $TYPE-PARAMETERS$
+$TYPE-PARAMETERS$$END-IFNOTEMPTY$&lt;remarks&gt;&lt;/remarks&gt;</common_comments>
+    <try_inherit>no</try_inherit>
+    <rules>
+      <comment_rule kind="constructor">
+        <protected>yes</protected>
+        <name>Default Constructor Comment</name>
+        <comment_template>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref="$DECLARING-TYPE-CREF$"/&gt; $DECLARING-TYPE-KIND$. 
+&lt;/summary&gt;$IFNOTEMPTY$ $PARAMETERS$
+$PARAMETERS$$END-IFNOTEMPTY$</comment_template>
+        <name_condition>
+          <comment_condition enabled="no">
+            <input_display_name>Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Declaring Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+    </rules>
+  </comment_setting>
+  <comment_setting id="property">
+    <common_comments>$IFNOTEMPTY$ $TYPE-PARAMETERS$
+$TYPE-PARAMETERS$$END-IFNOTEMPTY$&lt;remarks&gt;&lt;/remarks&gt;</common_comments>
+    <try_inherit>yes</try_inherit>
+    <rules>
+      <comment_rule kind="property">
+        <protected>no</protected>
+        <name>Boolean property starting with "Is"</name>
+        <comment_template>$IFNOTEMPTY$ $DESCRIPTION-ATTRIBUTE$
+&lt;summary&gt;
+$DESCRIPTION-ATTRIBUTE$
+&lt;/summary&gt;$ELSEIF$&lt;summary&gt;
+$PROPERTY-GET-OR-SET$ a value indicating whether this instance $CURSOR$.
+&lt;/summary&gt;$END-IFNOTEMPTY$$IFNOTEMPTY$ $PARAMETERS$
+$PARAMETERS$$END-IFNOTEMPTY$
+&lt;value&gt;&lt;see langword="true"/&gt; if this instance $CURSOR$; otherwise, &lt;see langword="false"/&gt;.&lt;/value&gt;</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Property Name</input_display_name>
+            <pattern>.*\.(is|Is)[A-Z].*</pattern>
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Value Type</input_display_name>
+            <pattern>System\.Boolean</pattern>
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+      <comment_rule kind="property">
+        <protected>no</protected>
+        <name>Boolean property</name>
+        <comment_template>$IFNOTEMPTY$ $DESCRIPTION-ATTRIBUTE$
+&lt;summary&gt;
+$DESCRIPTION-ATTRIBUTE$
+&lt;/summary&gt;$ELSEIF$&lt;summary&gt;
+$PROPERTY-GET-OR-SET$ a value indicating whether $CURSOR$.
+&lt;/summary&gt;$END-IFNOTEMPTY$$IFNOTEMPTY$ $PARAMETERS$
+$PARAMETERS$$END-IFNOTEMPTY$
+&lt;value&gt;&lt;see langword="true"/&gt; if $CURSOR$; otherwise, &lt;see langword="false"/&gt;.&lt;/value&gt;</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Property Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Value Type</input_display_name>
+            <pattern>System\.Boolean</pattern>
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+      <comment_rule kind="property">
+        <protected>yes</protected>
+        <name>Default Property Comment</name>
+        <comment_template>$IFNOTEMPTY$ $DESCRIPTION-ATTRIBUTE$
+&lt;summary&gt;
+$DESCRIPTION-ATTRIBUTE$
+&lt;/summary&gt;$ELSEIF$&lt;summary&gt;
+$PROPERTY-GET-OR-SET$ $CURSOR$.
+&lt;/summary&gt;$END-IFNOTEMPTY$$IFNOTEMPTY$ $PARAMETERS$
+$PARAMETERS$$END-IFNOTEMPTY$
+&lt;value&gt;$CURSOR$&lt;/value&gt;</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Property Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Value Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+    </rules>
+  </comment_setting>
+  <comment_setting id="event">
+    <common_comments>$IFNOTEMPTY$ $TYPE-PARAMETERS$
+$TYPE-PARAMETERS$$END-IFNOTEMPTY$&lt;remarks&gt;&lt;/remarks&gt;</common_comments>
+    <try_inherit>no</try_inherit>
+    <rules>
+      <comment_rule kind="event">
+        <protected>yes</protected>
+        <name>Default Event Comment</name>
+        <comment_template>&lt;summary&gt;
+Occurs when $CURSOR$. 
+&lt;/summary&gt;$IFNOTEMPTY$ $PARAMETERS$
+$PARAMETERS$$END-IFNOTEMPTY$</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Event Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="no">
+            <input_display_name>Return Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+    </rules>
+  </comment_setting>
+  <comment_setting id="class">
+    <common_comments>$IFNOTEMPTY$ $TYPE-PARAMETERS$
+$TYPE-PARAMETERS$$END-IFNOTEMPTY$&lt;remarks&gt;&lt;/remarks&gt;</common_comments>
+    <try_inherit>no</try_inherit>
+    <rules>
+      <comment_rule kind="class">
+        <protected>yes</protected>
+        <name>Default</name>
+        <comment_template>&lt;summary&gt;
+$CURSOR$
+&lt;/summary&gt;</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="no">
+            <input_display_name>Return Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+    </rules>
+  </comment_setting>
+  <comment_setting id="interface">
+    <common_comments>$IFNOTEMPTY$ $TYPE-PARAMETERS$
+$TYPE-PARAMETERS$$END-IFNOTEMPTY$&lt;remarks&gt;&lt;/remarks&gt;</common_comments>
+    <try_inherit>no</try_inherit>
+    <rules>
+      <comment_rule kind="class">
+        <protected>yes</protected>
+        <name>Default</name>
+        <comment_template>&lt;summary&gt;
+$CURSOR$
+&lt;/summary&gt;</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="no">
+            <input_display_name>Return Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+    </rules>
+  </comment_setting>
+  <comment_setting id="structure">
+    <common_comments>$IFNOTEMPTY$ $TYPE-PARAMETERS$
+$TYPE-PARAMETERS$$END-IFNOTEMPTY$&lt;remarks&gt;&lt;/remarks&gt;</common_comments>
+    <try_inherit>no</try_inherit>
+    <rules>
+      <comment_rule kind="class">
+        <protected>yes</protected>
+        <name>Default</name>
+        <comment_template>&lt;summary&gt;
+$CURSOR$
+&lt;/summary&gt;</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="no">
+            <input_display_name>Return Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+    </rules>
+  </comment_setting>
+  <comment_setting id="field">
+    <common_comments>&lt;remarks&gt;&lt;/remarks&gt;</common_comments>
+    <try_inherit>no</try_inherit>
+    <rules>
+      <comment_rule kind="field">
+        <protected>yes</protected>
+        <name>Default Field Comment</name>
+        <comment_template>&lt;summary&gt;
+$CURSOR$
+&lt;/summary&gt;</comment_template>
+        <name_condition>
+          <comment_condition enabled="no">
+            <input_display_name>Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="no">
+            <input_display_name>Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+    </rules>
+  </comment_setting>
+  <comment_setting id="parameter">
+    <common_comments />
+    <try_inherit>yes</try_inherit>
+    <rules>
+      <comment_rule kind="parameter">
+        <protected>no</protected>
+        <name>Boolean parameter</name>
+        <comment_template>If set to &lt;see langword="true"/&gt;, then $CURSOR$; otherwise, .</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Parameter Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Parameter Type</input_display_name>
+            <pattern>System\.Boolean</pattern>
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+      <comment_rule kind="parameter">
+        <protected>no</protected>
+        <name>*EventArgs parameter</name>
+        <comment_template>An &lt;see cref="$TYPE-CREF$"/&gt; that contains the event data.</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Parameter Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Parameter Type</input_display_name>
+            <pattern>.*EventArgs</pattern>
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+      <comment_rule kind="parameter">
+        <protected>no</protected>
+        <name>sender parameter</name>
+        <comment_template>The source of the event.</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Parameter Name</input_display_name>
+            <pattern>sender</pattern>
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Parameter Type</input_display_name>
+            <pattern>System\.Object</pattern>
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+      <comment_rule kind="parameter">
+        <protected>yes</protected>
+        <name>Default Parameter Comment</name>
+        <comment_template>$CURSOR$</comment_template>
+        <name_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Parameter Name</input_display_name>
+            <pattern />
+          </comment_condition>
+        </name_condition>
+        <type_condition>
+          <comment_condition enabled="yes">
+            <input_display_name>Parameter Type</input_display_name>
+            <pattern />
+          </comment_condition>
+        </type_condition>
+      </comment_rule>
+    </rules>
+  </comment_setting>
+</comment_settings>]]></add>
+  <add key="VBdocman_autoUpdateParams"><![CDATA[0]]></add>
+  <add key="VBdocman_xmlCommentLinePrefixCsharp"><![CDATA[///]]></add>
+  <add key="VBdocman_HighlightRegionBorderColor"><![CDATA[#FF8000]]></add>
+  <add key="VBdocman_InterceptVsAutoComment"><![CDATA[-1]]></add>
+  <add key="VBdocman_HhcPath"><![CDATA[]]></add>
+  <add key="VBdocman_nonModalEditorAutoUpdate"><![CDATA[0]]></add>
+  <add key="VBdocman_SourceViewForeColor"><![CDATA[#008000]]></add>
+  <add key="VBdocman_useModalEditor"><![CDATA[0]]></add>
+  <add key="VBdocman_wordWrapLength"><![CDATA[80]]></add>
+  <add key="VBdocman_hxcompPath"><![CDATA[]]></add>
+  <add key="VBdocman_commentStyleRecognize"><![CDATA[3]]></add>
+  <add key="VBdocman_HighlightRegionNoneditableBgColor"><![CDATA[#EEEEEE]]></add>
+  <add key="VBdocman_SourceViewFont"><![CDATA[Consolas, 10pt]]></add>
+</appSettings>

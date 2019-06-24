@@ -191,7 +191,7 @@ Parameters:
 [in] FVF - Flexible Vertex Format
 [in] vertexSize - Size of the vertex structure
 [in] dynamic - TRUE for dynamic buffer, FALSE for static buffer
-Returns: TRUE on success, FALSE on failure
+Returns: true on success, false on failure
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 bool RendererDx::CreateVertexBuffer(unsigned int numVertices, unsigned int vertexSize, unsigned long fvf, HANDLE handle, bool dynamic)
 {
@@ -221,9 +221,9 @@ void RendererDx::CreateIndexBuffer(unsigned int numIndices, unsigned long format
 
 	if (FAILED(_direct3DDevice->CreateIndexBuffer(length, usage, static_cast<D3DFORMAT>(format), pool, &_indexBuffer, NULL)))
 	{
-		Log::Instance()->LogMessage("RendererDx - Failed to create vertexbuffer", Log::MESSAGE_ERROR);
-
+		Log::Instance()->LogMessage("RendererDx - Failed to create indexbuffer", Log::MESSAGE_ERROR);
 	}
+	Log::Instance()->LogMessage("RendererDx - Indexbuffer is created", Log::MESSAGE_INFO);
 }
 /// <summary>
 /// Gets the vertex buffer.
@@ -375,11 +375,12 @@ void RendererDx::SetMaterial(void* material, unsigned int index)
 /// </summary>
 void RendererDx::SetTexture(void* texture, unsigned int index)
 {
-
-	if (FAILED(_direct3DDevice->SetTexture(0, DIRECT3DTEXTURE(texture)[index])))
+	LPDIRECT3DTEXTURE9* direct3DTexture = static_cast<LPDIRECT3DTEXTURE9*>(texture);
+	if (FAILED(_direct3DDevice->SetTexture(0, static_cast<LPDIRECT3DTEXTURE9*>(direct3DTexture)[index])))
 	{
 		Log::Instance()->LogMessage("RendererDx - Texture was failed to set to the direct3DDevice", Log::MESSAGE_ERROR);
 	}
+	static_cast<LPDIRECT3DDEVICE9>(GetDevice())->SetTexture(0, *direct3DTexture);//TODO
 
 }
 

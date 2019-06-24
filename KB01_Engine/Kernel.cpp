@@ -1,19 +1,8 @@
-//-----------------------------------------------------------------------------
-// File: Kernel.cpp
-//
-
-//
-// Desc: 
-//-----------------------------------------------------------------------------
 #include "Kernel.h"
-
 #include <iostream>
 #include <vector>
 
-#include "wtypes.h"
 
-#define KEYDOWN(name, key) (name[key])
-#define MSTATE(name, key) (name[key])
 
 /// <summary>
 /// Initializes a new instance of the <see cref="Kernel"/> class.
@@ -29,13 +18,13 @@ Kernel::Kernel()
 /// </summary>
 Kernel::~Kernel()
 {
-	DeleteAllManagers();
+	CleanUp();
 	Log::Instance()->LogMessage("~Kernel - Everything is cleaned up!", Log::MESSAGE_INFO);
 	std::exit(0);
 }
 
 /// <summary>
-/// Initializes this instance.
+/// Initializes the managers needed to handle the game
 /// </summary>
 void Kernel::Init()
 {
@@ -63,8 +52,11 @@ void Kernel::LoadLevel(const std::string &_level)
 	RECT rect = { 100, 100, 500, 500 };
 	HWND hwnd1 = windowManager->CreateNewWindow(rect, "Choo Choo")->GetHandler(); //std::string, OS--> LPWCSTR
 	renderer->InitDevice(hwnd1);
+	HWND hwnd2= windowManager->CreateNewWindow(rect, "Choo Choo2")->GetHandler(); //std::string, OS--> LPWCSTR
+	renderer->InitDevice(hwnd2);
 	HWND hwndC = GetConsoleWindow();
 	sceneManager->CreateScene(1, hwnd1, _level); //WORdt een methode
+	sceneManager->CreateScene(1, hwnd2, _level); //WORdt een methode
 	//sceneManager->CreateScene(1, hwnd1, "level1.txt");
 	/*sceneManager->CreateScene(0, 255, 255, 1, hwnd1);
 	sceneManager->CreateScene(228, 164, 228, 1, hwnd1);*/
@@ -182,16 +174,13 @@ void Kernel::Notify(TRANSFORMATIONEVENT transformationEvent, float x , float y )
 }
 
 /// <summary>
-/// Deletes all managers.
+/// Deletes all pointers and/or variables that can cause memory leaks
 /// </summary>
-void Kernel::DeleteAllManagers()
+void Kernel::CleanUp()
 {
 	delete windowManager;
 	delete resourceManager;
 	delete sceneManager;
 	delete inputManager;
-
 	delete renderer;
-
-	Log::Instance()->LogMessage("Kernel - Renderer and Managers are deleted.", Log::MESSAGE_INFO);
 }

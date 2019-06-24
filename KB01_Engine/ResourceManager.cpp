@@ -1,14 +1,12 @@
 #include "ResourceManager.h"
-
 #include "Renderer.h"
 #include "Log.h"
-
 #include <algorithm>
 
 
 ResourceManager::ResourceManager()
 {
-	textures = std::vector<Texture*>();
+	textures = std::vector<TextureContainer*>();
 	meshes = std::vector<Mesh*>();
 
 	Log::Instance()->LogMessage("ResourceManager - Created.", Log::MESSAGE_INFO);
@@ -60,16 +58,22 @@ Mesh* ResourceManager::LoadMesh(std::string _filePath, std::string _fileName)
 	return mesh;
 }
 
-Texture* ResourceManager::LoadTexture(std::string _filePath, std::string _fileName)
+/// <summary>
+/// Load the texture and store it in a texture container
+/// </summary>
+/// <param name="_filePath">the directory in which the file resides </param>
+/// <param name="_fileName">the name of the file that contains the texture</param>
+/// <returns></returns>
+TextureContainer* ResourceManager::LoadTexture(std::string _filePath, std::string _fileName)
 {
-	Texture* texture = NULL;
+	TextureContainer* texture = NULL;
 	
-	std::vector<Texture*>::iterator it = std::find_if(textures.begin(), textures.end(), [_fileName](Texture* temp) { return temp->GetFileName() == _fileName; });
+	std::vector<TextureContainer*>::iterator it = std::find_if(textures.begin(), textures.end(), [_fileName](TextureContainer* temp) { return temp->GetFileName() == _fileName; });
 
 	// if texture does exist, give it the existing pointer
 	if (it != textures.end())
 	{
-		texture = static_cast<Texture*>(*it);
+		texture = static_cast<TextureContainer*>(*it);
 
 		Log::Instance()->LogMessage("ResourceManager - Texture '" + _fileName + "' already loaded'", Log::MESSAGE_INFO);
 	}
@@ -86,10 +90,11 @@ Texture* ResourceManager::LoadTexture(std::string _filePath, std::string _fileNa
 }
 
 /// <summary>
-/// Deletes all resources.
+/// Delete all pointers and/or variables that can cause memory leaks
 /// </summary>
-void ResourceManager::DeleteAllResources()
+void ResourceManager::Cleanup()
 {
+
 	while (!textures.empty())
 	{
 		delete textures.back();
@@ -101,13 +106,6 @@ void ResourceManager::DeleteAllResources()
 		delete meshes.back();
 		meshes.pop_back();
 	}
-
-	Log::Instance()->LogMessage("ResourceManager - Deleted all resources", Log::MESSAGE_INFO);
-}
-
-void ResourceManager::Cleanup()
-{
-	DeleteAllResources();
 	
 	delete meshLoader;
 	delete textureLoader;

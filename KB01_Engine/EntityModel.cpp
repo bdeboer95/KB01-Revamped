@@ -1,23 +1,25 @@
 #include "EntityModel.h"
 #include <iostream>
 #include <vector>
-#include <dinput.h> //does this also need to be removed?
+#include "Vector3.h"
+//#include <dinput.h> //does this also need to be removed?
 
-#define KEYDOWN(name, key) (name[key])
-#define MSTATE(name, key) (name[key])
+//#define KEYDOWN(name, key) (name[key])
+//#define MSTATE(name, key) (name[key])
 
 /// <summary>
 /// Initializes a new instance of the <see cref="EntityModel"/> class.
 /// </summary>
-EntityModel::EntityModel(std::string _fileName, std::string _textureName, float _positionX, float _positionY, float _positionZ)
+EntityModel::EntityModel(std::string fileName, std::string textureName, float positionX, float positionY, float positionZ, Vector3 scaleVector)
 {
-	fileName = _fileName;
-	texture = new Texture(_textureName);
-	Log::Instance()->LogMessage("EntityModel - Created.", Log::MESSAGE_INFO);
-	_positionX = _positionX;
-	_positionY = _positionY;
-	_positionZ = _positionZ;
+	_fileName = fileName;
+	_textureContainer = new TextureContainer(textureName);
+	_positionX = positionX;
+	_positionY = positionY;
+	_positionZ = positionZ;
+	_scaleVector = scaleVector;
 	_speed = 0.1f;
+	Log::Instance()->LogMessage("EntityModel - Created.", Log::MESSAGE_INFO);
 }
 
 /// <summary>
@@ -29,13 +31,17 @@ EntityModel::~EntityModel()
 	Log::Instance()->LogMessage("~EntityModel - EntityModel cleaned up!", Log::MESSAGE_INFO);
 }
 
+/// <summary>
+/// Renders the entitymodel with the specified renderer.
+/// </summary>
+/// <param name="_renderer">The specified renderer.</param>
 void EntityModel::Render(Renderer* _renderer)
 {
 
 	for (UINT i = 0; i < mesh->GetNumberOfMaterials(); i++)
 	{
 		_renderer->SetMaterial(mesh->GetMeshMaterials(), i);
-		_renderer->SetTexture(texture->GetTextures(), i);
+		_renderer->SetTexture(_textureContainer->GetTexture(), i);
 		_renderer->DrawSubset(mesh->GetMesh(), i);
 	}
 
@@ -48,39 +54,33 @@ void EntityModel::Render(Renderer* _renderer)
 /// <param name="_renderer">The renderer used to draw the entitymodels on the backbuffer</param>
 void EntityModel::ChangeRotation(Renderer* _renderer)
 {
-	// Set up world matrix
-	switch (rotation)
-	{
+	//// Set up world matrix
+	//switch (rotation)
+	//{
 
-	case 0:
+	//case 0:
 
-		break;
+	//	break;
 
-	case 1:
-		//Move forward
-		_positionZ = _positionZ + 0.1f;
-		break;
-	case 2:
-		//Move left
-		_positionX = _positionX - 0.1f;
-		break;
+	//case 1:
+	//	//Move forward
+	//	_positionZ = _positionZ + 0.1f;
+	//	break;
+	//case 2:
+	//	//Move left
+	//	_positionX = _positionX - 0.1f;
+	//	break;
 
-	case 3:
-		//Move backwards
-		_positionZ = _positionZ - 0.1f;
-		break;
-	case 4:
-		//Move right
-		_positionX = _positionX + 0.1f;
-		break;
-	}
-	Scale(&_matScale, 1, 1, 1);
-	Translate(&_matTranslate, _positionX, _positionY, _positionZ);
-	RotateY(&_matRotateY, _rotationY);
-	RotateX(&_matRotateX, _rotationX);
-	_matWorld = _matScale*_matTranslate*_matRotateY*_matRotateX;
-	_renderer->SetTransform(_renderer->WORLD, &_matWorld);
-	SetRotation(0);
+	//case 3:
+	//	//Move backwards
+	//	_positionZ = _positionZ - 0.1f;
+	//	break;
+	//case 4:
+	//	//Move right
+	//	_positionX = _positionX + 0.1f;
+	//	break;
+	//}
+	
 }
 
 /// <summary>
@@ -89,6 +89,13 @@ void EntityModel::ChangeRotation(Renderer* _renderer)
 /// <param name="_renderer">The _renderer.</param>
 void EntityModel::SetupMatrices(Renderer* _renderer)
 {
+	Scale(&_matScale, _scaleVector);
+	Translate(&_matTranslate, _positionX, _positionY, _positionZ);
+	RotateY(&_matRotateY, _rotationY);
+	RotateX(&_matRotateX, _rotationX);
+	_matWorld = _matScale * _matTranslate*_matRotateY*_matRotateX;
+	_renderer->SetTransform(_renderer->WORLD, &_matWorld);
+	/*SetRotation(0);*/
 	//renderer->setTransform(&matWorld)
 
 //
@@ -131,7 +138,7 @@ void EntityModel::SetupMatrices(Renderer* _renderer)
 	//D3DXMatrixRotationZ(&matWorld, timeGetTime() / 1000.0f);
 	//	pd3dDevice->SetTransform(D3DTS_WORLD, &matWorld);
 	// Set up world matrix
-	ChangeRotation(_renderer);
+	//ChangeRotation(_renderer);
 	// Set up our view matrix. A view matrix can be defined given an eye point,
 	// a point to lookat, and a direction for which way is up. Here, we set the
 	// eye five units back along the z-axis and up three units, look at the 
@@ -162,8 +169,8 @@ void EntityModel::SetupMatrices(Renderer* _renderer)
 HRESULT EntityModel::InitGeometry(ResourceManager* _resourceManager)
 {
 	// Load the mesh from the specified file
-	mesh = _resourceManager->LoadMesh("..\\Assets\\Meshes\\", fileName);
-	texture = _resourceManager->LoadTexture("..\\Assets\\Textures\\", texture->GetFileName());
+	mesh = _resourceManager->LoadMesh("..\\Assets\\Meshes\\", _fileName);
+	_textureContainer = _resourceManager->LoadTexture("..\\Assets\\Textures\\", _textureContainer->GetFileName());
 	if (!mesh)
 	{
 		Log::Instance()->LogMessage("EntityModel - Geometry was failed to initialize.", Log::MESSAGE_ERROR);
@@ -171,24 +178,6 @@ HRESULT EntityModel::InitGeometry(ResourceManager* _resourceManager)
 	}
 
 	return S_OK;
-}
-
-/// <summary>
-/// Sets the rotation.
-/// </summary>
-/// <param name="_rotation">The _rotation.</param>
-void EntityModel::SetRotation(int _rotation)
-{
-	rotation = _rotation;
-}
-
-/// <summary>
-/// Gets the rotation.
-/// </summary>
-/// <returns></returns>
-int EntityModel::GetRotation()
-{
-	return rotation;
 }
 
 /// <summary>

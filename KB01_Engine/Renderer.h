@@ -10,6 +10,9 @@ class Vector3;
 class VertexBuffer;
 class IndexBuffer;
 
+/// <summary>
+/// The renderer draws vertices, indices and background with color onto a window
+/// </summary>
 class Renderer
 {
 public:
@@ -31,7 +34,7 @@ public:
 		SCRATCH = 3,
 	} POOL;
 
-	virtual					~Renderer() {}
+	virtual					~Renderer() {} //Destructor
 	virtual void			Release() = 0; //release the indexbuffer and the vertexbuffer
 	virtual bool			Cleanup() = 0;
 	virtual bool			InitDevice(HWND hWnd) = 0;
@@ -60,7 +63,7 @@ public:
 	virtual void			SetTexture(void* texture, unsigned int index) = 0;
 	virtual void			SetFVF() = 0;
 
-	virtual void			Present(HWND hwnd) = 0;
+	virtual void			Present(HWND hwnd) = 0; 
 
 	// Overerving enumerations?
 	typedef enum _TRANSFORMSTATETYPE {

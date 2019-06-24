@@ -302,7 +302,7 @@ void Skybox::Render(Renderer* _renderer)
 	//Loops through every square side of the cube
 	for (int i = 0; i < 6; i++)
 	{
-		_renderer->SetTexture(textures[i]->GetTextures(), 0); //this is what gives a side of the skybox it's texture
+		_renderer->SetTexture(textures[i]->GetTexture(), 0); //this is what gives a side of the skybox it's texture
 		_renderer->DrawSubset(mesh, i); // draws 
 	}
 

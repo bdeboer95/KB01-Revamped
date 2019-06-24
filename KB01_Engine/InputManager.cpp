@@ -6,7 +6,6 @@
 
 #include "InputManager.h"
 #include "Window.h"
-
 #include <iostream>
 
 /// <summary>
@@ -19,6 +18,9 @@ InputManager::InputManager(HWND _hwnd)
 	Log::Instance()->LogMessage("InputManager - InputManager created.", Log::MESSAGE_INFO);
 }
 
+/// <summary>
+/// Initializes a new instance of the <see cref="InputManager"/> class.
+/// </summary>
 InputManager::InputManager()
 {
 
@@ -53,6 +55,11 @@ void InputManager::CreateDevice(HWND _hwnd)
 	CreateKeyboard(_hwnd);
 }
 
+/// <summary>
+/// Creates the mouse.
+/// </summary>
+/// <param name="_hwnd">The HWND.</param>
+/// <returns></returns>
 Mouse* InputManager::CreateMouse(HWND _hwnd)
 {
 	Mouse* mouse = new Mouse(_hwnd);
@@ -60,6 +67,11 @@ Mouse* InputManager::CreateMouse(HWND _hwnd)
 	return mouse;
 }
 
+/// <summary>
+/// Creates the keyboard.
+/// </summary>
+/// <param name="_hwnd">The HWND.</param>
+/// <returns></returns>
 Keyboard* InputManager::CreateKeyboard(HWND _hwnd)
 {
 	Keyboard* keyboard = new Keyboard(_hwnd);
@@ -147,6 +159,10 @@ Mouse* InputManager::GetMouse()
 	}
 }
 
+/// <summary>
+/// Gets the keyboard.
+/// </summary>
+/// <returns></returns>
 Keyboard* InputManager::GetKeyboard()
 {
 	for (int i = 0; i < devices.size(); ++i)

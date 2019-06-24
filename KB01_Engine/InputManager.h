@@ -9,16 +9,16 @@
 class InputManager 
 {
 private:
-	std::vector<InputListener*> listeners;
-	std::vector<Device*>		devices;
+	std::vector<InputListener*> listeners;								//all the entities/objects that listen to input from devices
+	std::vector<Device*>		devices;								//all the devices that have been registerered
 
-	void						DeleteAllListeners();
+	void						DeleteAllListeners();	
 	void					    DeleteAllDevices();
 
 public:							
 	InputManager();
-	InputManager(HWND _hwnd);
-	~InputManager();
+								InputManager(HWND _hwnd);
+								~InputManager();
 	
 	Keyboard*					CreateKeyboard(HWND _hwnd);
 	Mouse*						CreateMouse(HWND _hwnd);

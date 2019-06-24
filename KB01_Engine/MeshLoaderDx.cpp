@@ -1,20 +1,20 @@
 #include "MeshLoaderDx.h"
 #include "Mesh.h"
 #include <iostream>
-#include <Windows.h>
+//#include <Windows.h>
 #include "StringToWStringConverter.h"
 
 MeshLoaderDx::MeshLoaderDx(Renderer* _renderer)
 {
 	renderer = _renderer;
-	materialBuffer = NULL;
-
+	_materialBuffer = NULL;
 	Log::Instance()->LogMessage("MeshLoaderDx - MeshLoaderDx created.", Log::MESSAGE_INFO);
 }
 
 
 MeshLoaderDx::~MeshLoaderDx()
 {
+	CleanUp();
 	Log::Instance()->LogMessage("~MeshLoaderDx - MeshLoaderDx cleaned up!", Log::MESSAGE_INFO);
 }
 
@@ -39,7 +39,7 @@ Mesh* MeshLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
 	if (FAILED(D3DXLoadMeshFromX(directory, D3DXMESH_SYSTEMMEM,
 		static_cast<LPDIRECT3DDEVICE9>(renderer->GetDevice()), 
 		NULL,
-		&materialBuffer, 
+		&_materialBuffer,
 		NULL, 
 		&numberOfMaterials,
 		&direct3Dmesh)))
@@ -51,7 +51,7 @@ Mesh* MeshLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
 
 	// We need to extract the material properties and texture names from the 
 	// pD3DXMtrlBuffer
-	D3DXMATERIAL* d3dxMaterials = (D3DXMATERIAL*)materialBuffer->GetBufferPointer();
+	D3DXMATERIAL* d3dxMaterials = (D3DXMATERIAL*)_materialBuffer->GetBufferPointer();
 	LPDIRECT3DTEXTURE9*	meshTextures = new LPDIRECT3DTEXTURE9[numberOfMaterials];
 	D3DMATERIAL9* meshMaterials = new D3DMATERIAL9[numberOfMaterials];
 
@@ -69,13 +69,13 @@ Mesh* MeshLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
 		mesh->SetNumberOfMaterials(numberOfMaterials);
 		mesh->SetMesh(direct3Dmesh);
 		//Done with the Materialbuffer
-		materialBuffer->Release();
+		_materialBuffer->Release();
 		return mesh;
 	}
 }
 
-void MeshLoaderDx::Cleanup()
+void MeshLoaderDx::CleanUp()
 {
-
+	_materialBuffer->Release();
 }
 

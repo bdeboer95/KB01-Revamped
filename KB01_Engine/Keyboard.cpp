@@ -136,7 +136,7 @@ void Keyboard::NotifyListeners(std::vector<InputListener*> listeners)
 {
 		for (int i = 0; i<listeners.size(); i++)
 		{
-			TRANSFORMATIONEVENT devent;
+			/*TRANSFORMATIONEVENT devent; todo*/
 			if (IsKeyDown(KEYCODE::W)) {
 				listeners[i]->Notify(TRANSFORMATIONEVENT::MOVE_BACKWARDS);
 			}

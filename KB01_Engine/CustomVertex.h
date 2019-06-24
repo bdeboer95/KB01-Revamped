@@ -1,112 +1,77 @@
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+#ifndef CUSTOMVERTEX_H
+#define CUSTOMVERTEX_H
 
-Title : CustomVertex.h
-Author : Chad Vernon
-URL : http://www.c-unit.com
 
-Description : Various vertex definitions
-
-Created :  12/04/2005
-Modified : 12/04/2005
-
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-#ifndef CUCUSTOMVERTEX_H
-#define CUCUSTOMVERTEX_H
-
-// Windows Header Files:
-#include <windows.h>
-
-// C RunTime Header Files
-#include <stdio.h>
-#include <stdlib.h>
-#include <malloc.h>
-#include <memory.h>
-#include <tchar.h>
-
-// DirectX Header Files
-#include <d3d9.h>
-#include "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9.h"
-#include <dinput.h>
-
-#include <ctime>
-#include <fstream>
-#include "resource.h"
-
-// Useful macros
-#define SAFE_RELEASE(x) if( x ) { (x)->Release(); (x) = NULL; }
-#define SAFE_DELETE(x) if( x ) { delete(x); (x) = NULL; }
-#define SAFE_DELETE_ARRAY(x) if( x ) { delete [] (x); (x) = NULL; }
-#define SHOWERROR(s,f,l) char buf[1024]; sprintf( buf, "File: %s\nLine: %d\n%s",f,l,s); MessageBox( 0, buf, "Error", 0 );
-
-namespace cuCustomVertex
+class CustomVertex
 {
+public:
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 Summary: Position
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-typedef struct Position
-{
-public:
-    Position() : X(0), Y(0), Z(0) {}
-    Position( float x, float y, float z ) 
-        : X(x), Y(y), Z(z) {}
-    float X, Y, Z;
-} Position;
+	typedef struct Position
+	{
+	public:
+		Position() : X(0), Y(0), Z(0) {}
+		Position(float x, float y, float z)
+			: X(x), Y(y), Z(z) {}
+		float X, Y, Z;
+	} Position;
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-Summary: Position and color
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-typedef struct PositionColor
-{
-public:
-    PositionColor() : X(0), Y(0), Z(0), Color(0) {}
-    PositionColor( float x, float y, float z, DWORD color ) 
-        : X(x), Y(y), Z(z), Color(color) {}
-    float X, Y, Z;
-    DWORD Color;
-} PositionColor;
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+	Summary: Position and color
+	* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+	typedef struct PositionColor
+	{
+	public:
+		PositionColor() : X(0), Y(0), Z(0), Color(0) {}
+		PositionColor(float x, float y, float z, unsigned long color)
+			: X(x), Y(y), Z(z), Color(color) {}
+		float X, Y, Z;
+		unsigned long Color;
+	} PositionColor;
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-Summary: Position and color
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-typedef struct PositionTextured
-{
-public:
-    PositionTextured() : X(0), Y(0), Z(0), Tu(0), Tv(0) {}
-    PositionTextured( float x, float y, float z, float tu, float tv ) 
-        : X(x), Y(y), Z(z), Tu(tu), Tv(tv) {}
-    float X, Y, Z;
-    float Tu, Tv;
-} PositionTextured;
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+	Summary: Position and color
+	* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+	typedef struct PositionTextured
+	{
+	public:
+		PositionTextured() : X(0), Y(0), Z(0), Tu(0), Tv(0) {}
+		PositionTextured(float x, float y, float z, float tu, float tv)
+			: X(x), Y(y), Z(z), Tu(tu), Tv(tv) {}
+		float X, Y, Z;
+		float Tu, Tv;
+	} PositionTextured;
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-Summary: Position, color, texture coordinates
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-typedef struct PositionColorTextured
-{
-public:
-    PositionColorTextured() : X(0), Y(0), Z(0), Color(0), Tu(0), Tv(0) {}
-    PositionColorTextured( float x, float y, float z, DWORD color, float tu, float tv ) 
-        : X(x), Y(y), Z(z), Color(color), Tu(tu), Tv(tv) {}
-    float X, Y, Z;
-    DWORD Color;
-    float Tu, Tv;
-} PositionColorTextured;
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+	Summary: Position, color, texture coordinates
+	* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+	typedef struct PositionColorTextured
+	{
+	public:
+		PositionColorTextured() : X(0), Y(0), Z(0), Color(0), Tu(0), Tv(0) {}
+		PositionColorTextured(float x, float y, float z, unsigned long color, float tu, float tv)
+			: X(x), Y(y), Z(z), Color(color), Tu(tu), Tv(tv) {}
+		float X, Y, Z;
+		unsigned long Color;
+		float Tu, Tv;
+	} PositionColorTextured;
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-Summary: Position, color, texture coordinates
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-typedef struct PositionNormalTextured
-{
-public:
-    PositionNormalTextured() : X(0), Y(0), Z(0), Nx(0), Ny(0), Nz(0), Tu(0), Tv(0) {}
-    PositionNormalTextured( float x, float y, float z, float nx, float ny, float nz, float tu, float tv ) 
-        : X(x), Y(y), Z(z), Nx(nx), Ny(ny), Nz(nz), Tu(tu), Tv(tv) {}
-    float X, Y, Z;
-    float Nx, Ny, Nz;
-    float Tu, Tv;
-} PositionNormalTextured;
+	/// <summary>
+	/// Position, color, texture coordinates
+	/// </summary>
+	typedef struct PositionNormalTextured
+	{
+	public:
+		PositionNormalTextured() : X(0), Y(0), Z(0), Nx(0), Ny(0), Nz(0), Tu(0), Tv(0) {}
+		PositionNormalTextured(float x, float y, float z, float nx, float ny, float nz, float tu, float tv)
+			: X(x), Y(y), Z(z), Nx(nx), Ny(ny), Nz(nz), Tu(tu), Tv(tv) {}
+		float X, Y, Z;
+		float Nx, Ny, Nz;
+		float Tu, Tv;
+	} PositionNormalTextured;
 
-}
+};
+
 #endif

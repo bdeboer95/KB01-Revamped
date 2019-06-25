@@ -7,8 +7,9 @@
 /// Initializes a new terrain object
 /// </summary>
 /// <param name="heightmapName">the name of the file that contains the heightmap</param>
-Terrain::Terrain(std::string heightmapName)
+Terrain::Terrain(std::string heightmapName, std::string textureName)
 {
+	_textureName = textureName;
 	_height = NULL;
 	_numVertices = _numIndices = 0;
 	_positionX = 0;
@@ -17,11 +18,7 @@ Terrain::Terrain(std::string heightmapName)
 	_rotationY = 0;
 	_rotationX = 0;
 	_speed = 2.0f;
-	Translate(&_matTranslate, _positionX, _positionY, _positionZ);
-	Scale(&_matScale, 10, 1, 10);
-	RotateY(&_matRotateY, _rotationY);
-	RotateX(&_matRotateX, _rotationX);
-	_matWorld = _matScale * _matTranslate*_matRotateY*_matRotateX;
+	SetUpMatrices();
 }
 
 /// <summary>
@@ -39,9 +36,8 @@ Terrain::~Terrain()
 /// <param name="transformationEvent"> the type of event that has been called</param>
 /// <param name="x">the change in the x-axis</param>
 /// <param name="y">the change in the y-axis</param>
-void Terrain::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y) 
+void Terrain::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 {
-
 	if (transformationEvent == TRANSFORMATIONEVENT::MOVE_RIGHT)
 	{
 		_positionX = _positionX - _speed;
@@ -74,11 +70,7 @@ void Terrain::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 	}
 
 
-	Translate(&_matTranslate, _positionX, _positionY, _positionZ);
-	RotateX(&_matRotateX, _rotationX);
-	RotateY(&_matRotateY, _rotationY);
-
-	_matWorld = _matScale * _matTranslate  * _matRotateX * _matRotateY;
+	SetUpMatrices();
 }
 
 /// <summary>
@@ -93,7 +85,7 @@ bool Terrain::Initialize(Renderer* renderer, char* rawFile, char* terrainTexture
 	renderer->Release();
 	// Load height map
 	char path[MAX_PATH] = { 0 };
-	
+
 	std::ifstream heightStream;
 	//Open the file with the height data with this specific name and path --> this needs to go to the resource manager TODO
 	heightStream.open(L"..\\Assets\\Heightmaps\\heightMap.raw", std::ios::binary);
@@ -134,25 +126,35 @@ bool Terrain::Initialize(Renderer* renderer, char* rawFile, char* terrainTexture
 /// Load the texture that will be used for the terrain from the resourcemanager
 /// </summary>
 /// <param name="resourceManager">the manager that will load the texture</param>
-/// <param name="textureName">the name of the texture that needs to be loaded</param>
-void Terrain::LoadTexture(ResourceManager* resourceManager, std::string textureName)
+void Terrain::LoadTexture(ResourceManager* resourceManager)
 {
 	std::string filePath = "..\\Assets\\Textures\\Terrain\\"; //the directory containing the texture file for the terrain
-	_textureContainer = resourceManager->LoadTexture(filePath, textureName);
+	_textureContainer = resourceManager->LoadTexture(filePath, _textureName);
 }
 
 /// <summary>
-/// Renders the terrain every second
+/// Renders the terrain every second and updates its transform matrices 
 /// </summary>
 /// <param name="renderer">The renderer used to draw the terrain on the backbuffer.</param>
 void Terrain::Render(Renderer* renderer)
 {
 	renderer->SetTransform(renderer->WORLD, &_matWorld); //set the transform position in the world
 	renderer->SetTexture(_textureContainer->GetTexture(), 0); // set the texture that need to be drawn on screen
-	renderer->SetStreamSource(0, 0, _vertexSize); 
+	renderer->SetStreamSource(0, 0, _vertexSize);
 	renderer->SetFVF();
 	renderer->SetIndices();
 	renderer->DrawIndexedPrimitive(Renderer::TRIANGLESTRIP, 0, 0, _numVertices, 0, _numIndices - 2); //draw the triangles for the terrain
+}
+
+/// <summary>
+/// Set up the world transform matrices.
+/// </summary>
+void Terrain::SetUpMatrices() {
+	Translate(&_matTranslate, _positionX, _positionY, _positionZ);
+	Scale(&_matScale, 10, 1, 10);
+	RotateY(&_matRotateY, _rotationY);
+	RotateX(&_matRotateX, _rotationX);
+	_matWorld = _matScale * _matTranslate*_matRotateY*_matRotateX;
 }
 
 /// <summary>

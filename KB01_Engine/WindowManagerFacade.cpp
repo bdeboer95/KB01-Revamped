@@ -42,7 +42,7 @@ void WindowManagerFacade::CreateInput()
 /// <param name="_levelIndex">Index of the _level.</param>
 void WindowManagerFacade::CreateNewWindow(std::string _name, int _top, int _left, int _bottom, int _right, int _amountOfScenes, int _levelIndex)
 {
-	if (_top < 0 || _left < 0 || _bottom < 0 || _right < 0 || _amountOfScenes < 0 || _levelIndex < 0)
+	/*if (_top < 0 || _left < 0 || _bottom < 0 || _right < 0 || _amountOfScenes < 0 || _levelIndex < 0)
 	{
 		int mb = MessageBox(NULL, L"Specified negative window values.", L"Error", MB_ICONERROR);
 
@@ -74,7 +74,7 @@ void WindowManagerFacade::CreateNewWindow(std::string _name, int _top, int _left
 	if (!inputManager)
 	{
 		CreateInput();
-	}
+	}*/
 }
 
 /// <summary>

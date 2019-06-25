@@ -11,7 +11,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BMPLoader.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="C:\Users\bdebo\Downloads\CU_Terrain\include\resource.h" />
     <ClInclude Include="Camera.h" />
@@ -55,10 +54,8 @@
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="WindowManagerFacade.h" />
-    <ClInclude Include="XMLParser.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BMPLoader.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="NoobFacade.cpp" />
     <ClCompile Include="Terrain.cpp" />
@@ -91,7 +88,6 @@
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="WindowManagerFacade.cpp" />
-    <ClCompile Include="XMLParser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="terrain.jpg" />

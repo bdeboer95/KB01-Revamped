@@ -1,14 +1,12 @@
 #ifndef CUSTOMVERTEX_H
 #define CUSTOMVERTEX_H
 
-
 class CustomVertex
 {
 public:
-
-	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-Summary: Position
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/// <summary>
+/// Position
+/// </summary>
 	typedef struct Position
 	{
 	public:
@@ -18,9 +16,9 @@ Summary: Position
 		float X, Y, Z;
 	} Position;
 
-	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-	Summary: Position and color
-	* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/// <summary>
+/// Position and color
+/// </summary>
 	typedef struct PositionColor
 	{
 	public:

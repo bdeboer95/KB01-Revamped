@@ -79,9 +79,14 @@ void Skybox::Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y)
 bool Skybox::InitGeometry(Renderer* renderer, ResourceManager* resourceManager)
 {
 	HRESULT hr = 0;
+
+	//hr = D3DXCreateMeshFVF(12,
+	//	24,
+	//	D3DXMESH_MANAGED, FVF_VERTEX, static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()), &mesh); //todo remove
 	renderer->CreateMeshFVF();
 	Vertex* v = 0;
 	renderer->LockVertexBuffer(0,(void**)&v);
+	//mesh->LockVertexBuffer(0, (void**)&v); //todo remove
 
 	v[0] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f);
 	v[1] = Vertex(1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f);
@@ -112,9 +117,11 @@ bool Skybox::InitGeometry(Renderer* renderer, ResourceManager* resourceManager)
 	v[21] = Vertex(-1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 1.0f); //BOTtom	
 	v[22] = Vertex(1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f);
 	v[23] = Vertex(1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f);
+	/*mesh->UnlockVertexBuffer();todo remove*/
 	renderer->UnlockVertexBuffer();
 	unsigned short* i = 0;
 	renderer->LockIndexBuffer(0, (void**)&i);
+	/*mesh->LockIndexBuffer(0, (void**)&i);*/
 
 	//This is made to set the indices for the squares
 	i[0] = 0;  i[1] = 1;    i[2] = 2;
@@ -134,11 +141,13 @@ bool Skybox::InitGeometry(Renderer* renderer, ResourceManager* resourceManager)
 
 	i[30] = 20; i[31] = 21;  i[32] = 22;
 	i[33] = 20; i[34] = 22;  i[35] = 23;// BOTTOM
+	//mesh->UnlockIndexBuffer();
 	renderer->UnlockIndexBuffer();
 
 	unsigned long* attributeBuffer = 0;
 
 	//Locks the mesh buffer that contains the mesh attribute data, and returns a pointer to it.
+	//mesh->LockAttributeBuffer(0, &attributeBuffer);
 	renderer->LockAttributeBuffer(0, &attributeBuffer);
 	for (int a = 0; a < 2; a++)     //--triangles 1-4   
 	{
@@ -165,9 +174,24 @@ bool Skybox::InitGeometry(Renderer* renderer, ResourceManager* resourceManager)
 		attributeBuffer[f] = 5;    //--subset 2   
 	}
 	renderer->UnLockAttributeBuffer();
+	//mesh->UnlockAttributeBuffer(); todo remove
 	LoadTextures(resourceManager);
 
 	return true;
+}
+
+std::wstring Skybox::StrToWStr(std::string str)
+{
+	int length;
+	int string_length = static_cast<int>(str.length() + 1);
+
+	length = MultiByteToWideChar(CP_ACP, 0, str.c_str(), string_length, 0, 0);
+	wchar_t* wide_char = new wchar_t[length];
+	MultiByteToWideChar(CP_ACP, 0, str.c_str(), string_length, wide_char, length);
+	std::wstring wstr(wide_char);
+	delete[] wide_char;
+
+	return wstr;
 }
 
 /// <summary>
@@ -191,9 +215,14 @@ void Skybox::LoadTextures(ResourceManager* _resourceManager)
 /// <param name="_renderer">The renderer.</param>
 void Skybox::Render(Renderer* renderer)
 {
+	//LPDIRECT3DDEVICE9 device = static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice());
+	//Disables the zbuffer for writing
+	//static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice())->SetRenderState(D3DRS_ZWRITEENABLE, false);
 	renderer->SetTransform(Renderer::WORLD, &_matWorld);
 	renderer->SetRenderState(Renderer::RENDERSTATETYPE_ZENABLE, false);
 	renderer->SetRenderState(Renderer::RENDERSTATETYPE_CULLMODE, Renderer::CULL_NONE);
+	//device->SetRenderState(D3DRS_ZENABLE, false); //todo remove
+	//device->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE); //todo remove
 
 	//Loops through every square side of the cube
 	for (int i = 0; i < 6; i++)
@@ -202,8 +231,10 @@ void Skybox::Render(Renderer* renderer)
 		renderer->DrawSubset(NULL, i); // draws the subset
 	}
 
-	renderer->SetRenderState(Renderer::RENDERSTATETYPE_CULLMODE, Renderer::CULL_CCW);
+	renderer->SetRenderState(Renderer::RENDERSTATETYPE_CULLMODE, Renderer::CULL_CCW); //dit ook in renderer
 
 	//Enables the zbuffer for writing
+	//device->SetRenderState(D3DRS_ZWRITEENABLE, true);
 	renderer->SetRenderState(Renderer::RENDERSTATETYPE_ZENABLE, true);
+	//device->SetRenderState(RENDERSTATETYPE_ZENABLE, true); //tdo remove
 }

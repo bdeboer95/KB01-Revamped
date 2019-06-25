@@ -1,65 +1,70 @@
 #include "Mesh.h"
 
-Mesh::Mesh(std::string _fileName)
+/// <summary>
+/// Initializes a new instance of the <see cref="Mesh"/> class.
+/// </summary>
+/// <param name="fileName">Name of the file.</param>
+Mesh::Mesh(std::string fileName)
 {
-	_fileName = _fileName;
+	_fileName = fileName;
 }
 
+
 /// <summary>
-/// Destructor
+/// Finalizes an instance of the <see cref="Mesh"/> class.
 /// </summary>
 Mesh::~Mesh()
 {
-
+	CleanUp();
 }
 
-void Mesh::SetNumberOfMaterials(unsigned int _numberOfMaterials)
+void Mesh::SetNumberOfMaterials(unsigned int numberOfMaterials)
 {
-	numberOfMaterials = _numberOfMaterials;
+	_numberOfMaterials = numberOfMaterials;
 }
 
 void* Mesh::GetMeshMaterials()
 {
-	return meshMaterials;
+	return _meshMaterials;
 }
 
-void Mesh::SetMeshMaterials(void* _meshMaterials)
+void Mesh::SetMeshMaterials(void* meshMaterials)
 {
-	meshMaterials = _meshMaterials;
+	_meshMaterials = meshMaterials;
 }
 
-void Mesh::SetMeshTextures(void* _meshTextures)
+void Mesh::SetMeshTextures(void* meshTextures)
 {
-	meshTextures = _meshTextures;
+	_meshTextures = meshTextures;
 }
 
 void* Mesh::GetMeshTextures()
 {
-	return meshTextures;
+	return _meshTextures;
 }
 
 unsigned int Mesh::GetNumberOfMaterials()
 {
-	return numberOfMaterials;
+	return _numberOfMaterials;
 }
 
 
 
 void Mesh::SetMesh(void* _mesh)
 {
-	mesh = _mesh;
+	_mesh = _mesh;
 }
 
 void* Mesh::GetMesh()
 {
-	return mesh;
+	return _mesh;
 }
 /// <summary>
 /// Deletes all pointers and/or variables that may cause memory leaks
 /// </summary>
 void Mesh::CleanUp()
 {
-	delete meshMaterials;
-	delete meshTextures;
+	delete _meshMaterials;
+	delete _meshTextures;
 	//delete numberOfMaterials;
 }

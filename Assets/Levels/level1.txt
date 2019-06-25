@@ -1,0 +1,4 @@
+EntityModel,Tiger.x,zebra3.bmp,1,-20, 50,5,5,5
+EntityModel,Tiger.x,zebra2.bmp,5,-20, 50,5,5,5
+Terrain,terrain.jpg,terrainbrown.jpg
+Skybox, right=, left=

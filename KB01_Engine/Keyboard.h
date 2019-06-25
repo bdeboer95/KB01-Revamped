@@ -9,8 +9,8 @@ private:
 
 public:
 
-	Keyboard(HWND _hwnd);
-	~Keyboard();
+	Keyboard(HWND _hwnd);    //Constructor
+	~Keyboard();			//Destructor
 	
 
 	enum KEYCODE {
@@ -160,9 +160,9 @@ public:
 		MEDIASELECT = 0xED
 	};
 
-	bool InitDevice();
-	bool AcquireDevice();
-	void NotifyListeners(std::vector<InputListener*> listeners);
+	bool InitDevice();												//Initialize the keyboard
+	bool AcquireDevice();											//Acquire the keyboard
+	void NotifyListeners(std::vector<InputListener*> listeners);	//Notify all the listeners that are subscribed to this keyboard
 	void ReleaseDevice();
 	HRESULT PollDevice();
 	bool IsKeyDown(KEYCODE keyCode);

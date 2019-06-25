@@ -4,9 +4,9 @@
 #include "StringToWStringConverter.h"
 #include <string>
 
-TextureLoaderDx::TextureLoaderDx(Renderer* _renderer)
+TextureLoaderDx::TextureLoaderDx(Renderer* renderer)
 {
-	renderer = _renderer;
+	_renderer = renderer;
 
 	Log::Instance()->LogMessage("TextureLoaderDx - TextureLoaderDx created.", Log::MESSAGE_INFO);
 }
@@ -16,7 +16,12 @@ TextureLoaderDx::~TextureLoaderDx()
 	Log::Instance()->LogMessage("~TextureLoaderDx - TextureLoaderDx cleaned up!", Log::MESSAGE_INFO);
 
 }
-
+/// <summary>
+/// Load the reosurce
+/// </summary>
+/// <param name="_filePath"></param>
+/// <param name="_fileName"></param>
+/// <returns></returns>
 TextureContainer* TextureLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
 {
 	TextureContainer* texture = new TextureContainer(_fileName);
@@ -31,7 +36,7 @@ TextureContainer* TextureLoaderDx::LoadResource(std::string _filePath, std::stri
 
 	// Fill LPDIRECT3DTEXTURE9
 	if (FAILED(D3DXCreateTextureFromFile(
-		static_cast<LPDIRECT3DDEVICE9>(renderer->GetDevice()), 
+		static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()), 
 		directory,
 		meshTextures)))
 	{

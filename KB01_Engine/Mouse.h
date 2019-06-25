@@ -3,8 +3,11 @@
 
 #include "Device.h"
 #include "InputListener.h"
-#include "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9.h"
 #include "Vector2.h"
+
+/// <summary>
+/// The state that the mouse is currently in, if it's pressed or if it moved
+/// </summary>
 struct MouseState {
 	LONG    lX;
 	LONG    lY;
@@ -12,24 +15,13 @@ struct MouseState {
 	BYTE    rgbButtons[4];
 };
 
+/// <summary>
+/// The mouse device and it's states if the user moves or presses certain keys
+/// </summary>
 class Mouse : public Device
 {
-
-public:
-
-
-	Mouse(HWND _hwnd);
-	~Mouse();
-
-	bool InitDevice();
-	bool AcquireDevice();
-	void ReleaseDevice();
-	HRESULT PollDevice();
-	void NotifyListeners(std::vector<InputListener*> listeners);
-	MouseState GetMouseState(); //get the current buttons and positioning of the mouse	
-	Vector2 mouseCoordinates;
 private:
-	MouseState mouseState; //the buttons that have been pressed or the amount the mouse was moved to the right or left
+	MouseState mouseState;											//the buttons that have been pressed or the amount the mouse was moved to the right or left
 
 	struct MouseStruct
 	{
@@ -46,14 +38,28 @@ private:
 		bool button7 = false;
 	};
 
-	LPDIRECTINPUT8 directInput;	// DirectInput interface
-	LPDIRECTINPUTDEVICE8 mouse;	// Keyboard device
-	HWND hwnd;
-	DIPROPDWORD dipdw;
-	MouseStruct bufferedMouse;
+	LPDIRECTINPUT8 directInput;										// DirectInput interface
+	LPDIRECTINPUTDEVICE8 mouse;										// Mouse device
+	HWND hwnd;														// The window that the mouse is moving on
+	DIPROPDWORD dipdw;												// The unsigned long property
+	MouseStruct bufferedMouse;										// The mouse buffer
 
-	void SetMouseBuffer();
-	void ResetStruct();
+	void SetMouseBuffer();											// Set the mouse buffer
+	void ResetStruct();												// Reset the mouse struct
+
+public:
+	Mouse(HWND _hwnd);												// Constructor
+	~Mouse();														// Destructor
+
+	bool InitDevice();												// Initialize the mouse device
+	bool AcquireDevice();											// Acquire the mouse device
+	void ReleaseDevice();											// Release the mouse device
+	HRESULT PollDevice();											// Constantly check the mouse device	
+	void NotifyListeners(std::vector<InputListener*> listeners);	// Notify all the listeners that the mouse has been moved or pressed
+	MouseState GetMouseState();										// Get the current buttons and positioning of the mouse	
+	Vector2 mouseCoordinates;										// The previously saved mousecoordinates
+
+
 };
 
 #endif

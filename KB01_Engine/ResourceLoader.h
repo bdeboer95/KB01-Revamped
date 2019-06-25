@@ -10,7 +10,7 @@
 class ResourceLoader
 {
 protected:
-	Renderer*				renderer;			//The renderer that is used to load the resources
+	Renderer*				_renderer;			//The renderer that is used to load the resources
 
 public:
 	virtual					~ResourceLoader(){}; //Deconstructor

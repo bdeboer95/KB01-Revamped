@@ -4,9 +4,9 @@
 //#include <Windows.h>
 #include "StringToWStringConverter.h"
 
-MeshLoaderDx::MeshLoaderDx(Renderer* _renderer)
+MeshLoaderDx::MeshLoaderDx(Renderer* renderer)
 {
-	renderer = _renderer;
+	_renderer = renderer;
 	_materialBuffer = NULL;
 	Log::Instance()->LogMessage("MeshLoaderDx - MeshLoaderDx created.", Log::MESSAGE_INFO);
 }
@@ -37,7 +37,7 @@ Mesh* MeshLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
 
 	// Fill LPD3DXMESH
 	if (FAILED(D3DXLoadMeshFromX(directory, D3DXMESH_SYSTEMMEM,
-		static_cast<LPDIRECT3DDEVICE9>(renderer->GetDevice()), 
+		static_cast<LPDIRECT3DDEVICE9>(_renderer->GetDevice()), 
 		NULL,
 		&_materialBuffer,
 		NULL, 
@@ -55,7 +55,7 @@ Mesh* MeshLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
 	LPDIRECT3DTEXTURE9*	meshTextures = new LPDIRECT3DTEXTURE9[numberOfMaterials];
 	D3DMATERIAL9* meshMaterials = new D3DMATERIAL9[numberOfMaterials];
 
-	for (UINT i = 0; i < numberOfMaterials; i++)
+	for (unsigned int i = 0; i < numberOfMaterials; i++)
 	{
 		// Copy the material
 		meshMaterials[i] = d3dxMaterials[i].MatD3D;
@@ -74,6 +74,10 @@ Mesh* MeshLoaderDx::LoadResource(std::string _filePath, std::string _fileName)
 	}
 }
 
+
+/// <summary>
+/// Cleans up.
+/// </summary>
 void MeshLoaderDx::CleanUp()
 {
 	_materialBuffer->Release();

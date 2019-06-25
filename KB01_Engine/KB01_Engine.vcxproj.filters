@@ -15,20 +15,8 @@
     <Filter Include="Header Files\Scenes">
       <UniqueIdentifier>{8a9da31b-1b7e-4748-b2d1-1b7bbb22ada4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Scenes">
-      <UniqueIdentifier>{8654e005-72b5-4472-914a-3bba63fb697d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Facades">
       <UniqueIdentifier>{c7438819-babe-4c7a-ae70-1e7acce811d1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Facades">
-      <UniqueIdentifier>{3571d375-08c9-4a31-a9d3-4eae2186e8ad}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Resourceloaders">
-      <UniqueIdentifier>{55e8ea14-cf7c-4150-bff8-531d47f4e947}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Converters">
-      <UniqueIdentifier>{2a172d1c-117f-4c8f-85b9-2d2869b6d551}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Math">
       <UniqueIdentifier>{b1c3b052-ae1c-4625-8dec-de2f346f7bed}</UniqueIdentifier>
@@ -38,37 +26,13 @@
     <ClCompile Include="Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Scene.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="BMPLoader.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
     <ClCompile Include="Kernel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="jsoncpp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ResourceManagerFacade.cpp">
-      <Filter>Source Files\Facades</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneManagerFacade.cpp">
-      <Filter>Source Files\Facades</Filter>
-    </ClCompile>
-    <ClCompile Include="WindowManagerFacade.cpp">
-      <Filter>Source Files\Facades</Filter>
-    </ClCompile>
     <ClCompile Include="Log.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="InputManagerFacade.cpp">
-      <Filter>Source Files\Facades</Filter>
-    </ClCompile>
-    <ClCompile Include="Terrain.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="XMLParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Skybox.cpp">
@@ -137,6 +101,24 @@
     <ClCompile Include="WindowManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="InputManagerFacade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManagerFacade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManagerFacade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowManagerFacade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Kernel.h">
@@ -147,12 +129,6 @@
     </ClInclude>
     <ClInclude Include="InputListener.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BMPLoader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ResourceLoader.h">
-      <Filter>Header Files\Resourceloaders</Filter>
     </ClInclude>
     <ClInclude Include="ResourceManagerFacade.h">
       <Filter>Header Files\Facades</Filter>
@@ -165,12 +141,6 @@
     </ClInclude>
     <ClInclude Include="InputManagerFacade.h">
       <Filter>Header Files\Facades</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureLoaderDx.h">
-      <Filter>Header Files\Resourceloaders</Filter>
-    </ClInclude>
-    <ClInclude Include="StringToWStringConverter.h">
-      <Filter>Header Files\Converters</Filter>
     </ClInclude>
     <ClInclude Include="KernelInterface.h">
       <Filter>Header Files</Filter>
@@ -192,12 +162,6 @@
     </ClInclude>
     <ClInclude Include="IndexBuffer.h">
       <Filter>Header Files\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Buffer.h">
-      <Filter>Header Files\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="XMLParser.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Skybox.h">
       <Filter>Header Files</Filter>
@@ -272,6 +236,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EntityModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureLoaderDx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="StringToWStringConverter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

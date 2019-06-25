@@ -1,9 +1,4 @@
-﻿//-----------------------------------------------------------------------------
-// File: RendererDx.cpp
-//
-// Desc: The RendererDx implements all the methods from Renderer and uses DirextX9.0 3D as it's base
-//-----------------------------------------------------------------------------
-#include "RendererDx.h"
+﻿#include "RendererDx.h"
 #include <mmsystem.h>
 #include <timeapi.h>
 #include <windows.h>
@@ -19,12 +14,7 @@
 RendererDx::RendererDx()
 {
 	_direct3D = NULL; // Used to create the D3DDevice
-					 //InitDevice(GetForegroundWindow());
 	_vertexBuffer = NULL; // Buffer to hold vertices
-	//PI = ;
-	//USAGE_DYNAMIC = 0x00000200L;
-	//USAGE_WRITEONLY = 0x00000008L;
-	//LOCK_DISCARD = 0x00002000L;
 }
 
 /// <summary>
@@ -41,7 +31,6 @@ RendererDx::~RendererDx()
 /// </summary>
 bool RendererDx::Cleanup()
 {
-	
 	if (_direct3DDevice != NULL)
 		if (FAILED(_direct3DDevice->Release()))
 		{
@@ -57,21 +46,25 @@ bool RendererDx::Cleanup()
 
 	return true;
 }
+/// <summary>
+/// Release the buffers and graphical devices
+/// </summary>
 void RendererDx::Release() {
 	if (_vertexBuffer != NULL)
 		if (FAILED(_vertexBuffer->Release()))
 		{
 			Log::Instance()->LogMessage("~RendererDx - Failed to release vertexbuffer!", Log::MESSAGE_WARNING);
-		
+
 		}
 	if (_indexBuffer != NULL) {
 		if (FAILED(_indexBuffer->Release()))
 		{
 			Log::Instance()->LogMessage("~RendererDx - Failed to release indexbuffer!", Log::MESSAGE_WARNING);
-			
+
 		}
 	}
 }
+
 /// <summary>
 /// Initializes the device.
 /// </summary>
@@ -95,13 +88,6 @@ bool RendererDx::InitDevice(HWND hWnd)
 	ZeroMemory(&d3dpp, sizeof(d3dpp));
 	d3dpp.Windowed = TRUE;
 	d3dpp.SwapEffect = D3DSWAPEFFECT_DISCARD;
-	//d3dpp.BackBufferFormat = d3dmm.Format;
-	//d3dpp.BackBufferWidth = d3dmm.Width;
-	//d3dpp.BackBufferHeight = d3dmm.Height;
-	//d3dpp.FullScreen_RefreshRateInHz = D3DPRESENT_RATE_DEFAULT;
-	//d3dpp.PresentationInterval = D3DPRESENT_INTERVAL_ONE;
-	//d3dpp.AutoDepthStencilFormat = D3DFMT_D16;
-	//d3dpp.EnableAutoDepthStencil = true;
 
 	if (FAILED(_direct3D->CreateDevice(D3DADAPTER_DEFAULT,
 		D3DDEVTYPE_HAL,
@@ -172,9 +158,9 @@ float RendererDx::GetBackBufferHeight()
 /// <summary>
 /// Clears the buffer.
 /// </summary>
-/// <param name="R">The r.</param>
-/// <param name="G">The g.</param>
-/// <param name="B">The b.</param>
+/// <param name="R">The red value from the rgb.</param>
+/// <param name="G">The green value from the rgb.</param>
+/// <param name="B">The blue value from the rgb.</param>
 void RendererDx::ClearBuffer(int r, int g, int b)
 {
 	if (FAILED(_direct3DDevice->Clear(0, NULL, D3DCLEAR_TARGET /*| D3DCLEAR_ZBUFFER,*/, D3DCOLOR_XRGB(200, 200, 200), 1.0f, 0)))
@@ -183,16 +169,77 @@ void RendererDx::ClearBuffer(int r, int g, int b)
 	}
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-Summary: Creates the vertex buffer.
-Parameters:
-[in] pDevice - Pointer to IDirect3DDevice9
-[in] numVertices - Max number of vertices allowed in the buffer
-[in] FVF - Flexible Vertex Format
-[in] vertexSize - Size of the vertex structure
-[in] dynamic - TRUE for dynamic buffer, FALSE for static buffer
-Returns: true on success, false on failure
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/// <summary>
+/// Locks the vertex buffer.
+/// </summary>
+/// <param name="flags">The flags.</param>
+/// <param name="ppData">The pp data.</param>
+void RendererDx::LockVertexBuffer(unsigned long flags, void** ppData)
+{
+	_mesh->LockVertexBuffer(flags, ppData);
+}
+
+/// <summary>
+/// Locks the index buffer.
+/// </summary>
+/// <param name="flags"></param>
+/// <param name="ppData"></param>
+void RendererDx::LockIndexBuffer(unsigned long flags, void** ppData) {
+	_mesh->LockIndexBuffer(flags, ppData);
+}
+
+/// <summary>
+/// Locks the attribute buffer.
+/// </summary>
+/// <param name="flags">The flags.</param>
+/// <param name="ppData">The pp data.</param>
+void RendererDx::LockAttributeBuffer(unsigned long flags, unsigned long** ppData)
+{
+	_mesh->LockAttributeBuffer(flags, ppData);
+}
+
+/// <summary>
+/// Unlocks the index buffer.
+/// </summary>
+void RendererDx::UnlockIndexBuffer()
+{
+	if (FAILED(_mesh->UnlockIndexBuffer())) {
+		Log::Instance()->LogMessage("RendererDx - Failed to lock the index buffer", Log::MESSAGE_ERROR);
+
+	}
+}
+
+/// <summary>
+/// Unlocks the index buffer.
+/// </summary>
+void RendererDx::UnlockVertexBuffer()
+{
+	if (FAILED(_mesh->UnlockVertexBuffer())) {
+		Log::Instance()->LogMessage("RendererDx - Failed to lock the vertex buffer", Log::MESSAGE_ERROR);
+
+	}
+}
+
+/// <summary>
+/// Unlocks the attribute buffer.
+/// </summary>
+void RendererDx::UnLockAttributeBuffer()
+{
+	if (FAILED(_mesh->UnlockAttributeBuffer())) {
+		Log::Instance()->LogMessage("RendererDx - Failed to lock the attribute buffer", Log::MESSAGE_ERROR);
+	}
+	
+}
+
+/// <summary>
+/// Creates the vertex buffer.
+/// </summary>
+/// <param name="numVertices"> Max number of vertices allowed in the buffer</param>
+/// <param name="vertexSize">Size of the vertex structure</param>
+/// <param name="fvf">Flexible Vertex Format</param>
+/// <param name="handle"></param>
+/// <param name="dynamic">TRUE for dynamic buffer, FALSE for static buffer</param>
+/// <returns>true on success, false on failure</returns>
 bool RendererDx::CreateVertexBuffer(unsigned int numVertices, unsigned int vertexSize, unsigned long fvf, HANDLE handle, bool dynamic)
 {
 	// Create the vertex buffer. Here we are allocating enough memory
@@ -212,12 +259,19 @@ bool RendererDx::CreateVertexBuffer(unsigned int numVertices, unsigned int verte
 	Log::Instance()->LogMessage("RendererDx - Vertexbuffer is created", Log::MESSAGE_INFO);
 	return true;
 }
+/// <summary>
+/// Create the index buffer
+/// </summary>
+/// <param name="numIndices">Max number of indices allowed in the buffer</param>
+/// <param name="format"></param>
+/// <param name="handle"></param>
+/// <param name="dynamic"></param>
 void RendererDx::CreateIndexBuffer(unsigned int numIndices, unsigned long format, HANDLE handle, bool dynamic) {
 
 	D3DPOOL pool = dynamic ? D3DPOOL_DEFAULT : D3DPOOL_MANAGED;
 	unsigned int size = (format == D3DFMT_INDEX32) ? sizeof(unsigned int) : sizeof(unsigned short);
 	DWORD usage = dynamic ? D3DUSAGE_WRITEONLY | D3DUSAGE_DYNAMIC : D3DUSAGE_WRITEONLY;
-	unsigned int length = numIndices*size;
+	unsigned int length = numIndices * size;
 
 	if (FAILED(_direct3DDevice->CreateIndexBuffer(length, usage, static_cast<D3DFORMAT>(format), pool, &_indexBuffer, NULL)))
 	{
@@ -234,6 +288,10 @@ void* RendererDx::GetVertexBuffer()
 	return _vertexBuffer;
 }
 
+
+/// <summary>
+/// Set the indices for the indexbuffer
+/// </summary>
 void RendererDx::SetIndices() {
 	if (_indexBuffer) {
 		_direct3DDevice->SetIndices(_indexBuffer);
@@ -242,12 +300,21 @@ void RendererDx::SetIndices() {
 		_direct3DDevice->SetIndices(NULL);
 	}
 }
-
+/// <summary>
+/// Get the index buffer
+/// </summary>
+/// <returns>the index buffer</returns>
 void* RendererDx::GetIndexBuffer()
 {
 	return _indexBuffer;
 }
 
+/// <summary>
+/// Fill the index buffer with an amount of indices
+/// </summary>
+/// <param name="numIndices"></param>
+/// <param name="pIndices"></param>
+/// <param name="flags"></param>
 void RendererDx::FillIndexBuffer(unsigned int numIndices, void *pIndices, unsigned long flags)
 {
 
@@ -282,7 +349,7 @@ void RendererDx::FillIndexBuffer(unsigned int numIndices, void *pIndices, unsign
 }
 
 /// <summary>
-/// Draws the primitive.
+/// Draws the indexed primitive.
 /// </summary>
 void RendererDx::DrawIndexedPrimitive(unsigned int primitiveType, unsigned int baseVertexIndex, unsigned int minVertexIndex, unsigned int numberOfVertices, unsigned int startIndex, unsigned int primitiveCount)
 {
@@ -301,7 +368,12 @@ void RendererDx::DrawIndexedPrimitive(unsigned int primitiveType, unsigned int b
 		_direct3DDevice->DrawPrimitive(static_cast<D3DPRIMITIVETYPE>(primitiveType), 0, primitiveCount);
 	}
 }
-
+/// <summary>
+/// Draws the primitive
+/// </summary>
+/// <param name="primitiveType"></param>
+/// <param name="startVertex"></param>
+/// <param name="primitiveCount"></param>
 void RendererDx::DrawPrimitive(unsigned int primitiveType, unsigned int startVertex, unsigned int primitiveCount)
 {
 
@@ -313,23 +385,33 @@ void RendererDx::DrawPrimitive(unsigned int primitiveType, unsigned int startVer
 	}
 }
 
-//-----------------------------------------------------------------------------
-// Name: DrawSubset()
-// Desc: Draw the mesh subset for 1 material
-//-----------------------------------------------------------------------------
+/// <summary>
+/// Draw the mesh subset for 1 material
+/// </summary>
+/// <param name="mesh"></param>
+/// <param name="index"></param>
 void RendererDx::DrawSubset(void* mesh, unsigned int index)
 {
-	if FAILED(DIRECT3DMESH(mesh)->DrawSubset(index))
+	if (mesh == NULL) {
+		mesh = _mesh;
+	}
+
+	if FAILED(static_cast<LPD3DXMESH>(mesh)->DrawSubset(index))
 	{
 		Log::Instance()->LogMessage("RendererDx - The subset could not be drawn with number: ", Log::MESSAGE_ERROR);
 	}
-}
 
+}
+/// <summary>
+/// Set the transform matrix with a specific transform statetype
+/// </summary>
+/// <param name="transformStateType"></param>
+/// <param name="matrix"></param>
 void RendererDx::SetTransform(unsigned int transformStateType, Matrix* matrix) {
 
 	_direct3DDevice->SetTransform(
 		static_cast<D3DTRANSFORMSTATETYPE>(transformStateType),
-		reinterpret_cast<D3DXMATRIX*>(matrix)); 
+		reinterpret_cast<D3DXMATRIX*>(matrix));
 }
 
 /// <summary>
@@ -344,7 +426,7 @@ void RendererDx::SetStreamSource(unsigned int streamNumber, unsigned int offsetI
 		stride))) {
 		Log::Instance()->LogMessage("RendererDx - Failed to set the streamsource ", Log::MESSAGE_WARNING);
 	}
-	
+
 }
 
 /// <summary>
@@ -356,15 +438,16 @@ void RendererDx::SetViewPort(void* viewPort)
 	_direct3DDevice->SetViewport(static_cast<D3DVIEWPORT9*>(viewPort));
 }
 
-//-----------------------------------------------------------------------------
-// Name: SetMaterial()
-// Desc: Sets the material using the direct3DDevice
-//-----------------------------------------------------------------------------
+/// <summary>
+/// Sets the material using the direct3DDevice
+/// </summary>
+/// <param name="material"></param>
+/// <param name="index"></param>
 void RendererDx::SetMaterial(void* material, unsigned int index)
 {
 	//Unsigned ints can hold a larger positive value, and no negative value.
 	//Signed ints can not hold a less large positive value and negative values.
-	if (FAILED(_direct3DDevice->SetMaterial(&DIRECT3DMATERIAL(material)[index])))
+	if (FAILED(_direct3DDevice->SetMaterial(&(static_cast<D3DMATERIAL9*> (material))[index])))
 	{
 		Log::Instance()->LogMessage("RendererDx - Material was failed to be set to the direct3DDevice.", Log::MESSAGE_ERROR);
 	}
@@ -385,14 +468,14 @@ void RendererDx::SetTexture(void* texture, unsigned int index)
 }
 
 /// <summary>
-/// TODO
+/// Sets the flexible vertex format
 /// </summary>
 void RendererDx::SetFVF()
 {
-	if (FAILED(_direct3DDevice->SetFVF(_fvf))){
+	if (FAILED(_direct3DDevice->SetFVF(_fvf))) {
 		Log::Instance()->LogMessage("RendererDx - Failed to set the FVF", Log::MESSAGE_WARNING);
 	}
-	
+
 }
 
 /// <summary>
@@ -402,13 +485,14 @@ void RendererDx::Present(HWND hWnd)
 {
 	_direct3DDevice->Present(NULL, NULL, hWnd, NULL);
 }
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-Summary: Fill up the vertex buffer
-Parameters:
-[in] numVertices - Number of vertices being put in the buffer.
-[in] pVertices - Pointer to the vertex data
-[in] flags - Lock flags
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/// <summary>
+/// Fill up the vertex buffer
+/// </summary>
+/// <param name="numVertices">Number of vertices being put in the buffer.</param>
+/// <param name="pVertices">Pointer to the vertex data</param>
+/// <param name="flags">- Lock flags</param>
+/// <returns></returns>
 bool RendererDx::FillVertexBuffer(unsigned int numVertices, void *pVertices, unsigned long flags)
 {
 	if (_vertexBuffer == NULL)
@@ -437,73 +521,41 @@ bool RendererDx::FillVertexBuffer(unsigned int numVertices, void *pVertices, uns
 
 	return true;
 }
+/// <summary>
+/// Set the render state of the  backbuffer
+/// </summary>
+/// <param name="type"></param>
+/// <param name="value"></param>
+void RendererDx::SetRenderState(RENDERSTATETYPE renderStateType, unsigned long value) {
+	_direct3DDevice->SetRenderState(static_cast<D3DRENDERSTATETYPE>(renderStateType), value); //todo remove
+}
 
+/// <summary>
+/// End drawing the scene on the window
+/// </summary>
+void RendererDx::EndScene()
+{
+	_direct3DDevice->EndScene();
+}
 
+/// <summary>
+/// Begin drawing the scene on the window
+/// </summary>
+bool RendererDx::BeginScene()
+{
+	if (FAILED(_direct3DDevice->BeginScene())) {
+		return false;
+	}
+	return true;
+}
 
-
-
-
-
-
-
-//void RendererDx::CreateSwapChain()
-//{
-//	D3DPRESENT_PARAMETERS swapChainParameters;
-// ZeroMemory(&deviceConfig, sizeof(deviceConfig));
-//	deviceConfig.Windowed = TRUE;
-//	deviceConfig.SwapEffect = D3DSWAPEFFECT_DISCARD;
-//	deviceConfig.BackBufferFormat = D3DFMT_UNKNOWN;
-//	deviceConfig.BackBufferHeight = 1024;
-//	deviceConfig.BackBufferWidth = 768;
-//	deviceConfig.EnableAutoDepthStencil = TRUE;
-//	deviceConfig.AutoDepthStencilFormat = D3DFMT_D16;
-//	
-//
-//}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//void RendererDx::CreateSwapChain()
-//{
-//	D3DPRESENT_PARAMETERS swapChainParameters;
-// ZeroMemory(&deviceConfig, sizeof(deviceConfig));
-//	deviceConfig.Windowed = TRUE;
-//	deviceConfig.SwapEffect = D3DSWAPEFFECT_DISCARD;
-//	deviceConfig.BackBufferFormat = D3DFMT_UNKNOWN;
-//	deviceConfig.BackBufferHeight = 1024;
-//	deviceConfig.BackBufferWidth = 768;
-//	deviceConfig.EnableAutoDepthStencil = TRUE;
-//	deviceConfig.AutoDepthStencilFormat = D3DFMT_D16;
-//	
-//
-//}
+/// <summary>
+/// Creates the mesh with a flexible vertex format
+/// </summary>
+/// <returns></returns>
+bool RendererDx::CreateMeshFVF() {
+	if (FAILED(D3DXCreateMeshFVF(12, 24, D3DXMESH_MANAGED, (D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1), _direct3DDevice, &_mesh))) {
+		return false;
+	}
+	return true;
+}

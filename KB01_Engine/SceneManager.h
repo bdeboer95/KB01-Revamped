@@ -19,7 +19,6 @@ public:
 	void				Cleanup();
 	void				DrawScene(Renderer* _renderer);
 	HRESULT				PrepareScenes(ResourceManager* resourceManager, Renderer* _renderer);
-	std::vector<Scene*> GetScenesByLevelIndex(int _levelIndex);
 	void				AddListener(InputManager* _inputManager);
 };
 

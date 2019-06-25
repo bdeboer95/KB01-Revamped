@@ -17,18 +17,20 @@ class ResourceManager;
 class Terrain : public InputListener, public Entity
 {
 public:
-								Terrain(std::string heightmapName);										//Constructor
+								Terrain(std::string heightmapName, std::string textureName);			//Constructor							//Constructor
 								~Terrain();																//Deconstructor
 
 	float						_positionX;																//position on the horizontal axis
 	float						_positionY;																//position on the vertical axis
-	float						_positionZ;																// position on the depth axis
+	float						_positionZ;																//position on the depth axis
 	float						_rotationX;																//horizontal rotation
-	float						_rotationY;																// vertical rotation
-
+	float						_rotationY;																//vertical rotation
+	std::string					_textureName;															//the name of the texture
+	
 	bool						Initialize(Renderer* renderer, char* rawFile, char* terrainTexture);	//Initialize the terrain by setting it's initial position and vertices
 	void						Render(Renderer* renderer);												//Function that is used to draw the terrain so that it is visible at all times
-	void						LoadTexture(ResourceManager* resourceManager, std::string textureName); //Load the texture of the terrain using a resource manager					//retrieve the texture using a resource manager and saves it
+	void						LoadTexture(ResourceManager* resourceManager);							//Load the texture of the terrain using a resource manager					//retrieve the texture using a resource manager and saves it
+
 private:
 	unsigned char*				_height;																//the height of the terrain
 	float						_speed;																	//the speed on which the terrain is moving
@@ -42,7 +44,8 @@ private:
 	Matrix  					_matScale;																//the matrix for the scaling of the skybox
 	Matrix  					_matTranslate;															//the matrix for the translation of the 
 	TextureContainer*			_textureContainer;														//the texture that will define the terrain's looks
-
+	
+	void						SetUpMatrices();														//Set up the matrices for the terrain
 	void						Notify(TRANSFORMATIONEVENT transformationEvent, float x, float y);		//the function that notifies the Renderer if the terrain should be drawn on another way
 	void						CleanUp();																//Deletes all pointers and variables that may cause memory leaks
 

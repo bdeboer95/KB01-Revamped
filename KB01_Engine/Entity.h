@@ -41,5 +41,6 @@ public:
 	Matrix*				RotateY(Matrix* out, float angle);													//Used to rotate an object containing a matrix on the y-axis
 	Matrix*				Scale(Matrix* out, float x, float y, float);										//Used to scale an object containing a matrix with an x, y and z value
 	Matrix*				Scale(Matrix* out, Vector3 scaleVector);											//Scale using a vector that contains the x,y and z value
+	 void				SetUpMatrices();
 };
 #endif

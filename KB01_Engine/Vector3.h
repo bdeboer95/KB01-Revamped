@@ -9,10 +9,10 @@ private:
 	float					_z;									//the z-axis of the vector
 
 public:
-							Vector3 ();
-							Vector3 (const Vector3& v);
-							Vector3 (const float* f);
-							Vector3 (float x, float y, float z);
+							Vector3 ();							//Constructor
+							Vector3 (const Vector3& v);			//Constructor initialized with a Vector3
+							Vector3 (const float* f);		
+							Vector3 (float x, float y, float z);//Constructor initialized with separate x,y and z values
 	float					GetX();
 	float					GetY();
 	float					GetZ();
